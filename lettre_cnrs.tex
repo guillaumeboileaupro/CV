@@ -1,0 +1,171 @@
+\documentclass[11pt,a4paper]{altacv}
+
+\geometry{left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm,columnsep=1.5cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{paracol}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+
+% Couleurs exactes du CV
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% En-tête identique au CV
+\name{BOILEAU Guillaume}
+%\tagline{R\&D Engineer and Data Project Manager}
+%\photoL{2.8cm}{moi}
+\personalinfo{
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes Maritimes, France}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\setlength{\parskip}{0.75\baselineskip}
+\linespread{1.15}
+
+\begin{document}
+\makecvheader
+
+\cvsection{Lettre de motivation}
+\iffalse
+{\color{accent}\textbf{Objet :}} \textit{\textbf{Candidature au poste de Responsable du Service des Systèmes d'Information (H/F) -- Réf. MOY2000-LAUSCH1-095}}
+
+\vspace{0.3cm}
+
+{\color{body}
+
+Madame, Monsieur,
+
+Actuellement ingénieur logiciel et data chez VEV Platform Services France à Valbonne, et ancien ingénieur R\&D au CNES au sein de l'Observatoire de la Côte d'Azur, je souhaite vous proposer ma candidature au poste de Responsable du Service des Systèmes d'Information de la Délégation Côte d'Azur du CNRS.
+
+Titulaire d’un doctorat en physique, j’ai construit mon parcours au sein d’environnements scientifiques exigeants, avec plus de sept années passées au contact direct des laboratoires, des ingénieurs et des grandes infrastructures de recherche. Cette expérience constitue pour moi un atout majeur pour ce poste : je connais les attentes du monde de la recherche, la diversité des besoins des unités, ainsi que l’importance d’infrastructures numériques fiables, sécurisées et adaptées aux usages scientifiques comme aux besoins des services de gestion.
+
+Au CNES, au sein du Laboratoire Lagrange de l’Observatoire de la Côte d’Azur, j’ai conçu et structuré CATpyLISA dans le cadre de la mission LISA menée avec l’ESA et la NASA. Ce travail m’a conduit à définir une feuille de route technique, organiser des flux de données complexes, documenter les traitements, coordonner plusieurs contributions et inscrire le développement dans une logique de robustesse, de traçabilité et d’évolutivité. Cette expérience me permet aujourd’hui de me projeter dans les missions de pilotage attendues pour ce poste : accompagner l’évolution des infrastructures numériques, structurer les pratiques, garantir la continuité de service et répondre à des besoins métiers variés dans un environnement scientifique exigeant.
+
+La dimension managériale du poste me motive particulièrement. Mon parcours m’a déjà conduit à encadrer des stagiaires, à animer des réunions hebdomadaires de coordination, à suivre des feuilles de route techniques et à faire avancer des travaux collectifs dans des collaborations internationales. J’y ai développé une manière de travailler fondée sur la priorisation, l’écoute, la transmission des savoirs et l’accompagnement de la montée en compétences. Dans le contexte de la Délégation Côte d’Azur, je souhaite mettre cette capacité d’animation au service d’une équipe technique de proximité, en contribuant à structurer les procédures, accompagner la transition et préparer la transmission des connaissances.
+
+Je suis également particulièrement sensible aux enjeux de sécurité, de fiabilité et de qualité de service. Mon expérience m’a conduit à travailler sur des environnements Linux, des architectures distribuées, des outils collaboratifs, des flux de données critiques et des pratiques d’automatisation où la maîtrise des accès, la robustesse des procédures, la documentation et la traçabilité sont essentielles. Sans revendiquer un parcours de RSSI au sens strict, je suis particulièrement motivé par la dimension SSI du poste, qui implique à la fois rigueur, pédagogie, coordination avec la chaîne nationale et accompagnement des unités sur les bonnes pratiques.
+
+Dans mes fonctions actuelles à Valbonne, je développe des applications et services pour la gestion d’infrastructures techniques, avec une forte composante d’intégration de systèmes, de supervision, de suivi opérationnel et de relation avec des interlocuteurs variés. Cette expérience renforce ma capacité à articuler qualité de service, contraintes techniques, besoins utilisateurs et travail partenarial. Elle me semble en adéquation avec les attentes du poste en matière d’accompagnement des laboratoires, de lien avec la DSI, d’appui aux services de la délégation et de dialogue avec les partenaires institutionnels, notamment dans un contexte de transformation numérique.
+
+Parce que je connais déjà le territoire, les acteurs et la culture de la recherche sur la Côte d’Azur, je suis en mesure de me projeter avec réalisme dans les responsabilités de Responsable du Service des Systèmes d’Information : moderniser et fiabiliser les infrastructures, accompagner la transition numérique des unités, soutenir les équipes dans la durée, renforcer la sécurité des usages et développer une offre de service de proximité réellement adaptée aux besoins des laboratoires et des services.
+
+Je serais très heureux de pouvoir mettre à votre disposition ma culture de projet, mon expérience des environnements complexes et ma capacité à articuler besoins utilisateurs, exigences techniques et vision de long terme.
+
+Je vous remercie pour l'attention portée à ma candidature et me tiens naturellement à votre disposition pour tout échange complémentaire.
+
+Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+\fi
+\iffalse
+{\color{accent}\textbf{Objet :}} \textit{Candidature au poste d'Ingénieur de Recherche -- Segment sol mission spatiale Euclid}
+
+Madame, Monsieur,
+
+Actuellement ingénieur logiciel et data chez VEV Platform Services France à Valbonne, et ancien ingénieur R\&D au CNES au sein de l’Observatoire de la Côte d’Azur, je souhaite vous proposer ma candidature au poste d’Ingénieur de Recherche, Segment sol mission spatiale Euclid, au Laboratoire d’Astrophysique de Marseille.
+
+Titulaire d’un doctorat en physique, j’ai construit mon parcours à l’interface entre astrophysique, traitement de données complexes et développement logiciel scientifique. Au cours de mes années passées dans l’environnement de la recherche publique et des projets spatiaux, j’ai développé une solide expérience de la conception, de l’intégration et de la validation d’outils logiciels destinés à l’exploitation de données scientifiques dans des contextes exigeants, collaboratifs et internationaux.
+
+Au CNES, dans le cadre de la mission LISA menée avec l’ESA et la NASA, j’ai conçu et structuré CATpyLISA, une plateforme modulaire en Python dédiée à la validation, à la comparaison et à la consolidation de produits scientifiques complexes. Ce travail m’a conduit à développer des composants logiciels robustes, à organiser les flux et formats de données, à documenter les traitements, à mettre en place des procédures de test et à coordonner plusieurs contributions dans une logique de reproductibilité, de traçabilité et d’évolutivité. Cette expérience correspond directement aux enjeux du poste, qui associe développement, intégration, validation et déploiement d’un logiciel scientifique dans le contexte d’une mission spatiale de grande ampleur.
+
+Mon parcours m’a également permis de développer une solide pratique de l’analyse de données astrophysiques et de la modélisation statistique. À l’Université d’Anvers, j’ai travaillé sur des pipelines d’inférence bayésienne pour l’identification et la caractérisation de sources de bruit dans des instruments de haute précision. J’y ai renforcé ma maîtrise de Python, de l’environnement Linux, des méthodes d’analyse et de la structuration de chaînes de traitement adaptées à des problématiques scientifiques complexes.
+
+Je suis particulièrement motivé par cette offre car elle se situe au croisement de plusieurs dimensions qui structurent mon parcours : développement logiciel scientifique, traitement de données instrumentales, documentation technique, intégration dans un environnement collaboratif structuré et participation à l’exploitation de données issues d’une mission spatiale européenne. Habitué à travailler avec des scientifiques et des développeurs dans des cadres internationaux, je suis à l’aise avec les échanges techniques en anglais, les logiques de validation collective et les contraintes propres aux grands consortiums.
+
+Si je n’ai pas encore travaillé directement sur Euclid, CODEEN/EDEN ou AMAZED, mon expérience des pipelines scientifiques, du développement modulaire, des environnements Linux et des projets spatiaux me permettrait d’aborder rapidement cet écosystème avec méthode et efficacité. Je serais très heureux de mettre mes compétences en développement, intégration et analyse de données au service du LAM, du CeSAM et du consortium Euclid.
+
+Je vous remercie pour l’attention portée à ma candidature et me tiens naturellement à votre disposition pour tout échange complémentaire.
+
+Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau} 
+{\color{accent}\textbf{Objet :}} \textit{Candidature au poste d'Ingénieur de Recherche -- Segment sol mission spatiale Euclid (Réf. UMR7326-ANAMEK-124)}
+
+{\color{body}
+
+Madame, Monsieur,
+
+Actuellement ingénieur logiciel et data chez VEV Platform Services France à Valbonne, et ancien ingénieur R\&D au CNES au sein de l'Observatoire de la Côte d'Azur, je souhaite vous proposer ma candidature au poste d'Ingénieur de Recherche, Segment sol mission spatiale Euclid, au Laboratoire d'Astrophysique de Marseille.
+
+Titulaire d'un doctorat en physique, j'ai construit mon parcours à l'interface entre astrophysique, traitement de données complexes et développement logiciel scientifique dans des environnements internationaux exigeants. Ce poste m'intéresse tout particulièrement car il porte sur un enjeu central d'Euclid : produire un traitement spectroscopique suffisamment robuste, traçable et intégré pour permettre une estimation fiable des redshifts, donc exploitable scientifiquement à grande échelle dans le cadre de la mission.
+
+Au CNES, dans le cadre de la mission LISA menée avec l'ESA et la NASA, j'ai travaillé directement sur le segment sol scientifique, en particulier sur la structuration du pipeline de consolidation des produits L3. J'y ai conçu et développé CATpyLISA, une plateforme logicielle modulaire en Python dédiée à la validation, à la comparaison et à la fusion de produits scientifiques complexes issus de traitements multiples. Ce travail m'a conduit à définir une architecture logicielle claire, structurer des formats de données, documenter les traitements, mettre en place des procédures de validation, suivre la qualité des résultats et garantir la traçabilité des produits finaux. Cette expérience me semble en adéquation très directe avec les attentes du poste, qui demandent de développer, intégrer, tester et déployer un logiciel scientifique dans un environnement spatial fortement contraint.
+
+Ce que je trouve particulièrement stimulant dans Euclid est précisément la nature du défi logiciel et scientifique : il ne s'agit pas seulement de faire fonctionner un code, mais de l'inscrire dans une chaîne collective où la qualité du traitement spectroscopique conditionne directement la valeur scientifique des données produites. L'intégration d'AMAZED dans le contexte Euclid implique à mes yeux plusieurs exigences fortes : robustesse de l'architecture, qualité des interfaces, reproductibilité des traitements, validation rigoureuse des résultats, documentation technique exploitable et capacité à dialoguer efficacement avec les équipes scientifiques et techniques du consortium. Ce sont précisément ces dimensions que j'ai déjà rencontrées sur LISA dans le développement d'outils destinés au segment sol.
+
+Mon parcours m'a également permis de développer une pratique approfondie de Python, de l'environnement Linux, de l'analyse de données et de la structuration de pipelines scientifiques. J'ai l'habitude de travailler sur des chaînes de traitement complexes, d'analyser les résultats, de produire des outils utilisables collectivement et de faire évoluer les développements au contact direct des besoins scientifiques. Cette expérience est pour moi un point fort pour contribuer aux campagnes d'analyse de données Euclid, rédiger une documentation technique solide et participer efficacement aux réunions d'intégration en France comme à l'étranger.
+
+%Si je n'ai pas encore travaillé directement dans l'environnement Euclid, CODEEN/EDEN ou sur AMAZED lui-même, je pense que mon profil présente une adéquation particulièrement forte avec les missions du poste : expérience concrète d'un segment sol de mission spatiale, développement de logiciels scientifiques robustes, compréhension des enjeux de validation et de déploiement, maîtrise de Python et de Linux, et capacité à travailler dans un cadre international au contact direct des scientifiques. Je serais ainsi très heureux de mettre cette expérience au service du LAM, du CeSAM et du consortium Euclid.
+
+Cette expérience me donne une adéquation particulièrement forte avec les missions du poste. J'ai déjà travaillé au cœur du segment sol scientifique d'une mission spatiale, sur un maillon où la robustesse du logiciel conditionne directement la valeur scientifique des produits finaux. Avec CATpyLISA, que j'ai conçu from scratch et dont j'ai structuré l'architecture logique, les développements logiciels et le pipeline de consolidation, j'ai pris en charge la validation, la comparaison, la consolidation et l'exploitation de produits scientifiques complexes issus de plusieurs chaînes de traitement. J'y ai organisé les formats et contrats de données, assuré la traçabilité des métadonnées techniques et des résultats, mis en place des critères de validation explicites, et développé les premières briques de contrôle qualité, de visualisation et d'automatisation nécessaires à une production scientifiquement robuste. Ce travail, retenu par le CNES comme base du pipeline L3 de LISA, puis validé sur Sangria avant d'être appliqué à Mojito, m'a donné une expérience directe des enjeux que l'on retrouve dans Euclid : développer un logiciel scientifique fiable, l'intégrer dans une chaîne collective, documenter les traitements, garantir la qualité et l'interprétabilité des produits, et travailler au contact étroit des scientifiques dans un cadre international.
+
+Je vous remercie pour l'attention portée à ma candidature et me tiens naturellement à votre disposition pour tout échange complémentaire.
+
+Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+{\color{accent}\textbf{Objet :}} \textit{Candidature au poste d'Ingénieur de Recherche -- Segment sol mission spatiale Euclid (Réf. UMR7326-ANAMEK-124)}
+
+{\color{body}
+\fi
+{\color{accent}\textbf{Objet :}} \textit{Candidature au poste d'Ingénieur de Recherche -- Segment sol mission spatiale Euclid (Réf. UMR7326-ANAMEK-124)}
+
+{\color{body}
+
+Madame, Monsieur,
+
+Je souhaite vous proposer ma candidature au poste d'Ingénieur de Recherche -- Segment sol mission spatiale Euclid, au Laboratoire d'Astrophysique de Marseille. Docteur en physique, je mène depuis près de huit ans une activité de recherche académique dans des collaborations internationales en astrophysique et ondes gravitationnelles, avec une production scientifique soutenue et une forte implication dans le développement d'outils d'analyse et de pipelines scientifiques.
+
+Mon parcours me place précisément sur le type d'interface scientifique, méthodologique et logicielle que requiert ce poste, avec une double légitimité de chercheur et de développeur de pipelines scientifiques pour grandes missions. J'ai construit mon expérience à l'articulation entre astrophysique, traitement de données complexes, développement logiciel scientifique et exploitation de produits issus de grandes collaborations internationales. Ce positionnement est particulièrement en adéquation avec Euclid, où l'enjeu n'est pas simplement de développer un logiciel supplémentaire, mais de fiabiliser un maillon critique du segment sol scientifique.
+
+Dans le cas d'Euclid, l'enjeu dépasse la seule dimension informatique. Le traitement des données spectroscopiques de NISP conditionne directement la qualité de la mesure des redshifts, donc la valeur scientifique des produits qui seront ensuite exploités à grande échelle par la mission. Développer, tester, intégrer et déployer AMAZED dans cet environnement suppose une compréhension fine de ce qu'est un logiciel scientifique de mission : un outil dont les traitements doivent être robustes, traçables, documentés, validés collectivement, et suffisamment bien intégrés pour que les résultats produits soient interprétables et défendables scientifiquement. C'est précisément ce type d'exigence que j'ai déjà rencontré dans le cadre de mes travaux sur LISA.
+
+Au CNES, au sein du Laboratoire Lagrange de l'Observatoire de la Côte d'Azur, j'ai travaillé directement sur le segment sol scientifique de la mission LISA menée avec l'ESA et la NASA. Dans ce cadre, j'ai conçu et développé \textbf{CATpyLISA} \textit{from scratch}. Il ne s'agissait pas d'un outil annexe, mais du socle logiciel de la consolidation des produits scientifiques de niveau L3. J'en ai défini l'architecture logique, le modèle de données, les développements logiciels principaux et l'organisation générale du pipeline. Ce travail portait sur un verrou central : comparer, valider, consolider et exploiter des sorties hétérogènes issues de plusieurs \textit{global fits}, afin de produire des catalogues scientifiquement robustes, traçables et exploitables collectivement. Le fait que CATpyLISA ait été retenu par le CNES comme base du pipeline L3 de LISA confirme à mes yeux la portée très concrète de ce travail.
+
+Cette expérience m'a conduit à prendre en charge des problématiques directement transposables à Euclid : structuration d'un modèle de données commun, validation de produits complexes, comparaison de sorties hétérogènes, traçabilité des traitements, intégration de diagnostics de qualité, visualisation des résultats et mise à disposition de produits consolidés pour la collaboration. Autrement dit, j'ai déjà travaillé sur ce qui fait la difficulté réelle d'un segment sol : faire en sorte qu'un logiciel soit non seulement fonctionnel, mais aussi scientifiquement fiable, maintenable, interopérable et intégré proprement dans une chaîne collective.
+
+Cette expérience me donne une adéquation particulièrement forte avec les missions du poste. J'ai déjà eu à analyser un besoin scientifique complexe, à le traduire en architecture logicielle, à développer des briques robustes, à les intégrer dans une chaîne plus large, à définir des critères de validation et à documenter les traitements au contact direct des scientifiques. Je me projette ainsi sur Euclid non comme un développeur extérieur au contexte scientifique, mais comme quelqu'un qui connaît déjà la logique profonde d'un segment sol de mission spatiale.
+
+Mon profil me paraît d'autant plus pertinent que j'associe cette expérience du segment sol à une pratique approfondie du traitement de données et du développement scientifique. Mon activité de recherche, qui s'est traduite par 31 publications à comité de lecture, dont 6 en premier auteur, m'a conduit à travailler quotidiennement avec Python, Linux, des chaînes de traitement complexes, des approches statistiques avancées, des environnements de calcul exigeants et des outils destinés à être utilisés collectivement. Mon activité récente de développement logiciel m'a en parallèle apporté une pratique concrète de l'intégration de services, des architectures applicatives, des API et de la structuration logicielle de systèmes plus larges. Cette double culture me semble particulièrement précieuse pour Euclid, où l'on attend à la fois une forte rigueur de développement et une compréhension claire des enjeux scientifiques associés aux traitements.
+
+
+Je suis également particulièrement à l'aise dans les environnements collaboratifs internationaux. Les projets auxquels j'ai contribué m'ont appris à travailler dans des consortiums structurés, à discuter des choix méthodologiques avec des scientifiques comme avec des développeurs, à documenter précisément les décisions techniques et à faire converger plusieurs contraintes (scientifiques, instrumentales et logicielles)
+vers un produit commun robuste. Cette manière de travailler correspond pleinement à ce que demande votre offre, qu'il s'agisse de l'intégration dans l'environnement Euclid, de la participation aux campagnes d'analyse de données ou des réunions d'intégration en France et à l'étranger.
+
+
+Je voudrais enfin insister sur un point essentiel : ce que j'ai développé sur LISA n'est pas périphérique par rapport à Euclid. C'est, sur le fond, une expérience de même nature. Dans les deux cas, la difficulté décisive n'est pas seulement d'écrire du code, mais de construire un cadre dans lequel les produits générés deviennent comparables, validables, traçables et scientifiquement exploitables par une grande collaboration. Mon expérience m'a appris qu'un bon logiciel de segment sol n'est pas seulement un logiciel qui fonctionne : c'est un logiciel dont les sorties sont interprétables, dont les traitements sont traçables, dont les hypothèses sont explicites, et dont l'intégration renforce la confiance scientifique dans les produits finaux. C'est exactement cette expertise que je souhaite mettre au service du LAM, du CeSAM et de la mission Euclid.
+
+Je serais ainsi très heureux de mettre mon expérience du segment sol scientifique, du développement de pipelines robustes, de la validation de produits complexes et du travail en consortium international au service du Laboratoire d'Astrophysique de Marseille.
+
+Je vous remercie pour l'attention portée à ma candidature et me tiens naturellement à votre disposition pour tout échange complémentaire.
+
+Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+}
+
+
+\end{document}

@@ -1,0 +1,353 @@
+%%%%%%%%%%%%%%%%%
+% CV targeted for Viveris - Manager IVVQ Logiciel - Secteur spatial
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Technical Project Manager \& Systems Engineer | Space Software Validation, IVVQ \& Integration}
+
+\photoL{2.8cm}{moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+
+\vspace{-0.3cm}
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- System Integration \& Hardware Interfaces}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and integration of software services for EV charging infrastructure within a CPMS platform connected to operational hardware systems.
+
+\begin{itemize}
+\item \textbf{Software development:} Developed web and backend services using TypeScript, Angular and Node.js.
+\item \textbf{System integration:} Contributed to software services interacting with charging infrastructure and field hardware.
+\item \textbf{Operational validation:} Monitored data exchanges, analysed incidents and supported correction workflows.
+\item \textbf{Hardware/software interfaces:} Worked on issues involving platform services, operational data flows and charging station systems.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer -- Space Software Integration, IVVQ-Oriented Validation \& Technical Coordination}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering activities for the LISA ESA/NASA space mission, involving complex software chains, model integration, validation workflows and coordinated technical developments.
+
+\begin{itemize}
+\item \textbf{Technical coordination:} Coordinated software and validation activities, aligned contributors and structured technical actions in an international space-mission context.
+\item \textbf{Software platform development:} Developed a Python-based platform for large-scale model integration, comparison and validation workflows. \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\item \textbf{Software integration:} Integrated heterogeneous analysis components, models and processing workflows within a structured validation environment.
+\item \textbf{Verification and validation:} Defined and executed comparison campaigns, consistency checks and validation workflows to verify complex software-chain outputs.
+\item \textbf{Anomaly analysis:} Investigated inconsistencies, unexpected behaviours and technical issues in complex software and analysis chains.
+\item \textbf{Traceability and documentation:} Documented validation outcomes, technical assumptions, procedures and review results for collaborative decision-making.
+\item \textbf{Team management:} Supervised interns and supported engineering activities across development, analysis, integration and validation tasks.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Analysis Pipelines, Validation \& Technical Diagnostics}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement technical environment.
+
+\begin{itemize}
+\item \textbf{Analysis pipeline development:} Developed Python-based analysis pipelines for noise source identification, characterization and mitigation.
+\item \textbf{Performance investigation:} Contributed to technical investigations related to system sensitivity limitations and performance degradation.
+\item \textbf{Validation workflows:} Produced structured technical analyses requiring traceability, reproducibility and reliability of results.
+\item \textbf{Anomaly investigation:} Analysed unexpected behaviours in measurement and simulation outputs to identify possible sources of degradation.
+\item \textbf{Technical reporting:} Reported complex findings in an international research and engineering environment.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer -- Signal Analysis, Simulation \& Software Validation}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Engineering and analysis activities for gravitational-wave mission preparation, involving signal analysis, simulation, software workflows and noise characterization.
+
+\begin{itemize}
+\item \textbf{Signal analysis:} Developed methods for the separation of overlapping low-SNR signals in complex datasets.
+\item \textbf{Simulation workflows:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+\item \textbf{Software validation:} Compared simulated outputs, model behaviours and analysis results to assess consistency and robustness.
+\item \textbf{Technical investigations:} Investigated noise sources through cross-sensor correlation analyses in diagnostic contexts.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Summary and Strengths}
+
+\textbf{Software IVVQ-oriented technical project manager and systems/software engineer} with experience in \textbf{space systems}, \textbf{software integration}, \textbf{validation workflows}, \textbf{test-like campaigns}, \textbf{anomaly analysis}, \textbf{technical reporting} and \textbf{team coordination}.
+
+Background developed through the \textbf{LISA ESA/NASA space mission}, \textbf{LIGO--Virgo--KAGRA} and \textbf{Einstein Telescope}, with recent industrial software experience involving \textbf{hardware/software interfaces} and operational data flows.
+
+Comfortable with \textbf{Python}, \textbf{Shell scripting}, \textbf{Linux/Unix workflows}, \textbf{Git/GitLab}, \textbf{Docker}, CI/CD-oriented practices, structured documentation and technical English.
+
+\cvsection{Project \& Team Management}
+
+\begin{itemize}
+  \item Coordination of technical activities involving engineers, technicians, researchers and interns.
+  \item Supervision of \textbf{3 Master's thesis interns (M2)} during engineering and development phases.
+  \item Structuring of tasks, priorities, validation campaigns and technical follow-up.
+  \item Experience in technical reviews, anomaly follow-up, result consolidation and documentation.
+  \item Ability to translate complex technical issues into clear actions and decision-support elements.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI -- Andrew Ng}{2020}{Coursera}
+
+\end{paracol}
+
+%\newpage
+
+\cvsection{Projects}
+
+\cvevent{Co-author and full member of the LISA Consortium}{ESA/NASA Space Mission -- Large-scale International Collaboration}{2018 -- now}{}
+
+Contribution to software, analysis and validation workflows for the LISA space mission within an international engineering and scientific collaboration involving ESA, NASA and multiple research institutes.
+
+\textbf{Role:} Contribution to software workflows, technical coordination, complex signal-processing activities, model integration, validation campaigns and collaborative engineering tasks.
+
+\textbf{Project relevance:} Work at the interface between software development, scientific requirements, data processing, validation workflows, technical contributors and international coordination.
+
+\textbf{IVVQ relevance:} Experience directly relevant to software IVVQ activities requiring structured validation campaigns, anomaly analysis, traceability, documentation quality and coordination between software, system-level constraints and technical contributors.
+
+\textbf{Program scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Co-author and full member of Einstein Telescope and LIGO--Virgo--KAGRA Collaborations}{International Collaborations}{2021 -- now}{}
+
+Contribution to collaborative developments in data analysis, signal characterization, software methods and technical investigations within the LIGO--Virgo--KAGRA and Einstein Telescope collaborations.
+
+\textbf{Role:} Development of analysis tools, contribution to technical activities and support to complex software workflows in high-standard collaborative environments.
+
+\textbf{System impact:} Contributed to studies on environmental and instrumental noise sources, helping identify fundamental design constraints and performance limitations for next-generation gravitational-wave observatories.
+
+\textbf{Environment:} Large-scale international collaborations involving strong technical requirements, structured methods, technical review, versioned software workflows and coordinated contributions.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Project \& coordination skills}
+
+{\small
+\cvtag{Technical Project Coordination}
+\cvtag{Work Package Structuring}
+\cvtag{Task Follow-Up}
+\cvtag{Task Allocation}
+\cvtag{Contributor Alignment}
+\cvtag{Technical Roadmap Support}
+\cvtag{Delivery Support}
+\cvtag{Technical Reporting}
+\cvtag{Stakeholder Communication}
+\cvtag{Cross-Functional Coordination}
+\cvtag{Team Coordination}
+\cvtag{Risk-Oriented Analysis}
+\cvtag{Issue Follow-Up}
+\cvtag{Decision Support}
+\cvtag{Documentation Quality}
+\cvtag{Structured Execution}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Engineering skills}
+
+{\small
+\cvtag{Systems Engineering}
+\cvtag{Software IVVQ}
+\cvtag{Software Integration}
+\cvtag{Verification \& Validation}
+\cvtag{Software Validation}
+\cvtag{Test Strategy Support}
+\cvtag{Test Execution}
+\cvtag{Test Automation}
+\cvtag{Non-Regression Mindset}
+\cvtag{Non-Regression Testing}
+\cvtag{Requirements Traceability}
+\cvtag{Validation Campaigns}
+\cvtag{Integration Testing}
+\cvtag{System Validation}
+\cvtag{Anomaly Analysis}
+\cvtag{Root Cause Analysis}
+\cvtag{Technical Diagnostics}
+\cvtag{Issue Resolution}
+\cvtag{Result Analysis}
+\cvtag{Complex Software Systems}
+\cvtag{Embedded Systems Awareness}
+\cvtag{Space Systems}
+\cvtag{Hardware / Software Interfaces}
+\cvtag{Critical Systems Awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Technical skills}
+
+{\small
+\cvtag{Python}
+\cvtag{Shell Scripting}
+\cvtag{Bash}
+\cvtag{Linux}
+\cvtag{Unix}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Test Automation Scripting}
+\cvtag{SQL}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{C}
+\cvtag{Matlab}
+\cvtag{Pandas}
+\cvtag{REST API}
+\cvtag{FTP}
+\cvtag{Issue Tracking}
+\cvtag{Technical Reporting}
+\cvtag{Condor}
+\cvtag{Slurm}
+\cvtag{PyTorch}
+\cvtag{MongoDB}
+\cvtag{Mathematica}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Domain knowledge}
+
+{\small
+\cvtag{Space Systems}
+\cvtag{Satellite Mission Context}
+\cvtag{ESA/NASA Collaboration}
+\cvtag{Mission-Level Performance}
+\cvtag{Scientific Payload Analysis}
+\cvtag{Precision Instrumentation}
+
+
+\cvtag{Critical Systems Awareness}
+\cvtag{Industrial Software}
+\cvtag{Software Validation}
+\cvtag{Hardware / Software Interfaces}
+\cvtag{Technical English}
+\cvtag{Large-Scale International Projects}\cvtag{Space Mission Data Processing}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+{\small\LaTeXraggedright
+\cvsubsection{Soft skills}
+
+{\small
+\cvtag{Autonomy}
+\cvtag{Analytical Thinking}
+\cvtag{Execution Rigor}
+\cvtag{Problem Solving}
+\cvtag{Adaptability}
+\cvtag{Responsibility}
+\cvtag{Attention to Detail}
+\cvtag{Collaboration}
+\cvtag{Structured Communication}
+\cvtag{Customer Awareness}
+\cvtag{Technical Interface}
+\cvtag{Leadership Potential}
+\par}}
+
+\vspace{0.1cm}
+
+{\small\textit{Target roles: software IVVQ coordination, space software validation, systems engineering and technical project management.}}
+
+\end{document}

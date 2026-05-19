@@ -1,0 +1,333 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.2, 28 August 2024) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+%EXPERIENCE
+%Senior researcher, CNES : LISA esa/NASA Space mission
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+\iftutex 
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}%{450808}
+\definecolor{PastelRed}{HTML}{00B0DA}%{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}%{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+%\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\includesvg[width=10pt]{orcid}}}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear.tex}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num.tex}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+% \usepackage{academicons}\let\faOrcid\aiOrcid
+\begin{document}
+\name{BOILEAU Guillaume} %, PhD
+\tagline{Data Scientist | R\&D Engineer | Signal Processing Expert}%Your Position or Tagline Here}
+%% You can add multiple photos on the left or right
+\photoL{2.8cm}{moi}
+%\photoR{2.5cm}{Suitcase_High}%6892(1)}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes Maritimes, FRANCE}
+  %\mailaddress{1 avenue des citronniers 06800 Cagnes sur Mer, France}
+  %\homepage{https://www.researchgate.net/profile/Guillaume-Boileau-2}%\href{https://www.researchgate.net/profile/Guillaume-Boileau-2}{Guillaume-Boileau}}
+ %\faLinkedin \href{https://www.linkedin.com/in/guillaume-boileau-phd-891b81265/}{in/guillaume-boileau}
+     
+
+  % \twitter{@twitterhandle}
+  %\xtwitter{@x-handle}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  %\github{your_id}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+  
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.64}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Experience}
+\cvevent{\textbf{Web Developer – CPMS, Angular, Node.js \& Hardware Integration}}{VEV Platform Services France}{2025 -- Ongoing}{Valbonne, France}
+\begin{itemize}
+\item \textbf{Full-Stack Development:} Development of web applications using TypeScript, Angular and Node.js.
+\item \textbf{CPMS Development:} Development and maintenance of CPMS services for EV charging infrastructure.
+\item \textbf{FTP Services:} Integration and management of FTP-based services for charging station data exchange.
+\item \textbf{Hardware Interaction:} Software integration and monitoring for EV charging station hardware.
+\end{itemize}
+\divider
+\cvevent{\textbf{Senior R\&D Engineer – Signal Processing \& Modeling (CNES)}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+\begin{itemize}
+\item \textbf{Simulation Tools:} Development of a Python-based platform for large-scale model integration and statistical comparison. \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\item \textbf{Signal Modeling:}  Design and simulation of low-SNR background signals for advanced detection systems.
+\end{itemize}
+\divider
+\cvevent{\textbf{Data Scientist – Noise Modeling for Precision Instruments}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+\begin{itemize}
+\item \textbf{Bayesian Inference:} Developed MCMC pipelines for noise source identification and mitigation.
+\item \textbf{Sensor Environment:} Analyzed environmental effects on the precision of large-scale instruments.
+
+\item \textbf{Analysis Pipeline Deployment:} Contributed to pre-operational validation and performance improvement for next-generation precision instruments.
+
+\end{itemize}
+\divider
+\cvevent{\textbf{Junior R\&D Engineer – Data Analysis \& System Simulation (OCA)}}
+{ARTEMIS, Observatoire de la Côte d'Azur, Nice, France}{2018--2021}{Nice, France}
+\begin{itemize}
+    \item \textbf{Signal Decomposition:} Developed methods for the separation of overlapping low-SNR signals in complex datasets.
+    \item \textbf{Foreground Simulation:} Modeled astrophysical background noise using large-scale population synthesis.
+    \item \textbf{Cross-Correlation Analysis:} Investigated noise sources through cross-sensor correlation studies in pre-launch diagnostics.
+\end{itemize}
+
+\iffalse
+\cvsection{Projects}
+
+\cvevent{Co-author and full member of the LISA Consortium}{Space Mission ESA : Large-scale International Collaboration}{2018-now}{}
+Development and strategic contribution to the analysis pipeline of a complex data-driven system. (FRANCE and CNES responsibility) / Team working. \textbf{Budget:} Estimated at approximately 2 billion EUR over 10 years.
+
+
+\divider
+
+\cvevent{Co-author and full member of Einstein Telescope and LIGO-Virgo-KAGRA Collaborations}{International Collaborations}{2021-now}{}
+Contributed as part of the broader collaboration efforts and development to updated analysis performance.
+Development Responsibility in Analysis segment. \textbf{Nobel Prize in Physics 2017:} Awarded to the LIGO collaboration for the discovery of gravitational waves. 
+%\medskip
+\fi
+\cvsection{Strengths}
+\vspace{-.3cm}
+\cvsubsection{Hard skills}
+{\small
+\cvtag{Machine Learning} \cvtag{Logistic Regression} \cvtag{Artificial Neural Network}
+\cvtag{Bayesian Inference} \cvtag{Big Data}
+\cvtag{Statistical Analysis} 
+\cvtag{Statistical Modeling} \cvtag{Time Series Analysis}
+\cvtag{Signal Processing}
+\cvtag{Web Development} \cvtag{Full Stack Development}
+\cvtag{Backend Systems} \cvtag{API Development}
+\cvtag{EV Charging Systems} \cvtag{CPMS}}
+\\
+\divider\smallskip
+\vspace{-.3cm}
+\cvsubsection{Computing skills}
+{\small
+\cvtag{Python} \cvtag{Pandas} \cvtag{PyTorch}
+\cvtag{TypeScript} \cvtag{Angular} \cvtag{Node.js}
+\cvtag{REST API} \cvtag{FTP} \cvtag{SQL}
+\cvtag{Git} \cvtag{Docker}
+\cvtag{Condor} \cvtag{Slurm} \cvtag{bash script}
+\cvtag{C} \cvtag{Matlab} \cvtag{Mathematica}
+\cvtag{Latex} \cvtag{Optimization}
+\cvtag{Parallel processing} \cvtag{MongoDB} \cvtag{AWS} \cvtag{Agent AI Manager}
+ \\
+
+\divider\smallskip
+\vspace{-.3cm}
+{\small\LaTeXraggedright
+\cvsubsection{Soft skills}
+{\small\cvtag{Project Manager Leader}\cvtag{Oral presentations international conferences}
+\cvtag{Motivator \& Leader}
+\cvtag{Scientific writing}
+\cvtag{Peer-reviewed journals}
+\cvtag{Hard-working}
+\cvtag{Eye for detail} \cvtag{Scientific Software Engineering}
+\par}}
+\cvtag{\textit{Applications: predictive maintenance, sensor networks, risk modeling, simulation}}
+
+
+\switchcolumn
+
+
+\cvsection{My Life Philosophy}
+
+\begin{quote}
+``Life is like riding a bicycle. To keep your balance, you must keep moving.''
+\end{quote}
+
+\iffalse
+\cvsection{Summary and Strengths}
+
+Experienced astrophysicist with advanced skills in statistical analysis, Bayesian modeling, and machine learning. Proven ability to lead teams in international collaborations. Strong scientific background demonstrated by impactful publications and presentations at major conferences. Skilled in managing large-scale scientific projects and solving complex problems.
+\fi
+\cvsection{Summary and Strengths}
+
+\textbf{R\&D engineer} and \textbf{data scientist} specialized in \textbf{signal processing}, \textbf{statistical modeling} and large-scale \textbf{data analysis}. Experience in \textbf{international} scientific collaborations and development of complex analysis pipelines. 
+
+\textbf{Full-stack web developer} working on CPMS platforms for EV charging infrastructure using TypeScript, Angular and Node.js, including integration with hardware systems.
+
+\cvsection{Team Management}
+
+\begin{itemize}
+  \item Supervision of \textbf{3 Master’s thesis interns (M2)} during research and development phases.
+  \item \textbf{Team leader} of a group of \textbf{research engineers and technicians}, developing a \textbf{data processing pipeline} for the \textbf{LISA space mission}.
+\end{itemize}
+
+
+\cvsection{Languages}
+%\cvskill{French}{5}
+%\divider
+\cvskill{English}{4}
+\divider
+
+\cvskill{Spanish}{2}
+\divider
+
+%\cvskill{German}{3.5} %% Supports X.5 values.
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+\medskip
+
+\cvsection{Education And Formation }
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+\divider
+
+\cvevent{Supervised Machine Learning: Regression and Classification}{DeepLearning.AI, Andrew Ng}{2020}{Coursera, Stanford University}
+
+\divider
+
+\cvevent{Magistère's Degree - Fundamental Physics}{Université Paris Sud/Paris Saclay, University Paris 11}{2016-2018}{Orsay, France}
+%\textit{with distinction}
+
+\divider
+\cvevent{Master's Degree - Astronomy and Astrophysics}{Observatoire de Paris and Université Paris Sud/Paris Saclay}{2017-2018}{ Paris and Orsay, France}
+%\textit{with distinction}
+
+\divider
+
+\cvevent{Bachelor's Degree - Fundamental Physics}{Université Paris Sud/Paris Saclay}{2015-2016}{Orsay, France}
+%\textit{with distinction}
+
+%\divider
+
+%\cvevent{CPGE Classe préparatoire aux grandes écoles MPSI/MP (Maths-Physics)}{Lycée  Dessaigne}{2013-2015}{Blois, France}
+%\textit{with distinction and merit}
+
+%\divider
+
+%\cvevent{High School Diploma, Baccalauréat  S }{Lycée  Augustin  Thierry}{2013}{Blois, France}
+
+%\cventry{2013-2015}{CPGE Classe préparatoire aux grandes écoles MPSI/MP (Maths-Physics)}{Lycée  Dessaigne, Blois, France}{%(a  two  years preparatory  course  that  is  a  prerequisite  for  entry  into  one  of  the Grandes Ecoles)
+%}{}{\textit{with distinction and merit}}
+
+%\cventry{2013}{High School Diploma, Baccalauréat  S %(high  school diploma focusing on Mathematics and Physics) 
+%}{Lycée  Augustin  Thierry}{Blois, France}{}{\textit{with distinction }}
+
+
+\end{paracol}
+
+
+\end{document}

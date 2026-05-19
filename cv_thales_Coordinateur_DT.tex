@@ -1,0 +1,314 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Thales - Coordinateur DT - Documentation et Etudes R&T
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Technical Documentation \& R\&T Coordination | PMO Support, Reporting, Data Management \& Technical Synthesis}
+
+\photoL{2.8cm}{moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - Operational Data, Reporting \& Industrial Interfaces}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and support of software services for EV charging infrastructure within a CPMS platform connected to operational equipment and field data flows.
+
+\textbf{Objective:} Support reliable operational data exchanges, reporting-oriented follow-up and coordination between software services, charging infrastructure behaviour and operational needs.
+
+\begin{itemize}
+  \item \textbf{Operational data flows:} Implemented and monitored FTP-based data exchange services used for infrastructure operation and technical follow-up.
+  \item \textbf{Data consistency:} Checked consistency between CPMS platform services, operational data flows and charging station behaviour.
+  \item \textbf{Industrial interfaces:} Worked on services connected to EV charging stations, electrical equipment status and maintenance-related diagnostics.
+  \item \textbf{Issue follow-up:} Investigated production issues involving data exchanges, service behaviour, interface continuity and operational reliability.
+  \item \textbf{Technical feedback:} Structured operational observations and technical issues to support follow-up, prioritisation and decision-making.
+  \item \textbf{Agile environment:} Used Zenhub for task tracking, backlog follow-up and coordination within an iterative software development environment.
+  \item \textbf{Software development:} Developed web and backend services using TypeScript, Angular and Node.js.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Technical Documentation, Coordination \& R\&T Studies}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering and R\&D activities for the LISA ESA/NASA space mission, involving technical studies, model integration, simulation workflows, validation campaigns and international coordination.
+
+\textbf{Objective:} Coordinate technical activities, structure documentation, produce synthesis material and support decision-making for complex R\&D and validation workflows.
+
+\begin{itemize}
+  \item \textbf{R\&T studies:} Contributed to upstream technical studies on mission performance, modelling assumptions, uncertainty sources and system-level limitations.
+  \item \textbf{Technical coordination:} Coordinated contributors, supervised interns and aligned software, modelling, simulation and validation activities across multiple stakeholders.
+  \item \textbf{Reporting and synthesis:} Produced structured technical reports, review material, validation summaries and decision-support documents for project stakeholders.
+  \item \textbf{Technical documentation:} Used Confluence to organise documentation, coordination notes, validation follow-up and knowledge sharing.
+  \item \textbf{Data management:} Structured technical repositories, simulation outputs, model configurations and analysis results to improve traceability and reuse.
+  \item \textbf{Validation logic:} Structured technical activities around specification, implementation, comparison, verification, validation and documented evidence.
+  \item \textbf{Process improvement:} Formalised comparison workflows, validation checks, documentation practices and reproducibility rules.
+  \item \textbf{Knowledge capitalisation:} Supported capitalisation of methods, assumptions, validation logic and technical lessons learned.
+  \item \textbf{Software platform:} Developed CATpyLISA, a Python platform for model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Technical Studies, Analysis \& Reporting}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement technical environment linked to gravitational-wave detector performance.
+
+\textbf{Objective:} Produce robust technical analyses, syntheses and documented results to support understanding of system performance and technical risks.
+
+\begin{itemize}
+  \item \textbf{Technical studies:} Analysed sources affecting system sensitivity, measurement quality and performance stability.
+  \item \textbf{Analysis and synthesis:} Transformed complex datasets and statistical results into structured conclusions for technical stakeholders.
+  \item \textbf{Reporting:} Produced reproducible and traceable technical analyses for international engineering and research teams.
+  \item \textbf{Data pipelines:} Developed Python-based pipelines for noise source identification, characterization and mitigation.
+  \item \textbf{Decision support:} Helped identify environmental and instrumental constraints affecting next-generation detector design and performance.
+  \item \textbf{Technical communication:} Worked in English within international collaborations and multidisciplinary technical environments.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Simulation, Documentation \& Technical Analysis}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} R\&D activities for gravitational-wave mission preparation, involving signal analysis, simulation, technical documentation and noise characterization.
+
+\textbf{Objective:} Develop analysis methods, document results and support technical investigations in demanding system environments.
+
+\begin{itemize}
+  \item \textbf{Simulation studies:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Technical analysis:} Developed methods for the separation of overlapping low-SNR signals in complex datasets.
+  \item \textbf{Documentation:} Documented methods, assumptions, outputs and scientific conclusions for collaborative review.
+  \item \textbf{Technical investigations:} Investigated noise sources through cross-sensor correlation analyses in diagnostic contexts.
+  \item \textbf{Performance synthesis:} Supported the identification of limiting factors affecting mission-level performance and system sensitivity.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile for Thales}
+
+\textbf{Technical documentation and R\&T coordination-oriented engineer with strong experience in technical studies, reporting, data management, synthesis and coordination of multidisciplinary contributors}. Background developed through major international collaborations including \textbf{LISA ESA/NASA}, \textbf{LIGO--Virgo--KAGRA} and \textbf{Einstein Telescope}, complemented by recent industrial software experience involving operational data flows and connected equipment.
+
+For the \textbf{Coordinateur DT - Documentation et Etudes R\&T} role, I bring a strong ability to structure information, produce clear synthesis reports, manage technical documentation, support project follow-up, organise data repositories and contribute to process improvement in complex technical environments.
+
+\begin{itemize}
+  \item Strong experience in technical documentation, reporting, synthesis and knowledge capitalisation.
+  \item Ability to support PMO activities: activity follow-up, coordination, prioritisation and preparation of review material.
+  \item Experience structuring technical data, repositories, simulation outputs, analysis results and validation evidence.
+  \item Strong analytical mindset for transforming complex technical information into clear summaries and decision-support material.
+  \item Experience with R\&D studies, upstream technical analysis, performance assessment and multidisciplinary coordination.
+  \item Practical use of collaborative tools including Confluence for documentation and Zenhub for activity follow-up.
+  \item Understanding of validation and V-cycle logic: specification, implementation, verification, validation, traceability and documented evidence.
+  \item Comfortable working with data, structured repositories, technical dashboards, reporting material and process documentation.
+  \item Strong communication skills in English within international and multidisciplinary environments.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA - Technical Documentation, Data Structuring \& Validation Platform}{Python Platform for the LISA ESA/NASA Space Mission}{2023 -- 2025}{}
+
+Development of a Python platform dedicated to large-scale model integration, comparison, validation and technical review for LISA mission-level analysis workflows.
+
+\textbf{Role:} Technical coordination, data structuring, documentation support, validation reporting, synthesis material, consistency checks and interaction with multiple contributors.
+
+\textbf{Relevance for PMO R\&T and documentation:} Work involving structured repositories, traceability of assumptions and outputs, technical reporting, review preparation, process improvement and knowledge capitalisation.
+
+\divider
+
+\cvevent{Co-author and full member of the LISA Consortium}{ESA/NASA Space Mission - Large-scale International Collaboration}{2018 -- now}{}
+
+Contribution to software, analysis, documentation and validation workflows for the LISA space mission within an international engineering and scientific collaboration involving ESA, NASA and multiple research institutes.
+
+\textbf{Role:} R\&D studies, simulation campaigns, technical coordination, validation activities, complex signal-processing tasks, documentation and collaborative engineering support.
+
+\textbf{Relevance for Thales SPIRIT / R\&T:} Experience in upstream technical studies, structured reporting, knowledge capitalisation, multidisciplinary collaboration and high-standard engineering communication.
+
+\textbf{Program scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Co-author and full member of Einstein Telescope and LIGO--Virgo--KAGRA Collaborations}{International Collaborations}{2021 -- now}{}
+
+Contribution to collaborative developments in data analysis, signal characterization, software methods and technical investigations within the LIGO--Virgo--KAGRA and Einstein Telescope collaborations.
+
+\textbf{Role:} Development of analysis tools, contribution to technical studies and support to complex software workflows in high-standard collaborative environments.
+
+\textbf{System impact:} Studies on environmental and instrumental noise sources helping identify fundamental design constraints and performance limitations for next-generation gravitational-wave observatories.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{PMO, Reporting \& R\&T Coordination}
+
+{\small
+\cvtag{PMO Support}
+\cvtag{R\&T Studies}
+\cvtag{Technical Coordination}
+\cvtag{Activity Follow-Up}
+\cvtag{Project Reporting}
+\cvtag{Synthesis Reports}
+\cvtag{Decision Support}
+\cvtag{Review Preparation}
+\cvtag{Stakeholder Coordination}
+\cvtag{Workstream Follow-Up}
+\cvtag{Process Improvement}
+\cvtag{Roadmap Logic}
+\cvtag{Risk Analysis}
+\cvtag{Prioritisation}
+\cvtag{Agile Environment}
+\cvtag{Zenhub}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Documentation, Data Management \& Knowledge Capitalisation}
+
+{\small
+\cvtag{Technical Documentation}
+\cvtag{Documentation Management}
+\cvtag{Knowledge Capitalisation}
+\cvtag{Technical Watch}
+\cvtag{Data Management}
+\cvtag{Data Structuring}
+\cvtag{Data Repositories}
+\cvtag{Reporting Tools}
+\cvtag{Data Consistency}
+\cvtag{Traceability}
+\cvtag{Version Control}
+\cvtag{Confluence}
+\cvtag{MindMap Logic}
+\cvtag{Process Documentation}
+\cvtag{Technical Libraries}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Technical Background \& Tools}
+
+{\small
+\cvtag{Signal Processing}
+\cvtag{Acoustics Logic}
+\cvtag{Noise Analysis}
+\cvtag{Simulation Workflows}
+\cvtag{Performance Analysis}
+\cvtag{System-Level Analysis}
+\cvtag{Complex Systems}
+\cvtag{Space Systems}
+\cvtag{Validation Follow-Up}
+\cvtag{V-Cycle Logic}
+\cvtag{Python}
+\cvtag{Linux}
+\cvtag{Bash}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{GitHub}
+\cvtag{Docker}
+\cvtag{SQL}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{REST API}
+\cvtag{FTP}
+}
+
+\end{document}

@@ -1,0 +1,185 @@
+\documentclass[10pt,a4paper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=0.5cm,bottom=1cm,columnsep=1.2cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{paracol}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+
+% Couleurs exactes du CV
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% En-tête strictement identique
+\name{BOILEAU Guillaume}
+\tagline{R\&D Engineer and Data Project Manager}
+\photoL{2.8cm}{moi} 
+\personalinfo{
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes Maritimes, France}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+% Espacement et lisibilité
+\setlength{\parskip}{0.75\baselineskip}
+\linespread{1.15}
+
+\begin{document}
+
+\makecvheader
+
+% Active le grand trait vertical doré sans rien casser visuellement
+%\cvsection{Lettre de motivation}
+
+%\begin{paracol}{1}
+
+%{\color{accent}\textbf{Objet :}} \textit{Candidature au poste d'ingénieur développement,  }
+
+%\vspace{0.5cm}
+
+{\color{body}
+\iffalse
+Nice, le 17 juillet 2025
+
+Madame, Monsieur,
+
+Titulaire d'un doctorat en physique et fort de plus de sept années d'expérience en ingénierie des données et en modélisation scientifique dans des environnements complexes, je souhaite aujourd'hui mettre mon expertise au service d'une structure dynamique et ambitieuse telle que Capgemini Engineering. Votre offre pour un poste d'Ingénieur DevOps m'a particulièrement intéressé, tant par sa dimension technique que par sa transversalité entre R\&D, automatisation et fiabilité opérationnelle.
+
+Mon expérience dans des projets scientifiques complexes, notamment au sein du CNES et de la mission LISA (ESA/NASA), m'a permis de développer une expertise poussée dans la conception, le déploiement et la supervision d'architectures de traitement de données scientifiques à large échelle. J'ai notamment contribué à la mise en œuvre de pipelines d'analyse complexes intégrant Python, Bash, Git, Slurm, Condor et divers outils de supervision. Travaillant en lien étroit avec des ingénieurs système, des experts en sécurité et des équipes de développement, j'ai appris à concevoir des solutions robustes, automatisées et documentées dans des environnements distribués critiques.
+
+Je possède de solides compétences sur les systèmes Linux, les protocoles réseaux (SSH, VPN, transfert sécurisé), ainsi qu'une bonne compréhension des logiques de CI/CD, de gestion de configuration et de virtualisation. J'ai également une appétence naturelle pour l'automatisation et la documentation technique, ainsi qu'une capacité à interagir efficacement avec les équipes techniques et non techniques.
+
+Intégré au sein de grandes collaborations internationales (LIGO/Virgo/KAGRA), j'ai acquis une capacité à travailler dans des contextes exigeants, avec des enjeux de qualité, de performance et de disponibilité proches de ceux rencontrés dans les environnements DevOps avancés. Le poste proposé par Capgemini Engineering représente pour moi une évolution naturelle, me permettant de mettre à profit mes compétences en architecture système, en automatisation et en coordination technique.
+
+Basé à proximité immédiate de Valbonne, je suis disponible à partir de septembre ou octobre. Votre approche centrée sur l'expertise, l'accompagnement personnalisé et l'engagement collectif me motive particulièrement. Je serais très heureux de pouvoir contribuer activement à vos projets.
+
+Je reste bien entendu à votre disposition pour tout échange complémentaire et vous remercie pour l'attention portée à ma candidature.
+
+Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+
+Madame, Monsieur,
+
+Titulaire d'un doctorat en physique, je possède plus de sept années d'expérience en ingénierie des données, en modélisation scientifique et en traitement du signal dans des environnements complexes et internationaux. Aujourd'hui, je souhaite mettre mon expertise au service d'une structure innovante, exigeante et ambitieuse, à l'image de la vôtre.
+
+Tout au long de mon parcours, j'ai développé et intégré des outils avancés d'analyse et de simulation pour la détection de signaux faibles et la modélisation de bruits instrumentaux. Chez CNES, j'ai notamment conçu une plateforme modulaire de simulation en Python destinée à intégrer des modèles à grande échelle, dans le cadre de la mission spatiale LISA (ESA/NASA). Ce pipeline a été officiellement validé par le CNES comme base pour le développement du segment sol de la mission, ce qui reflète son niveau de robustesse, de documentation et d'intégration dans une architecture de traitement scientifique à long terme. Cette expérience m'a permis de travailler au croisement des problématiques de traitement du signal avec une équipe d'ingénieur, de performance système et d'architecture logicielle.
+
+Précédemment à l'Université d'Anvers, j'ai contribué au développement de chaînes de traitement bayésien (MCMC) pour l'identification et l'atténuation de sources de bruit dans des instruments de haute précision. J'y ai acquis une solide maîtrise des outils d'inférence statistique, du calcul distribué (Condor, Slurm), de l'automatisation sous Linux, ainsi que des bonnes pratiques de développement collaboratif (Git, documentation, intégration continue).
+
+Mon expérience dans de grandes collaborations scientifiques internationales (LISA, LIGO/Virgo/KAGRA, Einstein Telescope) m'a appris à évoluer dans des environnements exigeants, collaboratifs et techniquement diversifiés. J'y ai occupé un rôle actif dans le développement de pipelines d'analyse à grande échelle, souvent à l'interface entre chercheurs, ingénieurs systèmes et experts métiers. Ces responsabilités m'ont permis d'encadrer des stagiaires M2, de coordonner des livrables critiques, et de concevoir des solutions robustes pour des systèmes distribués. J'ai également dirigé une équipe d'ingénieurs et de techniciens dans un contexte international, en assurant la coordination technique et la livraison de composants critiques.
+
+Je maîtrise les principaux outils de l'écosystème scientifique et DevOps : Python (pandas, numpy, PyTorch), bash, Condor, Slurm, Docker, Git, SQL, ainsi que les environnements Linux et les protocoles sécurisés (SSH, VPN, transfert). J'ai également une forte sensibilité aux problématiques de reproductibilité, d'optimisation, et de supervision technique. Je suis également régulièrement des MOOC pour me former à de nouveaux outils et maintenir mes compétences techniques à jour.
+
+Rigoureux, autonome et enthousiaste, je suis motivé par les défis technologiques et l'amélioration continue des outils de traitement de données. Je souhaite aujourd'hui rejoindre une équipe dynamique où je pourrais continuer à concevoir, automatiser et déployer des solutions techniques à fort impact.
+
+Basé dans les Alpes-Maritimes, je suis disponible dès septembre pour une prise de poste. Je serais très heureux de pouvoir contribuer à vos projets et de vous apporter mon expertise scientifique et technique.
+
+Je reste à votre disposition pour tout échange complémentaire et vous remercie pour l'attention portée à ma candidature.
+
+Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+
+
+}
+
+Madame, Monsieur,
+
+Titulaire d’un doctorat en physique et disposant de plus de sept années d’expérience en ingénierie des données, modélisation scientifique et développement logiciel, je souhaite aujourd’hui mettre mes compétences au service d’une entreprise innovante telle qu’Acri-ST, reconnue pour son expertise dans le traitement de données scientifiques et les systèmes complexes.
+
+Au cours de mon parcours, j’ai développé une forte expertise dans l’analyse de données complexes, le traitement du signal et le développement de logiciels scientifiques. En tant qu’ingénieur R\&D au CNES au sein du Laboratoire Lagrange (Observatoire de la Côte d’Azur), j’ai notamment conçu une plateforme logicielle modulaire en Python permettant l’intégration et la simulation de modèles astrophysiques à grande échelle dans le cadre de la mission spatiale LISA (ESA/NASA). Cette plateforme a été validée comme base de développement pour certains outils du segment sol de la mission, nécessitant des exigences élevées en robustesse logicielle, reproductibilité scientifique et performance computationnelle.
+
+Précédemment à l’Université d’Anvers, j’ai développé des pipelines d’analyse bayésienne reposant sur des méthodes MCMC pour l’identification et la modélisation de sources de bruit dans des instruments de haute précision. Ces travaux m’ont permis d’acquérir une solide expérience en inférence statistique, traitement du signal et calcul distribué sur des infrastructures HPC utilisant notamment Condor et Slurm.
+
+Plus récemment, j’ai élargi mon expertise vers le développement logiciel full-stack en travaillant sur des plateformes web dédiées aux infrastructures de recharge pour véhicules électriques. Dans ce cadre, je développe des applications en TypeScript utilisant Angular et Node.js, avec conception d’API REST, intégration de services backend et interaction directe avec des systèmes matériels industriels. Je participe également à l’intégration et au monitoring de services d’échange de données, notamment via des protocoles FTP, ainsi qu’au développement et à la maintenance de services CPMS pour la gestion d’infrastructures de recharge.
+
+Membre actif de plusieurs grandes collaborations scientifiques internationales telles que le consortium LISA, LIGO/Virgo/KAGRA ou encore Einstein Telescope, j’ai l’habitude d’évoluer dans des environnements techniques exigeants et multidisciplinaires, impliquant la coordination d’équipes internationales et le développement de pipelines d’analyse complexes.
+
+Grâce à cette double compétence en développement logiciel et en analyse de données scientifiques avancées, je suis particulièrement motivé à l’idée de contribuer aux projets d’Acri-ST, notamment dans les domaines du traitement de données, de la modélisation scientifique et du développement d’outils logiciels robustes pour l’analyse de systèmes complexes.
+
+Rigoureux, autonome et habitué au travail collaboratif dans des environnements internationaux, je serais très heureux de pouvoir mettre mon expertise au service de vos équipes.
+
+Je me tiens naturellement à votre disposition pour tout échange complémentaire et vous remercie pour l’attention portée à ma candidature.
+
+Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+Madame, Monsieur,
+
+Titulaire d’un doctorat en physique et disposant de plus de sept années d’expérience en science des données, modélisation statistique et développement logiciel, je souhaite aujourd’hui mettre mon expertise en analyse de données et en machine learning au service de problématiques appliquées aux sciences du vivant et à la bioinformatique.
+
+Actuellement ingénieur logiciel et data au sein de VEV Platform Services France, je participe au développement de plateformes numériques dédiées à la gestion d’infrastructures de recharge pour véhicules électriques. Dans ce cadre, je développe des applications et services permettant de collecter, structurer et exploiter des flux de données issus de systèmes industriels. Ce travail implique la conception d’API, l’intégration de services backend ainsi que le développement d’outils permettant l’analyse et l’exploitation de données dans des systèmes d’information complexes.
+
+Auparavant, en tant qu’ingénieur R\&D au CNES au sein du Laboratoire Lagrange (Observatoire de la Côte d’Azur), j’ai conçu une plateforme logicielle modulaire en Python permettant l’intégration, la simulation et l’analyse statistique de modèles scientifiques à grande échelle dans le cadre de la mission spatiale LISA (ESA/NASA). Ce projet impliquait la mise en place de pipelines d’analyse reproductibles et l’exploitation de jeux de données volumineux pour comparer différents modèles scientifiques.
+
+Précédemment à l’Université d’Anvers, j’ai développé des pipelines d’analyse reposant sur des méthodes d’inférence bayésienne (MCMC) afin de modéliser des sources de bruit dans des instruments de haute précision. Ces travaux m’ont permis d’acquérir une solide expérience dans la préparation et la transformation de données complexes, la modélisation statistique et la validation d’algorithmes d’analyse.
+
+Ces différentes expériences m’ont permis de développer une forte maîtrise de l’écosystème Python pour la data science (NumPy, Pandas, notebooks Jupyter, bibliothèques de modélisation et de machine learning), ainsi qu’une expertise dans la conception de pipelines d’analyse scientifique et la gestion de données expérimentales complexes.
+
+Particulièrement intéressé par les applications de la data science aux sciences du vivant, je suis très motivé par l’opportunité de contribuer au développement de pipelines bioinformatiques, à l’analyse de données génomiques et à la construction de modèles permettant d’exploiter efficacement les données issues du séquençage et de l’étude du vivant.
+
+Rigoureux, curieux et force de proposition, je serais très heureux de pouvoir mettre mes compétences en science des données, modélisation et développement logiciel au service de vos équipes.
+
+Je vous remercie pour l’attention portée à ma candidature et me tiens naturellement à votre disposition pour tout échange complémentaire.
+
+Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+
+\fi
+
+{\color{accent}\textbf{Objet :}} \textit{Candidature au poste de Responsable du Service des Systèmes d'Information (H/F) -- Réf. MOY2000-LAUSCH1-095}
+
+\vspace{0.4cm}
+
+{\color{body}
+
+Madame, Monsieur,
+
+Actuellement ingénieur logiciel et data chez VEV Platform Services France à Valbonne, et ancien ingénieur R\&D au CNES au sein de l’Observatoire de la Côte d’Azur, je souhaite vous proposer ma candidature au poste de Responsable du Service des Systèmes d’Information de la Délégation Côte d’Azur. Titulaire d’un doctorat en physique, j’ai construit depuis plus de sept ans un parcours à l’interface entre développement logiciel, pilotage de pipelines complexes, coordination technique et accompagnement d’équipes dans des environnements exigeants. La dimension stratégique de votre offre, au service direct des laboratoires et de la transformation numérique du CNRS, correspond pleinement à mon parcours et à mes motivations.
+
+Au CNES, dans le cadre de la mission LISA menée avec l’ESA et la NASA, j’ai conçu et structuré CATpyLISA, une plateforme modulaire en Python dédiée à la validation, à la comparaison et à la consolidation de produits scientifiques complexes. Ce développement, retenu par le CNES comme base du pipeline L3, m’a amené à définir une feuille de route technique, organiser les flux et formats de données, mettre en place des procédures robustes, documenter les traitements et coordonner plusieurs contributions dans un environnement scientifique particulièrement exigeant. Cette expérience m’a donné une compréhension concrète de ce qu’implique un système d’information fiable pour la recherche : continuité de service, qualité des livrables, traçabilité, évolutivité et adaptation à des besoins métiers variés.
+
+Dans mes fonctions actuelles à Valbonne, je développe des applications et services pour la gestion d’infrastructures de recharge pour véhicules électriques. J’y conçois des API et services backend en TypeScript, Angular et Node.js, j’intègre des flux d’échange de données, participe au monitoring de services et au suivi d’interactions avec des équipements matériels. Ce contexte m’apporte une expérience directement opérationnelle des environnements numériques, de l’intégration de systèmes, du suivi technique et de la relation avec des utilisateurs et partenaires aux attentes fortes en matière de disponibilité et de réactivité.
+
+Mon parcours m’a également amené à exercer des responsabilités d’animation et de management. J’ai encadré plusieurs stagiaires de master, animé des réunions hebdomadaires de coordination scientifique en Belgique, co-piloté un groupe de travail au sein de la collaboration LIGO/Virgo/KAGRA, et dirigé un groupe d’ingénieurs et de techniciens sur des développements liés à LISA. Ces expériences m’ont appris à prioriser, répartir les tâches, accompagner la montée en compétences et faire converger des interlocuteurs très divers autour d’objectifs communs. Elles me semblent directement en phase avec vos attentes en matière d’encadrement d’équipe, de structuration de la transmission des savoirs et de coordination avec les laboratoires, la DSI et les partenaires régionaux.
+
+Si mon parcours s’est construit dans la recherche et l’ingénierie scientifique plutôt que dans une DSI classique, il m’a conduit à travailler quotidiennement sur des environnements Linux, des architectures distribuées, des outils collaboratifs, la conteneurisation, des protocoles d’échange sécurisés et des pratiques de documentation et d’automatisation indispensables à la fiabilité des services. J’accorde une grande importance aux enjeux de sécurité opérationnelle, de maîtrise des accès, de robustesse des procédures et de qualité de service. Mon expérience d’enseignement, d’encadrement et de vulgarisation constitue en outre un atout pour conduire des actions de sensibilisation, expliquer des sujets techniques avec pédagogie et développer une offre de service de proximité adaptée à des publics variés.
+
+Ayant déjà évolué au contact direct des laboratoires, des ingénieurs et des grandes infrastructures de recherche, je mesure pleinement ce qu’un service des systèmes d’information représente pour un organisme comme le CNRS : un levier essentiel de continuité, de sécurité, d’efficacité collective et d’innovation au service de la science. Rejoindre la Délégation Côte d’Azur représenterait pour moi une continuité naturelle, au service du territoire, des équipes et de la mission scientifique du CNRS. Je serais très heureux de pouvoir mettre à votre disposition ma culture de projet, mon expérience des environnements complexes et ma capacité à articuler besoins utilisateurs, exigences techniques et vision de long terme.
+
+Je vous remercie pour l’attention portée à ma candidature et me tiens naturellement à votre disposition pour tout échange complémentaire.
+
+Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+}
+
+%\end{paracol}
+
+\end{document}

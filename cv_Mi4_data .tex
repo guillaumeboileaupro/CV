@@ -1,0 +1,309 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Mi4 - Data Integration Specialist
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Data Integration Specialist | Python, JavaScript/TypeScript, API, ETL, Data Quality \& Automation}
+
+\photoL{2.8cm}{moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - Data Flows, APIs \& Operational Integrations}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Software development and operational support for a CPMS platform connected to EV charging infrastructure, field equipment and external data exchanges.
+
+\textbf{Objective:} Contribute to reliable operational data flows, system integrations and technical follow-up between software services, charging infrastructure and business operations.
+
+\begin{itemize}
+  \item \textbf{Data integration:} Implemented and monitored FTP-based operational data exchanges used for infrastructure follow-up and technical operations.
+  \item \textbf{System interfaces:} Worked on software services connected to EV charging stations, operational equipment status and platform-side data flows.
+  \item \textbf{Data consistency:} Checked consistency between CPMS services, external data exchanges, infrastructure behaviour and operational expectations.
+  \item \textbf{Issue analysis:} Investigated production issues involving data exchanges, service behaviour, interface continuity and operational reliability.
+  \item \textbf{Automation logic:} Supported automation-oriented workflows for operational data handling, monitoring and technical diagnostics.
+  \item \textbf{Technical communication:} Structured technical observations and incident analyses to support prioritisation and decision-making.
+  \item \textbf{Agile environment:} Used Zenhub for backlog follow-up, task tracking and coordination within an iterative software development environment.
+  \item \textbf{Software stack:} Developed web and backend services using TypeScript, Angular and Node.js.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Data Pipelines, Model Integration \& Validation}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering and R\&D activities for the LISA ESA/NASA space mission, involving model integration, simulation workflows, data processing, validation campaigns and international coordination.
+
+\textbf{Objective:} Design and maintain Python-based workflows to integrate heterogeneous models, structure technical data, validate outputs and support collaborative analysis.
+
+\begin{itemize}
+  \item \textbf{Data pipelines:} Developed Python workflows for model integration, data transformation, output comparison and validation.
+  \item \textbf{Data management:} Structured simulation outputs, model configurations, technical repositories and analysis results to improve traceability and reuse.
+  \item \textbf{Data quality:} Implemented consistency checks, comparison logic and validation rules to identify discrepancies between models and outputs.
+  \item \textbf{Integration work:} Integrated heterogeneous external model results into a common analysis and review framework.
+  \item \textbf{Technical documentation:} Used Confluence to organise documentation, coordination notes, validation follow-up and knowledge sharing.
+  \item \textbf{Collaboration:} Worked with multidisciplinary contributors and translated complex technical results into clear synthesis material.
+  \item \textbf{Process improvement:} Formalised reproducible workflows, comparison methods, validation checks and documentation practices.
+  \item \textbf{Software platform:} Developed CATpyLISA, a Python platform for model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Data Processing, Cleaning \& Technical Analysis}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a demanding technical environment linked to gravitational-wave detector performance.
+
+\textbf{Objective:} Build robust and reproducible data-analysis workflows to identify, characterise and mitigate sources affecting measurement quality.
+
+\begin{itemize}
+  \item \textbf{Python pipelines:} Developed Python-based workflows for data processing, statistical analysis and noise-source identification.
+  \item \textbf{Data cleaning:} Processed, filtered and structured complex datasets to support reproducible technical analyses.
+  \item \textbf{Data transformation:} Converted raw and derived data into exploitable formats for analysis, comparison and reporting.
+  \item \textbf{Quality assessment:} Analysed data consistency, measurement stability and performance limitations in complex systems.
+  \item \textbf{Reporting:} Produced traceable technical analyses and synthesis material for international technical stakeholders.
+  \item \textbf{Problem solving:} Investigated environmental and instrumental constraints affecting system performance and data quality.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Simulation, Data Analysis \& Automation}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} R\&D activities for gravitational-wave mission preparation, involving signal analysis, simulation, technical documentation and noise characterisation.
+
+\textbf{Objective:} Develop analysis methods, automate simulation workflows and document results in collaborative technical environments.
+
+\begin{itemize}
+  \item \textbf{Simulation workflows:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Data analysis:} Developed methods for separating overlapping low-SNR signals in complex datasets.
+  \item \textbf{Automation:} Implemented reproducible analysis workflows for repeated technical studies and comparison tasks.
+  \item \textbf{Technical investigations:} Investigated noise sources through cross-sensor correlation analyses in diagnostic contexts.
+  \item \textbf{Documentation:} Documented methods, assumptions, outputs and conclusions for collaborative review.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile for Mi4}
+
+\textbf{Data integration-oriented engineer with strong experience in Python workflows, data pipelines, data quality, system interfaces, automation and technical communication}. Background developed through complex scientific and industrial environments, including \textbf{EV charging infrastructure software}, \textbf{LISA ESA/NASA}, \textbf{LIGO--Virgo--KAGRA} and \textbf{Einstein Telescope}.
+
+For the \textbf{Data Integration Specialist} role, I bring a strong ability to analyse integration needs, structure data, automate transformations, monitor data flows, investigate anomalies and communicate clearly with both technical and non-technical stakeholders.
+
+\begin{itemize}
+  \item Strong experience in Python-based data processing, transformation, validation and automation workflows.
+  \item Recent industrial software experience involving operational data flows, platform services and connected equipment.
+  \item Practical experience with JavaScript/TypeScript, Node.js, Angular, Git, GitLab, Linux and Docker.
+  \item Ability to work on APIs, external interfaces, data exchanges, system integration and operational reliability.
+  \item Strong focus on data quality: consistency checks, traceability, reproducibility, validation evidence and anomaly investigation.
+  \item Comfortable translating complex technical problems into clear explanations for multidisciplinary teams.
+  \item Experience structuring technical repositories, documentation, workflows and data outputs for reuse and maintainability.
+  \item Curious, autonomous and methodical profile, used to solving complex problems in evolving technical environments.
+  \item Fast learner able to ramp up on CRM/ERP integration tools, HubSpot ecosystems, n8n and low-code automation platforms.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA - Data Integration, Validation \& Automation Platform}{Python Platform for the LISA ESA/NASA Space Mission}{2023 -- 2025}{}
+
+Development of a Python platform dedicated to large-scale model integration, data structuring, output comparison, validation and technical review for LISA mission-level workflows.
+
+\textbf{Role:} Python development, data pipeline design, data structuring, validation logic, consistency checks, technical documentation and coordination with multiple contributors.
+
+\textbf{Relevance for Mi4:} Experience directly transferable to data integration: heterogeneous data sources, automated transformations, traceability, validation, documentation and technical communication.
+
+\divider
+
+\cvevent{Operational Data Flows for EV Charging Infrastructure}{CPMS Platform - VEV Platform Services France}{2025 -- 2026}{}
+
+Contribution to software services supporting operational data exchanges and connected infrastructure behaviour for EV charging systems.
+
+\textbf{Role:} Development and follow-up of data exchange services, production issue analysis, operational diagnostics, interface reliability and technical coordination.
+
+\textbf{Relevance for Mi4:} Practical industrial experience with operational data flows, external interfaces, technical troubleshooting and service-oriented software.
+
+\divider
+
+\cvevent{International Scientific and Technical Collaborations}{LISA, LIGO--Virgo--KAGRA and Einstein Telescope}{2018 -- now}{}
+
+Contribution to collaborative developments in data analysis, signal characterisation, software workflows, validation activities and technical investigations within large international collaborations.
+
+\textbf{Role:} Development of analysis tools, contribution to data-processing workflows, technical studies, documentation and collaborative review.
+
+\textbf{Relevance for Mi4:} Ability to work with multidisciplinary teams, clarify complex technical issues, document methods and deliver reliable outputs in demanding collaborative environments.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Data Integration, ETL \& Automation}
+
+{\small
+\cvtag{Data Integration}
+\cvtag{ETL Workflows}
+\cvtag{Data Pipelines}
+\cvtag{Data Cleaning}
+\cvtag{Data Transformation}
+\cvtag{Data Import}
+\cvtag{Data Migration Logic}
+\cvtag{Data Consolidation}
+\cvtag{Workflow Automation}
+\cvtag{Operational Data Flows}
+\cvtag{System Integration}
+\cvtag{Interface Monitoring}
+\cvtag{Anomaly Investigation}
+\cvtag{Process Improvement}
+\cvtag{Low-Code Ramp-Up}
+\cvtag{n8n Ramp-Up}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{APIs, Software \& Technical Tools}
+
+{\small
+\cvtag{Python}
+\cvtag{JavaScript}
+\cvtag{TypeScript}
+\cvtag{Node.js}
+\cvtag{Angular}
+\cvtag{REST API}
+\cvtag{Webhooks Logic}
+\cvtag{FTP}
+\cvtag{SQL}
+\cvtag{Linux}
+\cvtag{Bash}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{GitHub}
+\cvtag{Docker}
+\cvtag{Confluence}
+\cvtag{Zenhub}
+\cvtag{AI-Assisted Coding}
+\cvtag{Technical Debugging}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Data Quality, CRM Logic \& Collaboration}
+
+{\small
+\cvtag{Data Quality}
+\cvtag{Data Consistency}
+\cvtag{Traceability}
+\cvtag{Validation Checks}
+\cvtag{Documentation}
+\cvtag{Technical Synthesis}
+\cvtag{Requirements Analysis}
+\cvtag{Business Needs Translation}
+\cvtag{CRM Integration Logic}
+\cvtag{ERP Integration Logic}
+\cvtag{HubSpot Ramp-Up}
+\cvtag{Client-Oriented Mindset}
+\cvtag{Cross-Functional Collaboration}
+\cvtag{Problem Solving}
+\cvtag{Autonomy}
+\cvtag{Methodical Approach}
+}
+
+\end{document}

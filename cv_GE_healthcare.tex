@@ -1,0 +1,340 @@
+%%%%%%%%%%%%%%%%%
+% CV targeted for GE HealthCare - Acoustic Data Science Engineer
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Data Science Engineer | Machine Learning for Physical Systems, Signal Processing \& Model Validation}
+
+\photoL{2.8cm}{moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+
+\vspace{-0.3cm}
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer – Data Flows, System Interfaces \& Operational Monitoring}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and integration of software services for EV charging infrastructure within a CPMS platform involving operational data flows, hardware-related interfaces and production environments.
+
+\textbf{Objective:} Support reliable software components, operational data exchanges and monitoring workflows for infrastructure-related systems.
+
+\begin{itemize}
+\item \textbf{Operational data flows:} Implemented and monitored FTP-based data exchange services for infrastructure-related operational workflows.
+\item \textbf{System interfaces:} Contributed to software services interacting with hardware systems and operational platforms.
+\item \textbf{Production analysis:} Investigated service behavior, data consistency issues and software/hardware interaction problems.
+\item \textbf{Software development:} Developed and maintained application components using TypeScript, Node.js and Angular.
+\item \textbf{Reliability support:} Supported verification, monitoring and correction of service behavior in production and pre-production contexts.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer – ML-ready Data Platform, Signal Processing \& Model Validation}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering activities for the LISA ESA/NASA space mission, involving complex physical signals, large-scale simulations, Python software chains and model comparison workflows.
+
+\textbf{Objective:} Develop robust Python-based workflows to process, simulate, compare and validate complex physical-system models and signal-analysis outputs.
+
+\begin{itemize}
+\item \textbf{Python data platform:} Developed a Python-based platform for large-scale model integration, data processing, comparison and analysis workflows. \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\item \textbf{Signal processing:} Designed analysis workflows for complex low signal-to-noise physical signals and stochastic backgrounds.
+\item \textbf{Model validation:} Built comparison and validation workflows to assess model outputs, uncertainty, consistency and robustness.
+\item \textbf{Simulation-based analysis:} Structured synthetic data and waveform-like simulations to evaluate model behavior and analysis robustness.
+\item \textbf{Predictive modeling logic:} Contributed to performance-oriented analysis workflows linking physical models, simulated data and measurable signal properties.
+\item \textbf{AI-oriented workflows:} Contributed to the framing, comparison and validation of model-based analysis workflows.
+\item \textbf{Technical coordination:} Coordinated contributors, aligned development tasks and organized collaborative workflows in an international environment.
+\item \textbf{Problem solving:} Investigated unexpected software/data behaviors, identified root causes and supported corrective actions across technical domains.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist – Noise Modeling, Statistical Learning \& Physical-System Analysis}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement technical environment involving noisy, heterogeneous and correlated datasets.
+
+\textbf{Objective:} Identify, characterize and mitigate sources affecting system sensitivity using robust statistical, computational and data-driven methods.
+
+\begin{itemize}
+\item \textbf{Data science pipelines:} Developed robust Python analysis workflows for noise source identification, characterization and mitigation.
+\item \textbf{Physical-system modeling:} Analysed correlations between environmental, instrumental and performance-related variables.
+\item \textbf{Statistical learning:} Applied Bayesian inference, MCMC methods and uncertainty analysis to extract reliable information from complex datasets.
+\item \textbf{Feature analysis:} Identified relevant signal, noise and environmental features affecting measurement quality and system performance.
+\item \textbf{Validation strategy:} Developed reproducible workflows requiring traceability, consistency checks and robust interpretation of results.
+\item \textbf{Performance investigation:} Contributed to technical investigations related to system sensitivity limitations and measurement quality.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer – Signal Processing, Simulation \& Data Algorithms}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Engineering and analysis activities for gravitational-wave mission preparation, involving simulation, signal separation, data modeling and noise characterization.
+
+\textbf{Objective:} Develop robust computational methods to process complex physical signals and support technical investigations in demanding measurement environments.
+
+\begin{itemize}
+\item \textbf{Signal analysis:} Developed methods for separation and interpretation of overlapping low-SNR signals in complex datasets.
+\item \textbf{Synthetic data generation:} Built simulation workflows for complex signal environments and large-scale physical datasets.
+\item \textbf{Noise characterization:} Investigated noise sources through cross-sensor correlation analyses and diagnostic workflows.
+\item \textbf{Algorithm development:} Developed computational methods for signal decomposition, model comparison and physical interpretation.
+\item \textbf{Scientific software:} Contributed to collaborative analysis methods and software tools for complex space-system applications.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Summary and Strengths}
+
+\textbf{Data Science Engineer with a PhD in Physics}, specialized in \textbf{machine learning-ready workflows}, \textbf{signal processing}, \textbf{statistical modeling}, \textbf{simulation-based analysis} and \textbf{model validation for physical systems}. Strong experience extracting reliable information from noisy, complex and heterogeneous data.
+
+Experienced in building \textbf{Python data pipelines}, processing physical signals, comparing models, validating outputs and investigating system performance limitations. Strong fit for applied ML problems where data science must remain connected to instrumentation, measurement quality, uncertainty and physical interpretation.
+
+Comfortable working with \textbf{Python}, \textbf{NumPy/SciPy-like workflows}, \textbf{PyTorch}, \textbf{Matlab}, \textbf{SQL}, \textbf{Git/GitLab}, \textbf{Linux}, \textbf{Docker}, automation and collaborative technical development. Able to work autonomously in distributed international teams and translate complex technical needs into structured project tasks.
+
+\cvsection{Target Role Fit}
+
+\begin{itemize}
+  \item Strong fit for \textbf{machine learning applied to physical systems}, signal processing and predictive performance monitoring.
+  \item Experience with \textbf{complex physical signals}, low-SNR data, noise modeling, simulation and validation workflows.
+  \item Practical experience with \textbf{model comparison}, uncertainty analysis, robustness checks and reproducible evaluation strategies.
+  \item Relevant background for \textbf{synthetic waveform/data generation} and simulation-based training or validation approaches.
+  \item Experience defining technical objectives, coordinating contributors and structuring roadmaps in international projects.
+  \item Transferable expertise from precision instrumentation and space systems to ultrasound probe performance modeling.
+\end{itemize}
+
+\cvsection{Team Management}
+
+\begin{itemize}
+  \item Supervision of \textbf{3 Master’s thesis interns (M2)} during software, data analysis and engineering development phases.
+  \item Coordination of technical activities involving \textbf{research engineers and technicians} on a \textbf{data processing pipeline} for the \textbf{LISA space mission}.
+  \item Experience organizing technical tasks, supporting junior contributors and maintaining alignment across collaborative developments.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning: Regression \& Classification}{DeepLearning.AI – Andrew Ng}{2020}{Coursera}
+
+\end{paracol}
+
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA – Python Platform for Physical Models, Simulation and Signal Analysis}{LISA ESA/NASA Space Mission}{2023 -- 2025}{}
+
+Development of a Python-based software platform designed to integrate, compare and analyze heterogeneous physical models, synthetic data products and signal-analysis outputs in the context of the LISA mission.
+
+\textbf{Role:} Python development, data workflow architecture, model integration, simulation-based analysis, automated comparison, technical coordination and validation support.
+
+\textbf{Relevance:} Data science project involving complex physical signals, simulation workflows, model comparison, reproducibility, large-scale analysis and collaborative software development.
+
+\divider
+
+\cvevent{Co-author and full member of the LISA Consortium}{ESA/NASA Space Mission -- Large-scale International Collaboration}{2018 -- now}{}
+
+Contribution to software and analysis workflows for the LISA mission within an international engineering and scientific collaboration involving ESA, NASA and multiple research institutes.
+
+\textbf{Role:} Signal processing workflows, data analysis pipelines, technical coordination, model validation and collaborative engineering tasks.
+
+\textbf{Program scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Co-author and full member of Einstein Telescope and LIGO-Virgo-KAGRA Collaborations}{International Collaborations}{2021 -- now}{}
+
+Contribution to collaborative developments in data analysis, signal characterization and software methods within the LIGO--Virgo--KAGRA and Einstein Telescope collaborations.
+
+\textbf{Role:} Development of analysis tools, contribution to signal-processing activities and support to complex software workflows in high-standard collaborative environments.
+
+\textbf{Environment:} Large-scale international collaborations involving strong technical requirements, distributed teams, validation culture and structured methods.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+\cvsubsection{Machine Learning, Data Science \& Signal Processing}
+{\small
+\cvtag{Machine Learning}
+\cvtag{Deep Learning}
+\cvtag{Supervised Learning}
+\cvtag{Unsupervised Learning}
+\cvtag{Model Evaluation}
+\cvtag{Cross-validation}
+\cvtag{Bias/Variance}
+\cvtag{Hyperparameter Tuning}
+\cvtag{Predictive Modeling}
+\cvtag{Feature Extraction}
+\cvtag{Signal Processing}
+\cvtag{Noise Modeling}
+\cvtag{Physical-System Modeling}
+\cvtag{Synthetic Data}
+\cvtag{Waveform Simulation}
+\cvtag{Classification}
+\cvtag{Statistical Modeling}
+\cvtag{Bayesian Inference}
+\cvtag{MCMC}
+\cvtag{Uncertainty Analysis}
+}
+\\
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Software, Cloud-ready Pipelines \& Tools}
+{\small
+\cvtag{Python}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{Pandas}
+\cvtag{PyTorch}
+\cvtag{Matlab}
+\cvtag{SQL}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{Linux}
+\cvtag{Docker}
+\cvtag{Automation}
+\cvtag{CI/CD}
+\cvtag{Data Pipelines}
+\cvtag{Data Processing}
+\cvtag{Visualization}
+\cvtag{Power BI}
+\cvtag{VS Code}
+\cvtag{bash scripting}
+\cvtag{Slurm}
+\cvtag{HTCondor}
+}
+\\
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Project, Product \& Engineering}
+{\small
+\cvtag{Product Requirements}
+\cvtag{User Requirements}
+\cvtag{Roadmap}
+\cvtag{Technical Coordination}
+\cvtag{Task Delegation}
+\cvtag{Stakeholder Alignment}
+\cvtag{International Teams}
+\cvtag{Validation Strategy}
+\cvtag{Traceability}
+\cvtag{Performance Monitoring}
+\cvtag{Technical Investigation}
+\cvtag{Root Cause Analysis}
+\cvtag{Problem Solving}
+\cvtag{Structured Execution}
+\cvtag{Technical Reporting}
+}
+\\
+
+\divider\smallskip
+\vspace{-.3cm}
+
+{\small\LaTeXraggedright
+\cvsubsection{Soft skills}
+{\small
+\cvtag{Autonomy}
+\cvtag{Analytical Thinking}
+\cvtag{Fast Learner}
+\cvtag{Execution Rigor}
+\cvtag{Communication}
+\cvtag{Distributed Teamwork}
+\cvtag{Adaptability}
+\cvtag{Responsibility}
+\cvtag{Attention to Detail}
+\cvtag{Collaboration}
+\cvtag{Scientific Rigor}
+\cvtag{Customer/User Awareness}
+\par}}
+
+\cvtag{\textit{Applications: ML for physical systems, ultrasound-adjacent signal processing, predictive performance monitoring, model validation}}
+
+\end{document}

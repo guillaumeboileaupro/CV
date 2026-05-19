@@ -1,0 +1,346 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for ALTEN - Ingénieur AIT Spatial
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{AIT / IVVQ Engineer - Space Systems | Integration, Functional Validation, Test Analysis \& Anomaly Investigation}
+
+\photoL{2.8cm}{moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \github{guillaume-boileaupro}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - System Integration, Operational Data \& Industrial Interfaces}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and support of software services for an EV charging infrastructure CPMS platform connected to charging stations, operational data flows, industrial interfaces and field equipment.
+
+\textbf{Objective:} Support system integration, operational reliability, interface continuity and technical diagnostics between software services, connected equipment and field constraints.
+
+\begin{itemize}
+  \item \textbf{System integration:} Worked on software components connected to industrial equipment, operational data flows and charging station behaviour.
+  \item \textbf{Interface validation:} Checked consistency between CPMS platform services, operational data exchanges, field equipment status and expected functional behaviour.
+  \item \textbf{Operational diagnostics:} Investigated production issues involving service behaviour, data exchanges, interface continuity and operational reliability.
+  \item \textbf{Anomaly analysis:} Used logs, application behaviour analysis and technical diagnostics to identify root causes and support corrective actions.
+  \item \textbf{Test-oriented support:} Analysed observed behaviours, reproduced issues and structured technical feedback for follow-up with software and operational teams.
+  \item \textbf{Industrial constraints:} Worked in an environment involving connected infrastructure, equipment status, maintenance-related diagnostics and operational continuity.
+  \item \textbf{Coordination:} Used Zenhub for task tracking, backlog follow-up and coordination within an iterative engineering environment.
+  \item \textbf{Software development:} Developed web and backend services using TypeScript, Angular and Node.js in a production-oriented industrial context.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Space Mission Validation, Data Integration \& Test Analysis}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering and R\&D activities for the LISA ESA/NASA space mission, involving mission-level simulations, model integration, validation workflows, performance analysis and international coordination.
+
+\textbf{Objective:} Support validation activities, structure test-like analysis workflows, compare system-level outputs, document results and contribute to technical decision-making for complex space mission studies.
+
+\begin{itemize}
+  \item \textbf{Space mission environment:} Contributed to technical activities for LISA, a major ESA/NASA space mission involving complex system modelling, validation and mission performance analysis.
+  \item \textbf{Validation workflows:} Developed Python-based workflows to compare, verify and validate heterogeneous simulation outputs produced by multiple contributors.
+  \item \textbf{Test analysis logic:} Structured analysis campaigns around expected outputs, consistency checks, comparison criteria, uncertainty assessment and documented evidence.
+  \item \textbf{Requirements-oriented mindset:} Worked with specification-like constraints, modelling assumptions, validation criteria and traceability of technical results.
+  \item \textbf{Anomaly and inconsistency detection:} Identified discrepancies between model outputs, investigated causes and supported correction or clarification with contributors.
+  \item \textbf{Performance assessment:} Analysed mission-level signals, low-SNR behaviours, noise contributions and limiting factors affecting system performance.
+  \item \textbf{Technical documentation:} Produced validation summaries, analysis reports, review material and documented evidence for technical discussions.
+  \item \textbf{Coordination:} Acted as technical interface between users, contributors and stakeholders to clarify needs, constraints, results and validation objectives.
+  \item \textbf{Software platform:} Developed CATpyLISA, a Python platform for model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Instrumental Noise, Performance Studies \& Validation}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement technical environment linked to gravitational-wave detector performance.
+
+\textbf{Objective:} Analyse instrumental and environmental constraints, validate complex datasets and provide technical conclusions supporting system performance understanding.
+
+\begin{itemize}
+  \item \textbf{Instrumental analysis:} Studied noise sources affecting sensitivity, measurement quality and performance stability in precision instrumentation.
+  \item \textbf{Validation pipelines:} Developed Python workflows for noise source identification, characterization, mitigation and robustness assessment.
+  \item \textbf{System diagnostics:} Investigated environmental and instrumental effects through statistical analysis, correlation studies and technical interpretation.
+  \item \textbf{Performance analysis:} Assessed sensitivity limitations, uncertainty sources and constraints relevant to next-generation detector design.
+  \item \textbf{Technical reporting:} Produced reproducible and traceable analyses for international engineering and research stakeholders.
+  \item \textbf{English environment:} Worked in English within international collaborations and multidisciplinary technical teams.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Simulation, Signal Processing \& Technical Validation}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} R\&D activities for gravitational-wave mission preparation, involving signal analysis, simulation, technical documentation and characterization of complex low-SNR data environments.
+
+\textbf{Objective:} Develop analysis methods, process complex simulation outputs, investigate noise contributions and support validation activities in demanding system environments.
+
+\begin{itemize}
+  \item \textbf{Simulation workflows:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Signal analysis:} Developed methods for separating overlapping low-SNR signals and interpreting complex spectral behaviours.
+  \item \textbf{Noise investigation:} Investigated noise sources and cross-sensor correlations in diagnostic contexts.
+  \item \textbf{Validation logic:} Compared numerical outputs, assessed consistency and documented assumptions, methods and conclusions.
+  \item \textbf{Technical documentation:} Produced scripts, figures, reports and documented analysis material for collaborative review.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile for ALTEN}
+
+\textbf{Space systems engineer with strong experience in validation workflows, system-level analysis, technical diagnostics, anomaly investigation, documentation and coordination in demanding scientific and industrial environments}. Background developed through major international collaborations including \textbf{LISA ESA/NASA}, \textbf{LIGO--Virgo--KAGRA} and \textbf{Einstein Telescope}, complemented by recent industrial software experience involving connected equipment, operational data flows and interface diagnostics.
+
+For the \textbf{AIT Engineer - Space} role, I bring a strong transferable background in integration logic, test analysis, validation evidence, anomaly treatment, performance assessment and coordination with multidisciplinary technical contributors.
+
+\begin{itemize}
+  \item Experience in space mission context through LISA ESA/NASA, with mission-level simulation, validation and performance analysis workflows.
+  \item Strong IVVQ/AIT-compatible mindset: specification, integration logic, test preparation, verification, validation, result analysis and documented evidence.
+  \item Ability to analyse functional behaviour, compare expected and observed outputs, investigate anomalies and structure corrective feedback.
+  \item Experience with complex systems, instrumentation constraints, noise analysis, performance limitations and technical diagnostics.
+  \item Strong background in signal processing, spectral analysis, low-SNR environments, uncertainty assessment and system-level interpretation.
+  \item Practical experience coordinating contributors, structuring technical reviews and producing documentation for multidisciplinary stakeholders.
+  \item Comfortable with interfaces between software, data, systems, equipment behaviour and operational constraints.
+  \item Technical English used daily in international collaborations and engineering/scientific environments.
+  \item Based in Alpes-Maritimes, immediately aligned with Cannes / Sophia Antipolis / Valbonne industrial and space ecosystem.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning - Regression \& Classification}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA - Space Mission Validation, Integration \& Test Analysis Platform}{Python Platform for the LISA ESA/NASA Space Mission}{2023 -- 2025}{}
+
+Development of a Python platform dedicated to large-scale model integration, comparison, validation and technical review for LISA mission-level analysis workflows.
+
+\textbf{Role:} Technical coordination, model integration, validation workflows, consistency checks, result analysis, anomaly detection, documentation and interaction with multiple contributors.
+
+\textbf{Relevance for AIT / IVVQ:} Work involving integration of heterogeneous contributors, verification of expected outputs, validation evidence, comparison campaigns, technical reviews and structured anomaly analysis.
+
+\divider
+
+\cvevent{Operational Interfaces - EV Charging Platform}{Connected Equipment, Interface Diagnostics and Production Support}{2025 -- 2026}{}
+
+Contribution to software services and operational data exchanges within an EV charging infrastructure platform connected to field equipment and production constraints.
+
+\textbf{Role:} Interface follow-up, production diagnostics, service behaviour analysis, operational feedback, anomaly investigation and coordination with technical stakeholders.
+
+\textbf{Relevance for AIT:} Work involving connected equipment behaviour, interface continuity, expected versus observed behaviour analysis, logs, operational reliability, issue follow-up and corrective technical feedback.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{AIT, IVVQ \& Space System Validation}
+
+{\small
+\cvtag{AIT Logic}
+\cvtag{IVVQ}
+\cvtag{Integration}
+\cvtag{Functional Validation}
+\cvtag{Test Analysis}
+\cvtag{Verification}
+\cvtag{Validation}
+\cvtag{Requirements Logic}
+\cvtag{Test Procedures}
+\cvtag{Result Analysis}
+\cvtag{Anomaly Analysis}
+\cvtag{Non-Conformity Logic}
+\cvtag{Technical Reviews}
+\cvtag{Validation Evidence}
+\cvtag{Traceability}
+\cvtag{Space Systems}
+\cvtag{Satellite Mission Context}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{RF, Signal Processing \& Instrumentation Background}
+
+{\small
+\cvtag{Signal Processing}
+\cvtag{Spectral Analysis}
+\cvtag{Noise Analysis}
+\cvtag{Low-SNR Signals}
+\cvtag{Propagation Logic}
+\cvtag{Measurement Analysis}
+\cvtag{Performance Assessment}
+\cvtag{Sensitivity Studies}
+\cvtag{Instrumental Diagnostics}
+\cvtag{System-Level Analysis}
+\cvtag{Complex Systems}
+\cvtag{Environmental Noise}
+\cvtag{EMC Awareness}
+\cvtag{RF Concepts}
+\cvtag{Telemetry Logic}
+\cvtag{Space Mission Data}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Satellite Platform, Interfaces \& Operational Diagnostics}
+
+{\small
+\cvtag{Platform Interfaces}
+\cvtag{Functional Behaviour}
+\cvtag{Interface Continuity}
+\cvtag{Operational Diagnostics}
+\cvtag{Connected Equipment}
+\cvtag{Industrial Interfaces}
+\cvtag{Data Flows}
+\cvtag{Logs}
+\cvtag{Monitoring}
+\cvtag{Root-Cause Analysis}
+\cvtag{Technical Support}
+\cvtag{Issue Follow-Up}
+\cvtag{Corrective Actions}
+\cvtag{Service Reliability}
+\cvtag{Production Constraints}
+\cvtag{OBDH Awareness}
+\cvtag{AOCS Awareness}
+\cvtag{TT\&C Awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Software, Data \& Technical Tools}
+
+{\small
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{Bash}
+\cvtag{Linux}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{GitHub}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Data Pipelines}
+\cvtag{Simulation Workflows}
+\cvtag{REST API}
+\cvtag{FTP}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{JavaScript}
+\cvtag{C}
+\cvtag{Matlab}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Coordination, Documentation \& Project Interfaces}
+
+{\small
+\cvtag{Technical Documentation}
+\cvtag{Test Documentation}
+\cvtag{Procedure Writing}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{Stakeholder Coordination}
+\cvtag{Technical Coordination}
+\cvtag{Review Preparation}
+\cvtag{Reporting}
+\cvtag{Synthesis Reports}
+\cvtag{Decision Support}
+\cvtag{Knowledge Capitalisation}
+\cvtag{Process Improvement}
+\cvtag{English Technical Communication}
+}
+
+\end{document}

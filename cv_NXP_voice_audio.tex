@@ -1,0 +1,370 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for NXP - Voice & Audio Software Engineer
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Signal Processing \& Software Engineer | Noise Analysis, Python/C, Algorithm Validation \& System Integration}
+
+\photoL{2.8cm}{moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Full Stack \& System Interfaces}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Software development and operational support for a CPMS platform connected to electric vehicle charging infrastructure and field data flows.
+
+\textbf{Objective:} Contribute to software development, system integration, operational monitoring and technical reliability of services interacting with connected equipment.
+
+\begin{itemize}
+  \item \textbf{Software development:} Contributed to web applications and backend services using TypeScript, Angular and Node.js.
+  \item \textbf{System integration:} Worked on interfaces between software services, operational data flows and field equipment behavior.
+  \item \textbf{Operational data flows:} Monitored and analyzed production data exchanges, including FTP-based operational flows.
+  \item \textbf{Production support:} Investigated incidents, analyzed software behavior and contributed to service reliability improvements.
+  \item \textbf{Hardware/software interfaces:} Analyzed consistency between application data, connected infrastructure behavior and operational expectations.
+  \item \textbf{Debugging and diagnostics:} Supported technical investigations involving logs, data inconsistencies, integration issues and system behavior.
+  \item \textbf{Agile organization:} Used Zenhub for task tracking, backlog management, prioritization and iterative development coordination.
+  \item \textbf{Technical communication:} Formalized observations, incident analyses and technical findings to support team decisions.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer -- Signal Processing, Software \& Validation}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering and R\&D activities for the ESA/NASA LISA space mission, involving simulation, low-SNR signal analysis, model integration, data processing and technical validation.
+
+\textbf{Objective:} Develop Python tools to integrate, compare, validate and review heterogeneous models and technical results in a complex international environment.
+
+\begin{itemize}
+  \item \textbf{Python development:} Designed and developed workflows for model integration, data processing, result comparison and technical validation.
+  \item \textbf{Signal processing:} Worked on frequency-domain analysis, low-SNR signals, noise contributions and separation of overlapping components.
+  \item \textbf{Noise analysis:} Structured methods to characterize, compare and validate signal and noise contributions in complex datasets.
+  \item \textbf{Algorithm validation:} Defined consistency checks, comparison rules and verification methods for heterogeneous model outputs.
+  \item \textbf{Data pipelines:} Built reproducible workflows to organize inputs, transform outputs and compare technical results.
+  \item \textbf{Model integration:} Consolidated outputs from different models into a common analysis and review framework.
+  \item \textbf{Traceability:} Structured configurations, simulation outputs, analysis results and technical documentation.
+  \item \textbf{Documentation and knowledge sharing:} Used Confluence to organize technical documentation, validation follow-up and analysis traceability.
+  \item \textbf{International collaboration:} Worked with scientific, software and institutional contributors in a multidisciplinary environment.
+  \item \textbf{Software platform:} Developed CATpyLISA, a Python platform for model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Noise Modelling \& Signal Analysis}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in an international technical environment.
+
+\textbf{Objective:} Develop robust and reproducible workflows to identify, characterize and reduce sources affecting measurement quality.
+
+\begin{itemize}
+  \item \textbf{Data analysis:} Processed, structured and analyzed complex datasets from precision instruments.
+  \item \textbf{Noise characterization:} Identified and characterized noise contributions affecting measurement quality.
+  \item \textbf{Signal processing:} Analyzed instrument signals, sensitivity limits and noise-related performance constraints.
+  \item \textbf{Statistical modelling:} Developed Bayesian inference and MCMC-based analysis methods.
+  \item \textbf{Python pipelines:} Built reproducible workflows for processing, filtering, transformation and statistical analysis.
+  \item \textbf{Validation of results:} Performed sensitivity analyses, consistency checks and performance-limit assessments.
+  \item \textbf{Technical reporting:} Produced traceable results, technical summaries and communication material for international stakeholders.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer -- Signal, Simulation \& Data Analysis}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} R\&D activities related to weak-signal analysis, numerical simulation and preparation of space missions and detection instruments.
+
+\textbf{Objective:} Develop analysis methods, automate simulations and produce exploitable results in demanding scientific and technical environments.
+
+\begin{itemize}
+  \item \textbf{Numerical simulation:} Developed simulation approaches for complex signal environments and large-scale datasets.
+  \item \textbf{Weak-signal analysis:} Implemented methods to analyze and separate weak, overlapping and noisy signals.
+  \item \textbf{Signal processing:} Studied characterization, decomposition and comparison of signals in noisy contexts.
+  \item \textbf{Automation:} Developed reproducible workflows for repeated analyses, comparisons and sensitivity studies.
+  \item \textbf{Technical investigation:} Analyzed noise sources and performed diagnostics through cross-sensor correlations.
+  \item \textbf{Documentation:} Formalized methods, assumptions, results and conclusions for collaborative review.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Signal processing and software engineer with strong experience in noise analysis, low-SNR signal processing, Python development, algorithm validation and system-level technical investigation.}
+
+My background combines software development, data processing, numerical simulation, signal/noise characterization, model integration, validation workflows and technical documentation. I have worked in demanding environments involving space mission data analysis, precision instrumentation, connected infrastructure and operational software systems.
+
+\medskip
+
+\textbf{Target role:} Voice \& Audio Software Engineer, Signal Processing Software Engineer, Algorithm Integration Engineer, Software Validation Engineer or System Integration Engineer.
+
+\begin{itemize}
+  \item Strong foundations in digital signal processing, noise characterization, frequency-domain analysis and validation of numerical results.
+  \item Experience developing Python tools and reproducible workflows for algorithm evaluation, model comparison and technical diagnostics.
+  \item Ability to work at the interface between software, data, system behavior, field constraints and user/customer feedback.
+  \item Comfortable with collaborative, international and multidisciplinary environments requiring precision, documentation and clear communication.
+  \item Interested in embedded voice/audio software, real-time processing constraints, speech enhancement and acoustic algorithm integration.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning: Regression \& Classification}{DeepLearning.AI -- Andrew Ng}{2026}{Coursera}
+\divider
+
+\cvevent{AI-assisted Software Development}{Prompting, code review, debugging, incremental prompting and critical assessment}{2026}{Self-training}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA -- Python platform for signal/model integration and validation}{ESA/NASA LISA space mission}{2023 -- 2025}{}
+
+Development of a Python platform dedicated to model integration, data structuring, result comparison, technical validation and workflow review for the LISA space mission.
+
+\textbf{Role:} Python development, pipeline design, data structuring, validation logic, consistency checks, technical documentation and coordination with multiple contributors.
+
+\textbf{Skills:} Python, signal processing, low-SNR analysis, noise characterization, data processing, automation, modelling, validation, GitLab, international collaboration.
+
+\divider
+
+\cvevent{Noise analysis and weak-signal processing workflows}{Precision instrumentation and space mission preparation}{2018 -- 2025}{}
+
+Development of numerical and statistical workflows to analyze weak signals, overlapping components and noise contributions in complex datasets.
+
+\textbf{Role:} signal analysis, frequency-domain studies, noise characterization, simulation, sensitivity studies, diagnostics and technical reporting.
+
+\textbf{Skills:} digital signal processing, spectral analysis, noise modelling, Python, C, numerical simulation, Bayesian inference, MCMC, validation, technical documentation.
+
+\cvsection{Key Skills}
+
+\vspace{-.3cm}
+
+\cvsubsection{Signal processing, audio-related foundations \& noise}
+
+{\small
+\cvtag{Digital signal processing}
+\cvtag{Signal analysis}
+\cvtag{Frequency-domain analysis}
+\cvtag{Spectral analysis}
+\cvtag{Noise analysis}
+\cvtag{Noise modelling}
+\cvtag{Weak signals}
+\cvtag{Low-SNR analysis}
+\cvtag{Signal separation}
+\cvtag{Sensor data}
+\cvtag{Filtering}
+\cvtag{Numerical simulation}
+\cvtag{Sensitivity analysis}
+\cvtag{Acoustic algorithms awareness}
+\cvtag{Speech processing fundamentals}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Software development, tools \& automation}
+
+{\small
+\cvtag{Python}
+\cvtag{C}
+\cvtag{Pandas}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{Scikit-learn}
+\cvtag{PyTorch}
+\cvtag{Bash}
+\cvtag{Linux}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{SQL}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{REST API}
+\cvtag{FTP}
+\cvtag{PC tools awareness}
+\cvtag{C\# awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Algorithm integration, validation \& system constraints}
+
+{\small
+\cvtag{Algorithm validation}
+\cvtag{Model integration}
+\cvtag{Software integration}
+\cvtag{System integration}
+\cvtag{Hardware/software interfaces}
+\cvtag{Real-time constraints awareness}
+\newline
+\cvtag{Embedded systems awareness}
+\cvtag{Testing}
+\cvtag{Non-regression}
+\cvtag{Consistency checks}
+\cvtag{Data quality}
+\cvtag{Root cause analysis}
+\cvtag{Technical diagnostics}
+\cvtag{Production support}
+\cvtag{Customer feedback}
+\cvtag{Technical documentation}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Data, AI \& modelling}
+
+{\small
+\cvtag{Data processing}
+\cvtag{Data pipelines}
+\cvtag{Statistical modelling}
+\cvtag{Machine Learning}
+\cvtag{Classification}
+\cvtag{Bayesian inference}
+\cvtag{MCMC}
+\cvtag{Simulation}
+\cvtag{Model comparison}
+\cvtag{Performance assessment}
+\cvtag{Reproducible workflows}
+\cvtag{Prompt engineering}
+\cvtag{LLM awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Project, collaboration \& technical coordination}
+
+{\small
+\cvtag{Technical coordination}
+\cvtag{Agile}
+\cvtag{Kanban}
+\cvtag{Backlog tracking}
+\cvtag{Prioritization}
+\cvtag{Reporting}
+\cvtag{Stakeholder management}
+\cvtag{International teams}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{Traceability}
+\cvtag{Problem solving}
+\cvtag{Attention to detail}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Application domains}
+
+{\small
+\cvtag{Voice/audio software interest}
+\cvtag{Wearables interest}
+\cvtag{Embedded systems interest}
+\cvtag{Space systems}
+\cvtag{LISA ESA/NASA}
+\cvtag{Precision instrumentation}
+\cvtag{Connected infrastructure}
+\cvtag{Industrial software}
+\cvtag{CPMS}
+\cvtag{Complex systems}
+\cvtag{International projects}
+}
+
+\end{document}

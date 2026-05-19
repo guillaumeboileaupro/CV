@@ -1,0 +1,123 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{parskip}
+
+% Définition des couleurs EXACTES fournies
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+\definecolor{Violet}{HTML}{5A2582}
+\definecolor{Rouge}{HTML}{F53B3B}
+\definecolor{Noir}{HTML}{00232C}
+\definecolor{Bleu}{HTML}{00B0DA}
+\definecolor{Rose}{HTML}{F831A0}
+\definecolor{Jaune}{HTML}{FFEC00}
+\definecolor{Vert}{HTML}{34AD6C}
+
+% Application des couleurs
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{PastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Style des titres
+\titleformat{\section}{\large\bfseries\color{heading}}{}{0pt}{}[\color{headingrule}\titlerule]
+
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% En-tête identique au CV avec COULEURS APPLIQUÉES
+\begin{center}
+    {\Huge \textbf{\textcolor{name}{BOILEAU GUILLAUME}}}\\
+    \vspace{0.3cm}
+    \textcolor{body}{\faEnvelope ~ guillaume.boileaupro@gmail.com \quad \faPhone* ~ +33 6 59 94 85 84 \quad \faMapMarker* ~ Alpes Maritimes, FRANCE} \\
+    \textcolor{body}{\faLinkedin ~ guillaume-boileau-phd-891b81265 \quad \faGithub ~ Guillaume-Boileau-2 \quad \faOrcid ~ 0000-0002-3576-6968}
+    \color{headingrule}\rule{0.9\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.5cm}
+
+% Destinataire et date alignés
+\begin{minipage}{0.6\textwidth}
+    \textbf{\textcolor{heading}{Nom de l'entreprise}} \\
+    À l'attention de [Nom du Responsable] \\
+    Adresse \\
+    Code Postal, Ville \\
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \flushright
+    \textcolor{body}{Alpes-Maritimes, le \today}
+\end{minipage}
+
+\vspace{0.8cm}
+
+% Objet de la lettre
+\section*{\textcolor{accent}{\faPencil} ~ \textcolor{heading}{Objet : Candidature au poste de [Nom du Poste]}}
+
+Madame, Monsieur, \\
+
+\vspace{0.3cm}
+
+Actuellement **[poste actuel]** au sein de **[institution actuelle]**, j’ai développé une expertise approfondie en **[domaine scientifique ou technique]** appliquée à **[secteur ou projet spécifique]**. Fort de mon expérience en **[thème clé, ex. Machine Learning, analyse de données]**, je suis particulièrement motivé(e) à l’idée de rejoindre **[Nom de l'Entreprise]** et d’apporter mes compétences à vos projets.
+
+\vspace{0.3cm}
+
+\section*{\textcolor{accent}{\faBriefcase} ~ \textcolor{heading}{EXPÉRIENCE}}
+\textbf{\textcolor{heading}{[Poste 1]}}, \textcolor{body}{[Entreprise]} \\
+\textcolor{body}{z [Année – Année] * [Lieu]} \\
+\textcolor{body}{• [Responsabilité 1]} \\
+\textcolor{body}{• [Responsabilité 2]} \\
+\textcolor{body}{• [Responsabilité 3]} \\
+
+\vspace{0.3cm}
+
+\textbf{\textcolor{heading}{[Poste 2]}}, \textcolor{body}{[Entreprise]} \\
+\textcolor{body}{z [Année – Année] * [Lieu]} \\
+\textcolor{body}{• [Responsabilité 1]} \\
+\textcolor{body}{• [Responsabilité 2]} \\
+\textcolor{body}{• [Responsabilité 3]} \\
+
+\vspace{0.3cm}
+
+\section*{\textcolor{accent}{\faCogs} ~ \textcolor{heading}{COMPÉTENCES}}
+\textbf{\textcolor{heading}{Hard skills}}  
+\textcolor{body}{Machine Learning : Régression Logistique, Réseaux de Neurones, Analyse Bayésienne} \\
+\textcolor{body}{Optimisation, Analyse Statistique, Big Data} \\
+
+\textbf{\textcolor{heading}{Outils et langages}}  
+\textcolor{body}{Python (numpy, pandas, PyTorch, seaborn), C, Matlab, Mathematica, Git, LaTeX, Bash, Slurm} \\
+
+\textbf{\textcolor{heading}{Soft skills}}  
+\textcolor{body}{Présentations en conférences, Rédaction scientifique, Travail d’équipe, Leadership} \\
+
+\vspace{0.3cm}
+
+\section*{\textcolor{accent}{\faBuilding} ~ \textcolor{heading}{POURQUOI REJOINDRE [Nom de l'Entreprise] ?}}
+Votre engagement dans **[secteur d'activité]** et vos perspectives de recherche m’encouragent à vous soumettre ma candidature.  
+Convaincu(e) que mon expertise en **[thème clé]** peut être un atout majeur pour **[Nom de l’Entreprise]**, je souhaite intégrer votre équipe pour contribuer à **[objectif du poste]**.
+
+\vspace{0.5cm}
+
+\section*{\textcolor{accent}{\faHandshake} ~ \textcolor{heading}{CONCLUSION}}
+Je serais ravi(e) de discuter avec vous lors d’un entretien pour explorer plus en détail mes compétences et motivations.  
+Dans cette attente, je vous prie d’agréer, Madame, Monsieur, mes salutations distinguées.
+
+\vspace{1cm}
+
+\textbf{\textcolor{heading}{Guillaume Boileau}}
+
+\end{document}

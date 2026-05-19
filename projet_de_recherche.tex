@@ -1,0 +1,87 @@
+\documentclass[10pt,a4paper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=0.5cm,bottom=1cm,columnsep=1.2cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{paracol}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+
+% Couleurs exactes du CV
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% En-tête strictement identique
+\name{BOILEAU Guillaume}
+\tagline{R\&D Engineer and Data Project Manager}
+\photoL{2.8cm}{moi} 
+\personalinfo{
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes Maritimes, France}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+% Espacement et lisibilité
+\setlength{\parskip}{0.75\baselineskip}
+\linespread{1.15}
+
+\begin{document}
+
+\makecvheader
+
+% Active le grand trait vertical doré sans rien casser visuellement
+\cvsection{Projet de recherche}
+
+\begin{paracol}{1}
+
+%{\color{accent}\textbf{Objet :}} \textit{Candidature au poste d'ingénieur développement,  }
+
+%\vspace{0.5cm}
+
+{\color{body}
+\textbf{Synergies entre radioastronomie et ondes gravitationnelles dans le cadre de SPECTRUM}
+
+Mon activité de recherche est centrée sur le traitement avancé des données d'ondes gravitationnelles, et en particulier sur la mesure du fond stochastique dans des environnements complexes et non idéaux. Cette expertise s'appuie sur un parcours complet, de la modélisation du bruit instrumental à la production de catalogues scientifiques pour la mission spatiale LISA (ESA/NASA), en passant par la caractérisation des détecteurs au sol (Einstein Telescope, LIGO/Virgo/KAGRA). Elle m'a conduit à piloter des projets techniques critiques, à contribuer à plusieurs livrables structurants de consortium, et à coanimer des groupes de travail internationaux sur les bruits non linéaires et la simulation de fonds stochastiques.
+
+Je développe actuellement, à l'UMR Lagrange dans le cadre du CNES, le pipeline de production des données L3 pour LISA : fusion et comparaison des sorties des ajustements globaux, construction des catalogues publics, outils de tri, d'accès et de visualisation. Cette chaîne traite des volumes massifs de données simulées, mobilise des techniques d'inférence bayésienne haute dimension, des figures de mérite pour l'optimisation des modèles de population, et intègre des outils interactifs à destination de la communauté scientifique. Elle s'inscrit pleinement dans la logique d'une infrastructure de traitement distribuée à l'échelle européenne.
+
+Mon expérience avec les détecteurs terrestres est également structurante. J'ai introduit un formalisme général du canal nul pour les instruments triangulaires, et conçu un pipeline bayésien pour l'estimation simultanée du bruit corrélé (sismique, magnétique, newtonien) et du fond stochastique. Ces outils, validés sur des données réelles, sont conçus pour s'adapter à différents environnements et configurations (ET, LISA), et pour anticiper les effets des bruits instrumentaux non modélisés sur les fonds cosmologiques.
+
+Ces compétences ont une portée directe pour le projet \textbf{SPECTRUM}, qui vise à structurer un continuum européen de données et de calcul entre communautés (radioastronomie, physique des hautes énergies, infrastructures numériques). Je peux contribuer à plusieurs volets :
+\begin{itemize}
+  \item contribuer aux travaux conjoints entre les communautés GW et RA en partageant les retours d'expérience sur le traitement de données à fort volume (catalogues, infrastructures, contraintes de reproductibilité) ;
+  \item animer une réflexion intercommunautaire autour de la modélisation du bruit et des usages de l'inférence bayésienne pour des cas de détection distribuée et multi-instrument ;
+  \item documenter des cas d'utilisation concrets pour la RA à partir des outils déjà développés pour LISA (catalogues simulés, visualisation interactive, figures de mérite) ;
+  \item participer à l'élaboration d'un schéma technique pour la fédération des données et le continuum de calcul, en tirant parti de l'expérience acquise dans la production des niveaux L3 pour la mission LISA ;
+  \item contribuer activement à la rédaction des recommandations stratégiques du SRIDA, en particulier sur les aspects méthodologiques liés aux infrastructures logicielles et aux outils de traitement reproductibles.
+\end{itemize}
+
+
+Une fédération des pratiques entre radioastronomie et ondes gravitationnelles est à la fois naturelle et stratégique. Les deux domaines mobilisent des approches similaires pour la gestion du bruit, l'extraction de signaux faibles, la simulation de populations, la production de catalogues publics, et la visualisation à grande échelle. Le projet \textbf{SPECTRUM} offre un cadre unique pour structurer ces ponts de manière pérenne. Mon objectif est d'y contribuer activement, en apportant une vision transverse entre physique, calcul scientifique, et ingénierie des données.
+
+
+}
+
+
+\end{paracol}
+
+\end{document}
