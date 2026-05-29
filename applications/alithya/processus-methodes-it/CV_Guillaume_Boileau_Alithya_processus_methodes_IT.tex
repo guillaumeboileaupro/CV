@@ -1,0 +1,374 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Matawan Services - Program Manager Data / AI
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Chargé de Processus \& Méthodes IT | Amélioration Continue, Agile, KPI, Documentation \& Conduite du Changement}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - IT Delivery, Process Follow-up \& Operational Support}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and integration of software services for an EV charging CPMS platform connected to operational infrastructure, field equipment and business-facing services.
+
+\textbf{Objective:} Improve reliability of delivery, incident follow-up, operational data-flow continuity and collaboration between technical stakeholders.
+
+\begin{itemize}
+  \item \textbf{IT delivery follow-up:} Developed and maintained web and backend services using TypeScript, Angular and Node.js in an operational industrial environment.
+  \item \textbf{Process analysis:} Analysed existing practices around incidents, data exchanges, operational constraints, task follow-up and technical deliverables.
+  \item \textbf{Operational methods:} Structured corrective actions from user feedback, production issues, field-equipment constraints and data-flow anomalies.
+  \item \textbf{Incident / issue management:} Investigated service behaviour, communication issues, interface interruptions and operational deviations affecting service continuity.
+  \item \textbf{Data-flow reliability:} Implemented, maintained and monitored FTP-based operational data exchange services supporting industrial workflows.
+  \item \textbf{Validation / acceptance:} Checked service behaviour, interface continuity and data consistency in production-like or operational conditions.
+  \item \textbf{Collaborative tooling:} Used Zenhub to support backlog follow-up, action tracking, iterative delivery and technical coordination.
+  \item \textbf{Documentation support:} Formalised technical findings, open points and corrective actions to improve shared understanding and follow-up.
+  \item \textbf{Stakeholder coordination:} Worked with technical contributors to clarify priorities, unblock issues and support pragmatic delivery decisions.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Process Structuring, Validation Workflows \& Technical Coordination}}{CNES, Laboratoire Lagrange, Observatoire de la Côte d'Azur}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering activities for the LISA ESA/NASA space mission, involving complex software chains, model integration, simulation workflows, validation campaigns and international coordination.
+
+\textbf{Objective:} Structure, document and improve collaborative methods for complex data/software workflows under strong traceability, quality, reproducibility and validation constraints.
+
+\begin{itemize}
+  \item \textbf{Process structuring:} Designed and improved working methods for model integration, comparison campaigns, validation workflows and evidence consolidation.
+  \item \textbf{Project coordination:} Coordinated technical activities involving contributors, research engineers, technicians and Master's thesis interns, with progress follow-up and deliverable consolidation.
+  \item \textbf{Methods \& standards:} Defined validation logic, expected outputs, review practices, acceptance criteria and reproducible workflow principles.
+  \item \textbf{Tooling and workflows:} Developed CATpyLISA, a Python platform for large-scale model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Documentation:} Used Confluence to support technical documentation, coordination notes, validation follow-up, decision logs and knowledge sharing.
+  \item \textbf{KPI / indicators logic:} Consolidated validation status, comparison results, deviations, open points and progress material to support steering and technical decisions.
+  \item \textbf{Continuous improvement:} Identified inconsistencies, bottlenecks, quality issues and technical risks affecting reliability, progress or delivery quality.
+  \item \textbf{Reporting:} Produced technical notes, validation summaries, analysis reports, progress material and review supports for contributors and stakeholders.
+  \item \textbf{Change support:} Helped stakeholders adopt shared workflows, common documentation practices and clearer validation / review methods.
+  \item \textbf{International environment:} Operated in a collaborative framework requiring technical English, structured communication and versioned workflows.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Workflow Improvement, Technical Analysis \& Reporting}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement international environment linked to gravitational-wave detector performance.
+
+\textbf{Objective:} Develop reproducible analysis workflows, improve technical decision support and document data-driven conclusions for international stakeholders.
+
+\begin{itemize}
+  \item \textbf{Workflow design:} Developed Python-based pipelines for noise source identification, uncertainty estimation and statistical modelling.
+  \item \textbf{Process reliability:} Improved reproducibility, traceability and robustness of technical analyses through structured methods and documented workflows.
+  \item \textbf{Audit-like analysis:} Analysed instrumental and environmental effects impacting system sensitivity, stability and measurement quality.
+  \item \textbf{KPI-style reporting:} Synthesised performance indicators, deviations and dominant contributors into actionable technical conclusions.
+  \item \textbf{Documentation:} Produced reproducible and traceable technical analyses for international engineering and research stakeholders.
+  \item \textbf{Communication:} Communicated complex technical results through structured reporting, presentations and collaborative review.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Simulation, Software Workflows \& Validation}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Engineering and analysis activities for gravitational-wave mission preparation, involving signal analysis, simulation, software workflows and noise characterization.
+
+\textbf{Objective:} Build robust analysis methods and validation practices for complex signals and demanding system environments.
+
+\begin{itemize}
+  \item \textbf{Workflow formalisation:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Validation methods:} Compared simulated outputs, model behaviours and analysis results to assess consistency, robustness and reliability.
+  \item \textbf{Technical investigations:} Investigated noise sources through cross-sensor correlation analyses in diagnostic contexts.
+  \item \textbf{Continuous improvement mindset:} Identified limiting factors affecting mission-level performance and proposed analysis improvements.
+  \item \textbf{Scientific computing:} Developed strong expertise in Python-based analysis, modelling, documentation and reproducible workflows.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile for Alithya}
+
+\textbf{IT process and methods profile with strong experience in structuring collaborative workflows, analysing existing practices, documenting methods, improving delivery quality and supporting cross-functional technical teams}. Background developed through international space and scientific programs, reinforced by recent industrial software experience involving operational services, incident follow-up and delivery coordination.
+
+For a \textbf{Chargé de Processus et Méthodes Informatiques} role, I bring a hybrid profile combining IT delivery understanding, analytical rigour and strong documentation culture: analysing practices, formalising processes, improving collaborative methods, supporting Agile-like workflows, tracking indicators, facilitating technical alignment and helping teams adopt clearer working practices.
+
+\begin{itemize}
+  \item Strong fit with process-improvement activities: audit of practices, workflow structuring, documentation, KPI-style follow-up and continuous improvement.
+  \item Experience coordinating multidisciplinary contributors across software, data, modelling, validation, operational constraints and decision-support objectives.
+  \item Ability to translate operational issues, technical constraints and stakeholder needs into structured processes, action plans and follow-up routines.
+  \item Strong analytical ability to investigate deviations, identify root causes, assess impacts and converge toward pragmatic improvements.
+  \item Practical experience with Agile delivery contexts, backlog follow-up, Git-based collaboration, Confluence documentation, Zenhub and Jira-style issue tracking.
+  \item Comfortable producing clear documentation, training-style supports, technical syntheses and steering material for varied stakeholders.
+\end{itemize}
+
+\cvsection{Fit for IT Processes \& Methods}
+
+\begin{itemize}
+  \item Relevant background for analysing existing practices around project management, incidents, tools, deliverables and validation workflows.
+  \item Strong experience designing and documenting collaborative work processes, reproducible workflows, review methods and acceptance logic.
+  \item Experience improving methods through indicators, deviation analysis, technical risk follow-up and corrective-action tracking.
+  \item Practical understanding of IT environments: applications, APIs, backend services, data flows, Linux, Git/GitLab, Docker, CI/CD and monitoring.
+  \item Familiar with Agile / Kanban delivery contexts, backlog follow-up, documentation practices and cross-functional coordination.
+  \item Strong fit with change support through documentation, knowledge sharing, user guidance, structured communication and stakeholder alignment.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\end{paracol}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\small{Reproducible research, GitLab, notebooks, data management, computational documentation, reproducible software environments and methodological transparency.}
+
+\divider
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, data analysis, algorithms, C/C++ and software engineering fundamentals.}
+
+\cvsection{Projects}
+
+\cvevent{CNES / LISA -- Process Structuring, Documentation \& Validation Workflows}{ESA/NASA Space Mission - Large-scale International Collaboration}{2023 -- 2025}{Nice, France}
+
+Structuring of software, data-processing and validation workflows for the LISA space mission within a large international engineering and scientific collaboration.
+
+\textbf{Process / methods relevance:} Analysis of existing practices, workflow formalisation, contributor coordination, validation planning, documentation, action follow-up, risk identification and stakeholder alignment.
+
+\textbf{IT relevance:} Work involving complex software workflows, GitLab-based development, reproducible environments, technical documentation, validation evidence, indicators and versioned deliverables.
+
+\textbf{Scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Einstein Telescope / LIGO--Virgo--KAGRA -- Technical Studies \& Collaborative Project Workflows}{International Collaborations}{2021 -- 2023}{Antwerp, Belgium}
+
+Contribution to collaborative developments in data analysis, software methods and technical investigations within large-scale international scientific and engineering collaborations.
+
+\textbf{Methods relevance:} Documentation of technical studies, progress reporting, collaborative review, prioritisation of analysis tasks and communication with international stakeholders.
+
+\textbf{System impact:} Studies on environmental and instrumental noise sources supporting the identification of performance limitations and design constraints for next-generation gravitational-wave observatories.
+\newpage
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{IT processes, methods \& continuous improvement}
+
+{\small
+\cvtag{IT Process Improvement}
+\cvtag{Methods Structuring}
+\cvtag{Continuous Improvement}
+\cvtag{Process Documentation}
+\cvtag{Workflow Optimisation}
+\cvtag{Practice Analysis}
+\cvtag{Gap Analysis}
+\cvtag{Incident Follow-Up}
+\cvtag{Deliverable Follow-Up}
+\cvtag{Action Plans}
+\cvtag{KPI Follow-Up}
+\cvtag{Indicator Follow-Up}
+\cvtag{Audit Awareness}
+\cvtag{Quality Follow-Up}
+\cvtag{Change Support}
+\cvtag{Knowledge Sharing}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Agile, project coordination \& tooling}
+
+{\small
+\cvtag{Agile}
+\cvtag{Scrum Awareness}
+\cvtag{Kanban Awareness}
+\cvtag{SAFe Awareness}
+\cvtag{Backlog Follow-Up}
+\cvtag{JIRA}
+\cvtag{Confluence}
+\cvtag{Zenhub}
+\cvtag{Trello Awareness}
+\cvtag{Git / GitLab}
+\cvtag{GitHub}
+\cvtag{Project Coordination}
+\cvtag{Workshop Facilitation}
+\cvtag{Stakeholder Alignment}
+\cvtag{Cross-Functional Coordination}
+\cvtag{Progress Reporting}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{IT, data \& technical environment}
+
+{\small
+\cvtag{Information Systems}
+\cvtag{Applications}
+\cvtag{Software Workflows}
+\cvtag{Data Flows}
+\cvtag{APIs}
+\cvtag{REST API}
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{Linux}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{Operational Monitoring}
+\cvtag{OpenSearch}
+\cvtag{Power BI Awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Documentation, training \& change management}
+
+{\small
+\cvtag{Technical Documentation}
+\cvtag{Methodological Guides}
+\cvtag{User Guidance}
+\cvtag{Support Material}
+\cvtag{Communication Supports}
+\cvtag{Change Management}
+\cvtag{Pedagogy}
+\cvtag{Training Support}
+\cvtag{Decision Logs}
+\cvtag{Meeting Notes}
+\cvtag{Synthesis}
+\cvtag{Technical English}
+\cvtag{French Professional Writing}
+\cvtag{Stakeholder Communication}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Analysis, communication \& soft skills}
+
+{\small
+\cvtag{Analytical Thinking}
+\cvtag{Problem Solving}
+\cvtag{Root-Cause Analysis}
+\cvtag{Rigor}
+\cvtag{Autonomy}
+\cvtag{Adaptability}
+\cvtag{Team Spirit}
+\cvtag{Clear Communication}
+\cvtag{PowerPoint}
+\cvtag{Excel}
+\cvtag{Word}
+\cvtag{MS Office}
+\cvtag{Executive Presentations}
+\cvtag{Reporting Dashboards}
+}
+
+\end{document}

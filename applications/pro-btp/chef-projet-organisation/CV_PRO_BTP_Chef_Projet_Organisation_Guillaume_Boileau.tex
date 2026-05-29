@@ -1,0 +1,346 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for PRO BTP - Chef de Projet Organisation H/F
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Chef de Projet Organisation | Transformation, Processus, Reporting, Performance \& SI}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - Project Coordination, Process Follow-Up \& Operational Reporting}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Digital services and operational software for EV charging infrastructure, involving platform services, data flows, hardware-connected systems and production constraints.
+
+\textbf{Objective:} Support reliable delivery, operational follow-up, issue resolution and coordination between technical stakeholders in an industrial digital environment.
+
+\begin{itemize}
+  \item \textbf{Digital project environment:} Contributed to the development and maintenance of web and backend services using TypeScript, Angular and Node.js.
+  \item \textbf{Operational coordination:} Supported task follow-up, prioritisation and coordination with technical stakeholders in an Agile delivery context.
+  \item \textbf{Process follow-up:} Monitored operational data flows, service behaviour and interface continuity to support quality and service reliability.
+  \item \textbf{Issue analysis:} Investigated production issues involving software behaviour, data exchanges and hardware-connected systems.
+  \item \textbf{Performance and quality:} Analysed data inconsistencies, abnormal behaviours and service anomalies affecting operational continuity.
+  \item \textbf{Tools and reporting:} Used Zenhub and collaborative tracking logic to support backlog follow-up, issue tracking and technical coordination.
+  \item \textbf{Operational interfaces:} Worked at the interface between software services, field equipment constraints and operational business needs.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Transformation of Workflows, Technical Coordination \& Performance Analysis}}{CNES, Laboratoire Lagrange, Observatoire de la C\^ote d'Azur}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering and coordination activities for the LISA ESA/NASA space mission, involving complex workflows, multiple contributors, technical deliverables, validation campaigns and international stakeholders.
+
+\textbf{Objective:} Structure, coordinate and improve software/data workflows under strong traceability, quality, performance and documentation constraints.
+
+\begin{itemize}
+  \item \textbf{Project structuring:} Structured complex analysis and validation workflows for the \textbf{LISA ESA/NASA space mission}, involving several contributors and technical stakeholders.
+  \item \textbf{Process improvement:} Designed and improved methods for model integration, output comparison, consistency checks and technical result consolidation.
+  \item \textbf{Technical roadmap support:} Translated scientific and technical needs into development priorities, validation tasks and actionable work packages.
+  \item \textbf{Performance analysis:} Analysed results, limitations, uncertainty sources and performance indicators to support interpretation and decision-making.
+  \item \textbf{Reporting and governance support:} Produced structured technical notes, validation summaries, progress updates and material for technical reviews.
+  \item \textbf{Coordination:} Coordinated contributors, research engineers, technicians and Master's thesis interns around shared technical objectives.
+  \item \textbf{Documentation:} Used Confluence to support technical documentation, knowledge sharing, coordination notes and follow-up of validation activities.
+  \item \textbf{Risk and issue identification:} Identified inconsistencies, deviations, weak points and operational limitations in complex software/data workflows.
+  \item \textbf{Change support:} Helped teams adopt structured workflows, reproducible practices, versioned methods and clearer validation logic.
+  \item \textbf{Software platform:} Developed CATpyLISA, a Python platform supporting workflow automation, model comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Performance Analysis, Diagnostics \& Decision Support}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Analysis of precision-instrument performance in a demanding international environment involving complex data, uncertainty, diagnostics and technical reporting.
+
+\textbf{Objective:} Identify performance drivers, analyse degradation factors and deliver structured evidence to support technical decisions.
+
+\begin{itemize}
+  \item \textbf{Performance analysis:} Analysed instrumental and environmental effects affecting sensitivity, stability and measurement quality.
+  \item \textbf{Data-driven diagnostics:} Developed Python pipelines to identify dominant contributors, weak points and degradation patterns.
+  \item \textbf{Decision support:} Produced structured technical analyses to help stakeholders understand limitations and prioritise mitigation actions.
+  \item \textbf{Indicator analysis:} Compared measurements, simulations and statistical indicators to detect trends, anomalies and performance changes.
+  \item \textbf{Reporting:} Delivered reproducible reports, technical summaries and presentations for international engineering and research stakeholders.
+  \item \textbf{Collaboration:} Worked with multidisciplinary teams in a transnational environment requiring clear communication and rigorous documentation.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Process Modelling, Simulation \& Technical Analysis}}{ARTEMIS, Observatoire de la C\^ote d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Engineering-oriented research for gravitational-wave mission preparation, involving simulation workflows, large datasets, uncertainty analysis and system-performance assessment.
+
+\textbf{Objective:} Build robust analysis methods and support structured investigations of complex technical systems.
+
+\begin{itemize}
+  \item \textbf{Complex analysis:} Developed methods for separating overlapping low-SNR signals in large and complex datasets.
+  \item \textbf{Workflow development:} Built simulation and analysis workflows for uncertainty studies, performance assessment and result comparison.
+  \item \textbf{Process reliability:} Compared model behaviours and outputs to assess consistency, robustness and limiting factors.
+  \item \textbf{Technical investigations:} Investigated noise sources and correlations through diagnostic analyses relevant to precision instruments.
+  \item \textbf{Scientific communication:} Produced peer-reviewed results and communicated complex findings to expert communities.
+\end{itemize}
+
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Recherche reproductible : principes m'ethodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Universit'e Num'erique}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Project-oriented digital skills: Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, web development, algorithms and software engineering fundamentals.
+}
+
+\switchcolumn
+
+\cvsection{Profile for PRO BTP}
+
+\textbf{Project-oriented engineer with strong experience in transformation of technical workflows, cross-functional coordination, process structuring, performance analysis, reporting and decision support}. Background developed in complex international environments, complemented by recent industrial software experience involving digital services, operational processes and stakeholder coordination.
+
+For a \textbf{Chef de Projet Organisation} role, I bring a structured and analytical approach: analysing complex information, formalising needs, improving processes, defining target workflows, coordinating stakeholders, producing decision-support material and supporting change adoption.
+
+\begin{itemize}
+  \item Strong ability to analyse functional, technical and organisational information and translate it into clear recommendations.
+  \item Experience structuring workflows, processes, validation logic, documentation and coordination routines across multiple stakeholders.
+  \item Ability to identify operational weaknesses, inefficiencies, risks, quality issues and improvement opportunities.
+  \item Experience producing structured reporting, progress summaries, technical notes and review material for decision-making.
+  \item Strong analytical and synthesis skills developed through PhD-level work, international projects and complex system analysis.
+  \item Comfortable working at the interface between technical contributors, project stakeholders, management needs and operational constraints.
+  \item Practical experience with collaborative tools including Confluence, Zenhub, GitLab and structured documentation workflows.
+  \item Strong command of \textbf{PowerPoint}, \textbf{Excel} and \textbf{Word} for executive synthesis, reporting, indicator follow-up and governance-oriented deliverables.
+\end{itemize}
+
+\cvsection{Fit for Organisation \& Transformation}
+
+\begin{itemize}
+  \item Relevant experience for transverse project coordination, process improvement, workflow transformation and performance-oriented analysis.
+  \item Ability to frame problems, consolidate needs, analyse indicators and formalise decision-support material.
+  \item Experience defining target workflows, improving documentation practices and supporting adoption of structured working methods.
+  \item Strong fit for reporting, stakeholder alignment, technical synthesis and preparation of governance-oriented deliverables using \textbf{PowerPoint}, \textbf{Excel} and \textbf{Word}.
+  \item Comfortable in high-standard environments requiring rigor, reliability, autonomy, listening skills and structured communication.
+  \item Motivated to apply project coordination, analytical and transformation skills to organisational performance and process improvement challenges.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Universit\'e C\^ote d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magist\`ere)}{Universit\'e Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Universit\'e Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Universit\'e Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\end{paracol}
+
+
+\cvsection{Projects}
+
+\cvevent{CNES / LISA -- Workflow Transformation, Project Coordination \& Performance Analysis}{CNES, Observatoire de la C\^ote d'Azur / Laboratoire Lagrange}{2023 -- 2025}{Nice, France}
+
+Coordination and structuring of software, data-analysis and validation workflows for the LISA ESA/NASA space mission, within an international collaboration involving ESA, NASA and multiple research institutes.
+
+\textbf{Project management relevance:} Structured priorities, technical tasks, validation workflows, documentation practices and contributor alignment across a multi-stakeholder environment.
+
+\textbf{Organisation relevance:} Work involving process structuring, traceability, reporting, consistency checks, risk identification, technical synthesis, workflow improvement and decision-support material.
+
+\textbf{Deliverables:} Python platform, validation summaries, technical notes, progress updates, documented workflows and review material supporting project execution and technical governance.
+
+\textbf{Program scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Einstein Telescope and LIGO--Virgo--KAGRA -- Performance Studies \& Technical Coordination}{Universiteit Antwerpen}{2021 -- 2023}{Antwerp, Belgium}
+
+Contribution to data analysis, signal characterization, performance diagnostics and technical investigations within large-scale international collaborations connected to gravitational-wave detector systems.
+
+\textbf{Project management relevance:} Coordinated technical analyses, structured reproducible workflows, produced reporting material and communicated results to international research and engineering stakeholders.
+
+\textbf{Organisation relevance:} Work involving indicator analysis, performance limitations, prioritisation of mitigation directions, documentation quality, technical synthesis and cross-functional communication.
+
+\textbf{System impact:} Studies on environmental and instrumental noise sources helping identify constraints, limitations and improvement directions for next-generation observatories.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Project organisation \& transformation}
+
+{\small
+\cvtag{Project Management}
+\cvtag{Transformation Projects}
+\cvtag{Organisation Analysis}
+\cvtag{Process Improvement}
+\cvtag{Process Mapping}
+\cvtag{Target Process Definition}
+\cvtag{Change Management}
+\cvtag{Change Support}
+\cvtag{Stakeholder Alignment}
+\cvtag{Governance Support}
+\cvtag{Decision Support}
+\cvtag{Roadmap Support}
+\cvtag{Risk Identification}
+\cvtag{Action Plan Follow-Up}
+\cvtag{Workshop Facilitation}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Analysis, reporting \& performance}
+
+{\small
+\cvtag{Functional Analysis}
+\cvtag{Technical Analysis}
+\cvtag{Performance Analysis}
+\cvtag{Indicator Analysis}
+\cvtag{Reporting}
+\cvtag{Dashboard Logic}
+\cvtag{Executive Synthesis}
+\cvtag{Technical Synthesis}
+\cvtag{Requirements Formalisation}
+\cvtag{Documentation Quality}
+\cvtag{Quality Improvement}
+\cvtag{Operational Efficiency}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Digital, SI \& tools}
+
+{\small
+\cvtag{Digital Projects}
+\cvtag{Information Systems}
+\cvtag{Data Workflows}
+\cvtag{Software Workflows}
+\cvtag{MS Office}
+\cvtag{PowerPoint}
+\cvtag{Excel}
+\cvtag{Word}
+\cvtag{Executive Presentations}
+\cvtag{Indicator Follow-Up}
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{GitLab}
+\cvtag{GitHub}
+\cvtag{Docker}
+\cvtag{REST API}
+\cvtag{Technical Documentation}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Soft skills}
+
+{\small
+\cvtag{Analytical Thinking}
+\cvtag{Synthesis Skills}
+\cvtag{Organisation}
+\cvtag{Reliability}
+\cvtag{Autonomy}
+\cvtag{Listening Skills}
+\cvtag{Dialogue}
+\cvtag{Mediation}
+\cvtag{Cross-Functional Communication}
+\cvtag{Adaptability}
+\cvtag{Execution Rigor}
+\cvtag{Technical English}
+}
+
+\end{document}

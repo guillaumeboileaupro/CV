@@ -1,0 +1,344 @@
+%%%%%%%%%%%%%%%%%
+% CV targeted for Arm - System Performance Analysis Engineer
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{System Performance Analysis Engineer | Modelling, Statistics, Diagnostics \& Complex Systems}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+
+\vspace{-0.3cm}
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- System Integration, Operational Performance \& Production Diagnostics}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\begin{itemize}
+\item Developed and maintained web and backend services for an EV charging CPMS platform using \textbf{TypeScript, Angular and Node.js}.
+\item Contributed to software integration activities involving operational charging infrastructure, hardware interfaces and field equipment constraints.
+\item Analysed software behaviours, operational data exchanges, communication issues and service anomalies affecting production continuity.
+\item Investigated data inconsistencies, abnormal behaviours and system-level interactions between software services and connected charging equipment.
+\item Supported monitoring, verification, correction and follow-up of operational data flows, including FTP-based exchanges.
+\item Contributed to issue diagnosis, prioritization and technical follow-up with stakeholders in an industrial operational context.
+\item Strengthened experience with production constraints, maintainability, service robustness and software systems connected to physical infrastructure.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer -- System Performance, Modelling, Validation \& Technical Coordination}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\begin{itemize}
+\item Contributed to engineering and analysis activities for the \textbf{LISA ESA/NASA space mission}, involving complex system-level performance constraints, scientific requirements and high modelling rigor.
+\item Developed \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf CATpyLISA}}, a Python platform for large-scale model integration, comparison, analysis and validation workflows.
+\item Conducted deep technical studies on complex system behaviours, weak-signal environments, numerical models, uncertainty sources and performance limitations.
+\item Analysed sensitivity to modelling assumptions, numerical parameters, data-processing choices, configuration changes and validation conditions.
+\item Identified bottlenecks, inconsistencies, deviations, critical behaviours and limiting factors in complex software and analysis chains.
+\item Structured validation workflows to compare outputs, verify expected behaviours, detect deviations and consolidate technical evidence.
+\item Supported activities aligned with \textbf{V-cycle engineering logic}: requirements interpretation, validation planning, consistency checks, result verification and anomaly analysis.
+\item Produced technical analyses supporting model selection, risk identification, performance interpretation and decision-making.
+\item Maintained traceability of configurations, assumptions, parameters, validation results and technical conclusions.
+\item Coordinated technical activities involving contributors, research engineers, technicians and Master's thesis interns.
+\item Operated in a collaborative international framework requiring technical English, structured reporting, versioned workflows and rigorous documentation.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Instrument Performance, Noise Modelling \& Statistical Diagnostics}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\begin{itemize}
+\item Analysed instrumental and environmental effects impacting the sensitivity, stability and performance of precision measurement systems.
+\item Developed Python-based analysis pipelines for noise source identification, uncertainty estimation, Bayesian inference and statistical modelling.
+\item Conducted deep technical studies on degradation patterns, dominant contributors, system limitations and correlations between environmental conditions and measurement performance.
+\item Investigated unexpected behaviours, weak points and possible mitigation directions using statistical diagnostics and reproducible workflows.
+\item Built traceable analysis workflows using Unix environments, scripting, source control practices and structured documentation.
+\item Contributed to studies connected to gravitational-wave detector systems, where performance, noise control, robustness and system-level sensitivity are critical.
+\item Communicated complex technical results to scientific and engineering stakeholders through reporting, presentations and collaborative review.
+\end{itemize}
+
+\divider
+\newpage
+
+\cvevent{\textbf{Junior R\&D Engineer -- Signal Analysis, Simulation \& System Performance Assessment}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\begin{itemize}
+\item Conducted research and engineering-oriented analysis for the preparation of gravitational-wave space missions, with a strong focus on \textbf{LISA}.
+\item Developed methods for the separation of weak overlapping signals in complex low-SNR datasets.
+\item Built simulation and analysis workflows to evaluate system performance under realistic noise, foreground and uncertainty conditions.
+\item Compared simulated outputs, model behaviours and analysis results to assess consistency, robustness and performance limitations.
+\item Investigated noise sources, correlations and sensitivity limits through diagnostic analyses relevant to precision instruments.
+\item Produced peer-reviewed results contributing to the understanding of performance limits for future gravitational-wave space missions.
+\item Developed strong expertise in modelling, uncertainty analysis, signal processing, technical validation and scientific software workflows.
+\end{itemize}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning}{DeepLearning.AI -- Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\begin{itemize}
+\item Training focused on reproducible research practices, computational documentation, data management, version control and transparent analysis workflows.
+\item Practical exposure to \textbf{Git/GitLab}, \textbf{Jupyter notebooks}, structured documentation, data handling and reproducible software environments.
+\end{itemize}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{On line}
+
+\begin{itemize}
+\item Completed courses covering \textbf{Python}, \textbf{JavaScript}, \textbf{TypeScript}, \textbf{Angular}, \textbf{Node.js}, \textbf{Django}, \textbf{REST APIs}, \textbf{SQL}, \textbf{Machine Learning}, \textbf{AI}, \textbf{Linux}, \textbf{C/C++}, web development and software engineering fundamentals.
+\item Strengthened practical skills in full-stack development, data analysis, algorithmic thinking, database querying, Linux administration and modern software tooling.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Summary and Strengths}
+
+\textbf{System performance and technical analysis engineer with strong experience in modelling, statistical diagnostics, simulation workflows, software/data validation and complex system analysis}. Background developed in international space and precision-instrumentation environments, complemented by recent industrial software experience involving operational data flows, hardware/software interfaces and production diagnostics.
+
+Experienced in \textbf{deep technical studies}, \textbf{performance analysis}, \textbf{statistical modelling}, \textbf{uncertainty analysis}, \textbf{bottleneck identification}, \textbf{anomaly investigation}, \textbf{Python automation}, \textbf{Unix/Linux environments}, \textbf{scripting}, \textbf{source control}, \textbf{technical documentation} and \textbf{cross-functional coordination}.
+
+Able to analyse complex systems, identify limiting factors, consolidate technical evidence, communicate insights clearly and support improvement directions in high-constraint environments.
+
+Relevant for \textbf{system performance analysis}, \textbf{software/hardware interaction diagnostics}, \textbf{advanced modelling}, \textbf{statistical analysis}, \textbf{simulation workflows}, \textbf{technical studies}, \textbf{validation}, \textbf{Unix-based engineering} and \textbf{collaborative multi-site environments}.
+
+\cvsection{Fit for Arm System Performance}
+
+\begin{itemize}
+  \item Strong experience conducting deep technical studies on complex systems, performance limitations, uncertainty sources and degraded behaviours.
+  \item Solid background in statistics, Bayesian inference, signal processing, modelling, simulation and sensitivity analysis.
+  \item Experience identifying bottlenecks, deviations, numerical behaviours, weak points and possible improvement or mitigation directions.
+  \item Hands-on experience with \textbf{Python}, \textbf{C/C++ foundations}, \textbf{Unix/Linux}, Bash scripting and Git/GitLab.
+  \item Used to analysing system-level behaviours at the interface between software, data, modelling assumptions and operational constraints.
+  \item Comfortable producing structured technical evidence, documenting assumptions and communicating results to multidisciplinary teams.
+  \item Familiar with high-performance and high-constraint technical contexts through space mission analysis, precision instrumentation and detector performance studies.
+  \item Motivated to extend existing system-performance expertise toward CPU, interconnect and cloud/server SoC environments.
+\end{itemize}
+
+\cvsection{Team Management}
+
+\begin{itemize}
+  \item Supervision of \textbf{3 Master's thesis interns (M2)} during engineering, modelling and software-development phases.
+  \item Coordination of technical activities involving \textbf{research engineers and technicians} on a \textbf{data processing and validation pipeline} for the \textbf{LISA space mission}.
+  \item Experience in organizing tasks, supporting contributors, reviewing outputs and maintaining alignment across collaborative technical developments.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{LISA Consortium -- Software, Modelling \& System Performance Analysis}{ESA/NASA Space Mission -- Large-scale International Collaboration}{2018 -- now}{}
+
+Contribution to software, analysis and validation workflows for the LISA space mission within an international engineering and scientific collaboration involving ESA, NASA and multiple research institutes.
+
+\textbf{Role:} Contribution to software workflows, technical coordination, complex signal-processing activities, model integration, validation campaigns, performance assessment and collaborative engineering tasks.
+
+\textbf{System performance relevance:} Work involving simulation, model comparison, weak-signal analysis, sensitivity studies, uncertainty analysis, bottleneck identification, validation evidence and performance limitation assessment.
+
+\textbf{Project relevance:} Work at the interface between software development, scientific requirements, data processing, validation workflows, technical contributors and international coordination.
+
+\textbf{Program scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Einstein Telescope and LIGO--Virgo--KAGRA Collaborations}{International Scientific and Engineering Collaborations}{2021 -- now}{}
+
+Contribution to collaborative developments in data analysis, signal characterization, software methods and technical investigations within the LIGO--Virgo--KAGRA and Einstein Telescope collaborations.
+
+\textbf{Role:} Development of analysis tools, contribution to technical activities and support to complex software workflows in high-standard collaborative environments.
+
+\textbf{System impact:} Contributed to studies on environmental and instrumental noise sources, supporting the identification of performance limitations and design constraints for next-generation gravitational-wave observatories.
+
+\textbf{Environment:} Large-scale international collaborations involving strong technical requirements, structured methods, technical review, versioned software workflows and coordinated contributions.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{System performance \& technical analysis}
+
+{\small
+\cvtag{System Performance Analysis}
+\cvtag{Software Performance Analysis}
+\cvtag{Performance Modelling}
+\cvtag{Bottleneck Identification}
+\cvtag{Deep Technical Studies}
+\cvtag{Statistical Modelling}
+\cvtag{Bayesian Inference}
+\cvtag{Simulation Workflows}
+\newline
+\cvtag{Uncertainty Analysis}
+\cvtag{Sensitivity Analysis}
+\cvtag{Signal Processing}
+\cvtag{Noise Modelling}
+\cvtag{Technical Diagnostics}
+\cvtag{Anomaly Analysis}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Systems, validation \& diagnostics}
+
+{\small
+\cvtag{Systems Engineering}
+\cvtag{Complex Systems}
+\cvtag{Mission-Level Performance}
+\cvtag{Validation Workflows}
+\cvtag{Verification \& Validation}
+\cvtag{Software Integration}
+\cvtag{Integration Testing}
+\newline
+\cvtag{Requirements Traceability}
+\cvtag{Configuration Follow-Up}
+\cvtag{Root Cause Analysis}
+\cvtag{Technical Evidence}
+\cvtag{Software / Hardware Interfaces}
+\cvtag{Operational Diagnostics}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Technical skills}
+
+{\small
+\cvtag{Python}
+\cvtag{C / C++}
+\cvtag{Unix / Linux}
+\cvtag{Bash}
+\cvtag{Shell Scripting}
+\cvtag{Git / GitLab}
+\cvtag{Source Control}
+\cvtag{Docker}
+\cvtag{SQL}
+\cvtag{Pandas}
+\cvtag{Matlab}
+\cvtag{TypeScript}
+\cvtag{Node.js}
+\cvtag{REST API}
+\cvtag{FTP}
+\cvtag{Jira}
+\cvtag{Confluence}
+\cvtag{OpenSearch}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Engineering environment}
+
+{\small
+\cvtag{Reproducible Workflows}
+\cvtag{Structured Documentation}
+\cvtag{Technical Reporting}
+\cvtag{Multi-Site Collaboration}
+\cvtag{Cross-Functional Coordination}
+\cvtag{International Collaboration}
+\cvtag{Technical English}
+\newline
+\cvtag{Space Systems}
+\cvtag{Precision Instrumentation}
+\cvtag{Industrial Software}
+\cvtag{Operational Monitoring}
+\cvtag{Scientific Computing}
+}
+
+
+\end{document}
+

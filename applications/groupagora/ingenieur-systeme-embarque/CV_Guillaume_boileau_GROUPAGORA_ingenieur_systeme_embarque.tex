@@ -1,0 +1,366 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Ingénieur Système Embarqué - Nice
+% Positioning: Ingénieur système / intégration / validation | systèmes embarqués critiques, exigences, interfaces HW/SW
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Ingénieur Système / Intégration | Systèmes embarqués critiques, exigences, validation \& interfaces HW/SW}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Développement logiciel, intégration \& support opérationnel}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Environnement industriel logiciel pour une plateforme CPMS liée à des infrastructures de recharge de véhicules électriques, avec services backend, interfaces applicatives, données opérationnelles et équipements terrain.
+
+\textbf{Objectif :} Contribuer au développement, à l’intégration et à la fiabilisation de services logiciels connectés, en analysant les flux de données, les incidents et les comportements applicatifs en environnement opérationnel.
+
+\begin{itemize}
+  \item \textbf{Interfaces logiciel / terrain :} Travail sur les interfaces entre services applicatifs, données opérationnelles, infrastructures connectées et contraintes terrain.
+  \item \textbf{Intégration logicielle :} Contribution à l’intégration de composants applicatifs dans une plateforme opérationnelle connectée à des équipements.
+  \item \textbf{Analyse d’incidents :} Investigation d’interruptions de flux, incohérences de données, comportements inattendus et impacts sur le service.
+  \item \textbf{Validation opérationnelle :} Vérification de la cohérence entre données applicatives, comportement des équipements et attendus fonctionnels.
+  \item \textbf{Développement logiciel :} Contribution à des composants TypeScript, Angular et Node.js.
+  \item \textbf{Documentation technique :} Formalisation de constats, analyses d’anomalies et éléments utiles à la résolution par les équipes techniques.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- Ingénierie système, validation \& performance spatiale}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Activités d’ingénierie et de R\&D pour la mission spatiale LISA ESA/NASA, dans un environnement international impliquant simulation, développement Python, traitement de données, intégration de modèles et validation technique.
+
+\textbf{Objectif :} Structurer, intégrer, comparer et valider des contributions techniques complexes afin de produire des résultats exploitables, traçables et présentables en revue collaborative.
+
+\begin{itemize}
+  \item \textbf{Ingénierie système :} Analyse de chaînes techniques complexes, identification d’hypothèses, interfaces, contraintes et dépendances entre contributions.
+  \item \textbf{Exigences \& traçabilité :} Structuration de configurations, versions, données d’entrée, sorties de simulation et résultats d’analyse pour assurer la traçabilité.
+  \item \textbf{Validation système :} Définition de contrôles de cohérence, règles de comparaison, méthodes de vérification et critères d’acceptabilité des résultats.
+  \item \textbf{Analyse de performance :} Évaluation de résultats de simulation dans des contextes de signaux faibles, bruit, incertitudes et contraintes de cohérence.
+  \item \textbf{Analyse d’anomalies :} Identification d’écarts entre modèles, analyse d’impact, formalisation des points bloquants et proposition d’actions correctives.
+  \item \textbf{Coordination technique :} Interface avec des contributeurs scientifiques, logiciels et institutionnels dans un environnement spatial international.
+  \item \textbf{Revues techniques :} Consolidation de livrables, synthèses techniques, traçabilité des hypothèses et préparation d’éléments de décision.
+  \item \textbf{Plateforme Python :} Développement de CATpyLISA pour l’intégration, la comparaison, la validation et la revue technique de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Données capteurs, bruit \& analyse de performance}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Études de performance pour instruments de précision et détecteurs de nouvelle génération, combinant mesures environnementales, bruit, modélisation statistique, configurations instrumentales et validation de résultats.
+
+\textbf{Objectif :} Développer des workflows robustes et reproductibles pour identifier, caractériser et réduire des sources affectant la qualité de mesure et la sensibilité de systèmes complexes.
+
+\begin{itemize}
+  \item \textbf{Données capteurs :} Analyse de mesures issues de capteurs environnementaux, corrélations spatiales et effets de propagation.
+  \item \textbf{Analyse de performance :} Évaluation de la qualité de mesure, des limites instrumentales et de l’impact de différentes sources de bruit.
+  \item \textbf{Traitement du signal :} Identification et caractérisation de contributions de bruit dans des mesures complexes.
+  \item \textbf{Configurations système :} Études de différentes configurations instrumentales et de différents niveaux de bruit pour la détection de signaux très ténus.
+  \item \textbf{Validation de résultats :} Analyse de sensibilité, vérification de cohérence, figures de mérite et évaluation des limites de performance.
+  \item \textbf{Reporting technique :} Production de résultats traçables, de synthèses techniques et de supports pour parties prenantes internationales.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Signal, simulation \& diagnostics techniques}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Activités de R\&D liées à l’analyse de signaux faibles, à la simulation numérique, aux diagnostics de bruit et à la préparation de missions spatiales et d’instruments de détection.
+
+\textbf{Objectif :} Développer des méthodes d’analyse, automatiser des simulations et produire des résultats exploitables dans un environnement scientifique et technique exigeant.
+
+\begin{itemize}
+  \item \textbf{Simulation numérique :} Développement d’approches de simulation pour environnements de signaux complexes et jeux de données de grande taille.
+  \item \textbf{Analyse de données :} Mise en place de méthodes pour analyser et séparer des signaux faibles et superposés.
+  \item \textbf{Traitement du signal :} Études de caractérisation, de décomposition et de comparaison de signaux dans des contextes bruités.
+  \item \textbf{Validation technique :} Vérification de cohérence, comparaison de résultats et études de sensibilité.
+  \item \textbf{Diagnostics :} Analyse de sources de bruit, corrélations entre capteurs et risques d’interprétation des résultats.
+  \item \textbf{Documentation :} Formalisation des méthodes, hypothèses, résultats et conclusions pour revue collaborative.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Ingénieur docteur orienté ingénierie système, intégration, validation et analyse de performance, avec une expérience solide en systèmes spatiaux, environnements complexes, données capteurs, traitement du signal, logiciel et documentation technique.}
+
+Positionnement pour ce rôle : ingénieur système capable d’intervenir sur la cohérence d’architectures multi-domaines, la déclinaison d’exigences, l’intégration de sous-ensembles, la validation et la qualification, avec une montée ciblée sur calculateurs embarqués durcis, interfaces HW/SW/mécanique et contraintes environnementales.
+
+\begin{itemize}
+  \item Expérience en validation système, analyse d’écarts, traçabilité, documentation technique et préparation de revues.
+  \item Culture forte des systèmes complexes, du spatial, de la simulation, des données capteurs et de l’analyse de performance.
+  \item Capacité à dialoguer avec des équipes logiciel, système, instrumentation, qualité et métiers techniques.
+  \item Profil rigoureux, autonome, orienté exigences, conformité, diagnostic technique et résolution de problèmes.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Supervised Machine Learning: Regression \& Classification}{DeepLearning.AI -- Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Recherche reproductible : principes \newline méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, web development, algorithms and software engineering fundamentals.
+}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA -- Plateforme Python d’intégration, comparaison et validation}{Mission spatiale LISA ESA/NASA}{2023 -- 2025}{}
+
+Plateforme Python dédiée à l’intégration de modèles, à la structuration de données, à la comparaison de résultats, à la validation technique et à la revue collaborative de workflows scientifiques.
+
+\textbf{Rôle :} développement Python, structuration de données, documentation technique, validation, analyse d’écarts, synthèse de résultats, coordination avec plusieurs contributeurs.
+
+\textbf{Compétences mobilisées :} Python, intégration de modèles, validation système, traitement du signal, analyse de performance, simulation, documentation, GitLab, Confluence, environnement spatial international.
+
+\divider
+
+\cvevent{Workflows de simulation, performance et analyse de bruit}{Instrumentation scientifique et préparation de missions spatiales}{2018 -- 2025}{}
+
+Développement de workflows numériques et statistiques pour analyser des signaux faibles, caractériser des contributions de bruit, comparer des résultats et évaluer la robustesse de modèles dans des environnements complexes.
+
+\textbf{Rôle :} analyse de performance, simulation, traitement du signal, caractérisation de bruit, études de sensibilité, diagnostics techniques, reporting et support à la décision.
+
+\textbf{Compétences mobilisées :} traitement du signal, simulation numérique, analyse spectrale, Python, C, validation, analyse de sensibilité, documentation technique.
+
+\divider
+
+\cvevent{VEV -- Développement logiciel, intégration \& support opérationnel}{Industrial software / Data flows / Connected infrastructure}{2025 -- 2026}{}
+
+Développement et intégration de services logiciels pour une plateforme CPMS connectée à des infrastructures de recharge, avec analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs, support opérationnel et documentation technique.
+
+\textbf{Rôle :} développement TypeScript, Angular et Node.js, intégration logicielle, analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs et formalisation de constats techniques.
+
+\textbf{Compétences mobilisées :} TypeScript, Angular, Node.js, FTP, Linux, Git, analyse d’incidents, intégration logicielle, support opérationnel, documentation technique.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{Ingénierie système, exigences \& conformité}
+
+{\small
+\cvtag{Ingénierie système}
+\cvtag{Analyse d’exigences}
+\cvtag{Déclinaison d’exigences}
+\cvtag{Traçabilité}
+\cvtag{Documentation système}
+\cvtag{Conformité qualité}
+\cvtag{EN9100 -- awareness}
+\cvtag{AQAP -- awareness}
+\cvtag{Revues techniques}
+\cvtag{Support décisionnel}
+\cvtag{Systèmes critiques}
+\cvtag{Défense -- habilitation compatible}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Intégration, validation \& qualification}
+
+{\small
+\cvtag{Intégration système}
+\cvtag{Intégration de sous-ensembles}
+\cvtag{Validation système}
+\cvtag{IVVQ}
+\cvtag{Qualification -- ramp-up}
+\cvtag{CEM -- ramp-up}
+\cvtag{Thermique -- awareness}
+\cvtag{Vibrations -- awareness}
+\cvtag{Chocs -- awareness}
+\cvtag{Étanchéité -- awareness}
+\cvtag{Procédures de test}
+\cvtag{Analyse de résultats}
+\cvtag{Traitement d’anomalies}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Systèmes embarqués, HW/SW \& interfaces}
+
+{\small
+\cvtag{Systèmes embarqués -- ramp-up}
+\cvtag{Calculateurs embarqués -- ramp-up}
+\cvtag{Calculateurs durcis -- awareness}
+\cvtag{Interfaces hardware/software}
+\cvtag{Architecture système}
+\cvtag{Cartes électroniques -- awareness}
+\cvtag{CPU / GPU -- awareness}
+\cvtag{FPGA -- awareness}
+\cvtag{Interfaces mécaniques -- awareness}
+\cvtag{Bus de communication -- ramp-up}
+\cvtag{Données capteurs}
+\cvtag{Instrumentation scientifique}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Analyse, diagnostic \& performance}
+
+{\small
+\cvtag{Analyse d’anomalies}
+\cvtag{Root cause analysis}
+\cvtag{Diagnostic technique}
+\cvtag{Analyse de performance}
+\cvtag{Contrôles de cohérence}
+\cvtag{Validation de résultats}
+\cvtag{Analyse de sensibilité}
+\cvtag{Simulation numérique}
+\cvtag{Modélisation}
+\cvtag{Traitement du signal}
+\cvtag{Analyse de bruit}
+\cvtag{Systèmes complexes}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Logiciel, data \& outils}
+
+{\small
+\cvtag{Python}
+\cvtag{C}
+\cvtag{Pandas}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{Matplotlib}
+\cvtag{SQL}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{Bash}
+\cvtag{Linux}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{OpenSearch}
+\cvtag{Sentry}
+}
+
+\end{document}

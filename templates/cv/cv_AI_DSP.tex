@@ -1,0 +1,366 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for EssilorLuxottica - AI&DSP Engineer
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{AI \& DSP Engineer | Traitement du signal, séries temporelles, bruit, IA \& validation algorithmique}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Ingénieur logiciel full stack -- Intégration, données opérationnelles \& diagnostic}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Développement logiciel, intégration et support opérationnel pour une plateforme CPMS connectée à des infrastructures de recharge de véhicules électriques.
+
+\textbf{Objectif :} Contribuer au développement, à l’intégration et à la fiabilisation de services logiciels connectés à des équipements terrain, des flux opérationnels et des interfaces système.
+
+\begin{itemize}
+  \item \textbf{Développement logiciel :} Contribution au développement d’applications web et de services backend en TypeScript, Angular et Node.js.
+  \item \textbf{Intégration logiciel-système :} Travail sur les interfaces entre services applicatifs, API, échanges FTP, données opérationnelles, supervision et équipements terrain.
+  \item \textbf{Analyse opérationnelle :} Analyse de données techniques issues d’infrastructures connectées afin d’identifier anomalies, incohérences, ruptures de flux et incidents applicatifs.
+  \item \textbf{Diagnostic \& fiabilisation :} Contribution à la fiabilisation des échanges de données, au suivi des interfaces et au contrôle de cohérence entre plateforme, équipements et exploitation.
+  \item \textbf{Support production :} Investigation d’incidents à partir de logs, remontées terrain, données opérationnelles et outils de monitoring.
+  \item \textbf{Documentation :} Formalisation des flux, interfaces, comportements observés, anomalies et actions de correction.
+  \item \textbf{Coordination agile :} Suivi des tickets, priorisation, backlog et coordination avec les équipes projet via Zenhub.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- AI/DSP, traitement de séries temporelles \& validation}}{Laboratoire Lagrange, Observatoire de la Côte d’Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Activités d’ingénierie et de R\&D pour la mission spatiale LISA ESA/NASA, centrées sur les séries temporelles complexes, les signaux faibles, la modélisation du bruit, l’analyse spectrale, la simulation, l’intégration de modèles et la validation technique.
+
+\textbf{Objectif :} Développer et structurer des workflows Python permettant de rechercher, prototyper, évaluer, comparer et valider des algorithmes et modèles de traitement du signal dans des environnements fortement bruités.
+
+\begin{itemize}
+  \item \textbf{Traitement du signal :} Développement de workflows pour analyser, comparer et valider des signaux simulés complexes en contexte faible SNR.
+  \item \textbf{Analyse spectrale :} Travail sur représentations fréquentielles, séparation signal/bruit, décomposition de contributions superposées et diagnostics de performance.
+  \item \textbf{Modélisation du bruit :} Analyse de bruit instrumental, bruit corrélé, limites de détection, sensibilité instrumentale et impact des bruits sur la performance système.
+  \item \textbf{Prototypage Python :} Conception d’outils Python pour le traitement de données, la comparaison de modèles, la validation algorithmique et l’analyse reproductible.
+  \item \textbf{Validation de performances :} Définition de contrôles de cohérence, règles de comparaison, critères de validation, analyse d’écarts et diagnostics exploitables.
+  \item \textbf{Logique AI/DSP :} Utilisation de statistiques, inférence bayésienne, MCMC, analyse d’incertitude et comparaison de modèles pour évaluer la robustesse des résultats.
+  \item \textbf{Intégration de modèles :} Consolidation de sorties hétérogènes dans un cadre commun d’analyse, de comparaison, de revue et de décision technique.
+  \item \textbf{Documentation \& traçabilité :} Structuration des paramètres, métadonnées, hypothèses, sorties de simulation, critères de qualité et résultats d’analyse.
+  \item \textbf{Plateforme logicielle :} Développement de CATpyLISA, plateforme Python pour l’intégration, la comparaison, la validation et la revue technique de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Modélisation du bruit, statistiques \& traitement du signal}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Analyse de données, modélisation statistique et études de performance pour des instruments de précision dans un environnement technique international.
+
+\textbf{Objectif :} Développer des workflows robustes et reproductibles pour identifier, caractériser et réduire des sources de bruit affectant la qualité de mesure.
+
+\begin{itemize}
+  \item \textbf{Séries temporelles :} Traitement, structuration et analyse de données complexes issues de systèmes de mesure et d’instruments de précision.
+  \item \textbf{Analyse de bruit :} Identification, modélisation et interprétation de contributions de bruit affectant la qualité de mesure et la performance système.
+  \item \textbf{Statistiques avancées :} Développement de méthodes d’inférence bayésienne, MCMC, estimation de paramètres et analyse d’incertitude.
+  \item \textbf{Pipelines Python :} Mise en place de workflows reproductibles pour filtrage, transformation, analyse statistique, comparaison et évaluation de performance.
+  \item \textbf{Validation de résultats :} Analyse de sensibilité, vérification de cohérence, robustesse des résultats et évaluation des limites de performance.
+  \item \textbf{Reporting technique :} Production de résultats traçables, synthèses techniques et supports pour parties prenantes internationales.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Traitement du signal, simulation \& faible SNR}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Thèse de doctorat sur la mission spatiale LISA, dédiée au traitement du signal, à la modélisation du bruit instrumental et à la validation de chaînes d’analyse pour la détection de signaux faibles.
+
+\textbf{Objectif :} Développer des chaînes de traitement et de simulation pour analyser, séparer et valider des signaux faibles, bruités et superposés dans des séries temporelles complexes.
+
+\begin{itemize}
+  \item \textbf{Analyse faible SNR :} Développement de méthodes pour analyser des signaux faibles, bruités et superposés dans les domaines temporel et fréquentiel.
+  \item \textbf{Séparation spectrale :} Modélisation et séparation de contributions superposées : signal cosmologique, fonds astrophysiques, foreground galactique et bruit instrumental.
+  \item \textbf{Analyse fréquentielle :} Mise en place de méthodes de comparaison de modèles et de validation de performances pour évaluer la détectabilité de signaux faibles.
+  \item \textbf{Statistiques \& IA :} Développement de stratégies bayésiennes, MCMC et information de Fisher pour estimation de paramètres, incertitudes et analyse de sensibilité.
+  \item \textbf{Bruits instrumentaux :} Étude de bruit corrélé, température, champ magnétique, micro-propulseurs, accélération des masses-test et impact sur les chaînes de mesure.
+  \item \textbf{Validation :} Vérification de cohérence entre canaux de mesure, diagnostics par corrélations entre capteurs et évaluation de méthodes de soustraction du bruit.
+  \item \textbf{Documentation scientifique :} Formalisation des hypothèses, paramètres, méthodes, résultats et limites sous forme de publications, présentations et supports de synthèse.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Ingénieur docteur spécialisé en traitement du signal, séries temporelles, modélisation du bruit, analyse spectrale, statistiques, prototypage Python et validation algorithmique.}
+
+Mon expertise principale n’est pas limitée aux ondes gravitationnelles : elle porte sur le traitement, la modélisation et la validation de signaux temporels complexes, faibles et bruités. Ce socle est directement transposable à l’audio et à la parole, où les problématiques clés sont l’amélioration du signal, la réduction de bruit, le filtrage, la séparation de sources, l’évaluation de performance et la validation d’algorithmes avant intégration produit.
+
+\medskip
+
+\textbf{Positionnement cible EssilorLuxottica / Pulse Audition :} AI \& DSP Engineer capable de contribuer à la recherche, au prototypage, à l’évaluation et à l’adaptation d’algorithmes hybrides AI/DSP pour des applications audio temps réel, embarquées et orientées dispositifs portables.
+
+\medskip
+
+\textbf{Apport principal :} très forte base en DSP, séries temporelles, bruit, statistiques, Python scientifique, validation de performances et documentation technique, avec montée en compétence ciblée sur audio embarqué, speech enhancement, beamforming, feedback suppression, transducteurs, audio ICs et contraintes on-device.
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning -- Regression, Classification \& Statistical Learning Foundations}{Coursera -- Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN / Inria}{2025}{Online}
+
+\divider
+
+\cvevent{Reproducible Research}{FUN / Inria}{2025}{Online}
+
+\divider
+
+\cvevent{OpenClassrooms continuous training}{Python, SQL, Linux, C/C++, JavaScript, TypeScript, Angular, Node.js, APIs, Data Analysis, Machine Learning}{2024 -- 2026}{Online}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA -- Plateforme Python d’intégration, comparaison et validation}{Mission spatiale LISA ESA/NASA}{2023 -- 2025}{}
+
+Développement d’une plateforme Python dédiée à l’intégration de modèles, à la structuration de données, à la comparaison de résultats, à la vérification, à la validation technique et à la revue de workflows liés à la mission LISA.
+
+\textbf{Rôle :} développement Python, conception de pipelines, intégration de contributions, structuration de données, logique de validation, contrôles de cohérence, analyse d’écarts, documentation technique et coordination avec plusieurs contributeurs.
+
+\textbf{Lien avec AI/DSP audio :} traitement de séries temporelles bruitées, analyse spectrale, comparaison de modèles, validation d’algorithmes, évaluation de performance, traçabilité et passage du prototype de recherche à un cadre d’intégration.
+
+\divider
+
+\cvevent{Séparation spectrale, signaux faibles \& modélisation du bruit}{Ondes gravitationnelles, instrumentation de précision, LISA}{2018 -- 2025}{}
+
+Développement de méthodes de traitement du signal pour analyser, séparer et valider des contributions faibles, bruitées et superposées dans des systèmes de mesure complexes.
+
+\textbf{Rôle :} simulation numérique, analyse fréquentielle, estimation de paramètres, MCMC, information de Fisher, analyse de sensibilité, modélisation de bruit, validation de performances et documentation scientifique.
+
+\textbf{Lien avec AI/DSP audio :} problématiques analogues à l’amélioration de signal audio : séparation signal/bruit, filtrage, réduction de bruit, robustesse d’algorithmes, métriques de performance et contraintes d’intégration.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{AI, DSP \& traitement du signal audio-compatible}
+
+{\small
+\cvtag{Digital Signal Processing}
+\cvtag{Traitement du signal}
+\cvtag{Séries temporelles}
+\cvtag{Signaux faibles}
+\cvtag{Low-SNR Signals}
+\cvtag{Analyse spectrale}
+\cvtag{Fourier Transforms}
+\cvtag{Filtrage}
+\cvtag{Modulation awareness}
+\cvtag{Noise Reduction}
+\cvtag{Noise Modelling}
+\cvtag{Signal/Noise Separation}
+\cvtag{SNR Evaluation}
+\cvtag{Speech Enhancement awareness}
+\cvtag{Beamforming awareness}
+\cvtag{Feedback Suppression awareness}
+\cvtag{Acoustics awareness}
+\cvtag{Transducers awareness}
+\cvtag{Audio ICs awareness}
+\cvtag{Embedded DSP awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{IA, statistiques \& validation de modèles}
+
+{\small
+\cvtag{Machine Learning}
+\cvtag{Audio ML awareness}
+\cvtag{Hybrid AI/DSP}
+\cvtag{Algorithm Prototyping}
+\cvtag{Algorithm Evaluation}
+\cvtag{Model Validation}
+\cvtag{Statistical Modelling}
+\cvtag{Bayesian Inference}
+\cvtag{MCMC}
+\cvtag{Fisher Information}
+\cvtag{Linear Algebra}
+\cvtag{Statistics}
+\cvtag{Uncertainty Analysis}
+\cvtag{Model Comparison}
+\cvtag{PyTorch}
+\cvtag{Scikit-Learn}
+\cvtag{Research Literature Watch}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Logiciel, Python scientifique \& optimisation}
+
+{\small
+\cvtag{Python}
+\cvtag{C}
+\cvtag{C++ awareness}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{Pandas}
+\cvtag{Matplotlib}
+\cvtag{Matlab}
+\cvtag{Algorithm Development}
+\cvtag{Scientific Computing}
+\cvtag{Optimization awareness}
+\cvtag{On-Device AI awareness}
+\cvtag{Real-Time Constraints awareness}
+\cvtag{Linux}
+\cvtag{Bash}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Jupyter Notebook}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Validation, intégration \& productisation}
+
+{\small
+\cvtag{Algorithm Validation}
+\cvtag{Verification \& Validation}
+\cvtag{IVVQ}
+\cvtag{Integration Testing}
+\cvtag{Performance Evaluation}
+\cvtag{Validation Strategy}
+\cvtag{Requirements Traceability}
+\cvtag{Reproducibility}
+\cvtag{Traceability}
+\cvtag{Technical Documentation}
+\cvtag{System Integration}
+\cvtag{Hardware / Software Interfaces}
+\cvtag{Anomaly Investigation}
+\cvtag{Root Cause Analysis}
+\cvtag{Research-to-Prototype}
+\cvtag{Prototype-to-Product}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{OpenSearch}
+\cvtag{Sentry}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Domaines applicatifs}
+
+{\small
+\cvtag{Assistive Hearing interest}
+\cvtag{Wearable Audio Devices interest}
+\cvtag{Embedded Audio interest}
+\cvtag{Space Systems}
+\cvtag{LISA Mission}
+\cvtag{ESA/NASA Collaboration}
+\cvtag{Precision Instrumentation}
+\cvtag{Complex Measurement Systems}
+\cvtag{Scientific Payload Analysis}
+\cvtag{Industrial Software}
+\cvtag{CPMS Platform}
+\cvtag{Operational Data Flows}
+\cvtag{Connected Equipment}
+\cvtag{Data-Driven Workflows}
+}
+
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{../_shared/altacv}
+
+\geometry{left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm,columnsep=1.5cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{paracol}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+
+% Couleurs exactes du CV
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\name{BOILEAU Guillaume}
+\personalinfo{
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes Maritimes, France}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\setlength{\parskip}{0.75\baselineskip}
+
+\begin{document}
+\makecvheader
+
+
+\cvsection{Lettre de motivation}
+{\color{accent}\textbf{Objet :}} \textit{Candidature spontanée -- Data Scientist R\&D | Traitement du signal \& Détection d'anomalies}
+
+{\color{body}
+
+Monsieur Kizil, Monsieur Muller,
+
+Je me permets de vous contacter directement pour vous soumettre ma candidature spontanée. Basé dans les Alpes-Maritimes, à deux pas de votre site de Biot, je suis convaincu que mon parcours d’ingénieur R\&D, de data scientist, de développeur full-stack et de responsable technique correspond aux besoins d’une startup innovante comme la vôtre, à l’intersection du traitement du signal, du deep learning et des applications défense et industrie. J’ai développé au cours de ces dernières années une expertise à l’interface entre analyse de données, modélisation physique et développement logiciel, avec une pratique concrète du traitement de données complexes, des méthodes bayésiennes et du développement de pipelines scientifiques jusqu’à leur mise en production.
+
+Mon parcours couvre plus de sept ans d’expérience dans des environnements scientifiques et industriels exigeants, où j’ai successivement occupé des rôles d’ingénieur junior, de data scientist confirmé, d’ingénieur R\&D senior et de développeur full-stack. Cela m’a permis de construire un profil capable de traiter des problématiques scientifiques complexes tout en développant des outils opérationnels et robustes.
+
+En tant que data scientist à l’Universiteit Antwerpen (2021--2023), j’ai développé des pipelines complets d’inférence bayésienne par méthodes MCMC pour l’identification et la mitigation de sources de bruit sur des instruments de métrologie de grande précision. J’y ai analysé les effets environnementaux sur la performance de capteurs complexes, contribué à la validation pré-opérationnelle de systèmes de nouvelle génération, et déployé des chaînes de traitement robustes sur des données massives et hétérogènes. Ce travail m’a conduit à développer une forte exigence sur la qualité des résultats, la traçabilité et la robustesse méthodologique, directement transposables à des contextes industriels et opérationnels.
+
+Auparavant, au sein du laboratoire ARTEMIS de l’Observatoire de la Côte d’Azur (2018--2021), j’ai travaillé pendant trois ans sur la décomposition de signaux à faible SNR superposés, la modélisation de fonds astrophysiques par synthèse de population à grande échelle, et les études de corrélation croisée multi-capteurs dans le cadre de diagnostics pré-lancement. Ces problématiques, qui consistent à détecter des structures faibles noyées dans un bruit complexe sur des données multi-sources, sont directement en lien avec les enjeux de détection et d’analyse que vous adressez.
+
+Plus récemment, au Laboratoire Lagrange de l’OCA en collaboration avec le CNES (2023--2025), j’ai pris la responsabilité du développement de CATpyLISA, une plateforme Python dédiée à la consolidation et à la comparaison statistique de catalogues de signaux pour la mission LISA. Ce travail m’a placé au cœur du traitement de données à grande échelle, en lien direct avec la structuration de pipelines scientifiques (L0 à L3) et leur exploitation. J’ai également encadré et supervisé une équipe d’ingénieurs de recherche et de techniciens, ainsi que trois stagiaires de Master 2, et présenté les résultats obtenus lors de conférences scientifiques internationales. Cette expérience m’a donné une réelle dimension de chef de projet technique, capable de structurer un développement, coordonner une équipe et faire le lien entre contraintes scientifiques, techniques et opérationnelles.
+
+Parallèlement à cette trajectoire scientifique, j’ai développé une expertise concrète en développement logiciel industriel. Dans mon poste actuel chez VEV Platform Services à Valbonne (2025 -- aujourd’hui), je conçois et maintiens des applications web full-stack en TypeScript, Angular et Node.js, j’intègre des services FTP pour l’échange de données entre bornes de recharge, et j’assure l’interaction logicielle avec du matériel embarqué. Cette expérience m’a permis de renforcer ma capacité à produire du code maintenable, documenté et déployé en production, et à transformer des développements R\&D en solutions concrètes.
+
+Sur le plan technique, je maîtrise Python, Pandas, PyTorch, Scikit-learn, SQL, MongoDB, les méthodes d’inférence bayésienne, le traitement spectral, les environnements distribués (Docker, AWS, Slurm, Condor, HPC), ainsi que TypeScript, Angular, Node.js et les API REST. Je travaille sous Linux, utilise Git et GitLab au quotidien, et dispose d’une solide expérience du calcul parallèle sur clusters. J’ai également suivi la formation \textit{Supervised Machine Learning: Regression and Classification} d’Andrew Ng (DeepLearning.AI / Stanford), qui a structuré et renforcé ma pratique du machine learning appliqué.
+
+Votre partenariat avec Thales dans le cadre du programme AI@Centech, votre intégration au collectif DeepGreen du CEA aux côtés d’Airbus, Dassault et ONERA, et votre appartenance au programme NVIDIA Inception témoignent d’un positionnement stratégique ambitieux auquel je souhaite contribuer activement. Mon profil me permet d’apporter une compréhension fine des données complexes, une capacité à développer des outils robustes, et une vision globale reliant modélisation, traitement du signal et mise en production.
+
+Je suis disponible rapidement et serais heureux d’échanger avec vous sur les opportunités au sein d’Ezako.
+
+Veuillez agréer, Messieurs, l’expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+}
+
+
+\end{document}

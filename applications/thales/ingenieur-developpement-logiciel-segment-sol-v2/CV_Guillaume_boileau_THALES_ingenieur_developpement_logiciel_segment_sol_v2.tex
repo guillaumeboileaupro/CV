@@ -1,0 +1,387 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for THALES - Ingénieur développement logiciel Segment Sol
+% Strong positioning: Ground Software / Space Software Engineer | Python, Java, C, mission data, integration, IVVQ, CI/CD
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Ingénieur Logiciel Segment Sol | LISA, CNES/ESA, données L0--L3, cycle en V, Python \& IVVQ}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Développement logiciel, intégration \& support opérationnel}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Plateforme logicielle industrielle CPMS connectée à des infrastructures de recharge, avec services backend, interfaces applicatives, données opérationnelles, flux d’échanges et contraintes d’exploitation.
+
+\textbf{Objectif :} Développer, intégrer et fiabiliser des services logiciels opérationnels, en intervenant sur les composants applicatifs, les interfaces de données, les incidents techniques, la validation des comportements et la documentation.
+
+\begin{itemize}
+  \item \textbf{Développement applicatif :} Contribution à des composants TypeScript, Angular et Node.js intégrés dans une plateforme opérationnelle.
+  \item \textbf{Backend / frontend :} Travail sur des interactions entre interfaces utilisateur, services applicatifs, données opérationnelles et comportements métier.
+  \item \textbf{Intégration de services :} Analyse des interfaces entre services logiciels, échanges de données, équipements connectés et contraintes terrain.
+  \item \textbf{Flux opérationnels :} Investigation d’échanges FTP, interruptions de flux, incohérences de données et comportements inattendus.
+  \item \textbf{Support technique :} Diagnostic d’incidents, analyse des causes, formalisation de constats et contribution aux actions de correction.
+  \item \textbf{Validation opérationnelle :} Vérification de la cohérence entre données applicatives, comportement des équipements et attendus fonctionnels.
+  \item \textbf{Pratiques projet :} Utilisation de Git, Linux, Zenhub, documentation technique et suivi collaboratif des sujets.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- Logiciel spatial, données mission \& validation}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Activités d’ingénierie logicielle et de R\&D pour le segment sol de la mission spatiale LISA ESA/NASA, impliquant Python scientifique, chaînes de données mission, niveaux L0--L3, intégration de modèles, simulation, validation technique et collaboration CNES/ESA.
+
+\textbf{Objectif :} Concevoir et développer des briques logicielles de segment sol permettant d’intégrer, comparer, valider et exploiter des données et modèles hétérogènes dans le cadre du cycle en V et des chaînes L0--L3 de la mission LISA.
+
+\begin{itemize}
+  \item \textbf{Développement logiciel Python :} Conception et développement de CATpyLISA, plateforme dédiée à l’intégration, la comparaison, la validation et la revue de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Segment sol LISA :} Développement de composants logiciels liés aux chaînes de données mission, à l’exploitation scientifique et à la validation des niveaux L0--L3.
+  \item \textbf{Cycle en V \& niveaux de données :} Connaissance approfondie de la logique cycle en V appliquée aux chaînes de données spatiales, depuis les données brutes L0 jusqu’aux produits L3.
+  \item \textbf{Intégration de modèles et produits :} Consolidation de contributions hétérogènes dans un cadre logiciel commun, traçable et reproductible, cohérent avec les besoins de validation du segment sol.
+  \item \textbf{Validation / IVVQ :} Définition de contrôles de cohérence, règles de comparaison, critères d’acceptation et procédures de vérification sur des produits de données mission.
+  \item \textbf{Analyse d’anomalies :} Identification d’écarts entre sorties, diagnostic des causes possibles, analyse d’impact et formalisation des points bloquants.
+  \item \textbf{Documentation technique :} Rédaction de supports, synthèses, hypothèses, limites, résultats et éléments de revue collaborative.
+  \item \textbf{Coordination technique :} Interface avec contributeurs scientifiques, logiciels et institutionnels dans un environnement spatial international.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Python, traitement de données \& performance système}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Travaux de data science pour instruments de précision et détecteurs de nouvelle génération, combinant données capteurs, bruit environnemental, modélisation statistique, machine learning et validation de performance.
+
+\textbf{Objectif :} Développer des workflows robustes pour analyser des données complexes, comparer des configurations, évaluer des performances et produire des résultats traçables.
+
+\begin{itemize}
+  \item \textbf{Pipelines Python :} Développement de workflows pour analyse de données, statistiques, performance, validation et reporting technique.
+  \item \textbf{Données capteurs :} Analyse de mesures environnementales, propagation, corrélations spatiales et impacts sur la performance système.
+  \item \textbf{Modélisation :} Mise en place de pipelines MCMC pour différentes configurations instrumentales et différents niveaux de bruit.
+  \item \textbf{Machine learning :} Structuration d’approches de réduction de bruits non stationnaires avec canaux témoins, machine learning et deep learning.
+  \item \textbf{Évaluation :} Utilisation de figures de mérite, analyses de sensibilité, contrôles de cohérence et comparaison de configurations.
+  \item \textbf{Support décisionnel :} Production de résultats traçables, synthèses techniques et recommandations pour parties prenantes internationales.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Calcul scientifique, simulation \& logiciel d’analyse}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Travaux de recherche appliquée liés à l’analyse de signaux faibles, à la simulation numérique, au traitement du signal et à la préparation de missions spatiales.
+
+\textbf{Objectif :} Développer des méthodes logicielles d’analyse et de simulation afin de produire des résultats scientifiques robustes, documentés et exploitables.
+
+\begin{itemize}
+  \item \textbf{Calcul scientifique :} Développement de workflows d’analyse, simulation, visualisation et validation de résultats.
+  \item \textbf{Simulation numérique :} Développement d’approches de simulation pour environnements complexes et grands jeux de données.
+  \item \textbf{Traitement du signal :} Méthodes pour analyser et séparer des signaux faibles et superposés.
+  \item \textbf{Validation :} Vérification de cohérence, comparaison de résultats, études de sensibilité et analyse de limites méthodologiques.
+  \item \textbf{Documentation :} Formalisation des méthodes, hypothèses, résultats et conclusions pour revue collaborative.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Ingénieur docteur orienté développement logiciel segment sol, avec une expérience directe sur LISA, les chaînes de données mission L0--L3, le cycle en V, Python, l’intégration de modèles, l’IVVQ et la documentation technique en environnement CNES/ESA.}
+
+Positionnement pour ce rôle : contribuer au développement de solutions logicielles sol pour programmes spatiaux, depuis l’analyse du besoin jusqu’à l’intégration, la validation, le support technique et l’amélioration continue.
+
+\begin{itemize}
+  \item Expérience directe du développement logiciel segment sol LISA, des chaînes de données mission, des niveaux L0--L3 et de la validation associée.
+  \item Expérience industrielle en développement logiciel, frontend/backend, intégration, support opérationnel et analyse d’incidents.
+  \item Culture spatiale forte : environnement CNES/ESA, cycle en V, données mission, modèles, simulation, validation, IVVQ et revues techniques.
+  \item Capacité à collaborer avec équipes système, IVVQ, opérations, support, qualité, cybersécurité et produit.
+  \item Bases solides en Git, Linux, Docker, CI/CD, documentation, tests, reproductibilité et anglais technique.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Supervised Machine Learning: Regression \& Classification}{DeepLearning.AI -- Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, Java, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, web development, algorithms and software engineering fundamentals.
+}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA / LISA Segment Sol -- Données mission L0--L3, intégration et validation}{Mission spatiale LISA ESA/NASA -- CNES/ESA}{2023 -- 2025}{}
+
+Développement logiciel lié au segment sol de LISA : structuration de données mission, niveaux L0--L3, intégration de modèles, comparaison de résultats, validation technique et revue collaborative de workflows scientifiques.
+
+\textbf{Rôle :} développement Python, structuration de données L0--L3, automatisation d’analyses, validation de modèles, analyse d’écarts, documentation technique et coordination avec plusieurs contributeurs.
+
+\textbf{Compétences mobilisées :} Python, NumPy, SciPy, pandas, Matplotlib, GitLab, segment sol, cycle en V, données L0--L3, IVVQ, data quality, validation de modèles, simulation, documentation.
+
+\divider
+
+\cvevent{VEV -- Développement logiciel, intégration \& support opérationnel}{Industrial software / Backend-frontend / Data flows}{2025 -- 2026}{}
+
+Développement et intégration de services logiciels pour une plateforme CPMS connectée à des infrastructures de recharge, avec analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs, support opérationnel et documentation technique.
+
+\textbf{Rôle :} développement TypeScript, Angular et Node.js, intégration logicielle, analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs et formalisation de constats techniques.
+
+\textbf{Compétences mobilisées :} TypeScript, Angular, Node.js, FTP, Linux, Git, analyse d’incidents, intégration logicielle, support opérationnel, documentation technique.
+
+\divider
+
+\cvevent{Workflows de simulation, traitement de données \& validation}{Scientific software / Mission preparation / Data processing}{2018 -- 2025}{}
+
+Développement de workflows numériques pour traiter des données complexes, analyser des signaux faibles, comparer des modèles, évaluer des performances et produire des résultats traçables.
+
+\textbf{Rôle :} calcul scientifique, simulation, traitement du signal, analyse de données, validation de résultats, diagnostic technique et reporting.
+
+\textbf{Compétences mobilisées :} Python, C, signal processing, simulation, statistiques, MCMC, validation, analyse de performance, documentation technique.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{Ground Software, spatial \& données mission}
+
+{\small
+\cvtag{Segment sol LISA}
+\cvtag{Ground Software}
+\cvtag{Systèmes spatiaux}
+\cvtag{Données mission L0--L3}
+\cvtag{Chaînes de traitement sol}
+\cvtag{Supervision / monitoring}
+\cvtag{Automatisation d’opérations -- awareness}
+\cvtag{Centres de contrôle -- awareness}
+\cvtag{Interfaces exploitation -- awareness}
+\cvtag{LISA ESA/NASA}
+\cvtag{CNES}
+\cvtag{ESA}
+\cvtag{Systèmes critiques}
+\cvtag{Cycle en V}
+\cvtag{Programmes spatiaux}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Développement logiciel}
+
+{\small
+\cvtag{Python}
+\cvtag{Java -- bases}
+\cvtag{C}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{Backend}
+\cvtag{Frontend}
+\cvtag{REST API}
+\cvtag{SQL}
+\cvtag{Scripts}
+\cvtag{Applications métier}
+\cvtag{Code review}
+\cvtag{Documentation technique}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Architecture, intégration \& cloud}
+
+{\small
+\cvtag{Microservices -- ramp-up}
+\cvtag{Services distribués -- awareness}
+\cvtag{Cloud -- ramp-up}
+\cvtag{Docker}
+\cvtag{Kubernetes -- ramp-up}
+\cvtag{CI/CD}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{Linux}
+\cvtag{Bash}
+\cvtag{Intégration logicielle}
+\cvtag{Performance applicative -- awareness}
+\cvtag{Scalabilité -- awareness}
+\cvtag{Sécurité logicielle -- awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{IVVQ, qualité \& support}
+
+{\small
+\cvtag{IVVQ}
+\cvtag{Validation logicielle}
+\cvtag{Validation système}
+\cvtag{Tests fonctionnels}
+\cvtag{Non-régression -- awareness}
+\cvtag{Contrôles de cohérence}
+\cvtag{Analyse d’anomalies}
+\cvtag{Root cause analysis}
+\cvtag{Support technique}
+\cvtag{Support opérationnel}
+\cvtag{Traçabilité}
+\cvtag{Qualité logicielle}
+\cvtag{Amélioration continue}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Data, simulation \& analyse}
+
+{\small
+\cvtag{Data processing}
+\cvtag{Simulation numérique}
+\cvtag{Traitement du signal}
+\cvtag{Analyse de performance}
+\cvtag{Analyse de bruit}
+\cvtag{Statistiques}
+\cvtag{MCMC}
+\cvtag{Machine Learning}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{pandas}
+\cvtag{Matplotlib}
+\cvtag{Jupyter}
+\cvtag{Data quality}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Méthodes, collaboration \& outils}
+
+{\small
+\cvtag{Agile / Scrum}
+\cvtag{Kanban}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{OpenSearch}
+\cvtag{Sentry}
+\cvtag{Power BI}
+\cvtag{Anglais technique}
+\cvtag{Équipe pluridisciplinaire}
+\cvtag{Interfaces système / IVVQ / opérations}
+\cvtag{Curiosité technique}
+\cvtag{Autonomie}
+\cvtag{Rigueur}
+}
+
+\end{document}

@@ -1,0 +1,357 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Intheair / R&D GPR, Geophysics & Drone Data Fusion
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Ingénieur R\&D Physique, Signal \& IA | Détection faible SNR, Python, Fusion de données, Validation terrain}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- System Integration, Data Flows \& Operational Validation}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Industrial software environment for an EV charging CPMS platform connected to operational charging stations, field equipment and hardware/software interfaces.
+
+\textbf{Objective:} Support reliable operation of connected infrastructure through software integration, data-flow checks, operational monitoring, anomaly analysis and validation of technical behaviours.
+
+\begin{itemize}
+  \item \textbf{Operational data flows:} Implemented and monitored FTP-based exchanges between software services and external systems.
+  \item \textbf{Anomaly analysis:} Investigated interrupted exchanges, inconsistent flows and defects affecting service behaviour.
+  \item \textbf{Validation:} Performed checks in production-like environments to assess continuity, expected behaviour and data consistency.
+  \item \textbf{Software support:} Maintained TypeScript, Angular and Node.js components and documented technical findings.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer -- Signal Processing, Modelling \& Validation Workflows}}{CNES, Laboratoire Lagrange, Observatoire de la Côte d'Azur}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} R\&D activities for the LISA ESA/NASA space mission, involving physical modelling, weak-signal analysis, simulation, software chains, data-processing workflows and validation campaigns.
+
+\textbf{Objective:} Develop and validate scientific analysis workflows able to compare complex models, process large datasets and assess weak physical signatures under strong noise and consistency constraints.
+
+\begin{itemize}
+  \item \textbf{Weak-signal analysis:} Worked on low signal-to-noise physical backgrounds and complex superposed signals.
+  \item \textbf{Signal processing:} Developed methods for spectral interpretation, model comparison and performance assessment.
+  \item \textbf{Python scientific platform:} Developed CATpyLISA for large-scale model integration, comparison and validation.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Validation campaigns:} Prepared and analysed comparison campaigns on simulated outputs and heterogeneous models.
+  \item \textbf{Reproducible workflows:} Used Python, Linux, Git/GitLab and Jupyter-style environments for traceable analyses.
+  \item \textbf{Collaboration:} Worked with international contributors across software, systems, modelling and instrumentation.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Noise Analysis, Statistical Modelling \& Performance Validation}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} R\&D work for Einstein Telescope and next-generation gravitational-wave detector studies, combining environmental noise analysis, detector-configuration studies, statistical modelling and weak-signal detection.
+
+\textbf{Objective:} Analyse the impact of environmental noise on detector sensitivity, develop statistical workflows for different detector configurations and support technical recommendations on noise budgets, geometry and experimental validation.
+
+\begin{itemize}
+  \item \textbf{Geophysical data analysis:} Used seismometer measurements to analyse propagation effects and spatial correlations.
+  \item \textbf{Noise studies:} Investigated seismic and Newtonian noise impacts on detector sensitivity.
+  \item \textbf{Experimental preparation:} Contributed to protocols, sensor selection and deployment preparation for low-noise campaigns.
+  \item \textbf{Scientific Python workflows:} Developed reproducible pipelines for signal analysis, statistical modelling and validation.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer -- Simulation, Signal Diagnostics \& Scientific Computing}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Software and analysis activities for gravitational-wave mission preparation, involving simulation, signal decomposition, diagnostic analysis and validation of complex physical environments.
+
+\textbf{Objective:} Develop robust analysis workflows for weak-signal detection, simulation, uncertainty studies and interpretation of complex datasets.
+
+\begin{itemize}
+  \item \textbf{Signal decomposition:} Developed methods to separate overlapping low-SNR signals.
+  \item \textbf{Simulation:} Built approaches for complex signal environments and uncertainty studies.
+  \item \textbf{Diagnostics:} Investigated noise sources through cross-sensor correlation analyses.
+  \item \textbf{Scientific Python:} Developed Python-based analysis, modelling and reproducible workflows.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile for Intheair}
+
+\textbf{R\&D engineer and PhD physicist with experience in signal processing, noise analysis, scientific Python and validation of complex physical models.} Background developed across space systems, precision instrumentation, connected infrastructure and scientific software.
+
+Transferable strengths for this role: physical modelling, low-SNR analysis, reproducible data workflows, experimental reasoning and validation of complex measurements.
+
+\begin{itemize}
+  \item Strong background in physics, modelling and interpretation of complex signals.
+  \item Experience in low-SNR analysis, noise diagnostics and performance assessment.
+  \item Python development for reproducible data-processing and validation workflows.
+  \item Used to working across data, software, physical systems and field constraints.
+  \item Able to ramp up quickly on GPR, geophysics and drone-based data workflows.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI -- Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, web development, algorithms and software engineering fundamentals.
+}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{LISA / CATpyLISA -- Weak-Signal Analysis, Model Validation \& Scientific Python}{ESA/NASA Space Mission -- Large-scale International Collaboration}{2023 -- 2025}{Nice, France}
+
+Python workflows for weak-signal analysis, model comparison and validation of complex physical data.
+
+\divider
+
+\cvevent{Noise Diagnostics \& Performance Analysis for Precision Instrumentation}{Signal Processing / Statistical Modelling / Environmental Effects}{2021 -- 2023}{Antwerp, Belgium}
+
+Statistical and signal-analysis workflows to identify environmental and instrumental noise sources.
+
+\divider
+
+\cvevent{VEV -- Connected Infrastructure, Operational Data Flows \& System Validation}{Industrial Software / Field Equipment Interfaces}{2025 -- 2026}{Valbonne, France}
+
+Software integration, operational monitoring and validation for a platform connected to field infrastructure.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Signal processing \& weak-signal detection}
+
+{\small
+\cvtag{Signal Processing}
+\cvtag{Weak-Signal Detection}
+\cvtag{Low SNR Analysis}
+\cvtag{Noise Reduction}
+\cvtag{Spectral Analysis}
+\cvtag{Filtering}
+\cvtag{Correlation Analysis}
+\cvtag{Signal Decomposition}
+\cvtag{Anomaly Detection}
+\cvtag{Performance Analysis}
+\cvtag{Uncertainty Analysis}
+\cvtag{Model Comparison}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Physics, radar \& geophysics ramp-up}
+
+{\small
+\cvtag{Physics}
+\cvtag{Electromagnetic Modelling Awareness}
+\cvtag{Propagation Effects}
+\cvtag{Radar / GPR Ramp-Up}
+\cvtag{Radargram Interpretation Ramp-Up}
+\cvtag{Near-Surface Geophysics Ramp-Up}
+\cvtag{Subsurface Mapping Ramp-Up}
+\cvtag{Sensor Calibration Logic}
+\cvtag{Experimental Protocols}
+\cvtag{Field Validation}
+\cvtag{Physical Modelling}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Python, data science \& AI}
+
+{\small
+\cvtag{Python}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{pandas}
+\cvtag{scikit-learn}
+\cvtag{Matplotlib}
+\cvtag{Jupyter}
+\cvtag{Machine Learning}
+\cvtag{Data Cleaning}
+\cvtag{Feature Extraction}
+\cvtag{Classification}
+\cvtag{Regression}
+\cvtag{Scientific Computing}
+\cvtag{Reproducible Workflows}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Geospatial \& multi-sensor data}
+
+{\small
+\cvtag{Data Fusion}
+\cvtag{Multi-Source Data}
+\cvtag{Geospatial Data Ramp-Up}
+\cvtag{GIS Ramp-Up}
+\cvtag{QGIS Ramp-Up}
+\cvtag{LiDAR Awareness}
+\cvtag{Photogrammetry Awareness}
+\cvtag{GNSS RTK Awareness}
+\cvtag{Digital Twins Awareness}
+\cvtag{Mapping Workflows}
+\cvtag{Coordinate Systems Ramp-Up}
+\cvtag{Data Georeferencing Ramp-Up}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Validation, software \& industrialisation}
+
+{\small
+\cvtag{R\&D Validation}
+\cvtag{Validation Strategy}
+\cvtag{Test Protocols}
+\cvtag{Field-Test Logic}
+\cvtag{Technical Reporting}
+\cvtag{Traceability}
+\cvtag{Quality Follow-Up}
+\cvtag{Linux}
+\cvtag{Git / GitLab}
+\cvtag{GitHub}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Bash}
+\cvtag{SQL}
+\cvtag{C}
+\cvtag{C++}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Collaboration \& R\&D delivery}
+
+{\small
+\cvtag{Technical English}
+\cvtag{International Environment}
+\cvtag{Stakeholder Coordination}
+\cvtag{Cross-Functional Collaboration}
+\cvtag{Agile}
+\cvtag{Kanban}
+\cvtag{Backlog Follow-Up}
+\cvtag{Jira}
+\cvtag{Confluence}
+\cvtag{Zenhub}
+\cvtag{Research-to-Product}
+\cvtag{Deeptech}
+\cvtag{Industrial Software}
+\cvtag{Field Constraints}
+\cvtag{Autonomy}
+}
+
+\end{document}

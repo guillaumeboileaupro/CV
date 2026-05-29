@@ -1,0 +1,325 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Thales - IS Data Engineer / Data Governance / Data Catalog / Datalake
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{IS Data Engineer | Data Governance, Data Quality, Data Cataloging, Datalake \& Application Support}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \github{guillaume-boileaupro}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - Operational Data, Application Support \& Industrial Interfaces}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and support of software services for an EV charging infrastructure CPMS platform connected to charging stations, operational data flows, industrial interfaces and field equipment.
+
+\textbf{Objective:} Support reliable operational data exchanges, application behaviour analysis, production diagnostics and coordination between software services, infrastructure constraints and user needs.
+
+\begin{itemize}
+  \item \textbf{Operational data flows:} Implemented and monitored FTP-based data exchange services used for infrastructure operation, technical follow-up and platform data handling.
+  \item \textbf{Application support:} Investigated production issues involving data exchanges, service behaviour, interface continuity, operational reliability and platform constraints.
+  \item \textbf{Data consistency:} Checked consistency between CPMS platform services, operational data flows, charging station behaviour and expected business logic.
+  \item \textbf{Industrial interfaces:} Worked on services connected to EV charging stations, electrical equipment status, field data and maintenance-related diagnostics.
+  \item \textbf{Incident analysis:} Used logs, application behaviour analysis and technical diagnostics to identify root causes and support service continuity.
+  \item \textbf{User support:} Clarified issues with technical and operational stakeholders, structured feedback and documented observed behaviours.
+  \item \textbf{Agile environment:} Used Zenhub for task tracking, backlog follow-up and coordination within an iterative software development environment.
+  \item \textbf{Software development:} Developed web and backend services using TypeScript, Angular and Node.js in a production-oriented industrial context.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Data Integration, Data Quality \& Validation Platform}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering and R\&D activities for the LISA ESA/NASA space mission, involving large-scale simulations, heterogeneous model outputs, technical validation, data structuring and international coordination.
+
+\textbf{Objective:} Structure, validate, document and exploit complex datasets while supporting contributors, comparison campaigns, reproducibility, technical decision-making and shared data practices.
+
+\begin{itemize}
+  \item \textbf{Data engineering:} Developed Python-based workflows to ingest, structure, process, compare and validate heterogeneous simulation outputs from multiple contributors.
+  \item \textbf{Data quality:} Implemented checks focused on data consistency, completeness, traceability, reproducibility, usability and comparison of technical outputs.
+  \item \textbf{Data cataloging logic:} Structured model configurations, simulation products, metadata-like information, analysis outputs and validation evidence for reuse and review.
+  \item \textbf{Validation platform:} Built CATpyLISA, a Python platform for model integration, data comparison, technical validation and review-oriented analysis workflows.
+  \item \textbf{Governance and good practices:} Helped define shared practices for data usage, result comparison, documentation, reproducibility and technical review.
+  \item \textbf{Stakeholder interface:} Acted as a technical interface between users, contributors and project stakeholders to clarify needs, constraints and expected outputs.
+  \item \textbf{Technical documentation:} Used Confluence to organise technical documentation, coordination notes, validation follow-up and knowledge sharing.
+  \item \textbf{Roadmap support:} Identified user needs, workflow limitations, technical improvements and data issues to support the evolution of internal tools.
+  \item \textbf{Technical synthesis:} Produced structured reports, validation summaries, review material and decision-support documents for complex data workflows.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Statistical Pipelines, Data Quality \& Technical Analysis}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement technical environment linked to gravitational-wave detector performance.
+
+\textbf{Objective:} Build robust data analysis pipelines, validate complex datasets and produce documented results to support understanding of system performance and technical risks.
+
+\begin{itemize}
+  \item \textbf{Data pipelines:} Developed Python-based workflows for noise source identification, characterization, mitigation and sensitivity studies.
+  \item \textbf{Data validation:} Processed heterogeneous and noisy datasets with attention to consistency, reproducibility, uncertainty and robustness of conclusions.
+  \item \textbf{Statistical analysis:} Applied Bayesian inference and MCMC methods to extract reliable information from complex and incomplete data environments.
+  \item \textbf{Technical reporting:} Transformed complex datasets and statistical results into structured conclusions for technical stakeholders.
+  \item \textbf{Decision support:} Helped identify environmental and instrumental constraints affecting next-generation detector design and performance.
+  \item \textbf{Technical communication:} Worked in English within international collaborations and multidisciplinary technical environments.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Simulation, Data Processing \& Validation}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} R\&D activities for gravitational-wave mission preparation, involving signal analysis, simulation, technical documentation and characterization of complex low-SNR data environments.
+
+\textbf{Objective:} Develop analysis methods, process complex simulation outputs, document results and support validation activities in demanding system environments.
+
+\begin{itemize}
+  \item \textbf{Simulation workflows:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Data processing:} Processed, compared and interpreted complex outputs produced by numerical models and signal-processing pipelines.
+  \item \textbf{Validation logic:} Developed methods for separating overlapping low-SNR signals and assessing data quality in challenging conditions.
+  \item \textbf{Technical investigations:} Investigated noise sources through cross-sensor correlation analyses in diagnostic contexts.
+  \item \textbf{Documentation:} Documented methods, assumptions, outputs and conclusions for collaborative review and reproducibility.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile for Thales}
+
+\textbf{IS Data Engineer-oriented profile with strong experience in data engineering, data quality, data validation, technical documentation, application support and coordination of complex data workflows}. Background developed through major international collaborations including \textbf{LISA ESA/NASA}, \textbf{LIGO--Virgo--KAGRA} and \textbf{Einstein Telescope}, complemented by recent industrial software experience involving operational data flows, production diagnostics and connected equipment.
+
+For the \textbf{IS Data Engineer / Data Galaxy / Datalake} role, I bring a strong ability to structure information, support data cataloging practices, improve data quality, contribute to governance logic, analyse incidents, support users and connect technical constraints with business needs.
+
+\begin{itemize}
+  \item Strong experience in data structuring, validation, consistency checks, reproducibility and traceability.
+  \item Practical experience with complex data workflows involving heterogeneous sources, simulation products, operational data and technical outputs.
+  \item Knowledge of AWS S3 principles, object storage, bucket-based organisation, data ingestion and datalake logic.
+  \item Ability to support data cataloging and metadata-oriented practices through structured documentation, repositories and reusable workflows.
+  \item Experience investigating application and production issues through logs, monitoring, technical diagnostics and root-cause analysis.
+  \item Ability to act as an interface between users, software teams, technical contributors and operational stakeholders.
+  \item Practical use of collaborative tools including Confluence for documentation, Zenhub for activity follow-up, Jira for issue tracking and OpenSearch/log-based analysis in operational contexts.
+  \item Understanding of data governance principles: ownership, consistency, quality, completeness, traceability, documentation and controlled reuse.
+  \item Strong analytical mindset for transforming complex technical information into clear summaries and decision-support material.
+  \item Comfortable working with cloud-oriented data environments, object storage logic and datalake principles.
+  \item Strong communication skills in English within international and multidisciplinary environments.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning - Regression \& Classification}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA - Data Integration, Cataloging Logic \& Validation Platform}{Python Platform for the LISA ESA/NASA Space Mission}{2023 -- 2025}{}
+
+Development of a Python platform dedicated to large-scale model integration, data structuring, comparison, validation and technical review for LISA mission-level analysis workflows.
+
+\textbf{Role:} Data engineering, technical coordination, data structuring, documentation support, validation reporting, consistency checks and interaction with multiple contributors.
+
+\textbf{Relevance for IS Data Engineering:} Work involving heterogeneous datasets, structured repositories, traceability of assumptions and outputs, quality checks, reusable workflows, documentation, cataloging-like logic and knowledge capitalisation.
+
+\divider
+
+\cvevent{Operational Data Flows - EV Charging Platform}{Application Interfaces, Production Diagnostics and Data Exchange Services}{2025 -- 2026}{}
+
+Contribution to operational data exchange mechanisms and software services within an EV charging infrastructure platform connected to field equipment and production constraints.
+
+\textbf{Role:} Development and support of data exchange services, incident investigation, application behaviour analysis, operational feedback and coordination with technical stakeholders.
+
+\textbf{Relevance for Application Support:} Work involving data consistency, interface continuity, logs, operational reliability, production diagnostics, user support and service follow-up.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Data Engineering, Governance \& Cataloging}
+
+{\small
+\cvtag{Data Engineering}
+\cvtag{Data Governance}
+\cvtag{Data Quality}
+\cvtag{Data Cataloging}
+\cvtag{Data Galaxy}
+\cvtag{Datalake}
+\cvtag{AWS S3}
+\cvtag{Object Storage}
+\cvtag{Bucket Organisation}
+\cvtag{Data Ingestion}
+\cvtag{Data Structuring}
+\cvtag{Data Repositories}
+\cvtag{Metadata}
+\cvtag{Data Lineage}
+\cvtag{Traceability}
+\cvtag{Data Completeness}
+\cvtag{Data Consistency}
+\cvtag{Controlled Reuse}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Application Support, Incident Analysis \& User Interface}
+
+{\small
+\cvtag{Application Support}
+\cvtag{Incident Analysis}
+\cvtag{Root-Cause Analysis}
+\cvtag{Log Analysis}
+\cvtag{Monitoring}
+\cvtag{OpenSearch}
+\cvtag{Production Diagnostics}
+\cvtag{Operational Data Flows}
+\cvtag{Interface Continuity}
+\cvtag{User Support}
+\cvtag{Business Needs}
+\cvtag{Technical Support}
+\cvtag{Service Reliability}
+\cvtag{Issue Follow-Up}
+\cvtag{Roadmap Support}
+\cvtag{Best Practices}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Software, Data Pipelines \& Technical Tools}
+
+{\small
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{Bash}
+\cvtag{Linux}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{GitHub}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{ETL Concepts}
+\cvtag{Data Pipelines}
+\cvtag{REST API}
+\cvtag{FTP}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{JavaScript}
+\cvtag{C}
+\cvtag{Matlab}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Coordination, Documentation \& Technical Analysis}
+
+{\small
+\cvtag{Technical Documentation}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{Stakeholder Coordination}
+\cvtag{Technical Coordination}
+\cvtag{Reporting}
+\cvtag{Synthesis Reports}
+\cvtag{Decision Support}
+\cvtag{Review Preparation}
+\cvtag{Knowledge Capitalisation}
+\cvtag{Process Improvement}
+\cvtag{Validation Follow-Up}
+\cvtag{Verification}
+\cvtag{Reproducibility}
+\cvtag{Complex Systems}
+\cvtag{Space Systems}
+}
+
+\end{document}

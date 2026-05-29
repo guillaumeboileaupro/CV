@@ -1,0 +1,344 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for MERITIS - Développeur Senior Python
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Développeur Senior Python / Software Engineer | Django, FastAPI, Flask, performance, intégration \& CI/CD}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Développement logiciel, intégration \& support opérationnel}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Plateforme logicielle industrielle CPMS connectée à des infrastructures de recharge, avec services backend, interfaces applicatives, données opérationnelles, flux d’échanges et contraintes d’exploitation.
+
+\textbf{Objectif :} Développer, intégrer et fiabiliser des services logiciels opérationnels, en intervenant sur les composants applicatifs, les interfaces de données, les incidents techniques, la validation des comportements et la documentation.
+
+\begin{itemize}
+  \item \textbf{Développement applicatif :} Contribution à des composants TypeScript, Angular et Node.js intégrés dans une plateforme opérationnelle.
+  \item \textbf{Backend / frontend :} Travail sur des interactions entre interfaces utilisateur, services applicatifs, données opérationnelles et comportements métier.
+  \item \textbf{Intégration de services :} Analyse des interfaces entre services logiciels, échanges de données, équipements connectés et contraintes terrain.
+  \item \textbf{Flux opérationnels :} Investigation d’échanges FTP, interruptions de flux, incohérences de données et comportements inattendus.
+  \item \textbf{Support technique :} Diagnostic d’incidents, analyse des causes, formalisation de constats et contribution aux actions de correction.
+  \item \textbf{Validation opérationnelle :} Vérification de la cohérence entre données applicatives, comportement des équipements et attendus fonctionnels.
+  \item \textbf{Pratiques projet :} Utilisation de Git, Linux, Zenhub, documentation technique et suivi collaboratif des sujets.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- Plateforme Python, performance \& validation logicielle}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Développement logiciel Python et R\&D pour la mission spatiale LISA ESA/NASA, impliquant chaînes de données, simulation, intégration de modèles, analyse de performance, validation technique et collaboration internationale.
+
+\textbf{Objectif :} Concevoir et maintenir une plateforme Python robuste permettant d’intégrer, comparer, valider et exploiter des modèles et données hétérogènes dans un environnement logiciel complexe.
+
+\begin{itemize}
+  \item \textbf{Développement Python :} Conception et développement de CATpyLISA, plateforme Python pour intégration, comparaison, validation et revue de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Code existant complexe :} Reprise, adaptation et intégration de contributions hétérogènes dans un cadre logiciel commun, traçable et reproductible.
+  \item \textbf{Architecture logicielle :} Structuration de modules, workflows, entrées/sorties, configurations, résultats intermédiaires et produits d’analyse.
+  \item \textbf{Performance \& robustesse :} Analyse de traitements numériques, volumes de données, comportements inattendus, limites de performance et effets de configuration.
+  \item \textbf{Debugging \& anomalies :} Identification d’écarts entre sorties, diagnostic des causes possibles, analyse d’impact et formalisation des points bloquants.
+  \item \textbf{Validation logicielle :} Définition de contrôles de cohérence, règles de comparaison, critères d’acceptation et procédures de vérification.
+  \item \textbf{Documentation technique :} Rédaction de supports, synthèses, hypothèses, limites, résultats et éléments de revue collaborative.
+  \item \textbf{Test Python Meritis :} Test Python réussi avec Meritis, confirmant le niveau technique sur le langage.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Python, pipelines de données \& modélisation statistique}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Travaux de data science pour instruments de précision et détecteurs de nouvelle génération, combinant données capteurs, bruit environnemental, modélisation statistique, machine learning et validation de performance.
+
+\textbf{Objectif :} Développer des workflows Python robustes pour analyser des données complexes, comparer des configurations, évaluer des performances et produire des résultats traçables.
+
+\begin{itemize}
+  \item \textbf{Pipelines Python :} Développement de workflows pour analyse de données, statistiques, performance, validation et reporting technique.
+  \item \textbf{Données complexes :} Analyse de mesures environnementales, propagation, corrélations spatiales et impacts sur la performance système.
+  \item \textbf{Modélisation :} Mise en place de pipelines MCMC pour différentes configurations instrumentales et différents niveaux de bruit.
+  \item \textbf{Machine learning :} Structuration d’approches de réduction de bruits non stationnaires avec canaux témoins, machine learning et deep learning.
+  \item \textbf{Évaluation :} Utilisation de figures de mérite, analyses de sensibilité, contrôles de cohérence et comparaison de configurations.
+  \item \textbf{Documentation :} Production de résultats traçables, synthèses techniques et recommandations pour parties prenantes internationales.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Python scientifique, simulation \& logiciel d’analyse}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Travaux de recherche appliquée liés à l’analyse de signaux faibles, à la simulation numérique, au traitement du signal et à la préparation de missions spatiales.
+
+\textbf{Objectif :} Développer des méthodes logicielles d’analyse et de simulation afin de produire des résultats scientifiques robustes, documentés et exploitables.
+
+\begin{itemize}
+  \item \textbf{Calcul scientifique :} Développement de workflows Python d’analyse, simulation, visualisation et validation de résultats.
+  \item \textbf{Simulation numérique :} Développement d’approches de simulation pour environnements complexes et grands jeux de données.
+  \item \textbf{Traitement du signal :} Méthodes pour analyser et séparer des signaux faibles et superposés.
+  \item \textbf{Validation :} Vérification de cohérence, comparaison de résultats, études de sensibilité et analyse de limites méthodologiques.
+  \item \textbf{Documentation :} Formalisation des méthodes, hypothèses, résultats et conclusions pour revue collaborative.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Développeur Senior Python / Software Engineer avec 8 ans d’expérience Python sur plateformes logicielles complexes, workflows de données, intégration, performance, validation et documentation technique.}
+
+Positionnement pour ce rôle : intervenir sur du code Python complexe, reprendre et fiabiliser des applications existantes, analyser des problèmes de performance, contribuer aux choix techniques et collaborer avec des équipes backend / DevOps.
+
+\begin{itemize}
+  \item Python avancé depuis 2018 : plateformes, pipelines, modules, workflows de données, validation, simulation et automatisation.
+  \item Connaissance de Django, FastAPI et Flask ; bases solides backend, API, structuration applicative et bonnes pratiques Python.
+  \item Expérience en développement logiciel industriel : intégration, support opérationnel, analyse d’incidents, documentation et correction.
+  \item Capacité à diagnostiquer rapidement des problèmes complexes : performance, comportements inattendus, cohérence des sorties et anomalies.
+  \item Git, Linux, Docker, CI/CD, qualité logicielle, revue de code, tests, traçabilité et anglais technique.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.}
+
+\divider
+
+\cvevent{Python Backend \& Web Frameworks}{Django, FastAPI, Flask}{2024 -- 2026}{Formation continue / pratique personnelle}
+
+\small{Développement backend Python, APIs, logique web, structuration d’applications, bonnes pratiques et montée en compétence sur les frameworks Python modernes.}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, web development, algorithms and software engineering fundamentals.}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA -- Plateforme Python complexe d’intégration et validation}{Python software / Scientific platform / Complex workflows}{2023 -- 2025}{}
+
+Plateforme Python dédiée à l’intégration de modèles, à la structuration de données, à la comparaison de résultats, à la validation technique et à la revue collaborative de workflows scientifiques.
+
+\textbf{Rôle :} développement Python, structuration de modules, intégration de contributions, automatisation d’analyses, validation de résultats, analyse d’écarts, debugging et documentation technique.
+
+\textbf{Compétences mobilisées :} Python, NumPy, SciPy, pandas, Matplotlib, GitLab, architecture de workflows, validation, data quality, performance numérique, documentation.
+
+\divider
+
+\cvevent{VEV -- Développement logiciel, intégration \& support opérationnel}{Industrial software / Backend-frontend / Data flows}{2025 -- 2026}{}
+
+Développement et intégration de services logiciels pour une plateforme CPMS connectée à des infrastructures de recharge, avec analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs, support opérationnel et documentation technique.
+
+\textbf{Rôle :} développement TypeScript, Angular et Node.js, intégration logicielle, analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs et formalisation de constats techniques.
+
+\textbf{Compétences mobilisées :} TypeScript, Angular, Node.js, FTP, Linux, Git, analyse d’incidents, intégration logicielle, support opérationnel, documentation technique.
+
+\divider
+
+\cvevent{Python data \& performance workflows}{Data processing / Numerical performance / Model validation}{2018 -- 2025}{}
+
+Développement de workflows Python pour traiter des données complexes, analyser des signaux faibles, comparer des modèles, évaluer des performances et produire des résultats traçables.
+
+\textbf{Rôle :} calcul scientifique, simulation, traitement de données, analyse de performance, diagnostic technique, validation, reporting et documentation.
+
+\textbf{Compétences mobilisées :} Python, C, NumPy, SciPy, pandas, statistiques, MCMC, traitement du signal, optimisation logique, validation, documentation technique.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{Python senior \& frameworks}
+
+{\small
+\cvtag{Python}
+\cvtag{Python avancé}
+\cvtag{Django}
+\cvtag{FastAPI}
+\cvtag{Flask}
+\cvtag{Backend}
+\cvtag{APIs}
+\cvtag{REST API}
+\cvtag{Tests Python}
+\cvtag{Revue de code}
+\cvtag{Debugging}
+\cvtag{Code existant complexe}
+\cvtag{Test Python Meritis réussi}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Architecture backend \& production}
+
+{\small
+\cvtag{Architectures backend}
+\cvtag{Microservices -- ramp-up}
+\cvtag{Event-driven -- awareness}
+\cvtag{Services distribués -- awareness}
+\cvtag{Cloud public -- ramp-up}
+\cvtag{Kubernetes -- ramp-up}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{Linux}
+\cvtag{Bash}
+\cvtag{SQL}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Performance, mémoire \& fiabilisation}
+
+{\small
+\cvtag{Analyse de performance}
+\cvtag{Optimisation applicative}
+\cvtag{Profiling -- ramp-up}
+\cvtag{Fuites mémoire -- awareness}
+\cvtag{Robustesse}
+\cvtag{Scalabilité -- awareness}
+\cvtag{Analyse d’anomalies}
+\cvtag{Root cause analysis}
+\cvtag{Diagnostic technique}
+\cvtag{Support opérationnel}
+\cvtag{Logs}
+\cvtag{OpenSearch}
+\cvtag{Sentry}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Data, calcul scientifique \& validation}
+
+{\small
+\cvtag{Data processing}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{pandas}
+\cvtag{Matplotlib}
+\cvtag{Jupyter}
+\cvtag{Simulation numérique}
+\cvtag{Statistiques}
+\cvtag{MCMC}
+\cvtag{Machine Learning}
+\cvtag{Data quality}
+\cvtag{Validation de modèles}
+\cvtag{Contrôles de cohérence}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Software engineering \& collaboration}
+
+{\small
+\cvtag{Software Engineering}
+\cvtag{Documentation technique}
+\cvtag{Qualité logicielle}
+\cvtag{Traçabilité}
+\cvtag{Agile}
+\cvtag{Kanban}
+\cvtag{Zenhub}
+\cvtag{Jira}
+\cvtag{Confluence}
+\cvtag{Collaboration DevOps}
+\cvtag{Autonomie rapide}
+\cvtag{Esprit collaboratif}
+\cvtag{Anglais technique}
+}
+
+\end{document}

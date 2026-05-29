@@ -1,0 +1,428 @@
+%%%%%%%%%%%%%%%%%
+% CV targeted for TerX / OneSide Technologies - Ingénieur Développement Moyens d'Essais
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Ingénieur Moyens d'Essais | Bancs de test, acquisition, LabVIEW, signal \& validation}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - System Integration, Hardware Interfaces \& Test Diagnostics}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and integration of software services for an EV charging CPMS platform connected to operational infrastructure, charging stations, data flows and hardware systems.
+
+\textbf{Objective:} Support reliable software integration, operational data-flow continuity, hardware/software interface diagnostics and test activities on charging infrastructure.
+
+\begin{itemize}
+  \item \textbf{Software development:} Developed and maintained web and backend services using TypeScript, Angular and Node.js in an operational industrial environment.
+  \item \textbf{System integration:} Contributed to the integration and maintenance of software services interacting with operational infrastructure and connected equipment.
+  \item \textbf{Hardware/software interfaces:} Analysed interactions between platform services, connected charging stations, data exchanges, electrical circuits, communication buses and operational behaviours.
+  \item \textbf{Electrical test support:} Worked on charging-station interfaces, circuits and buses used for testing, diagnostics and functional checks.
+  \item \textbf{Field interventions:} Performed hands-on maintenance on EV charging stations for test activities, including soldering, electrical checks and support to integration tests.
+  \item \textbf{Electrical safety:} Held B0 / BE Essais electrical authorization for test-related activities on charging infrastructure.
+  \item \textbf{Data flows:} Implemented, monitored and corrected FTP-based operational data exchange services.
+  \item \textbf{Issue analysis:} Investigated incidents involving software behaviour, operational data exchanges, interface continuity and hardware-connected systems.
+  \item \textbf{Coordination:} Worked with technical stakeholders to clarify issues, follow priorities and support iterative delivery.
+  \item \textbf{Tooling:} Used Zenhub, Git-based workflows, Confluence, OpenSearch and Sentry for delivery follow-up, diagnostics and technical documentation.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Test Logic, Signal Processing, Validation \& Technical Coordination}}{CNES, Laboratoire Lagrange, Observatoire de la Côte d'Azur}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering and data-analysis activities for the LISA ESA/NASA space mission, involving complex software chains, signal analysis, simulation workflows, validation campaigns and international coordination.
+
+\textbf{Objective:} Develop, integrate and validate Python-based analysis workflows under strong consistency, traceability, performance and verification constraints.
+
+\begin{itemize}
+  \item \textbf{Validation workflows:} Structured comparison, verification and validation logic for heterogeneous simulation outputs and technical deliverables.
+  \item \textbf{Software platform:} Developed CATpyLISA, a Python platform for large-scale model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Signal processing:} Analysed weak, noisy and superposed signals using spectral methods, signal/noise separation logic and performance metrics.
+  \item \textbf{Measurement-oriented analysis:} Worked on simulated and instrument-related data where performance depends on noise, sensitivity, acquisition quality and signal interpretation.
+  \item \textbf{Automated test logic:} Defined repeatable analysis sequences, comparison rules, consistency checks and acceptance-oriented diagnostics.
+  \item \textbf{Critical systems context:} Worked in a high-rigor space mission environment involving traceability, technical evidence, review logic and mission-level performance objectives.
+  \item \textbf{Technical studies:} Analysed sensitivity to modelling assumptions, numerical parameters, data-processing choices and configuration changes.
+  \item \textbf{Data reliability:} Ensured traceability of inputs, configurations, outputs, assumptions, metadata and validation results.
+  \item \textbf{Technical reporting:} Produced analysis notes, validation summaries, technical documentation and review material for contributors and project stakeholders.
+  \item \textbf{Coordination:} Coordinated contributors, supervised interns and supported technical activities across multiple stakeholders in an international environment.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Noise Diagnostics, Measurement Analysis \& Performance Validation}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement international environment linked to gravitational-wave detector performance.
+
+\textbf{Objective:} Identify, characterize and mitigate factors affecting measurement quality and system sensitivity using statistical modelling, signal processing and validation-oriented methods.
+
+\begin{itemize}
+  \item \textbf{Test data analysis:} Analysed measurement and simulation outputs to identify abnormal behaviours, noise contributions and degradation sources.
+  \item \textbf{Signal processing:} Analysed instrumental and environmental effects affecting measurement quality, sensitivity and stability.
+  \item \textbf{Noise diagnostics:} Developed methods for spectral analysis, noise characterization, sensitivity studies and cross-sensor correlations.
+  \item \textbf{Performance analysis:} Identified contributors to performance degradation and supported prioritisation of correction or mitigation actions.
+  \item \textbf{Data-driven decisions:} Analysed measurement and simulation outputs to extract meaningful conclusions from complex technical datasets.
+  \item \textbf{Reproducibility:} Produced traceable, reproducible and documented analyses for international scientific and engineering stakeholders.
+  \item \textbf{Communication:} Communicated complex results through structured reporting, presentations and collaborative review.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Instrumental Data, Simulation \& Signal Analysis}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Data-analysis and simulation activities for gravitational-wave mission preparation, involving weak-signal detection, modelling, simulation and noise characterization.
+
+\textbf{Objective:} Develop robust analysis methods for complex signals and support technical investigations in demanding system environments.
+
+\begin{itemize}
+  \item \textbf{Signal analysis:} Developed methods for the separation of overlapping low-SNR signals in complex datasets.
+  \item \textbf{Simulation workflows:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Algorithm assessment:} Compared simulated outputs, model behaviours and analysis results to assess consistency, robustness and performance limitations.
+  \item \textbf{Technical investigations:} Investigated noise sources through cross-sensor correlation analyses in diagnostic contexts.
+  \item \textbf{Scientific computing:} Developed strong expertise in Python-based analysis, modelling, documentation and reproducible workflows.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile for TerX}
+
+\textbf{Engineer at the interface between test means, software development, signal processing, acquisition-oriented data analysis and validation of complex systems}. Background developed through space mission engineering, precision instrumentation and industrial software environments, complemented by hands-on exposure to electrical test activities on EV charging infrastructure.
+
+Experienced in \textbf{Python}, \textbf{LabVIEW}, signal processing, data acquisition logic, measurement analysis, automated validation workflows, hardware/software interfaces, electrical test support, technical documentation and operational diagnostics. Familiar with \textbf{LabVIEW} from academic training and able to reactivate and deepen it in an industrial test-bench context.
+
+For an \textbf{Ingénieur Développement Moyens d'Essais} role in an industrial environment, I bring a strong engineering profile: understanding physical measurements, structuring automated test logic, analysing signal and acquisition quality, validating system performance, documenting results and working across software, hardware, production and engineering constraints.
+
+\cvsection{Fit for Test Means / Instrumentation}
+
+\begin{itemize}
+  \item Strong background in signal processing, measurement analysis, noise characterization and performance assessment.
+  \item Hands-on experience with Python-based analysis workflows, automated validation logic, consistency checks and technical reporting.
+  \item Familiarity with LabVIEW from academic training; ready to reactivate and deepen it in an industrial test-bench context.
+  \item Experience with hardware/software interfaces through operational systems connected to field equipment.
+  \item Hands-on exposure to electrical test environments: circuits, communication buses, EV charging stations, soldering, maintenance and B0 / BE Essais authorization.
+  \item Ability to define, analyse and document test logic, measurement outputs, anomalies and validation evidence.
+  \item Comfortable communicating technical results to multidisciplinary teams involving software, hardware, R\&D, production and operations.
+  \item Strong fit for industrial and critical-system contexts requiring rigor, autonomy, traceability, reliability and clear reporting.
+\end{itemize}
+
+\cvsection{Team Management}
+
+\begin{itemize}
+  \item Supervision of \textbf{3 Master's thesis interns (M2)} during software, modelling and data-analysis activities.
+  \item Coordination of technical activities involving \textbf{research engineers and technicians} on a \textbf{data processing and validation pipeline} for the \textbf{LISA space mission}.
+  \item Experience organizing tasks, supporting contributors, reviewing outputs and maintaining alignment across collaborative technical developments.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\end{paracol}
+
+\cvsection{Professional Training}
+
+\cvevent{LabVIEW -- Academic Training}{Engineering / Scientific Instrumentation Training}{During academic curriculum}{}
+
+\divider
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, Java, algorithms and software engineering fundamentals.
+}
+
+\cvsection{Projects}
+
+\cvevent{CNES / LISA -- Test Logic, Signal Processing \& Validation Workflows}{ESA/NASA Space Mission - Large-scale International Collaboration}{2023 -- 2025}{Nice, France}
+
+Contribution to Python-based signal-processing, model-comparison and validation workflows for the LISA space mission within a large international engineering and scientific collaboration.
+
+\textbf{Test means relevance:} Automated validation logic, repeatable comparison sequences, consistency checks, traceable outputs, technical documentation and review material.
+
+\textbf{Instrumentation relevance:} Signal/noise analysis, sensitivity reasoning, weak-signal interpretation, performance diagnostics and measurement-quality-oriented analysis.
+
+\textbf{Critical systems relevance:} Mission-level performance analysis, traceability, technical evidence, rigorous validation and work in a high-constraint international aerospace context.
+
+\divider
+
+\cvevent{Einstein Telescope / LIGO--Virgo--KAGRA -- Statistical Diagnostics \& Detector Performance}{International Collaborations}{2021 -- 2023}{Antwerp, Belgium}
+
+Contribution to collaborative developments in data analysis, signal characterization, statistical diagnostics and performance investigations within large-scale international scientific and engineering collaborations.
+
+\textbf{Role:} Development of analysis tools, contribution to technical studies, reporting and collaborative review in high-standard environments.
+
+\textbf{System impact:} Studies on environmental and instrumental noise sources supporting the identification of performance limitations and design constraints for next-generation gravitational-wave observatories.
+
+\divider
+
+\cvevent{VEV -- Hardware-Connected Software Services \& Electrical Test Support}{EV Charging Infrastructure / CPMS Platform}{2025 -- 2026}{Valbonne, France}
+
+Contribution to software development, operational diagnostics and hardware/software interface analysis for a CPMS platform connected to EV charging infrastructure.
+
+\textbf{Industrial testing relevance:} Interface diagnostics, data-flow monitoring, incident analysis, software reliability, electrical test support, charging-station maintenance, communication buses, soldering and operational traceability.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Test means, instrumentation \& acquisition}
+
+{\small
+\cvtag{Test Means}
+\cvtag{Test Benches}
+\cvtag{Instrumentation}
+\cvtag{LabVIEW}
+\cvtag{TestStand Basics}
+\cvtag{DAQ}
+\cvtag{Instrument Control}
+\newline
+\cvtag{Measurement Chains}
+\cvtag{Data Acquisition}
+\cvtag{Measurement Analysis}
+\cvtag{Automated Test Sequences}
+\cvtag{Test Procedure Logic}
+\cvtag{Test Sequences}
+\cvtag{Automated Testing}
+\cvtag{Functional Testing}
+\cvtag{Control/Command}
+\cvtag{Performance Validation}
+\cvtag{Test Logic}
+\cvtag{Sensor Data}
+\cvtag{Acquisition Quality}
+\cvtag{Measurement Reliability}
+\cvtag{Calibration Awareness}
+\cvtag{Technical Documentation}
+\cvtag{Validation Reports}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+\newline
+
+\cvsubsection{Signal, diagnostics \& complex data}
+
+{\small
+\cvtag{Signal Processing}
+\cvtag{Weak Signal Detection}
+\cvtag{Low-SNR Analysis}
+\cvtag{Noise Modelling}
+\cvtag{Noise Diagnostics}
+\cvtag{Spectral Analysis}
+\cvtag{Cross-Sensor Correlation}
+\cvtag{Anomaly Detection}
+\cvtag{Pattern Recognition}
+\cvtag{Simulation Workflows}
+\cvtag{Synthetic Data}
+\cvtag{Uncertainty Analysis}
+\cvtag{Sensitivity Analysis}
+\cvtag{Performance Assessment}
+\cvtag{Complex Data Analysis}
+\cvtag{Scientific Computing}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Hardware/software interfaces \& electrical testing}
+
+{\small
+\cvtag{Hardware/Software Interfaces}
+\cvtag{Electrical Test Support}
+\cvtag{EV Charging Stations}
+\cvtag{Electrical Circuits}
+\cvtag{Analog/Digital Electronics Awareness}
+\cvtag{Communication Buses}
+\cvtag{Bus Diagnostics}
+\cvtag{Soldering}
+\cvtag{Electrical Checks}
+\cvtag{Maintenance}
+\cvtag{Integration Tests}
+\cvtag{B0 / BE Essais}
+\cvtag{Operational Infrastructure}
+\cvtag{Field Equipment}
+\cvtag{Industrial Diagnostics}
+\cvtag{Production Support}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Programming, frameworks \& tools}
+
+{\small
+\cvtag{Python}
+\cvtag{LabVIEW}
+\cvtag{Matlab}
+\cvtag{C}
+\cvtag{C++}
+\cvtag{Java}
+\cvtag{Pandas}
+\cvtag{NumPy}
+\cvtag{Scikit-Learn}
+\cvtag{SQL}
+\cvtag{Bash}
+\cvtag{Linux}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{GitHub}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Jupyter}
+\cvtag{REST API}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Validation, quality \& critical systems}
+
+{\small
+\cvtag{System Validation}
+\cvtag{IVVQ}
+\cvtag{V-Cycle}
+\cvtag{Verification}
+\cvtag{Validation Evidence}
+\cvtag{Traceability}
+\cvtag{Requirements Awareness}
+\cvtag{Technical Evidence}
+\cvtag{Reliability}
+\cvtag{Robustness}
+\cvtag{Risk Identification}
+\cvtag{Root-Cause Analysis}
+\cvtag{Data Reliability}
+\cvtag{Critical Systems}
+\cvtag{Aerospace Context}
+\cvtag{Space Systems}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Collaboration, delivery \& communication}
+
+{\small
+\cvtag{Technical Workshops}
+\cvtag{Client-Facing Communication}
+\cvtag{Scientific Communication}
+\cvtag{Technical Reporting}
+\cvtag{Knowledge Sharing}
+\cvtag{Stakeholder Alignment} \newline
+\cvtag{Cross-Functional Coordination}
+\cvtag{Agile Environment}
+\cvtag{Confluence}
+\cvtag{JIRA}
+\cvtag{Zenhub}
+\cvtag{OpenSearch}
+\cvtag{Sentry}
+\cvtag{Technical English}
+\cvtag{Autonomy}
+\cvtag{Initiative}
+\cvtag{Problem Solving}
+\cvtag{Analytical Thinking}
+}
+
+\end{document}

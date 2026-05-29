@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper]{../_shared/altacv}
+
+\geometry{left=1.5cm,right=1.5cm,top=1.cm,bottom=1.2cm,columnsep=1.5cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{paracol}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+
+% Couleurs exactes du CV
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\name{BOILEAU Guillaume}
+\personalinfo{
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes Maritimes, France}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\setlength{\parskip}{0.75\baselineskip}
+
+\begin{document}
+\makecvheader
+\iffalse
+\cvsection{Lettre de motivation}
+{\color{accent}\textbf{Objet :}} \textit{Candidature spontanée -- Data Scientist \& Ingénieur R\&D Signal}
+
+{\color{body}
+
+Madame, Monsieur,
+
+Je me permets de vous adresser ma candidature spontanée au sein de Median Technologies, entreprise dont je suis les travaux depuis plusieurs années, convaincu que mon profil constitue un apport concret et immédiat pour vos équipes de recherche et développement en intelligence artificielle appliquée à l'imagerie médicale.
+
+Docteur en physique de l'Université Côte d'Azur, j'ai construit au fil de mes expériences une expertise à la croisée du traitement du signal, de la modélisation statistique avancée et de l'ingénierie logicielle. Ces trois piliers, que j'ai développés dans des environnements scientifiques et industriels exigeants — CNES, Observatoire de la Côte d'Azur, Universiteit Antwerpen — sont précisément ceux que mobilise votre approche d'analyse quantitative de l'imagerie oncologique.
+
+Mon expérience en traitement de signaux complexes à faible rapport signal sur bruit (SNR) est directement transposable aux problématiques de détection de lésions subtiles en imagerie médicale. J'ai développé des méthodes de séparation de signaux superposés, de modélisation de sources de bruit et d'inférence bayésienne (MCMC) pour identifier des structures faiblement contrastées dans des données massives et hétérogènes — un contexte très proche de celui de la détection précoce du nodule pulmonaire que vous adressez avec \textit{eyonis\texttrademark}. J'ai également conçu et déployé plusieurs pipelines Python robustes à grande échelle, intégrant validation statistique, automatisation et comparaison de modèles, dans le cadre du projet CATpyLISA développé pour la mission spatiale LISA du CNES.
+
+En parallèle, mon poste actuel chez VEV Platform Services m'a permis de renforcer ma dimension développeur logiciel : conception d'applications full-stack en TypeScript, Angular et Node.js, développement de services backend, intégration d'API et gestion de flux de données en production. Cette double culture — scientifique et ingénierie logicielle — me permet d'intervenir efficacement à toutes les étapes du cycle de vie d'un produit data et IA, de la conception algorithmique jusqu'au déploiement opérationnel.
+
+Je maîtrise Python, PyTorch, les méthodes d'inférence bayésienne, les architectures distribuées (Docker, AWS, Slurm, Condor), ainsi que les outils de versioning et de collaboration (Git, GitLab). Mon expérience de la supervision d'ingénieurs et d'internants, ainsi que ma participation à des collaborations scientifiques internationales, m'ont également appris à travailler en équipe pluridisciplinaire et à communiquer des résultats complexes à des interlocuteurs variés.
+
+Rejoindre Median Technologies représente pour moi une opportunité unique de mettre cette expertise au service d'un enjeu de santé publique majeur, dans une entreprise innovante dont les solutions ont un impact direct sur la vie des patients. Je suis convaincu de pouvoir contribuer rapidement et durablement à vos travaux, que ce soit sur l'amélioration des algorithmes de détection, le développement de nouvelles modalités d'analyse ou la robustification de vos pipelines de traitement.
+
+Je me tiens naturellement à votre disposition pour tout échange complémentaire et vous remercie sincèrement de l'attention portée à ma candidature.
+
+Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+}
+
+\cvsection{Lettre de motivation}
+{\color{accent}\textbf{Objet :}} \textit{Candidature -- Chef de Projet Ingénierie (Réf. 73-97357-82631)}
+
+{\color{body}
+
+Madame, Monsieur,
+
+Je vous adresse ma candidature pour le poste de Chef de Projet proposé par ARIAL Industries sur votre site de Sophia Antipolis.
+
+Ingénieur R\&D spécialisé dans l’analyse de données complexes et le développement de systèmes logiciels scientifiques, j’ai acquis une expérience solide dans la conduite de projets techniques impliquant coordination d’équipes, développement logiciel et gestion de systèmes complexes.
+
+Au cours de mes dernières expériences professionnelles, j’ai piloté plusieurs projets de développement impliquant la conception et l’intégration de pipelines logiciels destinés à l’analyse de données scientifiques à grande échelle. Ces projets m’ont amené à définir l’architecture technique des solutions, structurer les différentes phases de développement et coordonner le travail d’ingénieurs et de développeurs intervenant sur plusieurs modules.
+
+Dans ce cadre, j’ai assuré la planification des développements, l’intégration des différents composants logiciels ainsi que le suivi des performances des systèmes développés. Cette expérience m’a permis de développer une approche rigoureuse de la gestion de projet technique, incluant la définition des besoins, l’analyse des contraintes techniques et l’optimisation des solutions mises en œuvre.
+
+J’ai également été amené à encadrer et accompagner plusieurs stagiaires et ingénieurs sur des phases de développement logiciel et d’analyse de données. Cette responsabilité m’a permis de renforcer mes compétences en management technique et en coordination d’équipes pluridisciplinaires.
+
+Mon activité m’a par ailleurs conduit à travailler dans des environnements fortement collaboratifs impliquant plusieurs équipes techniques et partenaires internationaux. Dans ce contexte, j’ai participé à la coordination de développements logiciels complexes et à l’amélioration de systèmes d’analyse destinés à traiter des volumes importants de données.
+
+Sur le plan technique, je possède une expérience avancée en développement Python et en traitement de données scientifiques, ainsi qu’une bonne maîtrise des environnements de calcul haute performance et des architectures distribuées. Ces compétences me permettent d’aborder efficacement les problématiques liées au développement et à l’optimisation de systèmes techniques complexes.
+
+Aujourd’hui, je souhaite mettre cette expérience au service de projets industriels et contribuer à la conduite de projets d’ingénierie dans des secteurs technologiques exigeants tels que l’aéronautique, le spatial ou les systèmes embarqués.
+
+Rejoindre ARIAL Industries représente pour moi l’opportunité d’intégrer une structure dynamique intervenant sur des programmes techniques ambitieux et de contribuer activement à la réussite des projets qui vous sont confiés.
+
+Je serais ravi de pouvoir échanger avec vous afin de vous présenter plus en détail mon parcours et ma motivation.
+
+Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+}
+\fi
+\vspace{-0.5cm}
+\cvsection{Lettre de motivation}
+\vspace{-.5cm}
+{\color{accent}\textbf{Objet :}} \textit{Candidature -- Référent technique / Tech Lead (F/H)}
+
+{\color{body}
+
+Madame, Monsieur,
+
+Je vous adresse ma candidature pour le poste de Référent technique / Tech Lead au sein de l’Urssaf Caisse nationale sur le site de Biot.
+
+Ingénieur R\&D spécialisé dans l’analyse de données complexes et le développement de systèmes logiciels, j’ai acquis au cours de mes expériences une expertise solide dans la conception d’architectures techniques, la structuration de pipelines de traitement de données et la coordination d’équipes techniques intervenant sur des projets à forte complexité.
+
+Mes activités m’ont conduit à concevoir et développer des outils logiciels destinés au traitement et à l’analyse de volumes importants de données. Dans ce cadre, j’ai développé plusieurs pipelines automatisés en Python permettant la collecte, la transformation, l’analyse statistique et la validation de données issues de systèmes scientifiques complexes. Ces pipelines reposent sur des architectures modulaires permettant l’intégration de différents modèles de calcul, l’automatisation des traitements et l’évaluation comparative de résultats.
+
+J’ai également participé à la définition d’architectures logicielles permettant l’exploitation de ces outils dans des environnements de calcul distribués. Ces développements impliquaient l’utilisation d’environnements Linux, de plateformes de calcul parallèle et d’outils de gestion collaborative du code afin de garantir la robustesse, la reproductibilité et la maintenabilité des solutions développées.
+
+Au-delà du développement technique, j’ai joué un rôle actif dans la coordination de projets impliquant plusieurs équipes techniques. J’ai notamment organisé et structuré le travail de développeurs, ingénieurs et stagiaires intervenant sur différents modules logiciels. Cette responsabilité m’a conduit à définir les orientations techniques, suivre l’avancement des développements, accompagner les choix d’implémentation et assurer la cohérence globale des solutions mises en œuvre.
+
+Dans ce contexte, j’ai développé de fortes compétences en pilotage technique de projets, en animation d’équipes et en prise de décision sur des problématiques complexes. Habitué à travailler dans des environnements collaboratifs internationaux, je sais faciliter les échanges entre équipes, structurer les discussions techniques et faire converger les différents acteurs vers des solutions robustes et opérationnelles.
+
+Sur le plan technique, je possède une expertise avancée en développement Python, en analyse statistique et en traitement de données massives. Je maîtrise également les environnements Linux, les outils de gestion de code collaboratif, les architectures de calcul distribué ainsi que les méthodes d’optimisation et d’automatisation de pipelines logiciels.
+
+Le poste proposé au sein du pôle « Gestion des comptes entreprises » correspond particulièrement à mon souhait de contribuer à des projets techniques structurants impliquant des systèmes d’information manipulant de grands volumes de données. La transformation et l’évolution des systèmes techniques de l’Urssaf constituent un environnement particulièrement stimulant dans lequel je souhaite mettre à profit mes compétences en architecture logicielle, en coordination technique et en pilotage de développements.
+
+Rejoindre l’Urssaf représente pour moi l’opportunité de participer à des projets d’envergure tout en contribuant à une mission de service public essentielle au fonctionnement de notre système de protection sociale.
+
+Je serais heureux de pouvoir échanger avec vous afin de vous présenter plus en détail mon parcours et ma motivation.
+
+Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+}
+\end{document}

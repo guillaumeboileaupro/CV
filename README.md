@@ -1,196 +1,269 @@
-# AltaCV, yet another LaTeX CV/Résumé class
+# CV Repo
 
-v1.7.3 (31 Oct 2024), by LianTze Lim (liantze@gmail.com)
+Ce dépôt sert à gérer des candidatures LaTeX de manière structurée et semi-automatique.
 
-(Thanks to [Nur](https://github.com/nurh) for the name.)
+## Structure
 
-It all started with this:
+### Ressources communes à la racine
 
-[<img src="tweet-that-started-this.png" width="500px">](https://twitter.com/Leonduck/status/764281546408923136)
+Ces fichiers restent à la racine car ils sont partagés :
 
-Leonardo was talking about a [résumé of Marissa Mayer that Business Insider put together](http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/) using [enhancv.com](https://enhancv.com).
-I _knew_ I had to do something about it. And so AltaCV was born.
+- `altacv.cls`
+- `pubs-num.tex`
+- `pubs-authoryear.tex`
+- `sample.bib`
+- `moi.jpeg`
+- `orcid.svg`
+- `Globe_High.png`
+- `Suitcase_High.png`
+- `Yacht_High.png`
+- `6892(1).pdf`
 
-## Samples
+### Candidatures
 
-This is how the re-created résumé looks like ([view/open on Overleaf](https://www.overleaf.com/latex/examples/recreating-business-insiders-cv-of-marissa-mayer-using-altacv/gtqfpbwncfvp)):
+Les candidatures sont rangées dans :
 
-<img src="mmayer.png" alt="Marissa Mayer's résumé, re-created with AltaCV" width="600px">
-
-Though if you're creating your own CV/résumé, you'd probably prefer using the basic template ([view/open on Overleaf](https://www.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv)):
-
-<img src="sample.png" alt="sample barebones AltaCV template" width="600px">
-
-
-## Requirements and Compilation
-
-* AltaCV uses [`fontawesome5`](http://www.ctan.org/pkg/fontawesome5) (≥ v5.12.0), and [simpleicons](http://www.ctan.org/pkg/simpleicons) (≥ v9.9.0) for the new X icon when you use `\xtwitter`. If you're on an older version, the class will try to fall back to the old Twitter icon. But it's recommended to use an up-to-date MikTeX or TeX Live installation, with updated packages as recent as possible.
-* To produce the list of publications, run `pdflatex` + `biber` + `pdflatex`. (Replace `pdflatex` with `xelatex` or `lualatex` as necessary.)
-  * Note that to compile with XeLaTeX, you should use a command line as follows, per [the `pdfx` documentation](http://mirrors.ctan.org/macros/latex/contrib/pdfx/pdfx.pdf): `xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex`
-* Use the `normalphoto` option to get normal (i.e. non-circular) photos.
-* As of v1.2 you can add multiple photos on the left or right: `\photoL{2cm}{logo1}` and `\photoR{2.5cm}{logo2,photo}`. (`\photo` will work like `\photoR`.) Separate your image filenames with commas _without_ spaces.
-* Use the `ragged2e` option to activate hyphenations while keeping text left-justified; line endings will thus be less jagged and more aesthetically pleasing.
-* As of v1.3 the `withhyper` document class option will make the "personal info" fields into clickable hyperlinks (where it makes sense). See below for more details.
-* The samples here use the [Lato](http://www.latofonts.com/lato-free-fonts/) and [Roboto Slab fonts](https://github.com/googlefonts/robotoslab). Feel free to use a different typeface package instead—often a different typeface will change the entire CV's feel.
-
-## `sample.tex` ##
-
-This file was first created as `sample-alt.tex` on 2 Feb 2020. **It is the default sample LaTeX file since 10 May 2020.**
-
-Many users have overlooked the optional argument of `\cvsection` to insert the right sidebar contents, and often confused that the right sidebar doesn't automatically break across pages. This new layout uses the `paracol` package for typesetting the left and right columns that _can_ break across pages. It also makes changing the column widths easier:
-
-```latex
-%% Set the left/right column width ratio to 6:4.
-\columnratio{0.6}
-
-% Start a 2-column paracol. Both the left and right columns will automatically
-% break across pages if things get too long.
-\begin{paracol}{2}
-\cvsection{Experience}
-...
-... END OF LEFT COLUMN CONTENTS ...
-
-% Now switch to the right column.
-\switchcolumn
-\cvsection{Education}
-...
-...END OF RIGHT COLUMN CONTENTS ...
-\end{paracol}
-```
-You can also use `\swithcolumn*` for "synchronising" the columns, as well as other commands from the `paracol` package. See the [`paracol` package documentation](http://texdoc.net/pkg/paracol) for further details.
-
-**You do not need use the `fullwidth` environment nor use optional arguments with `\cvsection` with this new template.**
-
-## Clickable Info fields
-
-As of v1.3, the `withhyper` document class option will load the `hyperref` package, and make fields in the personal detail fields into clickable hyperlinks (where it makes sense anyway).
-
-*BIG CAVEAT:* Remember that not all readers may want to click on hyperlinks in PDFs. You may therefore sometimes want to _remove_ `withhyper`, and spell out the field URL details a bit more completely, e.g. `\github{github.com/your-id}`.
-
-Anyway assuming that you _do_ keep `withhyper` enabled: For each field e.g. `\homepage{foobar.com}`, a `\homepagesymbol` has been defined, and the clickable hyperlink is generated by prepending the `\homepagehyperprefix` to `foobar.com`. The `\homepgehyperprefix` is defined to be `\https://`, so this generates the hyperlink `https://foobar.com`.
-
-If your homepage doesn't use HTTPS yet, or if you want to use a different symbol, you can re-define them with
-```latex
-\renewcommand{\homepagehyperprefix}{http://}
-\renewcommand{\homepagesymbol}{\faLink}
+```text
+applications/<entreprise>/<offre>/
 ```
 
+Exemples :
 
-## New Information Fields ####
+- `applications/alten/ait-spatial/`
+- `applications/thales/rams-safety/`
+- `applications/viveris/ivvq/`
 
-I've decided against adding definitions for too many fields and symbols in the `.cls` itself; otherwise we'll have all possible platforms in the world (and more services are born everyday!) within `altacv.cls` before we know it.
+Chaque entreprise possède aussi un dossier :
 
-You can actually just typeset your own arbitrary information fields using the `\printinfo{symbol}{detail}[optional hyperlink prefix]` command within `\personalinfo`:
-
-````latex
-\printinfo{\faPaw}{Hey ho!}
-\printinfo{\faGitLab}{your-handle}[https://gitlab.com/]
-````
-
-Or if you really prefer, you can define a new field yourself with `\NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix]` before  using it:
-
-````latex
-\NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
-\gitlab{your_id}
-````
-
-For services and platforms like Mastodon where there isn't a straightforward relation between the more popular user ID or nickname and the hyperlink, you can use `\printinfo` directly e.g.
-
-```latex
-\printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+```text
+applications/<entreprise>/_shared/
 ```
 
-But if you absolutely want to create new dedicated info fields for such platforms, then use `\NewInfoField*` with a star:
+Il contient des liens vers les ressources communes utilisées par les `.tex`.
 
-```latex
-\NewInfoField*{mastodon}{\faMastodon}
+### Templates
+
+Les modèles non rattachés à une offre précise sont rangés dans :
+
+```text
+templates/cv/
+templates/letters/
+templates/research/
+templates/misc/
+templates/_shared/
 ```
 
-then you can use `\mastodon` with TWO arguments where the 2nd argument is the full hyperlink.
+## Objectif de l’automatisation
 
-```latex
-\mastodon{@username@instance}{https://instance.url/@username}
+Quand un nouveau `.tex` est déposé à la racine du repo, le script doit :
+
+1. détecter le fichier ;
+2. deviner l’entreprise et l’offre à partir du nom ;
+3. créer les dossiers manquants si nécessaire ;
+4. déplacer le fichier au bon endroit ;
+5. corriger automatiquement les chemins pour qu’il compile depuis son nouveau dossier ;
+6. créer un fichier `.xmpdata` si nécessaire pour éviter le warning `pdfx` ;
+7. compiler avec `latexmk` ;
+8. relancer automatiquement si le warning `rerunfilecheck` demande une seconde passe ;
+9. signaler les warnings restants et les placeholders non remplacés.
+
+Si l’entreprise ou l’offre ne peuvent pas être déduites proprement, le fichier est rangé dans :
+
+```text
+applications/_unsorted/<slug-du-fichier>/
 ```
 
+## Scripts
 
-## Configurable colours
+### Exécution ponctuelle
 
-Use `\colorlet` or `\definecolor` to change these; see examples 
-in preamble of `sample.tex`.
-* `accent`
-* `emphasis`
-* `heading`
-* `headingrule`
-* `subheading`
-* `body`
-* `name`
-* `tagline`
-
-## Configurable fonts
-
-Use `\renewcommand` to change these; see examples in preamble of
-`sample.tex`.
-* `\namefont`
-* `\taglinefont`
-* `\personalinfofont`
-* `\cvsectionfont`
-* `\cvsubsectionfont`
-
-## Configurable icons
-
-Use `\renewcommand` to change these; see examples in preamble of
-`sample.tex`.
-* `\cvItemMarker` (bullets for `itemize`)
-* `\cvRatingMarker` (for `\cvskill`)
-* `\cvDateMarker` (for date in `\cvevent`)
-* `\cvLocationMarker` (for location in `\cvevent` and `\location`)
-
-
-## Is this template ATS-friendly?
-There is some discussion about this in issue #76. No actual claims are made, because we don't really know how each ATS system works. But this template uses `accsupp` to add replacement text for the icons, which may help — e.g. the `\faGithub` icon rendered in the PDF would copy-and-paste from Acrobat Reader, as exactly the text `\faGithub`. 
-
-You could try running `pdftotext -raw sample.pdf` to view the text-only version of the CV, with the columnar layout removed.
-
-Alternatively running `pdftotext -layout sample.pdf` to view the text-only version in a pseudo-two-column layout.
-
-In particular `\locationname` and `\datename` hold the replacement text for the location and date/duration icon in `\cvevent`. These can be re-defined especially if your CV is in a non-English language, e.g. Spanish (see commented examples in preamble of `sample.tex`):
-
-```latex
-\renewcommand{\locationname}{Ubicación}
-\renewcommand{\datename}{Fecha}
+```bash
+python3 scripts/auto_tex_manager.py
 ```
 
----
+Cette commande traite tous les nouveaux `.tex` présents à la racine.
 
-## `legacy/sample-old.tex` (for historical record only)
+Avec commit automatique :
 
-This was the original sample template file until 5 May 2020. The right sidebar is actually a _`marginpar`_, so it doesn't support footnote and cannot automatically break across pages if it's too long. You would need to split your right sidebar contents into separate files e.g. `p1sidebar.tex` and `p2sidebar.tex`, and insert them as the optional argument of the `\cvsection{...}` that you want to align them with:
-
-```latex
-\cvsection[p1sidebar]{Experience}
-...
-... END OF FIRST PAGE OF YOUR CV ...
-\cvsection[page2sidebar]{Publications}
-...
+```bash
+python3 scripts/auto_tex_manager.py --git-commit
 ```
 
-This assumes that the next page's main column would start immediately with a `\cvsection`, so that the top of your right sidebar contents also appear at the top of the page. Now if the _next_ page doesn't start with a `\cvsection` but you'd still like to add a sidebar, then use this command on the _current_ page to add it. The optional argument lets you pull up the sidebar a bit so that it looks aligned with the top of the main column:
+Avec commit et push automatiques :
 
-```latex
-\addnextpagesidebar[-1ex]{page3sidebar}
+```bash
+python3 scripts/auto_tex_manager.py --git-push
 ```
 
-If you want to change the left and right columns' widths, you'll need to tinker with the `right` (distance from paper's right edge until the main column's right edge) and `marginparwidth` (width of the right sidebar) options in the `\geometry` line. For example, to make the right sidebar wider by 2cm, you could use
+Avec message personnalisé conforme a Conventional Commits :
 
-```latex
-%% original was right=9cm, marginparwidth=6.8cm
-\geometry{left=1cm,right=11cm,marginparwidth=8.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+```bash
+python3 scripts/auto_tex_manager.py --git-push --commit-message "feat(softeam): add ai application files"
 ```
-as well as doing a bit of arithmetic when you're making the header to get it full-width, i.e. reducing the sidebar by 2cm and extending the main column by 2cm.
 
-```latex
-\begin{adjustwidth}{}{-10cm}  %% original was -8cm
-\makecvheader
-\end{adjustwidth}
+### Mode surveillance
+
+```bash
+./scripts/auto_tex_watch.sh
 ```
-# CV
+
+Ce mode surveille la racine du repo et traite automatiquement tout nouveau `.tex`.
+
+Si vous voulez aussi commit/push automatiquement en mode surveillance, lancez directement :
+
+```bash
+python3 scripts/auto_tex_manager.py --watch --git-push
+```
+
+## Ce que le script modifie automatiquement
+
+Le script [scripts/auto_tex_manager.py](/home/gboileau/Documents/CV/Resume_guillaume_boileau_phd(2)/scripts/auto_tex_manager.py) applique notamment :
+
+- normalisation de `\documentclass{altacv}` ;
+- ajout ou correction des chemins vers :
+  - `../_shared/pubs-num.tex`
+  - `../_shared/pubs-authoryear.tex`
+  - `../_shared/sample.bib`
+  - `../_shared/moi`
+  - `../_shared/Globe_High`
+  - `../_shared/Suitcase_High`
+  - `../_shared/Yacht_High`
+- création d’un lien `altacv.cls` dans le dossier cible ;
+- création du `.xmpdata` pour les lettres ou documents `pdfx`.
+
+## Warnings gérés automatiquement
+
+Le script sait corriger ou absorber automatiquement certains cas fréquents :
+
+- warning `pdfx` dû à l’absence de `.xmpdata`
+- warning `rerunfilecheck` qui disparaît après recompilation
+- mauvais chemin vers `altacv.cls` ou les ressources partagées
+
+## Warnings non corrigés automatiquement
+
+Le script peut encore vous signaler des cas qui dépendent du contenu métier :
+
+- placeholders encore présents dans un template
+- erreurs LaTeX propres au contenu du fichier
+- structure de document incohérente ou incomplète
+
+## Placeholders détectés
+
+Le script signale certains placeholders typiques, par exemple :
+
+- `[Nom du Poste]`
+- `[Entreprise]`
+- `[Année]`
+- `[Lieu]`
+- `[Responsabilité 1]`
+- `Nom de l'Entreprise`
+- `poste actuel`
+
+## Convention de nommage recommandée
+
+Pour aider le classement automatique, utilisez autant que possible des noms comme :
+
+- `CV_Guillaume_Boileau_ALTEN_AIT_Spatial.tex`
+- `LM_Guillaume_Boileau_ALTEN_AIT_Spatial.tex`
+- `letter_Company_Offer.tex`
+
+Plus le nom est explicite, meilleur sera le classement.
+
+Format simple recommandé :
+
+- `CV_Prenom_Nom_ENTREPRISE_OFFRE.tex`
+- `LM_Prenom_Nom_ENTREPRISE_OFFRE.tex`
+- `letter_Prenom_Nom_COMPANY_ROLE.tex`
+
+Règles pratiques :
+
+- utiliser `_` comme séparateur ;
+- mettre le type de document au début : `CV`, `LM`, `letter`, `Lettre` ;
+- mettre ensuite prénom et nom ;
+- mettre ensuite l’entreprise ;
+- terminer par l’offre ou l’intitulé du poste ;
+- éviter les espaces, accents, parenthèses et caractères spéciaux dans le nom du fichier.
+
+Exemples :
+
+- `CV_Guillaume_Boileau_SOFTEAM_ingenieur_ia.tex`
+- `LM_Guillaume_Boileau_THALES_rams_safety.tex`
+- `CV_Guillaume_Boileau_GROUPAGORA_ingenieur_systeme_embarque.tex`
+
+## Conventional Commits
+
+Le script peut maintenant versionner automatiquement les changements avec un message au format :
+
+```text
+<type>[optional scope]: <description>
+```
+
+Exemples utilises dans ce repo :
+
+- `feat(repo): automate tex organization and compilation`
+- `feat(softeam): organize CV_Guillaume_boileau_SOFTEAM_ingenieur_ia.tex into applications/softeam/ingenieur-ia`
+
+Reference :
+- https://www.conventionalcommits.org/en/v1.0.0/
+
+## Prompt simple pour GPT
+
+Si vous voulez juste demander à GPT un nom de fichier correct, utilisez ce prompt :
+
+```text
+Donne-moi uniquement le nom du fichier `.tex`, sans explication.
+
+Format obligatoire :
+- pour un CV : `CV_Prenom_Nom_ENTREPRISE_OFFRE.tex`
+- pour une lettre : `LM_Prenom_Nom_ENTREPRISE_OFFRE.tex`
+
+Contraintes :
+- séparateur `_` uniquement
+- pas d’espace
+- pas d’accent
+- pas de parenthèses
+- pas de caractères spéciaux
+- entreprise et offre en majuscules/minuscules simples compatibles avec un nom de fichier
+
+Informations :
+- prénom : Guillaume
+- nom : Boileau
+- entreprise : [nom entreprise]
+- offre : [nom offre]
+- type : [CV ou LM]
+```
+
+## Exemple de workflow
+
+1. Déposer un nouveau fichier `.tex` à la racine.
+2. Lancer :
+
+```bash
+python3 scripts/auto_tex_manager.py
+```
+
+3. Lire le rapport terminal, par exemple :
+
+```text
+[move] LM_Foo_Bar.tex -> applications/foo/bar
+       created: applications/foo/bar
+       compile: ok
+       fixes: created_xmpdata, rerun_for_outlines
+```
+
+4. Ouvrir ensuite le fichier depuis son nouveau dossier dans `applications/...`.
+
+## Limites actuelles
+
+- Le classement repose principalement sur le nom du fichier.
+- Le script n’interprète pas le sens complet du contenu métier.
+- Les anciens onglets VS Code peuvent pointer vers les anciens chemins tant qu’ils ne sont pas rouverts.
+
+## Entretien du repo
+
+Pour garder le repo propre :
+
+- déposer les nouveaux `.tex` uniquement à la racine avant traitement ;
+- laisser le watcher tourner si vous voulez un traitement automatique continu ;
+- ouvrir les fichiers classés depuis `applications/...` ou `templates/...` après traitement ;
+- éviter de modifier manuellement les liens `_shared` sauf nécessité.

@@ -1,0 +1,345 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.2, 28 August 2024) written by LianTze Lim (liantze@gmail.com).
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Space Systems Engineer | Environmental Test Support, Instrumentation Data Analysis \& Validation}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+
+\vspace{-0.3cm}
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer – System Integration \& Hardware Interfaces}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and integration of software services for EV charging infrastructure within a CPMS platform connected to operational hardware systems.
+
+\textbf{Objective:} Deliver reliable software components, robust operational data flows and maintainable service interactions with charging station systems.
+
+\begin{itemize}
+\item \textbf{System integration:} Contributed to the integration and maintenance of software services interacting with EV charging infrastructure and operational hardware.
+\item \textbf{Operational validation:} Supported service verification, monitoring and correction of operational data exchanges to ensure service continuity and consistency.
+\item \textbf{Technical issue analysis:} Investigated software and hardware interaction issues in production environments and contributed to issue resolution.
+\item \textbf{Data flow robustness:} Implemented and monitored FTP-based services for operational data exchange between field systems and platform services.
+\item \textbf{Software development:} Developed web and backend services using TypeScript, Angular and Node.js.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer – Space Systems, Instrumental Data Analysis \& Validation}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering and R\&D activities for the LISA ESA/NASA space mission, involving complex analysis chains, mission-level performance studies, instrumental data modelling and international technical coordination.
+
+\textbf{Objective:} Develop, structure and validate robust software and analysis workflows for complex space mission systems under strong performance, traceability and consistency constraints.
+
+\begin{itemize}
+\item \textbf{Space mission environment:} Contributed to technical activities for the LISA space mission, a large-scale ESA/NASA mission involving complex system interfaces, scientific requirements and mission-level performance constraints.
+\item \textbf{Instrumental data analysis:} Developed analysis workflows to study signal behaviour, noise contributions and performance limitations in complex simulated measurement environments.
+\item \textbf{Validation and consistency checks:} Structured comparison campaigns and validation workflows to verify consistency between models, outputs and expected mission-level behaviour.
+\item \textbf{Anomaly and issue investigation:} Investigated model inconsistencies, unexpected behaviours and sensitivity limitations to identify potential sources of degradation.
+\item \textbf{Technical reporting:} Produced structured technical analyses and documented results for collaborative review and decision support.
+\item \textbf{Software platform development:} Developed a Python-based platform for large-scale model integration, comparison and analysis workflows. \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\item \textbf{Technical coordination:} Coordinated software development tasks, aligned contributors and supported collaborative engineering workflows across scientific and technical teams.
+\item \textbf{Team management:} Supervised interns and supported engineering activities across development, analysis and validation tasks.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist – Noise, Instrumentation \& Performance Analysis}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement technical environment.
+
+\textbf{Objective:} Identify, characterize and mitigate sources affecting system sensitivity, measurement quality and system-level performance.
+
+\begin{itemize}
+\item \textbf{Noise and sensitivity analysis:} Developed robust analysis pipelines for noise source identification, characterization and mitigation.
+\item \textbf{Measurement data interpretation:} Analysed complex instrumental and environmental data to assess their impact on measurement quality.
+\item \textbf{Performance degradation studies:} Investigated environmental and instrumental effects affecting system sensitivity and operational performance.
+\item \textbf{Technical diagnostics:} Identified critical contributors to sensitivity loss and proposed analysis strategies to reduce residual uncertainties.
+\item \textbf{Validation workflows:} Produced structured technical analyses requiring traceability, reproducibility and reliability of results.
+\item \textbf{Technical communication:} Reported complex findings in an international research and engineering environment.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer – Signal Analysis, Simulation \& Technical Diagnostics}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Engineering and analysis activities for gravitational-wave mission preparation, involving signal analysis, simulation, environmental noise studies and instrumental diagnostics.
+
+\textbf{Objective:} Develop robust analysis methods for complex signals and support technical investigations in demanding system environments.
+
+\begin{itemize}
+\item \textbf{Complex signal analysis:} Developed methods for the separation of overlapping low-SNR signals in complex datasets.
+\item \textbf{Simulation studies:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+\item \textbf{Environmental diagnostics:} Investigated environmental and instrumental noise sources through cross-sensor correlation analyses.
+\item \textbf{Performance assessment:} Studied how noise sources and measurement limitations affect system-level sensitivity and scientific performance.
+\item \textbf{Mission design impact:} Contributed to studies that helped identify fundamental noise and design constraints for future gravitational-wave observatories.
+\item \textbf{Collaborative technical work:} Contributed to analysis methods and software tools for complex space-system applications.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Summary and Strengths}
+
+\textbf{Engineer with a strong background in space systems, experimental data analysis, signal processing, validation and technical investigations}, developed through major international collaborations including \textbf{LISA}, \textbf{LIGO--Virgo--KAGRA} and \textbf{Einstein Telescope}.
+
+Experienced in \textbf{complex measurement environments}, \textbf{noise analysis}, \textbf{system performance validation}, \textbf{technical diagnostics}, \textbf{data quality assessment}, \textbf{structured reporting} and \textbf{traceable analysis workflows}. Used to working in demanding environments requiring \textbf{rigor}, \textbf{procedure compliance}, \textbf{documentation quality}, \textbf{cross-functional coordination} and \textbf{technical communication}.
+
+Relevant background for \textbf{environmental test activities}: analysis of complex instrumental data, identification of noise sources, performance degradation studies, validation of results against expected behaviour, anomaly investigation and production of technical reports.
+
+Additional hands-on experience in \textbf{software development and system interfaces} for EV charging infrastructure using TypeScript, Angular and Node.js, including operational data exchange services and production issue analysis.
+
+\cvsection{Relevance to Environmental Testing}
+
+\begin{itemize}
+  \item Experience with \textbf{space mission environments}, especially LISA, involving strict performance constraints, complex system behaviour and mission-level validation needs.
+  \item Strong background in \textbf{experimental and instrumental data analysis}, including noise characterization, signal processing, uncertainty analysis and performance assessment.
+  \item Ability to support \textbf{test data interpretation}, detect unexpected behaviours, investigate anomalies and document technical findings.
+  \item Experience in \textbf{verification and validation workflows}, including structured campaigns, consistency checks, comparison studies and technical reporting.
+  \item Comfortable working with \textbf{multidisciplinary teams}, technical contributors and English-speaking international collaborations.
+  \item Strong interest in applying this background to \textbf{mechanical, thermal and environmental test campaigns} for space equipment, subsystems and satellites.
+\end{itemize}
+
+\cvsection{Team Management}
+
+\begin{itemize}
+  \item Supervision of \textbf{3 Master's thesis interns (M2)} during engineering and development phases.
+  \item Coordination of technical activities involving \textbf{research engineers and technicians} on a \textbf{data processing pipeline} for the \textbf{LISA space mission}.
+  \item Experience in organizing tasks, supporting contributors and maintaining alignment across collaborative technical developments in demanding environments.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI – Andrew Ng}{2020}{Coursera}
+
+\end{paracol}
+
+\newpage
+
+\cvsection{Projects}
+
+\cvevent{Co-author and full member of the LISA Consortium}{ESA/NASA Space Mission -- Large-scale International Collaboration}{2018 -- now}{}
+
+Contribution to software, analysis and validation workflows for the LISA space mission within an international engineering and scientific collaboration involving ESA, NASA and multiple research institutes.
+
+\textbf{Role:} Contribution to software workflows, technical coordination, complex signal-processing activities, model validation and collaborative engineering tasks.
+
+\textbf{Environmental test relevance:} Work on mission-level performance, instrumental sensitivity, noise characterization, robustness of analysis chains, uncertainty assessment and consistency verification in a mission context with strong validation constraints.
+
+\textbf{Program scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Co-author and full member of Einstein Telescope and LIGO--Virgo--KAGRA Collaborations}{International Collaborations}{2021 -- now}{}
+
+Contribution to collaborative developments in data analysis, signal characterization, software methods and technical investigations within the LIGO--Virgo--KAGRA and Einstein Telescope collaborations.
+
+\textbf{Role:} Development of analysis tools, contribution to technical activities and support to complex software workflows in high-standard collaborative environments.
+
+\textbf{System impact:} Contributed to studies on environmental and instrumental noise sources, helping identify fundamental design constraints and performance limitations for next-generation gravitational-wave observatories.
+
+\textbf{Environment:} Large-scale international collaborations involving strong technical requirements, structured methods, technical review and coordinated contributions.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Core skills}
+
+{\small
+\cvtag{Environmental Test Support}
+\cvtag{Space Systems}
+\cvtag{Test Data Analysis}
+\cvtag{Instrumentation Data Analysis}
+\cvtag{Measurement Data Processing}
+\cvtag{Signal Processing}
+\cvtag{Noise Analysis}
+\cvtag{Thermal / Mechanical Test Interest}
+\cvtag{Performance Verification}
+\cvtag{Verification \& Validation}
+\cvtag{System Validation}
+\cvtag{Test Campaign Support}
+\cvtag{Technical Investigation}
+\cvtag{Anomaly Investigation}
+\cvtag{Root Cause Analysis}
+\cvtag{Technical Diagnostics}
+\cvtag{Data Quality Assessment}
+\cvtag{Uncertainty Analysis}
+\cvtag{Technical Reporting}
+\cvtag{Procedure Compliance}
+\cvtag{Traceability}
+\cvtag{Structured Execution}
+\cvtag{Complex Systems}
+\cvtag{Software Integration}
+\cvtag{Technical Coordination}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Technical skills}
+
+{\small
+\cvtag{Python}
+\cvtag{Git}
+\cvtag{Docker}
+\cvtag{Linux}
+\cvtag{SQL}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{C}
+\cvtag{Matlab}
+\cvtag{Pandas}
+\cvtag{REST API}
+\cvtag{Bash scripting}
+\cvtag{FTP}
+\cvtag{Test Automation Scripting}
+\cvtag{CI/CD}
+\cvtag{Issue Tracking}
+\cvtag{Technical Reporting}
+\cvtag{Condor}
+\cvtag{Slurm}
+\cvtag{PyTorch}
+\cvtag{MongoDB}
+\cvtag{Mathematica}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Domain knowledge}
+
+{\small
+\cvtag{Satellite Mission Context}
+\cvtag{ESA/NASA Collaboration}
+\cvtag{Mission-Level Performance}
+\cvtag{Scientific Payload Analysis}
+\cvtag{Precision Instrumentation}
+\cvtag{Environmental Noise}
+\cvtag{Space Mission Data Processing}
+\cvtag{Large-Scale International Projects}
+\cvtag{Cleanroom / ECSS Awareness}
+\cvtag{Technical English}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+{\small\LaTeXraggedright
+\cvsubsection{Soft skills}
+
+{\small
+\cvtag{Autonomy}
+\cvtag{Analytical Thinking}
+\cvtag{Execution Rigor}
+\cvtag{Problem Solving}
+\cvtag{Adaptability}
+\cvtag{Responsibility}
+\cvtag{Attention to Detail}
+\cvtag{Collaboration}
+\cvtag{Stakeholder Communication}
+\cvtag{Structured Communication}
+\cvtag{Team Coordination}
+\cvtag{Customer Awareness}
+\cvtag{Technical Interface}
+\par}}
+
+\cvtag{\textit{Applications: environmental test support, space systems, instrumentation data analysis, validation workflows and technical reporting}}
+
+\end{document}

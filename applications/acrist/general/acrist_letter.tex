@@ -1,0 +1,104 @@
+\documentclass[11pt,a4paper]{../_shared/altacv}
+
+\geometry{left=1.5cm,right=1.5cm,top=1.cm,bottom=1.2cm,columnsep=1.5cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{paracol}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+
+% Couleurs exactes du CV
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\name{BOILEAU Guillaume}
+\personalinfo{
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes Maritimes, France}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\setlength{\parskip}{0.75\baselineskip}
+
+\begin{document}
+\makecvheader
+\vspace{-0.5cm}
+\cvsection{Lettre de motivation}
+\vspace{-0.3cm}
+
+{\color{accent}\textbf{Objet :}} \textit{Candidature spontanée -- Ingénieur R\&D / Data Scientist}
+
+{\color{body}
+
+Madame, Monsieur,
+
+Je souhaite vous adresser ma candidature spontanée afin de rejoindre ACRI-ST en tant qu'ingénieur R\&D ou data scientist. Les activités de votre entreprise, centrées sur l'analyse et la valorisation de données issues d'instruments scientifiques et de missions satellitaires, correspondent directement à mon parcours situé à l'interface entre analyse de données complexes, modélisation scientifique et développement de pipelines logiciels.
+
+Docteur en physique et membre du consortium international de la mission spatiale LISA de l'Agence Spatiale Européenne, mes travaux de recherche portent sur le développement de méthodes permettant d'extraire une information scientifique robuste à partir de données massives fortement bruitées issues d'instruments de très haute précision.
+
+Dans le cadre de la préparation scientifique de la mission LISA, j'ai travaillé sur plusieurs problématiques centrales du traitement des données de la mission : modélisation des populations astrophysiques, analyse du fond stochastique d'ondes gravitationnelles, caractérisation du bruit instrumental et développement de pipelines d'analyse permettant de séparer différentes composantes physiques présentes dans les données.
+
+Ces travaux m'ont conduit à développer des outils de simulation et d'analyse permettant de modéliser des populations de sources astrophysiques réalistes, de générer des signaux synthétiques et d'étudier quantitativement leur impact sur les performances scientifiques de la mission. Ces développements reposent sur des méthodes avancées de traitement du signal, de modélisation statistique et d'inférence bayésienne.
+
+Une contribution centrale de mon travail concerne le développement de la plateforme CATpyLISA, dont j'ai conçu l'architecture et réalisé les principaux développements. Cette plateforme a été développée pour répondre à un problème clé de la mission LISA : la consolidation des catalogues de sources produits par différents pipelines d'analyse.
+
+Dans l'architecture du traitement des données de LISA, plusieurs pipelines indépendants produisent des catalogues de sources candidates (niveau L2). La production d'un catalogue scientifique final (niveau L3) nécessite alors de comparer, fusionner et valider ces résultats afin de produire un catalogue unique scientifiquement robuste.
+
+CATpyLISA permet précisément de réaliser cette consolidation. La plateforme intègre les catalogues produits par différents pipelines d'analyse, compare leurs résultats et évalue leur cohérence statistique. Elle permet également d'analyser les distributions probabilistes associées aux sources détectées, d'évaluer les biais de sélection et de mesurer la complétude et la pureté des catalogues scientifiques produits.
+
+Ce travail constitue un élément structurant du segment sol scientifique de la mission LISA. Il implique la conception d'architectures logicielles robustes, le développement d'algorithmes statistiques avancés et la mise en place d'outils permettant de garantir la traçabilité scientifique des résultats produits par les pipelines d'analyse.
+
+Ces recherches reposent notamment sur l'utilisation de méthodes d'inférence bayésienne et d'algorithmes MCMC permettant d'estimer simultanément les contributions de différentes populations astrophysiques et du bruit instrumental dans les données. Leur mise en œuvre nécessite le développement de pipelines de calcul robustes, l'optimisation d'algorithmes statistiques et l'utilisation d'infrastructures de calcul haute performance pour traiter de grands volumes de données.
+
+Au-delà des aspects méthodologiques, ces projets impliquent également une forte composante de développement logiciel scientifique et de coordination technique. Dans ce cadre, j'ai structuré plusieurs tâches de développement logiciel, encadré des stagiaires travaillant sur les pipelines d'analyse et contribué à la coordination technique d'outils utilisés dans des collaborations scientifiques internationales.
+
+Ces expériences m'ont permis de développer un ensemble de compétences directement mobilisables dans des projets de traitement de données scientifiques et instrumentales :
+
+\begin{itemize}
+\item traitement du signal et analyse de séries temporelles
+\item modélisation statistique et inférence bayésienne
+\item méthodes MCMC et analyse probabiliste
+\item simulation numérique et modélisation de populations
+\item analyse de données massives et pipelines scientifiques
+\item développement logiciel scientifique en Python (NumPy, SciPy, Pandas)
+\item calcul haute performance et traitement distribué
+\item conception d'architectures logicielles scientifiques modulaires
+\item développement collaboratif de logiciels scientifiques (Git, workflows HPC)
+\item coordination technique de projets de développement scientifique
+\end{itemize}
+
+Plus récemment, mon expérience dans le développement logiciel m'a également conduit à développer des applications backend et des services de traitement de données dans un contexte industriel, notamment dans le cadre de plateformes logicielles utilisant TypeScript, Angular et Node.js pour l'exploitation de flux de données issus d'infrastructures matérielles complexes.
+
+Au travers de ces différentes expériences, j'ai développé un profil combinant analyse de données scientifiques, développement logiciel et pilotage technique de projets. Ce positionnement me permet d'intervenir sur l'ensemble de la chaîne de traitement de données : conception d'algorithmes d'analyse, développement de pipelines logiciels, structuration d'architectures de traitement et exploitation scientifique ou opérationnelle des résultats.
+
+Les activités d'ACRI-ST, notamment dans le domaine du traitement de données satellitaires et de l'exploitation scientifique de données d'observation de la Terre, correspondent directement aux problématiques sur lesquelles j'ai travaillé au cours de mes recherches. Je serais ainsi très heureux de pouvoir mettre mes compétences en analyse de données scientifiques et en développement de pipelines de traitement au service de vos projets.
+
+Je serais ravi de pouvoir échanger avec vous afin de discuter plus en détail de ma candidature.
+
+Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+\textbf{Guillaume Boileau}
+
+}
+
+\end{document}

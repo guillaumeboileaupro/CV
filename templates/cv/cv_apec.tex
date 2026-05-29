@@ -1,0 +1,350 @@
+%%%%%%%%%%%%%%%%%
+% General CV - Guillaume Boileau
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Ingénieur docteur | Data, logiciel, systèmes complexes, validation \& coordination technique}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Ingénieur logiciel full stack}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Développement logiciel et support opérationnel pour une plateforme CPMS liée aux infrastructures de recharge de véhicules électriques.
+
+\textbf{Objectif :} Contribuer au développement, à l'intégration et au suivi technique de services logiciels connectés à des équipements terrain et à des flux de données opérationnels.
+
+\begin{itemize}
+  \item \textbf{Développement logiciel :} Contribution au développement d'applications web et de services backend en TypeScript, Angular et Node.js.
+  \item \textbf{Intégration système :} Travail sur des interfaces entre services logiciels, données opérationnelles et infrastructures de recharge.
+  \item \textbf{Flux de données :} Suivi et analyse de flux opérationnels, notamment via des échanges FTP utilisés pour le pilotage et le suivi technique.
+  \item \textbf{Support production :} Analyse d'incidents, investigation de comportements applicatifs et contribution à la fiabilisation des services.
+  \item \textbf{Qualité et cohérence :} Vérification de la cohérence entre données, services applicatifs, comportement terrain et attentes opérationnelles.
+  \item \textbf{Organisation agile :} Utilisation de Zenhub pour le suivi des tâches, la priorisation, le backlog et la coordination dans un environnement de développement itératif.
+  \item \textbf{Communication technique :} Formalisation d'observations, d'analyses d'incidents et de points techniques pour faciliter la prise de décision.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- Data, logiciel \& validation}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Activités d'ingénierie et de R\&D pour la mission spatiale LISA ESA/NASA, avec des enjeux de simulation, de traitement de données, d'intégration de modèles et de validation technique.
+
+\textbf{Objectif :} Développer des outils Python permettant de structurer, comparer, intégrer et valider des modèles et des résultats issus de contributions hétérogènes.
+
+\begin{itemize}
+  \item \textbf{Développement Python :} Conception et développement de workflows pour l'intégration, la comparaison et la validation de modèles.
+  \item \textbf{Pipelines de données :} Mise en place de chaînes de traitement pour organiser les entrées, transformer les sorties et comparer les résultats.
+  \item \textbf{Validation technique :} Définition de contrôles de cohérence, de règles de comparaison et de méthodes de vérification des résultats.
+  \item \textbf{Intégration de modèles :} Consolidation de résultats produits par différents modèles dans un cadre commun d'analyse et de revue.
+  \item \textbf{Traçabilité :} Structuration des configurations, sorties de simulation, résultats d'analyse et éléments de documentation.
+  \item \textbf{Documentation et capitalisation :} Utilisation de Confluence pour organiser la documentation technique, le suivi de validation, la traçabilité des analyses et le partage de connaissances.
+  \item \textbf{Coordination :} Travail avec des contributeurs scientifiques, logiciels et institutionnels dans un environnement international.
+  \item \textbf{Plateforme logicielle :} Développement de CATpyLISA, plateforme Python pour l'intégration, la comparaison, la validation et la revue technique de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Modélisation \& analyse de données}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Analyse de données et études de performance pour des instruments de précision dans un environnement technique international.
+
+\textbf{Objectif :} Développer des workflows robustes et reproductibles pour identifier, caractériser et réduire des sources affectant la qualité de mesure.
+
+\begin{itemize}
+  \item \textbf{Analyse de données :} Traitement, structuration et analyse de données complexes issues d'instruments de précision.
+  \item \textbf{Modélisation statistique :} Développement de méthodes d'analyse et d'inférence bayésienne, notamment par chaînes MCMC.
+  \item \textbf{Traitement du signal :} Identification et caractérisation de contributions de bruit dans des mesures complexes.
+  \item \textbf{Pipelines Python :} Mise en place de workflows de traitement, filtrage, transformation et analyse statistique.
+  \item \textbf{Validation de résultats :} Analyse de sensibilité, vérification de cohérence et évaluation des limites de performance.
+  \item \textbf{Reporting technique :} Production de résultats traçables, de synthèses techniques et de supports pour des parties prenantes internationales.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Signal, simulation \& analyse de données}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Activités de R\&D liées à l'analyse de signaux faibles, à la simulation numérique et à la préparation de missions spatiales et d'instruments de détection.
+
+\textbf{Objectif :} Développer des méthodes d'analyse, automatiser des simulations et produire des résultats exploitables dans un environnement scientifique et technique exigeant.
+
+\begin{itemize}
+  \item \textbf{Simulation numérique :} Développement d'approches de simulation pour des environnements de signaux complexes et des jeux de données de grande taille.
+  \item \textbf{Analyse de données :} Mise en place de méthodes pour analyser et séparer des signaux faibles et superposés.
+  \item \textbf{Traitement du signal :} Études de caractérisation, de décomposition et de comparaison de signaux dans des contextes bruités.
+  \item \textbf{Automatisation :} Développement de workflows reproductibles pour les analyses répétées, les comparaisons et les études de sensibilité.
+  \item \textbf{Investigation technique :} Analyse de sources de bruit et réalisation de diagnostics par corrélations entre capteurs.
+  \item \textbf{Documentation :} Formalisation des méthodes, hypothèses, résultats et conclusions pour revue collaborative.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Ingénieur docteur avec une double compétence en data, logiciel et systèmes complexes, spécialisé dans l'analyse de données, le développement de pipelines, la validation technique et la coordination de projets multidisciplinaires.}
+
+Mon parcours combine développement Python, traitement de données, simulation numérique, intégration de modèles, investigation d'anomalies, documentation technique et support à la décision. J'ai travaillé dans des environnements exigeants : mission spatiale LISA ESA/NASA, instrumentation scientifique, plateformes logicielles industrielles et infrastructures de recharge électrique.
+
+\medskip
+
+\textbf{Positionnement cible :} ingénieur systèmes / IVVQ, chef de projet technique, PMO technique, data / AI engineer, backend Python, coordinateur R\&T ou documentation technique.
+
+\begin{itemize}
+  \item Capacité à faire le lien entre besoins métier, contraintes techniques, données, logiciel, qualité et livraison.
+  \item Expérience en développement logiciel, data processing, simulation, validation de résultats et automatisation de workflows.
+  \item Culture forte de la qualité : cohérence, traçabilité, reproductibilité, documentation et contrôle des résultats.
+  \item Habitude des environnements collaboratifs, internationaux, multidisciplinaires et orientés livraison.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning: Regression \& Classification}{DeepLearning.AI -- Andrew Ng}{2026}{Coursera}
+\divider
+
+\cvevent{Développement assisté par IA}{Prompting, relecture de code, debugging, prompting incrémental et critique}{2026}{Autoformation}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA -- Plateforme Python d'intégration, comparaison et validation}{Mission spatiale LISA ESA/NASA}{2023 -- 2025}{}
+
+Développement d'une plateforme Python dédiée à l'intégration de modèles, à la structuration de données, à la comparaison de résultats, à la validation technique et à la revue de workflows liés à la mission LISA.
+
+\textbf{Rôle :} développement Python, conception de pipelines, structuration de données, logique de validation, contrôles de cohérence, documentation technique et coordination avec plusieurs contributeurs.
+
+\textbf{Compétences mobilisées :} Python, data processing, automatisation, modélisation, validation, documentation, GitLab, environnement collaboratif international.
+
+\divider
+
+\cvevent{Flux de données opérationnels pour infrastructures de recharge}{Plateforme CPMS -- VEV Platform Services France}{2025 -- 2026}{}
+
+Contribution à des services logiciels liés aux échanges de données opérationnelles et au comportement d'infrastructures connectées de recharge de véhicules électriques.
+
+\textbf{Rôle :} développement logiciel, suivi de flux de données, analyse d'incidents, diagnostic opérationnel, fiabilisation d'interfaces et coordination technique.
+
+\textbf{Compétences mobilisées :} TypeScript, Angular, Node.js, FTP, API, intégration logiciel/système, support production, analyse d'anomalies, Zenhub.
+
+\divider
+
+\cvevent{Collaborations scientifiques et techniques internationales}{LISA, LIGO--Virgo--KAGRA, Einstein Telescope}{2018 -- now}{}
+
+Contribution à des travaux collaboratifs en analyse de données, traitement du signal, simulation, caractérisation de bruit, validation de résultats et investigation technique dans des environnements internationaux.
+
+\textbf{Rôle :} développement d'outils d'analyse, contribution à des workflows de traitement, études techniques, documentation et revue collaborative.
+
+\textbf{Compétences mobilisées :} analyse de données, traitement du signal, modélisation, simulation, validation, coordination technique et communication scientifique.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{Pilotage technique, projet \& coordination}
+
+{\small
+\cvtag{Coordination technique}
+\cvtag{Gestion de projet technique}
+\cvtag{PMO technique}
+\cvtag{Suivi de tâches}
+\cvtag{Priorisation}
+\cvtag{Reporting}
+\cvtag{Gestion des risques}
+\cvtag{Stakeholder management}
+\cvtag{Agile}
+\cvtag{Kanban}
+\cvtag{Cycle en V}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{IVVQ, validation, qualité \& systèmes}
+
+{\small
+\cvtag{IVVQ logiciel}
+\cvtag{Vérification / Validation}
+\cvtag{Intégration système}
+\cvtag{Tests fonctionnels}
+\cvtag{Non-régression}
+\cvtag{Traçabilité exigences}
+\cvtag{Contrôles de cohérence}
+\newline
+\cvtag{Analyse d'anomalies}
+\cvtag{Diagnostic technique}
+\cvtag{Root cause analysis}
+\cvtag{Documentation qualité}
+\cvtag{Analyse de risques}
+\cvtag{Systèmes complexes}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Data, IA, modélisation \& signal}
+
+{\small
+\cvtag{Analyse de données}
+\cvtag{Data processing}
+\cvtag{Data quality}
+\cvtag{Pipelines de données}
+\cvtag{Modélisation statistique}
+\cvtag{Machine Learning}
+\cvtag{Classification}
+\cvtag{Scikit-learn}
+\cvtag{PyTorch}
+\cvtag{MCMC}
+\cvtag{Inférence bayésienne}
+\cvtag{Simulation numérique}
+\cvtag{Traitement du signal}
+\cvtag{Analyse de bruit}
+\cvtag{Signaux faibles}
+\cvtag{Prompt engineering}
+\cvtag{LLM awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Développement logiciel, web \& automatisation}
+
+{\small
+\cvtag{Python}
+\cvtag{Pandas}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{SQL}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{REST API}
+\cvtag{Bash}
+\cvtag{Linux}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{FTP}
+\cvtag{Power BI}
+\cvtag{n8n awareness}
+\cvtag{HubSpot awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Domaines d'application}
+
+{\small
+\cvtag{Spatial}
+\cvtag{LISA ESA/NASA}
+\cvtag{Systèmes satellites}
+\cvtag{Instrumentation scientifique}
+\cvtag{Plateformes data}
+\cvtag{CPMS}
+\cvtag{Recharge électrique}
+\cvtag{Systèmes industriels}
+\newline
+\cvtag{Projets internationaux}
+}
+
+\end{document}

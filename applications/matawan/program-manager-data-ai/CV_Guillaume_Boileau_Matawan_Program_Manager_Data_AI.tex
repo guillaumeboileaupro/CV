@@ -1,0 +1,385 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Matawan Services - Program Manager Data / AI
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Program Manager Data \& AI | Gouvernance, Qualité des Données, Pilotage Projet, KPI \& Coordination Métier-Technique}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - Data Flows, Industrial Services \& Delivery Follow-up}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and integration of software services for an EV charging CPMS platform connected to operational infrastructure and field equipment.
+
+\textbf{Objective:} Support reliable delivery, data-flow continuity, software integration and operational follow-up between platform services, business needs and charging station systems.
+
+\begin{itemize}
+  \item \textbf{Operational data flows:} Implemented, maintained and monitored FTP-based operational data exchange services feeding industrial platform workflows.
+  \item \textbf{Data quality / integrity:} Checked consistency, continuity and reliability of operational data exchanges between platform services and field infrastructure.
+  \item \textbf{Delivery follow-up:} Developed and maintained web and backend services using TypeScript, Angular and Node.js in an operational industrial environment.
+  \item \textbf{Business / technical interface:} Translated operational issues, user feedback, data-flow constraints and equipment feedback into structured technical tasks and corrective actions.
+  \item \textbf{Production follow-up:} Analysed service behaviour, communication issues and anomalies affecting operational continuity and data availability.
+  \item \textbf{Issue / deviation analysis:} Identified operational gaps, prioritised corrective actions and supported follow-up of open points in a delivery-oriented context.
+  \item \textbf{Validation:} Verified interface continuity, service behaviour and data consistency in production-like or operational conditions.
+  \item \textbf{Coordination:} Worked with technical stakeholders to clarify priorities, monitor action items and support iterative delivery.
+  \item \textbf{Agile tooling:} Used Zenhub to support backlog follow-up, task tracking, progress monitoring and technical coordination.
+  \item \textbf{Industrial exposure:} Hands-on exposure to EV charging infrastructure, equipment-connected services, test support and operational constraints.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Data/AI Workflows, Program Coordination \& Validation}}{CNES, Laboratoire Lagrange, Observatoire de la Côte d'Azur}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering activities for the LISA ESA/NASA space mission, involving complex software chains, model integration, simulation workflows, validation campaigns and international coordination.
+
+\textbf{Objective:} Structure, coordinate and validate complex data / AI-like workflows under strong consistency, traceability, quality, reproducibility and decision-support constraints.
+
+\begin{itemize}
+  \item \textbf{Program / project coordination:} Coordinated technical activities involving contributors, research engineers, technicians and Master's thesis interns, with progress follow-up and deliverable consolidation.
+  \item \textbf{Data workflow strategy:} Structured priorities, validation logic, expected outputs, milestones and technical acceptance criteria for large-scale data and simulation workflows.
+  \item \textbf{Data / AI platform:} Developed CATpyLISA, a Python platform for large-scale model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Data quality \& integrity:} Designed consistency checks, comparison campaigns and validation workflows to ensure robustness, traceability and reliability of technical outputs.
+  \item \textbf{Decision-support data:} Consolidated analysis results, model comparisons, validation status and open points into material supporting technical decisions.
+  \item \textbf{Risks \& deviations:} Identified inconsistencies, limiting factors, data-quality issues and technical risks affecting reliability, progress or delivery quality.
+  \item \textbf{Reporting / steering:} Produced technical notes, validation summaries, analysis reports, progress material and review supports for contributors and stakeholders.
+  \item \textbf{Governance logic:} Supported traceability, documentation, versioned workflows, reproducibility and evidence consolidation across the analysis chain.
+  \item \textbf{Documentation:} Used Confluence to support technical documentation, coordination notes, validation follow-up and knowledge sharing.
+  \item \textbf{Stakeholder alignment:} Worked at the interface between scientific requirements, software development, data processing, modelling assumptions and mission-level objectives.
+  \item \textbf{International environment:} Operated in a collaborative framework requiring technical English, structured communication and versioned workflows.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Technical Studies, Performance Analysis \& Project Reporting}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement international environment linked to gravitational-wave detector performance.
+
+\textbf{Objective:} Identify, characterize and mitigate factors affecting system sensitivity using statistical, computational and validation-oriented methods.
+
+\begin{itemize}
+  \item \textbf{Data analysis:} Analysed instrumental and environmental datasets impacting system sensitivity, stability and measurement quality.
+  \item \textbf{Data pipelines:} Developed Python-based pipelines for noise source identification, uncertainty estimation and statistical modelling.
+  \item \textbf{Quality / integrity:} Evaluated robustness, uncertainty and consistency of analysis outputs to support reliable technical conclusions.
+  \item \textbf{Data-driven decisions:} Analysed measurement and simulation outputs to identify abnormal behaviours, dominant contributors and prioritisation paths.
+  \item \textbf{Documentation:} Produced reproducible and traceable technical analyses for international engineering and research stakeholders.
+  \item \textbf{Coordination:} Communicated complex data-driven results through structured reporting, presentations and collaborative review.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Simulation, Software Workflows \& Validation}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Engineering and analysis activities for gravitational-wave mission preparation, involving signal analysis, simulation, software workflows and noise characterization.
+
+\textbf{Objective:} Develop robust analysis methods and validation workflows for complex signals and demanding system environments.
+
+\begin{itemize}
+  \item \textbf{Large-scale data workflows:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Validation:} Compared simulated outputs, model behaviours and analysis results to assess consistency, robustness and data reliability.
+  \item \textbf{Technical investigations:} Investigated noise sources through cross-sensor correlation analyses in diagnostic contexts.
+  \item \textbf{Performance analysis:} Supported the identification of limiting factors affecting mission-level performance and system sensitivity.
+  \item \textbf{Scientific computing:} Developed strong expertise in Python-based analysis, modelling, documentation and reproducible workflows.
+\end{itemize}
+
+
+
+\switchcolumn
+
+
+\cvsection{Profile for Matawan Services}
+
+\textbf{Data / AI Program Manager profile with strong experience in complex data workflows, project coordination, data-quality validation, technical documentation, reporting and stakeholder alignment}. Background developed through international scientific and space-mission programs, reinforced by recent industrial software experience involving operational data flows, production follow-up and business/technical coordination.
+
+For a \textbf{Program Manager Data / AI} role, I bring a hybrid profile combining data expertise and project leadership: structuring data initiatives, coordinating contributors, translating needs into actionable roadmaps, ensuring data quality and traceability, supervising delivery from cadrage to validation, and producing clear steering material for decision-making.
+
+\begin{itemize}
+  \item Strong fit with Data / AI program activities: roadmap structuring, portfolio follow-up, data-quality monitoring, validation logic, KPI-style reporting and stakeholder coordination.
+  \item Experience coordinating multidisciplinary contributors across software, data, modelling, validation, operational constraints and decision-support objectives.
+  \item Ability to translate business needs, technical constraints, data anomalies and quality issues into structured actions, deliverables and follow-up.
+  \item Strong analytical ability to investigate data inconsistencies, identify risks, assess impacts and converge toward pragmatic corrective actions.
+  \item Practical experience with Python, SQL foundations, data workflows, Git-based collaboration, Linux environments, documentation and operational monitoring.
+  \item Familiar with Agile delivery contexts, backlog follow-up, Jira-style issue tracking, Confluence documentation and technical reporting.
+  \item Comfortable working in English and in multidisciplinary / international environments involving technical and non-technical stakeholders.
+\end{itemize}
+
+\cvsection{Fit for Data / AI Program Management}
+
+\begin{itemize}
+  \item Relevant background for data-project phases: cadrage, needs analysis, workflow structuring, implementation follow-up, validation, quality checks and delivery support.
+  \item Strong experience producing technical documentation, validation reports, progress summaries, steering supports and decision-support material.
+  \item Experience coordinating contributors, clarifying priorities, identifying risks, analysing deviations and supporting corrective actions.
+  \item Practical understanding of data and software components: Python pipelines, SQL basics, APIs, data flows, backend services, Linux, Git/GitLab, CI/CD and monitoring.
+  \item Experience at the interface between data quality, software behaviour, operational constraints, stakeholder expectations and reliable decision-support outputs.
+  \item Comfortable with collaborative and project tools including Git/GitLab, GitHub, Confluence, Zenhub, JIRA-style issue tracking, Trello awareness, Excel and Power BI awareness.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\end{paracol}
+
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, scikit-learn, data analysis, model evaluation, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, algorithms and software engineering fundamentals.
+}
+
+\cvsection{Projects}
+
+\cvevent{CNES / LISA -- Data / AI Workflows, Program Coordination \& Validation}{ESA/NASA Space Mission - Large-scale International Collaboration}{2023 -- 2025}{Nice, France}
+
+Coordination and structuring of data-processing, model-integration and validation workflows for the LISA space mission within a large international engineering and scientific collaboration.
+
+\textbf{Program management relevance:} Cadrage of data activities, contributor coordination, roadmap and validation planning, delivery follow-up, risk identification, reporting, documentation and stakeholder alignment.
+
+\textbf{Data / AI relevance:} Work involving complex data-processing chains, model integration, reproducible environments, GitLab-based development, technical documentation, validation evidence, indicators and versioned deliverables.
+
+\textbf{Scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Einstein Telescope / LIGO--Virgo--KAGRA -- Technical Studies \& Collaborative Project Workflows}{International Collaborations}{2021 -- 2023}{Antwerp, Belgium}
+
+Contribution to collaborative developments in data analysis, software methods and technical investigations within large-scale international scientific and engineering collaborations.
+
+\textbf{Project management relevance:} Coordination of technical studies, reporting, documentation, contribution to collaborative review, prioritisation of analysis tasks and communication with international stakeholders.
+
+\textbf{System impact:} Studies on environmental and instrumental noise sources supporting the identification of performance limitations and design constraints for next-generation gravitational-wave observatories.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Data / AI program management \& delivery}
+
+{\small
+\cvtag{Program Management}
+\cvtag{Data Strategy}
+\cvtag{AI Initiatives}
+\cvtag{Project Portfolio}
+\cvtag{Cadrage}
+\cvtag{Roadmap Follow-Up}
+\cvtag{Milestone Follow-Up}
+\cvtag{Data Quality}
+\cvtag{Data Integrity}
+\cvtag{Risk Identification}
+\cvtag{Action Plans}
+\cvtag{Deviation Analysis}
+\cvtag{KPI Follow-Up}
+\cvtag{Steering Supports}
+\cvtag{Decision Support}
+\cvtag{Delivery Support}
+\cvtag{Stakeholder Reporting}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Data governance, quality \& reporting}
+
+{\small
+\cvtag{Data Governance}
+\cvtag{Data Quality}
+\cvtag{Data Integrity}
+\cvtag{Data Validation}
+\cvtag{Data Workflows}
+\cvtag{Data Pipelines}
+\cvtag{KPI Follow-Up}
+\cvtag{Project Reporting}
+\cvtag{Steering Committees}
+\cvtag{Action Plans}
+\cvtag{Deviation Analysis}
+\cvtag{Quality Follow-Up}
+\cvtag{Validation}
+\cvtag{Production Follow-Up}
+\cvtag{Business Needs Analysis}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Data, AI \& technical environment}
+
+{\small
+\cvtag{Data / AI}
+\cvtag{Machine Learning}
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{Pandas}
+\cvtag{PyTorch}
+\cvtag{TensorFlow}
+\cvtag{Data Pipelines}
+\cvtag{APIs}
+\cvtag{REST API}
+\cvtag{Linux}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Git / GitLab}
+\cvtag{GitHub}
+\cvtag{Power BI Awareness}
+\cvtag{OpenSearch}
+\cvtag{Operational Data Flows}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Tools, methods \& change management}
+
+{\small
+\cvtag{JIRA}
+\cvtag{Confluence}
+\cvtag{Zenhub}
+\cvtag{Trello Awareness}
+\cvtag{Agile}
+\cvtag{Scrum Awareness}
+\cvtag{Kanban Awareness}
+\cvtag{MS Project Ramp-Up}
+\cvtag{Change Management}
+\cvtag{User Support}
+\cvtag{User Guidance}
+\cvtag{Workshop Facilitation}
+\cvtag{Stakeholder Alignment}
+\cvtag{Business / Tech Coordination}
+\cvtag{Technical Documentation}
+\cvtag{Progress Reporting}
+\cvtag{Technical English}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Office \& communication}
+
+{\small
+\cvtag{PowerPoint}
+\cvtag{Excel}
+\cvtag{Word}
+\cvtag{MS Office}
+\cvtag{Executive Presentations}
+\cvtag{Reporting Dashboards}
+\cvtag{KPI Follow-Up}
+\cvtag{Indicator Follow-Up}
+\cvtag{Synthesis}
+\cvtag{Analytical Thinking}
+\cvtag{Problem Solving}
+\cvtag{Pedagogy}
+\cvtag{Autonomy}
+\cvtag{Adaptability}
+\cvtag{Rigor}
+}
+\end{document}

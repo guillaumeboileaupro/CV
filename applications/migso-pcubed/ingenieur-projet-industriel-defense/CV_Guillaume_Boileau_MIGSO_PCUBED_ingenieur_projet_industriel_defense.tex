@@ -1,0 +1,381 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for MI-GSO | PCUBED - Ingénieur projet industriel / PMO - Défense
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Ingénieur Projet Industriel / PMO | Planning, Risques, KPI, Qualité, Reporting \& Coordination Transverse}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - Industrial Systems, Production Follow-up \& Project Coordination}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and integration of software services for an EV charging CPMS platform connected to operational infrastructure and field equipment.
+
+\textbf{Objective:} Support reliable delivery, production follow-up, software integration and operational continuity between platform services, data flows and charging station systems.
+
+\begin{itemize}
+  \item \textbf{Delivery follow-up:} Developed and maintained web and backend services using TypeScript, Angular and Node.js in an operational industrial environment.
+  \item \textbf{System integration:} Contributed to the integration and maintenance of software services interacting with field equipment, charging stations and operational infrastructure.
+  \item \textbf{Needs clarification:} Translated operational issues, data-flow constraints, equipment feedback and user needs into technical tasks and corrective actions.
+  \item \textbf{Production follow-up:} Analysed service behaviour, data exchanges, communication issues and anomalies affecting operational continuity.
+  \item \textbf{Deviation analysis:} Identified operational gaps, prioritised corrective actions and contributed to progress follow-up in a delivery-oriented context.
+  \item \textbf{Verification / validation:} Checked data consistency, interface continuity and service behaviour in production-like or operational conditions.
+  \item \textbf{Technical issue management:} Investigated incidents involving software behaviour, operational data exchanges and hardware-connected systems.
+  \item \textbf{Coordination / PMO logic:} Worked with technical stakeholders to follow priorities, clarify issues, monitor action items and support iterative delivery.
+  \item \textbf{Data exchange:} Implemented and monitored FTP-based operational data exchange services.
+  \item \textbf{Field / equipment exposure:} Hands-on exposure to EV charging stations, test support and electrical-safety constraints in an industrial context.
+  \item \textbf{Agile tooling / indicators:} Used Zenhub to support task tracking, backlog follow-up, progress monitoring, iterative development and technical coordination.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Project Coordination, Validation \& Technical Reporting}}{CNES, Laboratoire Lagrange, Observatoire de la Côte d'Azur}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering activities for the LISA ESA/NASA space mission, involving complex software chains, model integration, simulation workflows, validation campaigns and international coordination.
+
+\textbf{Objective:} Structure, coordinate and validate complex software/data workflows under strong consistency, traceability, performance, risk-control and verification constraints.
+
+\begin{itemize}
+  \item \textbf{Project coordination:} Coordinated technical activities involving contributors, research engineers, technicians and Master's thesis interns, with progress follow-up and consolidation of deliverables.
+  \item \textbf{Cadrage / planning:} Structured development priorities, validation logic, expected outputs, milestones and technical acceptance criteria for complex analysis workflows.
+  \item \textbf{Solution implementation:} Developed CATpyLISA, a Python platform for large-scale model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{V-cycle logic:} Supported activities aligned with specification, integration, verification, validation, traceability and technical evidence consolidation.
+  \item \textbf{Verification / validation:} Defined comparison campaigns, consistency checks, acceptance logic and validation workflows for technical outputs.
+  \item \textbf{Risks \& deviations:} Identified deviations, inconsistencies, limiting factors and technical risks affecting result reliability, project progress or delivery quality.
+  \item \textbf{Reporting / decision support:} Produced technical notes, validation summaries, analysis reports, progress material and review supports for contributors and project stakeholders.
+  \item \textbf{Indicators / project steering:} Consolidated analysis outcomes, validation status, open points and technical evidence to support project decisions.
+  \item \textbf{Documentation:} Used Confluence to support technical documentation, coordination notes, validation follow-up and knowledge sharing.
+  \item \textbf{Stakeholder alignment:} Worked at the interface between scientific requirements, software development, data processing, modelling assumptions and mission-level objectives.
+  \item \textbf{International environment:} Operated in a collaborative framework requiring technical English, structured communication and versioned workflows.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Technical Studies, Performance Analysis \& Project Reporting}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement international environment linked to gravitational-wave detector performance.
+
+\textbf{Objective:} Identify, characterize and mitigate factors affecting system sensitivity using statistical, computational and validation-oriented methods.
+
+\begin{itemize}
+  \item \textbf{Technical studies:} Analysed instrumental and environmental effects impacting system sensitivity, stability and measurement quality.
+  \item \textbf{Analysis workflows:} Developed Python-based pipelines for noise source identification, uncertainty estimation and statistical modelling.
+  \item \textbf{Performance analysis:} Identified contributors to performance degradation and supported prioritisation of mitigation directions.
+  \item \textbf{Data-driven decisions:} Analysed measurement and simulation outputs to identify abnormal behaviours and dominant contributors.
+  \item \textbf{Documentation:} Produced reproducible and traceable technical analyses for international engineering and research stakeholders.
+  \item \textbf{Coordination:} Communicated complex technical results through structured reporting, presentations and collaborative review.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Simulation, Software Workflows \& Validation}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Engineering and analysis activities for gravitational-wave mission preparation, involving signal analysis, simulation, software workflows and noise characterization.
+
+\textbf{Objective:} Develop robust analysis methods and validation workflows for complex signals and demanding system environments.
+
+\begin{itemize}
+  \item \textbf{Simulation workflows:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Software validation:} Compared simulated outputs, model behaviours and analysis results to assess consistency and robustness.
+  \item \textbf{Technical investigations:} Investigated noise sources through cross-sensor correlation analyses in diagnostic contexts.
+  \item \textbf{Performance analysis:} Supported the identification of limiting factors affecting mission-level performance and system sensitivity.
+  \item \textbf{Scientific computing:} Developed strong expertise in Python-based analysis, modelling, documentation and reproducible workflows.
+\end{itemize}
+
+
+
+\switchcolumn
+
+\cvsection{Profile for MI-GSO | PCUBED}
+
+\textbf{Industrial project engineer / PMO-oriented profile with strong experience in project coordination, risk follow-up, KPI-style reporting, validation, documentation and delivery support for complex technical systems}. Background developed in international space-mission environments and reinforced by recent industrial software experience involving operational services, hardware/software interfaces and production follow-up.
+
+For an \textbf{Ingénieur Projet Industriel / PMO - Défense} role, I bring a rigorous project-oriented profile: planning and coordinating technical activities, tracking risks and action plans, consolidating indicators, preparing steering supports, analysing deviations, supporting quality / validation logic and communicating clearly with project stakeholders.
+
+\begin{itemize}
+  \item Strong fit with PMO activities: planning follow-up, risk and opportunity tracking, KPI consolidation, project reporting and stakeholder coordination.
+  \item Experience coordinating multidisciplinary contributors across software, data, modelling, operational constraints, validation activities and system-level objectives.
+  \item Ability to translate technical needs, anomalies, deviations and constraints into structured action plans, deliverables and follow-up.
+  \item Strong analytical ability to investigate critical points, identify risks, assess impacts and converge toward pragmatic corrective actions.
+  \item Practical experience with software integration, data flows, Linux environments, Git-based workflows, operational monitoring and industrial production follow-up.
+  \item Industrial exposure to hardware/software interfaces, operational data exchanges, equipment-connected services and quality-oriented validation.
+  \item Comfortable working in English and in multidisciplinary environments involving technical and non-technical stakeholders.
+\end{itemize}
+
+\cvsection{Fit for Industrial Project / PMO}
+
+\begin{itemize}
+  \item Relevant background for project phases: cadrage, planning follow-up, implementation monitoring, risk tracking, verification, validation and delivery support.
+  \item Strong experience producing technical documentation, validation reports, progress summaries, steering supports and decision-support material.
+  \item Experience coordinating contributors, clarifying priorities, identifying risks, analysing deviations and supporting corrective actions.
+  \item Practical understanding of software, data and operational components: data flows, backend services, Linux, Git/GitLab, CI/CD, monitoring and production follow-up.
+  \item Experience at the interface between software behaviour, operational data, system constraints, quality expectations and hardware-connected infrastructure.
+  \item Comfortable with collaborative and reporting tools including Git/GitLab, GitHub, Confluence, Zenhub, JIRA-style issue tracking, Excel and Power BI awareness.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\end{paracol}
+
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, web development, algorithms and software engineering fundamentals.
+}
+
+
+\cvsection{Projects}
+
+\cvevent{CNES / LISA -- Project Coordination, Validation, Risk Follow-up \& Reporting}{ESA/NASA Space Mission - Large-scale International Collaboration}{2023 -- 2025}{Nice, France}
+
+Coordination and structuring of software, data-processing and validation workflows for the LISA space mission within a large international engineering and scientific collaboration.
+
+\textbf{Project management relevance:} Cadrage of technical activities, contributor coordination, milestone and validation planning, delivery follow-up, risk identification, reporting, documentation and stakeholder alignment.
+
+\textbf{Industrial PMO relevance:} Work involving complex technical workflows, data-processing chains, GitLab-based development, reproducible environments, technical documentation, validation evidence, indicators and versioned deliverables.
+
+\textbf{Scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Einstein Telescope / LIGO--Virgo--KAGRA -- Technical Studies \& Collaborative Project Workflows}{International Collaborations}{2021 -- 2023}{Antwerp, Belgium}
+
+Contribution to collaborative developments in data analysis, software methods and technical investigations within large-scale international scientific and engineering collaborations.
+
+\textbf{Project management relevance:} Coordination of technical studies, reporting, documentation, contribution to collaborative review, prioritisation of analysis tasks and communication with international stakeholders.
+
+\textbf{System impact:} Studies on environmental and instrumental noise sources supporting the identification of performance limitations and design constraints for next-generation gravitational-wave observatories.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Project management, PMO \& delivery}
+
+{\small
+\cvtag{Project Management}
+\cvtag{PMO}
+\cvtag{Project Coordination}
+\cvtag{Cadrage}
+\cvtag{Planning Follow-Up}
+\cvtag{Milestone Follow-Up}
+\cvtag{Cost Awareness}
+\cvtag{Delay Follow-Up}
+\cvtag{Quality Follow-Up}
+\cvtag{Risk Identification}
+\cvtag{Opportunity Tracking}
+\cvtag{Action Plans}
+\cvtag{Deviation Analysis}
+\cvtag{KPI Follow-Up}
+\cvtag{Steering Supports}
+\cvtag{Decision Support}
+\cvtag{Delivery Support}\newline
+
+\cvtag{Stakeholder Reporting}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+\newpage
+
+\cvsubsection{PMO, risks, reporting \& performance follow-up}
+
+{\small
+\cvtag{PMO}
+\cvtag{Industrial Project}
+\cvtag{Planning Follow-Up}
+\cvtag{Cost / Delay / Quality}
+\cvtag{Risk \& Opportunity Tracking}
+\cvtag{KPI Follow-Up}
+\cvtag{Project Reporting}
+\cvtag{Steering Committees}
+\cvtag{Action Plans}
+\cvtag{Deviation Analysis}
+\cvtag{Quality Follow-Up}
+\cvtag{Validation}
+\cvtag{Test Reports}
+\cvtag{Production Follow-Up}
+\cvtag{Defence Sector Awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Technical environment \& industrial systems}
+
+{\small
+\cvtag{Industrial Systems}
+\cvtag{Critical Systems}
+\cvtag{Space Systems}
+\cvtag{Defence Awareness}
+\cvtag{System Integration}
+\cvtag{Hardware / Software Interfaces}
+\cvtag{Linux}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Git / GitLab}
+\cvtag{GitHub}
+\cvtag{SQL}
+\cvtag{Python}
+\cvtag{Power BI Awareness}
+\cvtag{OpenSearch}
+\cvtag{EV Charging Infrastructure}
+\cvtag{Equipment-Connected Services}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Tools, methods \& change management}
+
+{\small
+\cvtag{JIRA}
+\cvtag{Confluence}
+\cvtag{Zenhub}
+\cvtag{Trello Awareness}
+\cvtag{Agile}
+\cvtag{Scrum Awareness}
+\cvtag{V-cycle Awareness}
+\cvtag{MS Project Ramp-Up}
+\cvtag{Primavera P6 Ramp-Up}
+\cvtag{Change Management}
+\cvtag{User Support}
+\cvtag{User Guidance}
+\cvtag{Workshop Facilitation}
+\cvtag{Stakeholder Alignment}
+\cvtag{Cross-Functional Coordination}
+\cvtag{Technical Documentation}
+\cvtag{Progress Reporting}
+\cvtag{Technical English}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Office \& communication}
+
+{\small
+\cvtag{PowerPoint}
+\cvtag{Excel}
+\cvtag{Word}
+\cvtag{MS Office}
+\cvtag{Executive Presentations}
+\cvtag{Reporting Dashboards}
+\cvtag{KPI Follow-Up}
+\cvtag{Indicator Follow-Up}
+\cvtag{Synthesis}
+\cvtag{Analytical Thinking}
+\cvtag{Problem Solving}
+\cvtag{Pedagogy}
+\cvtag{Autonomy}
+\cvtag{Adaptability}
+\cvtag{Rigor}
+}
+\end{document}

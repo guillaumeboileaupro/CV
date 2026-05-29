@@ -1,0 +1,284 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Thales - Ingénieur Sûreté de Fonctionnement et Safety
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Systems Engineer | Safety, RAMS, IVVQ, Risk Analysis \& Space Systems}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer - System Integration \& Operational Reliability}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Development and integration of software services for EV charging infrastructure within a CPMS platform connected to operational hardware systems.
+
+\textbf{Objective:} Deliver reliable software components, robust operational data flows and maintainable service interactions with charging station systems.
+
+\begin{itemize}
+  \item \textbf{Software development:} Developed web and backend services using TypeScript, Angular and Node.js in an operational industrial environment.
+  \item \textbf{System integration:} Contributed to the integration and maintenance of services interacting with charging infrastructure and field hardware.
+  \item \textbf{Operational reliability:} Supported verification, monitoring and correction of operational data exchanges to ensure consistency and continuity of service.
+  \item \textbf{Hardware/software interfaces:} Analysed interactions between platform services, data flows and charging station systems.
+  \item \textbf{Incident analysis:} Investigated production issues involving software behaviour, data exchanges and hardware interfaces.
+  \item \textbf{Data exchange:} Implemented and monitored FTP-based operational data exchange services.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer - Space Systems, Validation \& Risk Analysis}}{Laboratoire Lagrange, Observatoire de la Côte d'Azur, CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering activities for the LISA ESA/NASA space mission, involving complex software chains, model integration, validation workflows and international coordination.
+
+\textbf{Objective:} Develop, coordinate and validate software and analysis workflows under strong traceability, consistency, performance and verification constraints.
+
+\begin{itemize}
+  \item \textbf{Space systems:} Contributed to mission-level analysis workflows for the LISA ESA/NASA space mission in a large international technical collaboration.
+  \item \textbf{Validation and IVVQ logic:} Structured comparison campaigns, consistency checks and validation workflows for complex models, outputs and software chains.
+  \item \textbf{Risk-oriented analysis:} Investigated anomalies, inconsistencies and technical deviations affecting reliability, interpretation and confidence in results.
+  \item \textbf{Technical evidence:} Consolidated validation outputs, documented limitations and supported engineering discussions with reproducible results.
+  \item \textbf{Software platform:} Developed CATpyLISA, a Python platform for large-scale model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab:CATpyLISA}}
+  \item \textbf{Technical coordination:} Coordinated contributors, supervised interns and supported development, analysis and validation activities across multiple stakeholders.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist - Reliability Analysis, Diagnostics \& Performance Validation}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data analysis and performance studies for precision instruments in a high-requirement technical environment linked to gravitational-wave detector performance.
+
+\textbf{Objective:} Identify, characterize and mitigate sources affecting system sensitivity using robust statistical, computational and validation-oriented methods.
+
+\begin{itemize}
+  \item \textbf{Reliability and performance analysis:} Analysed sources affecting system sensitivity, performance stability and measurement quality.
+  \item \textbf{Technical diagnostics:} Identified contributors to performance degradation and supported prioritisation of possible mitigation actions.
+  \item \textbf{Analysis pipelines:} Developed Python-based pipelines for noise source identification, characterization and mitigation.
+  \item \textbf{Anomaly investigation:} Analysed unexpected behaviours in measurement and simulation outputs to identify possible sources of degradation.
+  \item \textbf{Validation and reporting:} Produced reproducible and traceable technical analyses for international engineering and research stakeholders.
+  \item \textbf{System impact:} Contributed to studies identifying environmental and instrumental constraints for next-generation gravitational-wave observatories.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer - Signal Analysis, Simulation \& Software Validation}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Engineering and analysis activities for gravitational-wave mission preparation, involving signal analysis, simulation, software workflows and noise characterization.
+
+\textbf{Objective:} Develop robust analysis methods for complex signals and support technical investigations in demanding system environments.
+
+\begin{itemize}
+  \item \textbf{Signal analysis:} Developed methods for the separation of overlapping low-SNR signals in complex datasets.
+  \item \textbf{Simulation workflows:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Software validation:} Compared simulated outputs, model behaviours and analysis results to assess consistency and robustness.
+  \item \textbf{Technical investigations:} Investigated noise sources through cross-sensor correlation analyses in diagnostic contexts.
+  \item \textbf{Mission performance:} Supported the identification of limiting factors affecting mission-level performance and system sensitivity.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile for Thales}
+
+\textbf{Systems engineer with a strong background in space systems, complex technical analysis, software IVVQ, validation workflows, anomaly investigation and risk-oriented engineering}. Experience developed through major international collaborations including \textbf{LISA}, \textbf{LIGO--Virgo--KAGRA} and \textbf{Einstein Telescope}, complemented by recent industrial software experience involving operational reliability and hardware/software interfaces.
+
+For a \textbf{RAMS / Safety / Sûreté de Fonctionnement} role, I bring a practical engineering mindset: analysing complex system behaviour, identifying weak points, consolidating validation evidence, documenting technical findings and supporting recommendations to reduce residual technical risk.
+
+\begin{itemize}
+  \item Strong experience with complex systems under reliability, consistency, validation and traceability constraints.
+  \item Verification and validation of models, software chains, technical outputs and analysis workflows.
+  \item Risk-oriented analysis of anomalies, performance degradation, uncertainty sources and system limitations.
+  \item Ability to interface with technical contributors, engineers, researchers, project stakeholders and international teams.
+  \item Structured documentation and technical reporting in English for high-standard collaborative environments.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI - Andrew Ng}{2020}{Coursera}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{Co-author and full member of the LISA Consortium}{ESA/NASA Space Mission - Large-scale International Collaboration}{2018 -- now}{}
+
+Contribution to software, analysis and validation workflows for the LISA space mission within an international engineering and scientific collaboration involving ESA, NASA and multiple research institutes.
+
+\textbf{Role:} Software workflows, technical coordination, model integration, validation campaigns, complex signal-processing activities and collaborative engineering tasks.
+
+\textbf{Relevance for RAMS / Safety:} Work involving complex system behaviour, mission-level performance constraints, uncertainty analysis, consistency checks, validation evidence, technical documentation and cross-functional engineering coordination.
+
+\textbf{Program scale:} Major international space mission with an estimated budget of approximately 2 billion EUR over 10 years.
+
+\divider
+
+\cvevent{Co-author and full member of Einstein Telescope and LIGO--Virgo--KAGRA Collaborations}{International Collaborations}{2021 -- now}{}
+
+Contribution to collaborative developments in data analysis, signal characterization, software methods and technical investigations within the LIGO--Virgo--KAGRA and Einstein Telescope collaborations.
+
+\textbf{Role:} Development of analysis tools, contribution to technical activities and support to complex software workflows in high-standard collaborative environments.
+
+\textbf{System impact:} Studies on environmental and instrumental noise sources helping identify fundamental design constraints and performance limitations for next-generation gravitational-wave observatories.
+
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Safety, RAMS \& Systems}
+
+{\small
+\cvtag{Sûreté de Fonctionnement}
+\cvtag{RAMS}
+\cvtag{Safety-Oriented Analysis}
+\cvtag{Risk Analysis}
+\cvtag{Reliability Analysis}
+\cvtag{Criticality Assessment}
+\cvtag{Systems Engineering}
+\cvtag{Space Systems}
+\cvtag{Mission-Level Performance}
+\cvtag{Requirements Verification}
+\cvtag{Traceability}
+\cvtag{Technical Recommendations}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{IVVQ, Validation \& Diagnostics}
+
+{\small
+\cvtag{Software IVVQ}
+\cvtag{Verification \& Validation}
+\cvtag{Software Integration}
+\cvtag{Validation Campaigns}
+\cvtag{Test Automation}
+\cvtag{Anomaly Analysis}
+\cvtag{Root Cause Analysis}
+\cvtag{Technical Diagnostics}
+\cvtag{Performance Analysis}
+\cvtag{Uncertainty Analysis}
+\cvtag{Technical Reporting}
+\cvtag{Hardware / Software Interfaces}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Tools, Data \& Coordination}
+
+{\small
+\cvtag{Python}
+\cvtag{Linux}
+\cvtag{Bash}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{SQL}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{REST API}
+\cvtag{FTP}
+\cvtag{Technical Coordination}
+\cvtag{Stakeholder Communication}
+\cvtag{Technical English}
+}
+
+\cvtag{\textit{Target roles: RAMS, safety engineering, systems engineering, software IVVQ, space systems and complex system validation}}
+
+\end{document}

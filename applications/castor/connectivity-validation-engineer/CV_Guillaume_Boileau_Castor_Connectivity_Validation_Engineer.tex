@@ -1,0 +1,364 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Castor / Connectivity Validation Engineer Freelance
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{../_shared/altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+\addbibresource{../_shared/sample.bib}
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Ingénieur Validation Connectivité \& Systèmes | Tests, Logs, Defects, Python, Linux, Hardware/Software}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-phd-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- System Integration, Validation \& Production Follow-up}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Industrial software and connected infrastructure environment for an EV charging CPMS platform linked to operational charging stations, field equipment and hardware/software interfaces.
+
+\textbf{Objective:} Validate service behaviour, analyse anomalies and support reliable operation of connected systems through tests, checks, logs, operational follow-up and technical coordination.
+
+\begin{itemize}
+  \item \textbf{Connected systems validation:} Verified service behaviour, operational continuity and data-flow consistency between platform services and field infrastructure.
+  \item \textbf{Connectivity-related issue analysis:} Investigated communication failures, interrupted exchanges, inconsistent data flows and anomalies affecting connected equipment workflows.
+  \item \textbf{Logs, traces \& defects:} Analysed operational symptoms, service behaviour, issue reports and technical traces to identify defects and support resolution.
+  \item \textbf{Hardware/software collaboration:} Worked on software services interacting with charging-station infrastructure, field equipment and operational constraints.
+  \item \textbf{Manual \& operational tests:} Performed validation checks in production-like or live operational conditions to assess service continuity and expected behaviour.
+  \item \textbf{Automation \& scripts:} Developed and maintained TypeScript, Angular and Node.js components supporting operational workflows; strong Python/Linux background for test automation.
+  \item \textbf{Data exchange validation:} Implemented, monitored and checked FTP-based operational data exchange services.
+  \item \textbf{Quality follow-up:} Documented findings, clarified incidents, tracked corrective actions and supported technical reporting with stakeholders.
+  \item \textbf{Agile delivery:} Used Zenhub/GitHub-style workflows for backlog follow-up, task tracking, issue prioritisation and iterative delivery.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer -- Validation, Test Strategy \& Automation}}{CNES, Laboratoire Lagrange, Observatoire de la Côte d'Azur}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} Engineering activities for the LISA ESA/NASA space mission, involving complex software chains, data-processing workflows, simulation, model integration and validation campaigns.
+
+\textbf{Objective:} Define validation strategies, execute test-like analysis campaigns, automate checks and analyse results under strong consistency, traceability and robustness constraints.
+
+\begin{itemize}
+  \item \textbf{Validation strategy:} Defined validation logic, comparison campaigns, consistency checks and acceptance criteria for complex technical outputs.
+  \item \textbf{Test campaign execution:} Prepared, executed and analysed validation campaigns involving large datasets, simulated outputs and complex software behaviours.
+  \item \textbf{Python automation:} Developed CATpyLISA, a Python platform for large-scale model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Anomaly identification:} Detected deviations, inconsistencies, limiting factors and technical risks affecting validation quality and result reliability.
+  \item \textbf{Traceability:} Linked requirements, assumptions, inputs, processing steps and outputs through documented and versioned workflows.
+  \item \textbf{Linux/Git workflows:} Used Linux, Python, Git/GitLab and reproducible environments to automate analyses and support repeatable validation.
+  \item \textbf{Reporting quality:} Produced validation summaries, technical notes, analysis reports and review material for project stakeholders.
+  \item \textbf{Cross-functional work:} Collaborated with international contributors across software, systems, data, modelling and instrumentation constraints.
+  \item \textbf{Continuous improvement:} Improved validation workflows, documentation structure, analysis tools and review practices.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Trace Analysis, Debugging Logic \& Performance Validation}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Performance analysis for precision instrumentation in an international technical environment linked to detector sensitivity and system diagnostics.
+
+\textbf{Objective:} Identify, characterize and mitigate abnormal behaviours affecting measurement quality through signal analysis, Python tooling and reproducible validation workflows.
+
+\begin{itemize}
+  \item \textbf{Trace/result analysis:} Analysed measurements, simulations and diagnostic signals to identify abnormal behaviours and dominant contributors.
+  \item \textbf{Debugging mindset:} Investigated environmental and instrumental effects impacting stability, sensitivity and performance.
+  \item \textbf{Python tooling:} Developed Python pipelines for noise source identification, uncertainty estimation, modelling and automated analysis.
+  \item \textbf{Validation reporting:} Produced reproducible technical analyses, structured reports and review material for international stakeholders.
+  \item \textbf{Technical communication:} Presented complex findings clearly to multidisciplinary teams.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer -- Simulation, Diagnostics \& Validation Workflows}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Software and analysis activities for gravitational-wave mission preparation, involving simulation, diagnostic analysis and validation of complex signal environments.
+
+\textbf{Objective:} Develop robust analysis and validation workflows for demanding technical environments.
+
+\begin{itemize}
+  \item \textbf{Simulation \& validation:} Built simulation approaches for complex signal environments, uncertainty studies and large-scale datasets.
+  \item \textbf{Consistency checks:} Compared simulated outputs, model behaviours and analysis results to assess consistency and robustness.
+  \item \textbf{Diagnostic analysis:} Investigated noise sources through cross-sensor correlation analyses and system-level diagnostics.
+  \item \textbf{Performance analysis:} Supported identification of limiting factors affecting mission-level performance and system sensitivity.
+  \item \textbf{Scientific computing:} Developed Python-based analysis, modelling, documentation and reproducible workflows.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile for Castor}
+
+\textbf{Validation engineer with strong experience in system/software validation, anomaly analysis, logs/results interpretation, Python automation, Linux environments and hardware/software interface follow-up.} Background developed in industrial connected infrastructure, operational software, space systems and complex technical validation environments.
+
+For a \textbf{Connectivity Validation Engineer Freelance} mission, I bring a strong validation mindset: test plans, validation campaigns, manual and automated checks, analysis of logs and defects, technical reporting, quality follow-up and collaboration with software, hardware and system stakeholders.
+
+\begin{itemize}
+  \item Experience in validation, verification, integration and analysis of complex software/system workflows.
+  \item Industrial exposure to connected systems, operational infrastructure and hardware/software interfaces.
+  \item Strong Python, scripting, Linux, Git/GitLab and automation background for test tooling and repeatable analysis.
+  \item Strong capacity for logs, traces, defects, anomalies, technical risks and root-cause-oriented investigation.
+  \item Comfortable with validation plans, test strategy, campaign execution, reporting quality and improvement of test environments.
+  \item International technical experience and professional English for documentation, collaboration and reporting.
+  \item Ready to ramp up on wireless protocol validation tools for Wi-Fi, Bluetooth, GNSS, Cellular and NFC environments.
+\end{itemize}
+
+\cvsection{Target Mission Fit}
+
+\begin{itemize}
+  \item Validation of connected-system functionalities and operational behaviours.
+  \item Preparation of test plans, validation strategies and campaign execution.
+  \item Manual and automated testing using Python/scripts and reproducible environments.
+  \item Analysis of logs, traces, defects, abnormal behaviours and technical findings.
+  \item Collaboration with firmware, hardware, software and system stakeholders.
+  \item Improvement of test environments, validation workflows and documentation.
+  \item Technical reporting, quality follow-up and issue prioritisation.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\end{paracol}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Supervised Machine Learning (Regression \& Classification)}{DeepLearning.AI -- Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, web development, algorithms and software engineering fundamentals.
+}
+
+\cvsection{Projects}
+
+\cvevent{VEV -- Connected EV Charging Infrastructure, Operational Data Flows \& Validation}{Industrial Software / Connected Hardware Infrastructure}{2025 -- 2026}{Valbonne, France}
+
+Contribution to software integration, validation checks and operational follow-up for a CPMS platform connected to EV charging infrastructure.
+
+\textbf{Connectivity validation relevance:} analysis of communication issues, operational data exchanges, service behaviour, anomalies, incident reports and hardware/software interface constraints.
+
+\textbf{Technical relevance:} production follow-up, FTP data flows, operational monitoring, software integration, defect analysis, technical reporting and stakeholder coordination.
+
+\divider
+
+\cvevent{CNES / LISA -- Validation Campaigns, Automation \& Technical Reporting}{ESA/NASA Space Mission -- Large-scale International Collaboration}{2023 -- 2025}{Nice, France}
+
+Coordination and structuring of software, data-processing and validation workflows for the LISA space mission within a large international engineering and scientific collaboration.
+
+\textbf{Validation relevance:} test strategy logic, validation campaigns, consistency checks, requirements-to-results alignment, technical evidence, anomaly investigation, reporting and documentation.
+
+\textbf{Software relevance:} Python platform development, GitLab workflows, reproducible environments, model integration, data-processing chains and versioned deliverables.
+\newpage
+\cvsection{Strengths}
+
+\vspace{-.3cm}
+
+\cvsubsection{Validation connectivité \& tests}
+
+{\small
+\cvtag{Connectivity Validation}
+\cvtag{System Validation}
+\cvtag{Software Validation}
+\cvtag{Validation Strategy}
+\cvtag{Test Plans}
+\cvtag{Test Campaigns}
+\cvtag{Manual Testing}
+\cvtag{Automated Testing}
+\cvtag{Test Execution}
+\cvtag{Test Reports}
+\cvtag{Defect Tracking}
+\cvtag{Quality Follow-Up}
+\cvtag{Continuous Improvement}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Logs, debugging \& anomalies}
+
+{\small
+\cvtag{Log Analysis}
+\cvtag{Trace Analysis}
+\cvtag{Anomaly Identification}
+\cvtag{Defect Investigation}
+\cvtag{Root-Cause Reasoning}
+\cvtag{System Debugging}
+\cvtag{Operational Diagnostics}
+\cvtag{Technical Reporting}
+\cvtag{Risk Identification}
+\cvtag{Corrective Actions}
+\cvtag{Performance Analysis}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+
+\cvsubsection{Connectivity \& embedded environments}
+
+{\small
+\cvtag{Wi-Fi Awareness}
+\cvtag{Bluetooth Awareness}
+\cvtag{GNSS Awareness}
+\cvtag{Cellular Awareness}
+\cvtag{NFC Awareness}
+\cvtag{Wireless Protocols Ramp-Up}
+\cvtag{Embedded Systems Awareness}
+\cvtag{Linux}
+\cvtag{Android Embedded Awareness}
+\cvtag{Hardware/Software Interfaces}
+\cvtag{Firmware Team Interface}
+\cvtag{Hardware Team Interface}
+\cvtag{Software Team Interface}
+\cvtag{Connected Infrastructure}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Automation, software \& tools}
+
+{\small
+\cvtag{Python}
+\cvtag{Bash}
+\cvtag{Scripting}
+\cvtag{Test Automation}
+\cvtag{Linux Environments}
+\cvtag{Git / GitLab}
+\cvtag{GitHub}
+\cvtag{CI/CD}
+\cvtag{Docker}
+\cvtag{SQL}
+\cvtag{C}
+\cvtag{C++}
+\cvtag{TypeScript}
+\cvtag{Node.js}
+\cvtag{Angular}
+\cvtag{REST APIs}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Collaboration \& domains}
+
+{\small
+\cvtag{Technical English}
+\cvtag{International Environment}
+\cvtag{Stakeholder Coordination}
+\cvtag{Cross-Functional Collaboration}
+\cvtag{Agile}
+\cvtag{Kanban}
+\cvtag{Backlog Follow-Up}
+\cvtag{Jira}
+\cvtag{Confluence}
+\cvtag{Zenhub}
+\cvtag{Industrial Software}
+\cvtag{EV Charging Infrastructure}
+\cvtag{Operational Monitoring}
+\cvtag{Production Follow-Up}
+\cvtag{Critical Systems}
+}
+\end{document}

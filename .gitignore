@@ -1,0 +1,29 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.xmpi
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# Latexmk scratch
+_minted-*/
+
+# OS/editor noise
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
