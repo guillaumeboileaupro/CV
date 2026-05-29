@@ -1,0 +1,357 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for SCALIAN - PMO Fundings
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{PMO Fundings / CIR | R\&D, financements innovation, coordination internationale \& rédaction technique}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Développement logiciel, intégration \& support opérationnel}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Plateforme logicielle industrielle CPMS connectée à des infrastructures de recharge, avec services applicatifs, données opérationnelles, flux d’échanges, contraintes terrain et besoins d’exploitation.
+
+\textbf{Objectif :} Contribuer au développement, à l’intégration et à la fiabilisation de services logiciels opérationnels, en combinant analyse de flux, investigation d’incidents, documentation technique et coordination des sujets avec les équipes.
+
+\begin{itemize}
+  \item \textbf{Compréhension technique :} Travail à l’interface entre logiciel, données opérationnelles, services applicatifs et contraintes terrain.
+  \item \textbf{Analyse d’incidents :} Investigation d’échanges FTP, interruptions de flux, incohérences de données et comportements inattendus.
+  \item \textbf{Documentation technique :} Rédaction de constats, analyses d’anomalies et éléments utiles à la résolution par les équipes techniques.
+  \item \textbf{Support opérationnel :} Diagnostic, analyse des causes, formalisation de constats et contribution aux actions de correction.
+  \item \textbf{Développement logiciel :} Contribution à des composants TypeScript, Angular et Node.js intégrés dans une plateforme opérationnelle.
+  \item \textbf{Pratiques collaboratives :} Utilisation de Git, Linux, Zenhub et documentation technique pour suivre les sujets et partager l’information.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- Coordination R\&D, documentation \& validation}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Activités R\&D et développement logiciel pour le segment sol de la mission spatiale LISA ESA/NASA, avec chaînes de données mission L0--L3, simulation, intégration de modèles, validation technique et environnement CNES/ESA.
+
+\textbf{Objectif :} Structurer, documenter, comparer et valider des travaux R\&D complexes afin de produire des résultats exploitables, traçables et présentables en revue collaborative.
+
+\begin{itemize}
+  \item \textbf{Structuration R\&D :} Organisation de workflows, hypothèses, données d’entrée, sorties de simulation, versions, configurations et résultats.
+  \item \textbf{Identification de verrous :} Analyse des difficultés scientifiques et techniques liées aux signaux faibles, modèles hétérogènes, bruit, incertitudes et validation.
+  \item \textbf{Documentation technique :} Rédaction et structuration d’éléments techniques pour expliciter les méthodes, résultats, écarts, limites et hypothèses.
+  \item \textbf{Validation de résultats :} Définition de contrôles de cohérence, règles de comparaison, critères d’acceptabilité et méthodes de vérification.
+  \item \textbf{Coordination transverse :} Interface avec des contributeurs scientifiques, logiciels et institutionnels dans un environnement spatial international.
+  \item \textbf{Synthèse décisionnelle :} Production de synthèses, recommandations et éléments de revue pour faciliter les arbitrages techniques.
+  \item \textbf{Plateforme Python :} Développement de CATpyLISA pour l’intégration, la comparaison, la validation et la revue technique de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Environnement international :} Travail régulier en anglais technique avec des contributeurs et parties prenantes internationales.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Modélisation, IA/Data \& rédaction technique}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Travaux R\&D pour instruments de précision et détecteurs de nouvelle génération, combinant données capteurs, bruit environnemental, modélisation statistique, machine learning et validation de résultats.
+
+\textbf{Objectif :} Développer des workflows robustes et reproductibles pour identifier, caractériser et réduire des sources affectant la qualité de mesure, la performance et la sensibilité de systèmes complexes.
+
+\begin{itemize}
+  \item \textbf{Analyse R\&D :} Identification de problèmes techniques, incertitudes, verrous de modélisation et limites de performance.
+  \item \textbf{Data science :} Développement de workflows Python pour analyse de données, statistiques, performance et validation.
+  \item \textbf{Machine learning :} Structuration d’approches de réduction de bruits non stationnaires avec canaux témoins, machine learning et deep learning.
+  \item \textbf{Modélisation :} Mise en place de pipelines MCMC pour différentes configurations instrumentales et différents niveaux de bruit.
+  \item \textbf{Évaluation :} Utilisation de figures de mérite, analyses de sensibilité et contrôles de cohérence pour comparer des configurations.
+  \item \textbf{Reporting :} Production de résultats traçables, synthèses techniques et recommandations pour parties prenantes internationales.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Simulation, signal \& publications scientifiques}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Travaux de recherche appliquée liés à l’analyse de signaux faibles, à la simulation numérique, au traitement du signal et à la préparation de missions spatiales.
+
+\textbf{Objectif :} Développer des méthodes d’analyse, automatiser des simulations et produire des résultats scientifiques documentés dans un environnement de recherche international.
+
+\begin{itemize}
+  \item \textbf{Rédaction scientifique :} Contribution à des publications, rapports, analyses et supports de présentation.
+  \item \textbf{Simulation numérique :} Développement d’approches de simulation pour environnements complexes et grands jeux de données.
+  \item \textbf{Traitement du signal :} Méthodes d’analyse et de séparation de signaux faibles et superposés.
+  \item \textbf{Validation technique :} Vérification de cohérence, comparaison de résultats, études de sensibilité et limites méthodologiques.
+  \item \textbf{Documentation :} Formalisation des hypothèses, méthodes, résultats et conclusions pour revue collaborative.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Docteur en physique et ingénieur R\&D avec une forte expérience en coordination transverse, documentation technique, analyse de sujets complexes, rédaction scientifique, IA/Data et validation de travaux de recherche.}
+
+Positionnement pour ce rôle : PMO Fundings capable de dialoguer avec des équipes Cloud, IA, Data et cybersécurité, conduire des interviews techniques, consolider les informations collectées, rédiger des notices techniques CIR et contribuer aux dossiers de financements innovation.
+
+\begin{itemize}
+  \item Forte capacité à comprendre, questionner et synthétiser des travaux R\&D complexes.
+  \item Expérience en documentation technique, traçabilité, structuration de résultats et préparation de revues.
+  \item Culture solide des environnements IA, Data, logiciel, simulation, validation et systèmes complexes.
+  \item Habitué aux contextes internationaux, aux échanges techniques en anglais et à la coordination d’acteurs hétérogènes.
+  \item Profil crédible pour le CIR : identification de verrous, incertitudes, méthodes, résultats, limites et apports scientifiques/techniques.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d’Azur}{2018 -- 2021}{Nice, France}
+\divider
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+\divider
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+\divider
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+\small{Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+\small{Reproducible research, GitLab, notebooks/Jupyter, data management, computational documentation, software environments and reproducibility methods.}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+\small{Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, web development, algorithms and software engineering fundamentals.}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA / LISA Segment Sol -- R\&D, données mission \& validation}{Mission spatiale LISA ESA/NASA -- CNES/ESA}{2023 -- 2025}{}
+
+Développement logiciel lié au segment sol de LISA : structuration de données mission, niveaux L0--L3, intégration de modèles, comparaison de résultats, validation technique et revue collaborative de workflows scientifiques.
+
+\textbf{Rôle :} développement Python, structuration de données, documentation technique, validation, analyse d’écarts, synthèse de résultats, coordination avec plusieurs contributeurs et préparation de revues.
+
+\textbf{Apport CIR/PMO :} capacité à expliciter des verrous techniques, collecter les éléments pertinents, formaliser les méthodes, documenter les résultats et produire une synthèse exploitable.
+
+\divider
+
+\cvevent{Travaux R\&D, publications \& synthèses scientifiques}{Simulation / Signal / Data / Modélisation}{2018 -- 2025}{}
+
+Travaux de recherche appliquée sur signaux faibles, bruit, simulation, statistiques, validation de modèles, incertitudes et performance de systèmes complexes.
+
+\textbf{Rôle :} analyse scientifique, rédaction, structuration de résultats, production de figures, formalisation des limites, préparation de supports et échanges avec parties prenantes.
+
+\textbf{Apport CIR/PMO :} compréhension directe de la logique R\&D : état de l’art, verrous, incertitudes, démarche expérimentale, résultats, limites et valorisation technique.
+
+\divider
+
+\cvevent{VEV -- Développement logiciel, intégration \& support opérationnel}{Industrial software / Data flows / Connected infrastructure}{2025 -- 2026}{}
+
+Contribution au développement, à l’intégration, à l’analyse d’incidents et à la documentation technique de services logiciels connectés à des infrastructures terrain.
+
+\textbf{Rôle :} développement TypeScript, Angular et Node.js, intégration logicielle, analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs et formalisation de constats techniques.
+
+\textbf{Apport CIR/PMO :} expérience concrète de compréhension d’un environnement logiciel et data, collecte d’informations techniques, analyse de problèmes opérationnels et restitution claire de constats exploitables.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{CIR, R\&D \& notices techniques}
+{\small
+\cvtag{Crédit Impôt Recherche -- ramp-up}
+\cvtag{Notice technique -- ramp-up}
+\cvtag{Financements innovation}
+\cvtag{Tax incentives -- ramp-up}
+\cvtag{Identification de verrous}
+\cvtag{Incertitudes scientifiques}
+\cvtag{État de l’art}
+\cvtag{Méthodologie R\&D}
+\cvtag{Résultats \& limites}
+\cvtag{Rédaction scientifique}
+\cvtag{Rédaction technique}
+\cvtag{Synthèse complexe}
+\cvtag{Interviews techniques}
+\cvtag{Collecte documentaire}
+\cvtag{Conformité \& contrôle}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{PMO, coordination \& harmonisation}
+{\small
+\cvtag{PMO -- montée métier}
+\cvtag{Coordination transverse}
+\cvtag{Suivi d’actions}
+\cvtag{Organisation}
+\cvtag{Documentation projet}
+\cvtag{Harmonisation de pratiques}
+\cvtag{Accompagnement au changement}
+\cvtag{Modèle global unifié}
+\cvtag{Interfaces équipes}
+\cvtag{Reporting technique}
+\cvtag{Consolidation d’informations}
+\cvtag{Préparation de revues}
+\cvtag{Support décisionnel}
+\cvtag{Amélioration continue}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Financements européens \& subventions}
+{\small
+\cvtag{Financements européens -- ramp-up}
+\cvtag{Subventions -- ramp-up}
+\cvtag{Appels à projets}
+\cvtag{Consortium -- awareness}
+\cvtag{Recherche de partenaires}
+\cvtag{Qualification de partenaires}
+\cvtag{Dossiers de candidature}
+\cvtag{Business Units}
+\cvtag{Collecte de contributions}
+\cvtag{Collaboration internationale}
+\cvtag{Environnement multiculturel}
+\cvtag{Anglais professionnel}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{IA, Data, Cloud \& cybersécurité}
+{\small
+\cvtag{IA}
+\cvtag{Machine Learning}
+\cvtag{Data Science}
+\cvtag{Cloud -- awareness}
+\cvtag{Cybersécurité -- awareness}
+\cvtag{NDC -- ramp-up}
+\cvtag{Data}
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{pandas}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{LLMs}
+\cvtag{Agents IA}
+\cvtag{MCP}
+\cvtag{Chatbots}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Validation, analyse \& systèmes complexes}
+{\small
+\cvtag{Validation}
+\cvtag{IVVQ}
+\cvtag{Contrôles de cohérence}
+\cvtag{Analyse d’écarts}
+\cvtag{Analyse d’incidents}
+\cvtag{Root cause analysis}
+\cvtag{Simulation numérique}
+\cvtag{Modélisation}
+\cvtag{Traitement du signal}
+\cvtag{Analyse de performance}
+\cvtag{Statistiques}
+\cvtag{MCMC}
+\cvtag{Systèmes complexes}
+\cvtag{Risque technique}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Outils \& collaboration}
+{\small
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{Git / GitLab}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Linux}
+\cvtag{Bash}
+\cvtag{Power BI}
+\cvtag{OpenSearch}
+\cvtag{Sentry}
+\cvtag{Agile}
+\cvtag{Kanban}
+\cvtag{Documentation}
+}
+
+\end{document}
