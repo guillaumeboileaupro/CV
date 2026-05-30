@@ -1,0 +1,351 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for EFOR - Ingénieur Validation Systèmes Informatisés (VSI)
+% Positioning: Ingénieur Validation Systèmes Informatisés | IVVQ, cycle en V, tests, intégration & conformité
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../../_shared/pubs-num.tex}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Ingénieur Validation Systèmes Informatisés | IVVQ, cycle en V, tests, intégration \& conformité}
+
+\photoL{2.8cm}{../../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Intégration logicielle, validation \& support opérationnel}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Plateforme logicielle industrielle CPMS connectée à des infrastructures de recharge, avec services applicatifs, données opérationnelles, flux d’échanges, contraintes terrain et besoins d’exploitation.
+
+\textbf{Objectif :} Contribuer à l’intégration, à la validation et à la fiabilisation de services logiciels opérationnels, en analysant les incidents, les flux, les comportements applicatifs et les écarts fonctionnels.
+
+\begin{itemize}
+  \item \textbf{Intégration logicielle :} Analyse des interfaces entre services applicatifs, flux de données, équipements connectés et contraintes terrain.
+  \item \textbf{Validation opérationnelle :} Vérification de la cohérence entre données applicatives, comportements d’équipements et attendus fonctionnels.
+  \item \textbf{Analyse d’incidents :} Investigation d’échanges FTP, interruptions de flux, incohérences de données et comportements inattendus.
+  \item \textbf{Support technique :} Diagnostic, analyse de causes, formalisation de constats et contribution aux actions de correction.
+  \item \textbf{Documentation :} Rédaction d’analyses d’anomalies, constats techniques, éléments de suivi et supports de résolution.
+  \item \textbf{Développement logiciel :} Contribution à des composants TypeScript, Angular et Node.js intégrés dans une plateforme opérationnelle.
+  \item \textbf{Outils projet :} Utilisation de Git, Linux, Zenhub et documentation technique pour suivre les sujets et partager l’information.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- IVVQ, validation système \& cycle en V}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Développement logiciel et activités de validation pour le segment sol de la mission spatiale LISA ESA/NASA, avec chaînes de données mission L0--L3, simulation, intégration de modèles, exigences de traçabilité et environnement CNES/ESA.
+
+\textbf{Objectif :} Structurer, intégrer, vérifier et valider des modèles et produits de données complexes afin de produire des résultats exploitables, traçables et utilisables en revue technique.
+
+\begin{itemize}
+  \item \textbf{Cycle en V :} Expérience de la logique spécification, intégration, vérification, validation et qualification appliquée à des chaînes de données mission.
+  \item \textbf{IVVQ :} Définition de contrôles de cohérence, règles de comparaison, critères d’acceptation et procédures de vérification.
+  \item \textbf{Plans et procédures de tests :} Structuration de scénarios de comparaison, cas de validation, résultats attendus et analyse d’écarts.
+  \item \textbf{Validation de modèles :} Vérification de sorties, comparaison de configurations, qualification d’écarts et analyse d’impact.
+  \item \textbf{Revues techniques :} Préparation d’éléments de revue, synthèses, hypothèses, limites, résultats et recommandations.
+  \item \textbf{Traçabilité documentaire :} Formalisation des données d’entrée, versions, hypothèses, méthodes, résultats et limites.
+  \item \textbf{Coordination transverse :} Interface avec contributeurs scientifiques, logiciels et institutionnels dans un environnement international.
+  \item \textbf{Plateforme Python :} Développement de CATpyLISA pour l’intégration, la comparaison, la validation et la revue technique de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Validation de performance, données capteurs \& qualité de résultats}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Travaux de data science et de validation pour instruments de précision, combinant données capteurs, bruit environnemental, modélisation statistique, machine learning, contrôle de cohérence et validation de performance.
+
+\textbf{Objectif :} Développer des workflows robustes pour analyser des mesures, comparer des configurations, évaluer la performance et produire des résultats traçables.
+
+\begin{itemize}
+  \item \textbf{Validation de performance :} Figures de mérite, analyses de sensibilité, contrôles de cohérence et comparaison de configurations.
+  \item \textbf{Données capteurs :} Analyse de mesures environnementales, propagation, corrélations spatiales et impacts sur la performance système.
+  \item \textbf{Machine learning :} Approches de réduction de bruits non stationnaires avec canaux témoins, machine learning et deep learning.
+  \item \textbf{Modélisation statistique :} Développement de pipelines MCMC pour différentes configurations instrumentales et différents niveaux de bruit.
+  \item \textbf{Qualité des résultats :} Analyse d’incertitudes, limites de performance, robustesse et risques d’interprétation.
+  \item \textbf{Documentation technique :} Production de synthèses, recommandations et résultats traçables pour parties prenantes internationales.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Tests, simulation \& validation scientifique}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Recherche appliquée liée à l’analyse de signaux faibles, à la simulation numérique, au traitement du signal et à la préparation de missions spatiales.
+
+\textbf{Objectif :} Développer des méthodes d’analyse et de simulation afin de produire des résultats robustes, documentés et exploitables.
+
+\begin{itemize}
+  \item \textbf{Simulation numérique :} Développement d’approches de simulation pour environnements complexes et grands jeux de données.
+  \item \textbf{Validation technique :} Vérification de cohérence, comparaison de résultats, études de sensibilité et analyse de limites méthodologiques.
+  \item \textbf{Traitement du signal :} Méthodes pour analyser et séparer des signaux faibles et superposés.
+  \item \textbf{Documentation :} Formalisation des méthodes, hypothèses, résultats et conclusions pour publications et revues collaboratives.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Ingénieur docteur orienté validation de systèmes informatisés, IVVQ, cycle en V, tests, intégration, documentation et conformité technique, avec une expérience solide en systèmes complexes, logiciel, data, validation de modèles et analyse d’écarts.}
+
+Positionnement pour ce rôle : contribuer à la validation de systèmes informatisés en environnement réglementé, définir et exécuter des stratégies de tests, documenter les procédures, participer aux revues d’architecture, garantir la conformité aux exigences et collaborer avec les équipes logiciel, matériel et qualité.
+
+\begin{itemize}
+  \item Forte expérience en validation, IVVQ, cycle en V, critères d’acceptation, contrôles de cohérence et analyse d’écarts.
+  \item Capacité à rédiger des procédures, comptes rendus, plans de test, éléments de revue et documentation traçable.
+  \item Expérience en intégration logicielle, support opérationnel, investigation d’anomalies et amélioration continue.
+  \item Culture systèmes complexes : logiciel, données, capteurs, simulation, exigences, performance, risques et qualité.
+  \item Montée ciblée sur VSI pharma, CSV, FAT/SAT, IQ/OQ/PQ, GxP/GMP et exigences réglementaires santé.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\small{
+Reproducible research, GitLab, notebooks/Jupyter, data management, computational documentation, software environments and reproducibility methods.
+}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms / Coursera / FUN MOOC}{2020 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, reproducible research and software engineering fundamentals.
+}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA / LISA Segment Sol -- IVVQ, tests \& validation de modèles}{Mission spatiale LISA ESA/NASA -- CNES/ESA}{2023 -- 2025}{}
+
+Développement logiciel lié au segment sol de LISA : structuration de données mission, niveaux L0--L3, intégration de modèles, comparaison de résultats, validation technique et revue collaborative de workflows scientifiques.
+
+\textbf{Rôle :} développement Python, définition de contrôles de cohérence, validation de modèles, analyse d’écarts, documentation technique, préparation de revues et coordination avec plusieurs contributeurs.
+
+\textbf{Compétences mobilisées :} IVVQ, cycle en V, tests, validation, traçabilité, Python, GitLab, data quality, documentation technique, analyse de risques.
+
+\divider
+
+\cvevent{VEV -- Intégration logicielle, anomalies \& validation opérationnelle}{Industrial software / Data flows / Connected infrastructure}{2025 -- 2026}{}
+
+Contribution au développement, à l’intégration, à l’analyse d’incidents et à la documentation technique de services logiciels connectés à des infrastructures terrain.
+
+\textbf{Rôle :} développement TypeScript, Angular et Node.js, intégration logicielle, analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs et formalisation de constats techniques.
+
+\textbf{Compétences mobilisées :} intégration, tests fonctionnels, validation opérationnelle, analyse d’anomalies, support technique, documentation, Linux, Git.
+
+\divider
+
+\cvevent{Validation de performance sur données capteurs}{Instrumentation / Signal / Data / Modélisation}{2021 -- 2023}{}
+
+Développement de workflows de validation pour analyser des données capteurs, comparer des configurations, évaluer la performance et produire des résultats documentés.
+
+\textbf{Rôle :} analyse de données, contrôles de cohérence, figures de mérite, comparaison de configurations, documentation, synthèse et recommandations.
+
+\textbf{Compétences mobilisées :} validation de performance, data quality, statistiques, MCMC, Python, traitement du signal, analyse de sensibilité.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{VSI, CSV \& conformité}
+
+{\small
+\cvtag{Validation Systèmes Informatisés -- ramp-up}
+\cvtag{CSV -- ramp-up}
+\cvtag{FAT -- ramp-up}
+\cvtag{SAT -- ramp-up}
+\cvtag{IQ/OQ/PQ -- ramp-up}
+\cvtag{GxP / GMP -- awareness}
+\cvtag{Conformité réglementaire -- awareness}
+\cvtag{Exigences système}
+\cvtag{Traçabilité}
+\cvtag{Documentation qualité}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{IVVQ, tests \& intégration}
+
+{\small
+\cvtag{IVVQ}
+\cvtag{Validation}
+\cvtag{Vérification}
+\cvtag{Intégration}
+\cvtag{Cycle en V}
+\cvtag{Stratégie de test}
+\cvtag{Plans de tests}
+\cvtag{Procédures de test}
+\cvtag{Tests fonctionnels}
+\cvtag{Procédures d’intégration}
+\cvtag{Critères d’acceptation}
+\cvtag{Analyse d’écarts}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Architecture, système \& qualité produit}
+
+{\small
+\cvtag{Revues d’architecture}
+\cvtag{Systèmes complexes}
+\cvtag{Exigences}
+\cvtag{Conformité système}
+\cvtag{Qualité produit}
+\cvtag{Amélioration continue}
+\cvtag{Analyse de risques}
+\cvtag{Root cause analysis}
+\cvtag{Support technique}
+\cvtag{Documentation technique}
+\cvtag{Reporting}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Logiciel, data \& outils}
+
+{\small
+\cvtag{Python}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{SQL}
+\cvtag{Linux}
+\cvtag{Git / GitLab}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{OpenSearch}
+\cvtag{Sentry}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Collaboration \& environnement technique}
+
+{\small
+\cvtag{Équipes logiciel}
+\cvtag{Équipes qualité}
+\cvtag{Équipes matérielles -- awareness}
+\cvtag{Coordination transverse}
+\cvtag{Communication}
+\cvtag{Rigueur}
+\cvtag{Curiosité technique}
+\cvtag{Anglais technique}
+\cvtag{Travail en équipe}
+\cvtag{Autonomie}
+}
+
+\end{document}
