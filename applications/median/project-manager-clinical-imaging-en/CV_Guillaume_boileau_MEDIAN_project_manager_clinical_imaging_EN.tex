@@ -1,0 +1,367 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for Median Technologies - Project Manager I
+% English version
+% Positioning: Scientific Project Manager / Data & Validation | Coordination, documentation, data quality, clinical imaging ramp-up
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../../_shared/pubs-num.tex}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Scientific Project Manager / Data \& Validation | Coordination, documentation, data quality \& clinical imaging ramp-up}
+
+\photoL{2.8cm}{../../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Technical coordination, data quality \& operational support}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Context:} Industrial CPMS software platform connected to field infrastructure, involving application services, operational data, data flows, support activities and reliability constraints.
+
+\textbf{Objective:} Contribute to the monitoring, integration and reliability of operational software services by combining data-flow analysis, incident investigation, documentation and coordination with technical teams.
+
+\begin{itemize}
+  \item \textbf{Data quality:} Analysis of data inconsistencies, interrupted flows, unexpected behaviours and discrepancies between application data and operational reality.
+  \item \textbf{Reconciliation mindset:} Investigation of discrepancies between flows, systems, connected equipment and expected results, with structured findings.
+  \item \textbf{Operational support:} Incident diagnosis, root-cause analysis, preparation of follow-up elements and contribution to corrective actions.
+  \item \textbf{Documentation:} Writing of technical findings, anomaly analyses, resolution notes and knowledge-transfer material.
+  \item \textbf{Coordination:} Follow-up of open topics with teams, information sharing, clarification of issues and prioritisation.
+  \item \textbf{Software development:} Contributions to TypeScript, Angular and Node.js components integrated into an operational platform.
+  \item \textbf{Project tools:} Use of Git, Linux, Zenhub and technical documentation to track actions.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior R\&D Engineer -- Coordination, validation \& scientific documentation}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Context:} R\&D and software development for the LISA ESA/NASA space mission ground segment, involving L0--L3 mission data chains, simulation, model integration, technical validation and international collaboration.
+
+\textbf{Objective:} Structure, coordinate, validate and document complex technical and scientific contributions to deliver traceable, review-ready and usable outputs.
+
+\begin{itemize}
+  \item \textbf{Project coordination:} Follow-up of technical deliverables, open issues, dependencies, deviations and review material.
+  \item \textbf{Study management mindset:} Structuring of data, configurations, results, assumptions, versions, controls and associated documentation.
+  \item \textbf{Validation / quality:} Definition of acceptance criteria, consistency checks, comparison rules and deviation analyses.
+  \item \textbf{Technical documentation:} Production of review material, summaries, assumptions, limitations, results and recommendations.
+  \item \textbf{Communication:} Interface with scientific, software and institutional contributors in an international environment.
+  \item \textbf{Data management:} Organisation of complex datasets, traceability of inputs/outputs, result quality and reproducibility.
+  \item \textbf{Python platform:} Development of CATpyLISA for model integration, comparison, validation and technical review.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Statistics, sensor data \& result validation}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Context:} Data science work for precision instruments, combining sensor data, environmental noise, statistical modelling, machine learning, performance validation and technical reporting.
+
+\textbf{Objective:} Develop robust workflows to analyse complex datasets, compare configurations, verify result consistency and produce technical recommendations.
+
+\begin{itemize}
+  \item \textbf{Statistics \& data analysis:} Analysis of sensor measurements, correlations, time series, uncertainties and performance impacts.
+  \item \textbf{Data management:} Dataset structuring, consistency checking, result validation and documentation.
+  \item \textbf{Performance validation:} Figures of merit, sensitivity analyses, configuration comparison and result qualification.
+  \item \textbf{Machine learning:} Noise-reduction approaches using witness channels, machine learning and deep learning.
+  \item \textbf{Reporting:} Technical summaries, visualisations, recommendations and decision-support material for international stakeholders.
+  \item \textbf{Collaboration:} Work with scientific and technical teams in an English-speaking multicultural environment.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Junior R\&D Engineer -- Scientific analysis, validation \& publications}}{ARTEMIS, Observatoire de la Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Context:} Applied research involving weak-signal analysis, numerical simulation, signal processing and preparation of space-mission science cases.
+
+\textbf{Objective:} Develop analysis and simulation methods to produce robust, documented and usable scientific results.
+
+\begin{itemize}
+  \item \textbf{Scientific analysis:} Processing of complex signals, numerical simulation, result comparison and sensitivity studies.
+  \item \textbf{Validation:} Consistency checks, identification of methodological limitations and result qualification.
+  \item \textbf{Writing:} Contributions to publications, reports, presentations and scientific documentation.
+  \item \textbf{Communication:} Presentation of results to scientific and technical audiences.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Scientific project manager / data-oriented engineer with experience in technical coordination, documentation, data quality, validation, statistics, reporting and international collaboration.}
+
+Target position: manage and contribute to pharma customer project implementation by bringing scientific rigour, action follow-up, clear documentation, data discrepancy management, meeting support, reporting and strong adherence to procedures.
+
+\begin{itemize}
+  \item Scientific PhD background with strong data, statistics, validation and documentation culture.
+  \item Experience coordinating contributors, tracking deliverables, analysing discrepancies, reporting and supporting operations.
+  \item Ability to communicate with technical, business, quality and international stakeholders.
+  \item Strong professional English, both written and spoken.
+  \item Targeted ramp-up on clinical trials, GCP, medical imaging, study binder, PSR, site management and pharma procedures.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d'Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and methodological/software fundamentals of machine learning in Python.
+}
+
+\divider
+
+\cvevent{Reproducible Research: Methodological Principles for Transparent Science}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\small{
+Reproducible research, GitLab, notebooks/Jupyter, data management, computational documentation, software environments and reproducibility methods.
+}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Data, AI, Software and Systems}{OpenClassrooms / Coursera / FUN MOOC}{2020 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, data analysis, software engineering and algorithms.
+}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA -- Coordination, validation \& scientific data management}{LISA ESA/NASA space mission -- CNES/ESA}{2023 -- 2025}{}
+
+Python platform dedicated to model integration, data structuring, result comparison, technical validation and collaborative review of scientific workflows.
+
+\textbf{Role:} technical follow-up, data structuring, model validation, documentation, deviation analysis, review preparation and coordination with multiple contributors.
+
+\textbf{Transfer to Median:} study-management mindset, traceable documentation, data quality, reporting, deliverable follow-up and stakeholder communication.
+
+\divider
+
+\cvevent{VEV -- Data quality, incidents \& operational support}{Industrial software / Data flows / Connected infrastructure}{2025 -- 2026}{}
+
+Contribution to software development, integration, incident analysis and technical documentation for services connected to field infrastructure.
+
+\textbf{Role:} flow analysis, discrepancy investigation, application-behaviour validation, documentation and follow-up of corrective actions.
+
+\textbf{Transfer to Median:} data inconsistency analysis, reconciliation mindset, operational support, documentation and resolution follow-up.
+
+\divider
+
+\cvevent{Statistical workflows and sensor-data validation}{Sensor data / Statistics / Performance validation}{2021 -- 2023}{}
+
+Development of data workflows to analyse complex measurements, produce indicators, compare configurations and formulate technical recommendations.
+
+\textbf{Role:} data analysis, statistics, performance validation, consistency checks, reporting and communication of conclusions.
+
+\textbf{Transfer to Median:} statistics, data management, result quality, traceability, synthesis and English communication.
+
+\cvsection{Core Skills}
+
+\vspace{-.3cm}
+
+\cvsubsection{Project management \& study support}
+
+{\small
+\cvtag{Project management}
+\cvtag{Time / scope / risk}
+\cvtag{Communication}
+\cvtag{Meeting organisation}
+\cvtag{Minutes}
+\cvtag{Project status reporting}
+\cvtag{Training records -- ramp-up}
+\cvtag{Study binder -- ramp-up}
+\cvtag{PSR -- ramp-up}
+\cvtag{Escalation logs -- ramp-up}
+\cvtag{Procedure compliance}
+\cvtag{PM good practices}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Clinical research \& imaging}
+
+{\small
+\cvtag{Clinical trials -- ramp-up}
+\cvtag{Clinical research -- ramp-up}
+\cvtag{GCP -- ramp-up}
+\cvtag{Medical imaging -- ramp-up}
+\cvtag{Site management -- ramp-up}
+\cvtag{Site initiation -- ramp-up}
+\cvtag{Pharma industry -- ramp-up}
+\cvtag{Medical data -- awareness}
+\cvtag{Quality procedures}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Data management \& reconciliation}
+
+{\small
+\cvtag{Data management}
+\cvtag{Data quality}
+\cvtag{Reconciliation}
+\cvtag{Inconsistency analysis}
+\cvtag{Reconciliation reports -- ramp-up}
+\cvtag{Data validation}
+\cvtag{Traceability}
+\cvtag{Documentation}
+\cvtag{Statistics}
+\cvtag{Reporting}
+\cvtag{Root cause analysis}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Software engineering \& technical skills}
+
+{\small
+\cvtag{Software engineering}
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{Linux}
+\cvtag{Git / GitLab}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{Jupyter}
+\cvtag{pandas}
+\cvtag{Power BI}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Validation, quality \& documentation}
+
+{\small
+\cvtag{Validation}
+\cvtag{Quality mindset}
+\cvtag{Procedure writing}
+\cvtag{Technical documentation}
+\cvtag{Review preparation}
+\cvtag{Issue tracking}
+\cvtag{Risk analysis}
+\cvtag{Action follow-up}
+\cvtag{Continuous improvement}
+\cvtag{Good documentation practices}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Communication \& collaboration}
+
+{\small
+\cvtag{English written/oral}
+\cvtag{Cross-functional teams}
+\cvtag{Technical / business interface}
+\cvtag{Client-facing communication}
+\cvtag{Training support}
+\cvtag{Synthesis}
+\cvtag{Rigor}
+\cvtag{Organisation}
+\cvtag{International environment}
+\cvtag{Teamwork}
+}
+
+\end{document}
