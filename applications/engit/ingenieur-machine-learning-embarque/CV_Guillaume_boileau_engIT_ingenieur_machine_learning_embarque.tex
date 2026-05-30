@@ -1,0 +1,375 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for engIT - Ingénieur Machine Learning embarqué
+% Positioning: Ingénieur Machine Learning / Performance | Python, C/C++, Linux, validation, TensorFlow/ONNX ramp-up & systèmes contraints
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../../_shared/pubs-num.tex}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Ingénieur Machine Learning / Performance | Python, C/C++, Linux, validation \& systèmes contraints}
+
+\photoL{2.8cm}{../../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Développement logiciel, intégration \& support opérationnel}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Plateforme logicielle industrielle CPMS connectée à des infrastructures de recharge, avec services applicatifs, données opérationnelles, flux d’échanges, contraintes terrain et besoins d’exploitation.
+
+\textbf{Objectif :} Contribuer au développement, à l’intégration et à la fiabilisation de services logiciels opérationnels, en combinant analyse de flux, investigation d’incidents, validation de comportements applicatifs et documentation technique.
+
+\begin{itemize}
+  \item \textbf{Développement logiciel :} Contribution à des composants TypeScript, Angular et Node.js intégrés dans une plateforme opérationnelle.
+  \item \textbf{Intégration logiciel / terrain :} Travail sur les interfaces entre services applicatifs, données opérationnelles, équipements connectés et contraintes d’exploitation.
+  \item \textbf{Analyse d’incidents :} Investigation d’échanges FTP, interruptions de flux, incohérences de données et comportements inattendus.
+  \item \textbf{Validation opérationnelle :} Vérification de la cohérence entre données applicatives, comportement des équipements et attendus fonctionnels.
+  \item \textbf{Support technique :} Diagnostic, analyse de causes, formalisation de constats et contribution aux actions de correction.
+  \item \textbf{Pratiques projet :} Utilisation de Git, Linux, Zenhub, documentation technique et suivi collaboratif des sujets.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- Machine learning, simulation \& validation de performance}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Développement logiciel et R\&D pour le segment sol de la mission spatiale LISA ESA/NASA, avec chaînes de données mission L0--L3, simulation, intégration de modèles, analyse de performance et validation technique en environnement CNES/ESA.
+
+\textbf{Objectif :} Développer des workflows Python robustes pour intégrer, comparer, valider et exploiter des modèles et données complexes, avec contraintes de performance, reproductibilité et fiabilité des résultats.
+
+\begin{itemize}
+  \item \textbf{Python scientifique \& logiciel :} Développement de CATpyLISA, plateforme Python pour intégration, comparaison, validation et revue de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Machine learning / data-driven workflows :} Structuration de pipelines d’analyse, validation de modèles, métriques, contrôles de cohérence et comparaison de configurations.
+  \item \textbf{Performance \& systèmes contraints :} Analyse de traitements numériques, volumes de données, comportements inattendus, limites de performance et effets de configuration.
+  \item \textbf{Validation \& tests :} Définition de critères d’acceptation, règles de comparaison, procédures de vérification et analyse d’écarts.
+  \item \textbf{Simulation \& prototypage :} Développement d’environnements numériques permettant de tester des modèles et d’évaluer leur robustesse dans différents scénarios.
+  \item \textbf{Documentation technique :} Formalisation des hypothèses, méthodes, résultats, limites et éléments de revue.
+  \item \textbf{Coordination technique :} Interface avec contributeurs scientifiques, logiciels et institutionnels dans un contexte international.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Machine learning, capteurs \& réduction de bruit}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Travaux de data science pour instruments de précision et détecteurs de nouvelle génération, combinant données capteurs, bruit environnemental, modélisation statistique, machine learning, deep learning et validation de performance.
+
+\textbf{Objectif :} Développer des workflows robustes pour analyser des données capteurs, réduire des bruits non stationnaires, comparer des configurations et améliorer la performance de systèmes complexes.
+
+\begin{itemize}
+  \item \textbf{Machine learning appliqué :} Structuration d’approches de réduction de bruits non stationnaires avec canaux témoins, machine learning et deep learning.
+  \item \textbf{Données capteurs :} Analyse de mesures environnementales, propagation, corrélations spatiales et impacts sur la performance système.
+  \item \textbf{Pipelines Python :} Développement de workflows pour analyse de données, statistiques, performance, validation et reporting.
+  \item \textbf{Modélisation avancée :} Mise en place de pipelines MCMC pour différentes configurations instrumentales et différents niveaux de bruit.
+  \item \textbf{Évaluation de performance :} Figures de mérite, analyses de sensibilité, contrôles de cohérence et comparaison de configurations.
+  \item \textbf{Systèmes contraints :} Analyse de signaux très faibles dans des environnements bruités, avec contraintes de sensibilité, robustesse et qualité de mesure.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Signal, simulation \& calcul scientifique}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Recherche appliquée liée à l’analyse de signaux faibles, à la simulation numérique, au traitement du signal et à la préparation de missions spatiales.
+
+\textbf{Objectif :} Développer des méthodes logicielles d’analyse et de simulation afin de produire des résultats scientifiques robustes, documentés et exploitables.
+
+\begin{itemize}
+  \item \textbf{Traitement du signal :} Méthodes pour analyser et séparer des signaux faibles et superposés.
+  \item \textbf{Simulation numérique :} Développement d’approches de simulation pour environnements complexes et grands jeux de données.
+  \item \textbf{Calcul scientifique :} Workflows Python/C d’analyse, visualisation, comparaison et validation de résultats.
+  \item \textbf{Validation :} Vérification de cohérence, comparaison de résultats, études de sensibilité et analyse de limites méthodologiques.
+  \item \textbf{Documentation :} Formalisation des méthodes, hypothèses, résultats et conclusions pour revue collaborative.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Ingénieur docteur orienté Machine Learning, performance et validation de systèmes complexes, avec une expérience solide en Python, C/C++, Linux, data science, traitement du signal, simulation, tests et amélioration continue.}
+
+Positionnement pour ce rôle : contribuer au développement et à l’optimisation de modèles de Machine Learning sur systèmes contraints, avec une montée ciblée sur TensorFlow Lite, ONNX, Linux embarqué, ARM et accélérateurs IA.
+
+\begin{itemize}
+  \item Solide socle ML/data science : apprentissage supervisé, validation de modèles, métriques, analyse d’erreurs, robustesse et performance.
+  \item Expérience en données capteurs, réduction de bruit, signaux faibles, simulation, contraintes de sensibilité et systèmes complexes.
+  \item Python avancé, C/C++, Linux, Git, CI/CD, workflows reproductibles et documentation technique.
+  \item Capacité à collaborer avec équipes software, data, système et hardware grâce à une culture interdisciplinaire.
+  \item Montée rapide visée sur ML embarqué : TensorFlow Lite, ONNX, Linux embarqué, ARM, optimisation mémoire/consommation.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{Achievement Badge}
+
+\small{
+Predictive modelling with scikit-learn and methodological/software fundamentals of machine learning in Python.
+}
+
+\divider
+
+\cvevent{Supervised Machine Learning: Regression \& Classification}{DeepLearning.AI -- Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, algorithms and software engineering fundamentals.
+}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{Noise reduction and predictive modelling workflows}{Machine learning / Sensor data / Precision instrumentation}{2021 -- 2023}{}
+
+Développement de workflows numériques et statistiques pour la réduction de bruit non stationnaire, l’analyse de données capteurs, la comparaison de configurations et la validation de performance sur systèmes complexes.
+
+\textbf{Rôle :} analyse de données, modélisation statistique, pipelines MCMC, approches ML/deep learning pour la réduction de bruit, validation de performance et reporting technique.
+
+\textbf{Compétences mobilisées :} Python, machine learning, deep learning concepts, données capteurs, traitement du signal, statistiques, validation, analyse de performance.
+
+\divider
+
+\cvevent{CATpyLISA -- Plateforme Python de simulation, validation \& performance}{Mission spatiale LISA ESA/NASA -- CNES/ESA}{2023 -- 2025}{}
+
+Plateforme Python dédiée à l’intégration de modèles, à la structuration de données, à la comparaison de résultats, à la validation technique et à la revue collaborative de workflows scientifiques.
+
+\textbf{Rôle :} développement Python, structuration de workflows, simulation, validation de modèles, analyse d’écarts, documentation technique et coordination avec plusieurs contributeurs.
+
+\textbf{Compétences mobilisées :} Python, NumPy, SciPy, pandas, Matplotlib, GitLab, simulation, validation, performance numérique, data quality, documentation.
+
+\divider
+
+\cvevent{VEV -- Logiciel opérationnel, intégration \& support}{Industrial software / Data flows / Connected infrastructure}{2025 -- 2026}{}
+
+Développement et intégration de services logiciels pour une plateforme CPMS connectée à des infrastructures de recharge, avec analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs et support opérationnel.
+
+\textbf{Rôle :} développement TypeScript, Angular et Node.js, intégration logicielle, analyse de flux, investigation d’incidents, validation opérationnelle et documentation technique.
+
+\textbf{Compétences mobilisées :} TypeScript, Angular, Node.js, Linux, Git, analyse d’incidents, intégration logicielle, support opérationnel.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{Machine Learning \& Deep Learning}
+
+{\small
+\cvtag{Machine Learning}
+\cvtag{Deep Learning concepts}
+\cvtag{scikit-learn}
+\cvtag{TensorFlow -- awareness}
+\cvtag{TensorFlow Lite -- ramp-up}
+\cvtag{ONNX -- ramp-up}
+\cvtag{Validation de modèles}
+\cvtag{Métriques}
+\cvtag{Analyse d’erreurs}
+\cvtag{Robustesse}
+\cvtag{Optimisation de modèles -- ramp-up}
+\cvtag{Déploiement ML embarqué -- ramp-up}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Systèmes contraints \& embarqué}
+
+{\small
+\cvtag{Systèmes contraints}
+\cvtag{Linux}
+\cvtag{Linux embarqué -- ramp-up}
+\cvtag{ARM -- awareness}
+\cvtag{Accélérateurs IA -- awareness}
+\cvtag{Optimisation performance}
+\cvtag{Consommation / mémoire -- awareness}
+\cvtag{Temps de calcul}
+\cvtag{Capteurs}
+\cvtag{Instrumentation}
+\cvtag{Software / hardware interface -- awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Python, C/C++ \& outils}
+
+{\small
+\cvtag{Python}
+\cvtag{C}
+\cvtag{C++}
+\cvtag{Bash}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{pandas}
+\cvtag{Matplotlib}
+\cvtag{Jupyter}
+\cvtag{Git}
+\cvtag{GitLab}
+\cvtag{CI/CD}
+\cvtag{Docker}
+\cvtag{Linux}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Validation, tests \& performance}
+
+{\small
+\cvtag{Tests}
+\cvtag{Validation}
+\cvtag{Amélioration continue}
+\cvtag{Analyse de performance}
+\cvtag{Benchmarking}
+\cvtag{Contrôles de cohérence}
+\cvtag{Analyse de sensibilité}
+\cvtag{Diagnostic technique}
+\cvtag{Root cause analysis}
+\cvtag{Documentation technique}
+\cvtag{Reporting}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Data, signal \& simulation}
+
+{\small
+\cvtag{Data Science}
+\cvtag{Données capteurs}
+\cvtag{Traitement du signal}
+\cvtag{Simulation numérique}
+\cvtag{Analyse de bruit}
+\cvtag{Signaux faibles}
+\cvtag{Statistiques}
+\cvtag{MCMC}
+\cvtag{Modélisation}
+\cvtag{Data quality}
+\cvtag{Reproductibilité}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Collaboration \& environnement international}
+
+{\small
+\cvtag{Équipe multidisciplinaire}
+\cvtag{Software / data / hardware}
+\cvtag{Coordination technique}
+\cvtag{Documentation}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{Anglais technique}
+\cvtag{Environnement international}
+\cvtag{Autonomie}
+\cvtag{Rigueur}
+}
+
+\end{document}

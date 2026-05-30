@@ -33,13 +33,14 @@ Exemples :
 - `applications/thales/rams-safety/`
 - `applications/viveris/ivvq/`
 
-Chaque entreprise possède aussi un dossier :
+Toutes les candidatures partagent un seul dossier commun :
 
 ```text
-applications/<entreprise>/_shared/
+applications/_shared/
 ```
 
-Il contient des liens vers les ressources communes utilisées par les `.tex`.
+Il contient les ressources communes utilisées par les `.tex`.
+Les dossiers `applications/<entreprise>/<offre>/` ne gardent qu'un lien local `altacv.cls` pour permettre la compilation directe depuis le dossier.
 
 ### Templates
 
@@ -121,14 +122,12 @@ Le script [scripts/auto_tex_manager.py](/home/gboileau/Documents/CV/Resume_guill
 
 - normalisation de `\documentclass{altacv}` ;
 - ajout ou correction des chemins vers :
-  - `../_shared/pubs-num.tex`
-  - `../_shared/pubs-authoryear.tex`
-  - `../_shared/sample.bib`
-  - `../_shared/moi`
-  - `../_shared/Globe_High`
-  - `../_shared/Suitcase_High`
-  - `../_shared/Yacht_High`
-- création d’un lien `altacv.cls` dans le dossier cible ;
+  - `../../_shared/pubs-num.tex` pour les candidatures
+  - `../../_shared/pubs-authoryear.tex` pour les candidatures
+  - `../../_shared/sample.bib` pour les candidatures
+  - `../../_shared/moi` pour les candidatures
+  - `../_shared/...` pour les templates
+- création d’un lien local `altacv.cls` dans le dossier cible ;
 - création du `.xmpdata` pour les lettres ou documents `pdfx`.
 
 ## Warnings gérés automatiquement

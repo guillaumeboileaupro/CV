@@ -1,1 +1,1 @@
-../../../altacv.cls
+../../altacv.cls

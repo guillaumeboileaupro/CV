@@ -1,1 +1,1 @@
-../_shared/altacv.cls
+../../_shared/altacv.cls

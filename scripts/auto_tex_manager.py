@@ -15,6 +15,8 @@ ROOT = Path(__file__).resolve().parent.parent
 APPLICATIONS_DIR = ROOT / "applications"
 TEMPLATES_DIR = ROOT / "templates"
 UNSORTED_DIR = APPLICATIONS_DIR / "_unsorted"
+APPLICATIONS_SHARED_DIR = APPLICATIONS_DIR / "_shared"
+TEMPLATES_SHARED_DIR = TEMPLATES_DIR / "_shared"
 
 SHARED_FILES = [
     "altacv.cls",
@@ -173,12 +175,11 @@ def target_dir_for(path: Path) -> ManagedFile | None:
 
 def ensure_shared(target_dir: Path) -> None:
     if target_dir.parts[-2] == "templates":
-        shared_dir = TEMPLATES_DIR / "_shared"
-        shared_rel = Path("../_shared")
+        shared_dir = TEMPLATES_SHARED_DIR
+        altacv_target = Path("../_shared/altacv.cls")
     elif "applications" in target_dir.parts:
-        company_dir = target_dir.parent
-        shared_dir = company_dir / "_shared"
-        shared_rel = Path("../_shared")
+        shared_dir = APPLICATIONS_SHARED_DIR
+        altacv_target = Path("../../_shared/altacv.cls")
     else:
         return
 
@@ -189,16 +190,19 @@ def ensure_shared(target_dir: Path) -> None:
             link = shared_dir / name
             if link.exists() or link.is_symlink():
                 link.unlink()
-            link.symlink_to(Path("../../") / name if "templates" in shared_dir.parts else Path("../../../") / name)
+            link.symlink_to(Path("../../") / name if shared_dir == TEMPLATES_SHARED_DIR else Path("../..") / name)
 
     altacv_link = target_dir / "altacv.cls"
     if altacv_link.exists() or altacv_link.is_symlink():
         altacv_link.unlink()
-    altacv_link.symlink_to(shared_rel / "altacv.cls")
+    altacv_link.symlink_to(altacv_target)
 
 
 def patch_tex(tex_path: Path) -> None:
     text = tex_path.read_text(encoding="utf-8")
+    shared_prefix = "../_shared"
+    if "applications" in tex_path.parts:
+        shared_prefix = "../../_shared"
     replacements = {
         r"\documentclass[11pt,a4paper]{../_shared/altacv}": r"\documentclass[11pt,a4paper]{altacv}",
         r"\documentclass[10pt,a4paper]{../_shared/altacv}": r"\documentclass[10pt,a4paper]{altacv}",
@@ -206,18 +210,20 @@ def patch_tex(tex_path: Path) -> None:
         r"\documentclass[11pt,a4paper]{altacv}": r"\documentclass[11pt,a4paper]{altacv}",
         r"\documentclass[10pt,a4paper]{altacv}": r"\documentclass[10pt,a4paper]{altacv}",
         r"\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}": r"\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}",
-        "{pubs-num.tex}": "{../_shared/pubs-num.tex}",
-        "{pubs-authoryear.tex}": "{../_shared/pubs-authoryear.tex}",
-        "{sample.bib}": "{../_shared/sample.bib}",
-        "{moi}": "{../_shared/moi}",
-        "{Globe_High}": "{../_shared/Globe_High}",
-        "{Suitcase_High}": "{../_shared/Suitcase_High}",
-        "{Yacht_High}": "{../_shared/Yacht_High}",
-        "{orcid.svg}": "{../_shared/orcid.svg}",
+        "{pubs-num.tex}": "{%s/pubs-num.tex}" % shared_prefix,
+        "{pubs-authoryear.tex}": "{%s/pubs-authoryear.tex}" % shared_prefix,
+        "{sample.bib}": "{%s/sample.bib}" % shared_prefix,
+        "{moi}": "{%s/moi}" % shared_prefix,
+        "{Globe_High}": "{%s/Globe_High}" % shared_prefix,
+        "{Suitcase_High}": "{%s/Suitcase_High}" % shared_prefix,
+        "{Yacht_High}": "{%s/Yacht_High}" % shared_prefix,
+        "{orcid.svg}": "{%s/orcid.svg}" % shared_prefix,
     }
     for source, target in replacements.items():
         text = text.replace(source, target)
     text = re.sub(r"\\documentclass(\[[^\]]+\])\{[^}]*altacv\}", r"\\documentclass\1{altacv}", text)
+    if "applications" in tex_path.parts:
+        text = text.replace("{../_shared/", "{../../_shared/")
     tex_path.write_text(text, encoding="utf-8")
 
 
