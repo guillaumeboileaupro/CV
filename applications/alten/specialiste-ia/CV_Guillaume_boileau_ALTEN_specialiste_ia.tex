@@ -1,0 +1,401 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for ALTEN - Spécialiste IA expérimenté
+% Positioning: Spécialiste IA / LLM Engineer | Python, RAG, agents IA, FastAPI, MLOps & validation
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../../_shared/pubs-num.tex}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Spécialiste IA / LLM Engineer | Python, RAG, agents IA, FastAPI, MLOps \& validation}
+
+\photoL{2.8cm}{../../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Développement logiciel, IA appliquée \& intégration}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Plateforme logicielle industrielle CPMS connectée à des infrastructures de recharge, avec services applicatifs, données opérationnelles, flux d’échanges, contraintes terrain et besoins d’exploitation.
+
+\textbf{Objectif :} Contribuer au développement, à l’intégration et à la fiabilisation de services logiciels opérationnels, en combinant développement applicatif, analyse d’incidents, documentation technique et usages IA pour assister le delivery.
+
+\begin{itemize}
+  \item \textbf{Développement logiciel :} Contribution à des composants TypeScript, Angular et Node.js intégrés dans une plateforme opérationnelle.
+  \item \textbf{IA appliquée au développement :} Usage d’outils IA pour revue de code, debugging, synthèse technique, documentation et structuration de raisonnements.
+  \item \textbf{APIs \& backend awareness :} Travail sur des interactions entre interfaces utilisateur, services applicatifs, données opérationnelles et comportements métier.
+  \item \textbf{Intégration de services :} Analyse des interfaces entre services applicatifs, flux de données, équipements connectés et contraintes terrain.
+  \item \textbf{Analyse d’incidents :} Investigation d’échanges FTP, interruptions de flux, incohérences de données et comportements inattendus.
+  \item \textbf{Validation opérationnelle :} Vérification de la cohérence entre données applicatives, comportement des équipements et attendus fonctionnels.
+  \item \textbf{Documentation technique :} Formalisation de constats, analyses d’anomalies, explications techniques et supports de résolution.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- Python, IA scientifique \& validation de modèles}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Développement logiciel et R\&D pour le segment sol de la mission spatiale LISA ESA/NASA, avec chaînes de données mission L0--L3, simulation, intégration de modèles, validation technique et environnement CNES/ESA.
+
+\textbf{Objectif :} Développer des workflows Python robustes pour intégrer, comparer, valider et exploiter des modèles et données complexes, avec exigences de reproductibilité, traçabilité, qualité de données et documentation.
+
+\begin{itemize}
+  \item \textbf{Plateforme Python :} Développement de CATpyLISA pour l’intégration, la comparaison, la validation et la revue technique de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+  \item \textbf{Data pipelines :} Structuration de données, configurations, résultats intermédiaires, métriques, produits d’analyse et contrôles de cohérence.
+  \item \textbf{Validation de modèles :} Définition de critères d’acceptation, règles de comparaison, procédures de vérification et analyse d’écarts.
+  \item \textbf{Qualité et gouvernance des données :} Traçabilité des hypothèses, versions, entrées/sorties, limites méthodologiques et résultats.
+  \item \textbf{Métriques \& fiabilité :} Analyse de robustesse, incertitudes, comportements inattendus, anomalies et limites de performance.
+  \item \textbf{Documentation \& transmission :} Rédaction de supports techniques, synthèses, explications de résultats et préparation de revues.
+  \item \textbf{Coordination technique :} Interface avec contributeurs scientifiques, logiciels et institutionnels dans un contexte international.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Machine learning, modèles \& données complexes}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Travaux de data science pour instruments de précision et détecteurs de nouvelle génération, combinant données capteurs, bruit environnemental, modélisation statistique, machine learning, deep learning et validation de performance.
+
+\textbf{Objectif :} Développer des workflows robustes et reproductibles pour analyser des données complexes, réduire des bruits non stationnaires, comparer des configurations et produire des recommandations techniques.
+
+\begin{itemize}
+  \item \textbf{Machine learning appliqué :} Structuration d’approches de réduction de bruits non stationnaires avec canaux témoins, machine learning et deep learning.
+  \item \textbf{Données volumineuses et complexes :} Analyse de mesures environnementales, signaux faibles, corrélations spatiales et impacts sur la performance système.
+  \item \textbf{Modélisation statistique :} Développement de pipelines MCMC pour différentes configurations instrumentales et différents niveaux de bruit.
+  \item \textbf{Évaluation de modèles :} Figures de mérite, analyses de sensibilité, contrôles de cohérence et comparaison de configurations.
+  \item \textbf{Python data science :} Workflows Python pour analyse de données, statistiques, validation, visualisation et reporting.
+  \item \textbf{Communication scientifique :} Production de résultats traçables, synthèses techniques et recommandations pour parties prenantes internationales.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Signal, simulation \& calcul scientifique}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Recherche appliquée liée à l’analyse de signaux faibles, à la simulation numérique, au traitement du signal et à la préparation de missions spatiales.
+
+\textbf{Objectif :} Développer des méthodes logicielles d’analyse et de simulation afin de produire des résultats scientifiques robustes, documentés et exploitables.
+
+\begin{itemize}
+  \item \textbf{Traitement du signal :} Méthodes pour analyser et séparer des signaux faibles et superposés.
+  \item \textbf{Simulation numérique :} Développement d’approches de simulation pour environnements complexes et grands jeux de données.
+  \item \textbf{Calcul scientifique :} Workflows Python/C d’analyse, visualisation, comparaison et validation de résultats.
+  \item \textbf{Validation :} Vérification de cohérence, comparaison de résultats, études de sensibilité et analyse de limites méthodologiques.
+  \item \textbf{Rédaction :} Formalisation des méthodes, hypothèses, résultats et conclusions pour publications et revues collaboratives.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Spécialiste IA / LLM Engineer avec un socle solide en Python, machine learning, LLMs, agents IA, MCP, validation de modèles, data quality, documentation technique, APIs et systèmes complexes.}
+
+Positionnement pour ce rôle : concevoir, prototyper et industrialiser des solutions IA combinant RAG, OCR, search hybride, agents IA, pipelines de données, APIs, monitoring et MLOps, avec une montée ciblée sur Azure AI Search, Azure Document Intelligence, LangChain, LlamaIndex, ChromaDB, FAISS et cloud production.
+
+\begin{itemize}
+  \item Python avancé, data science, ML, validation de modèles, métriques, analyse d’erreurs, reproductibilité et documentation.
+  \item Expérience avec LLMs, agents IA, MCP, chatbots, prompting, workflows outillés et assistance au développement.
+  \item Connaissance de FastAPI, Django et Flask ; pratique API/backend et structuration de workflows Python.
+  \item Culture forte des données complexes : qualité, traçabilité, préparation, validation, gouvernance et interprétation.
+  \item Capacité à vulgariser des concepts complexes et à collaborer avec équipes IA, cloud, métier, avant-vente et projet.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Supervised Machine Learning: Regression \& Classification}{DeepLearning.AI -- Andrew Ng}{2020}{Coursera}
+
+\divider
+
+\cvevent{Python Backend \& Web Frameworks}{Django, FastAPI, Flask}{2024 -- 2026}{Formation continue / pratique personnelle}
+
+\small{
+Développement backend Python, APIs, logique web, structuration d’applications, bonnes pratiques et montée en compétence sur les frameworks Python modernes.
+}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms / Coursera / FUN MOOC}{2020 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, reproducible research and software engineering fundamentals.
+}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{IA générative, agents, chatbots \& MCP}{LLMs / Agentic AI / Tool use / Software productivity}{2024 -- 2026}{}
+
+Exploration et usage de workflows IA pour revue de code, debugging, documentation, synthèse technique, raisonnement incrémental, logique de chatbot, architectures orientées outils et interactions de type MCP.
+
+\textbf{Rôle :} analyse de cas d’usage, conception de workflows, prompting, assistance au développement, documentation, évaluation de pratiques, veille IA et vulgarisation.
+
+\textbf{Compétences mobilisées :} LLMs, agents IA, MCP, chatbots, prompting, Python, architecture de workflows, outillage, documentation, vulgarisation technique.
+
+\divider
+
+\cvevent{CATpyLISA -- Plateforme Python de données, modèles \& validation}{Mission spatiale LISA ESA/NASA -- CNES/ESA}{2023 -- 2025}{}
+
+Plateforme Python dédiée à l’intégration de modèles, à la structuration de données, à la comparaison de résultats, à la validation technique et à la revue collaborative de workflows scientifiques.
+
+\textbf{Rôle :} développement Python, structuration de données, validation de modèles, analyse d’écarts, documentation technique, contrôles de cohérence et coordination avec plusieurs contributeurs.
+
+\textbf{Compétences mobilisées :} Python, NumPy, SciPy, pandas, Matplotlib, GitLab, validation de modèles, data quality, traçabilité, simulation, documentation.
+
+\divider
+
+\cvevent{Noise reduction and predictive modelling workflows}{Machine learning / Sensor data / Precision instrumentation}{2021 -- 2023}{}
+
+Développement de workflows numériques et statistiques pour la réduction de bruit non stationnaire, l’analyse de données capteurs, la comparaison de configurations et la validation de performance sur systèmes complexes.
+
+\textbf{Rôle :} analyse de données, modélisation statistique, pipelines MCMC, approches ML/deep learning pour la réduction de bruit, validation de performance et reporting technique.
+
+\textbf{Compétences mobilisées :} Python, machine learning, deep learning concepts, données capteurs, traitement du signal, statistiques, validation, analyse de performance.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{IA générative, LLMs \& agents}
+
+{\small
+\cvtag{IA générative}
+\cvtag{LLMs}
+\cvtag{OpenAI -- awareness}
+\cvtag{Mistral -- awareness}
+\cvtag{Gemini -- awareness}
+\cvtag{Llama 2/3 -- awareness}
+\cvtag{Agents IA}
+\cvtag{MCP}
+\cvtag{Chatbots}
+\cvtag{Prompt Engineering}
+\cvtag{Tool use}
+\cvtag{Guardrails -- ramp-up}
+\cvtag{Trace logs -- ramp-up}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{RAG, Search \& bases vectorielles}
+
+{\small
+\cvtag{RAG -- ramp-up}
+\cvtag{Retrieval -- ramp-up}
+\cvtag{Search hybride -- ramp-up}
+\cvtag{Embeddings -- ramp-up}
+\cvtag{Retrievers -- ramp-up}
+\cvtag{FAISS -- ramp-up}
+\cvtag{ChromaDB -- ramp-up}
+\cvtag{Pinecone -- awareness}
+\cvtag{Azure AI Search -- ramp-up}
+\cvtag{PostgreSQL}
+\cvtag{MySQL -- awareness}
+\cvtag{SQL}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{OCR, extraction \& documents}
+
+{\small
+\cvtag{OCR -- ramp-up}
+\cvtag{Azure Document Intelligence -- ramp-up}
+\cvtag{Tesseract -- awareness}
+\cvtag{PaddleOCR -- ramp-up}
+\cvtag{EasyOCR -- ramp-up}
+\cvtag{Extraction documentaire -- ramp-up}
+\cvtag{PDF / formulaires}
+\cvtag{Classification documentaire}
+\cvtag{Human-in-the-loop -- ramp-up}
+\cvtag{Pré-traitement}
+\cvtag{Validation humaine}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Python, APIs \& software}
+
+{\small
+\cvtag{Python}
+\cvtag{FastAPI}
+\cvtag{Django}
+\cvtag{Flask}
+\cvtag{APIs}
+\cvtag{Orchestration}
+\cvtag{Streamlit -- ramp-up}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{pandas}
+\cvtag{Jupyter}
+\cvtag{TypeScript}
+\cvtag{Node.js}
+\cvtag{REST API}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{MLOps, Cloud \& production}
+
+{\small
+\cvtag{MLOps -- ramp-up}
+\cvtag{CI/CD}
+\cvtag{Docker}
+\cvtag{Kubernetes -- ramp-up}
+\cvtag{Azure -- ramp-up}
+\cvtag{AWS -- awareness}
+\cvtag{GCP -- awareness}
+\cvtag{Monitoring modèles -- ramp-up}
+\cvtag{Scalabilité -- awareness}
+\cvtag{Sécurité cloud -- awareness}
+\cvtag{RBAC -- awareness}
+\cvtag{VNET -- awareness}
+\cvtag{Audit -- awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{ML, data quality \& validation}
+
+{\small
+\cvtag{Machine Learning}
+\cvtag{Deep Learning concepts}
+\cvtag{NLP -- ramp-up}
+\cvtag{Validation de modèles}
+\cvtag{Métriques}
+\cvtag{Analyse d’erreurs}
+\cvtag{Data quality}
+\cvtag{Gouvernance des données}
+\cvtag{Reproductibilité}
+\cvtag{Traçabilité}
+\cvtag{Fine-tuning -- ramp-up}
+\cvtag{Biais -- awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Collaboration \& transmission}
+
+{\small
+\cvtag{Avant-vente -- ramp-up}
+\cvtag{Prototypage}
+\cvtag{Architecture -- ramp-up}
+\cvtag{Capitalisation technique}
+\cvtag{Veille technologique}
+\cvtag{Vulgarisation}
+\cvtag{Transmission}
+\cvtag{Collaboration transverse}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{Anglais technique}
+}
+
+\end{document}
