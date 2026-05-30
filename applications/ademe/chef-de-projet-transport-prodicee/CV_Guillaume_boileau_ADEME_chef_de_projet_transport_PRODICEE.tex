@@ -1,0 +1,370 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for ADEME - Chef.fe de projet Transport PRODICEE
+% Positioning: Chef de projet Transport / Transition énergétique | PRODICEE, coordination, KPI, données & acteurs publics
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{violet}{HTML}{5A2582}
+\definecolor{rouge}{HTML}{F53B3B}
+\definecolor{noir}{HTML}{00232C}
+\definecolor{bleu}{HTML}{00B0DA}
+\definecolor{rose}{HTML}{F831A0}
+\definecolor{jaune}{HTML}{FFEC00}
+\definecolor{vert}{HTML}{34AD6C}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../../_shared/pubs-num.tex}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Chef de projet Transport / Transition énergétique | Coordination, KPI, données, acteurs publics \& pilotage}
+
+\photoL{2.8cm}{../../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Mobilité électrique, données opérationnelles \& support terrain}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Plateforme CPMS liée à des infrastructures de recharge de véhicules électriques, avec services applicatifs, flux de données, contraintes terrain, exploitation opérationnelle et enjeux de fiabilisation.
+
+\textbf{Objectif :} Contribuer à la fiabilisation de services numériques connectés à des infrastructures de mobilité électrique, en analysant les flux, les incidents, les comportements applicatifs et les besoins opérationnels.
+
+\begin{itemize}
+  \item \textbf{Mobilité électrique :} Travail dans l’écosystème des infrastructures de recharge, à l’interface entre logiciel, données opérationnelles et contraintes terrain.
+  \item \textbf{Données \& exploitation :} Analyse de flux FTP, interruptions de flux, incohérences de données et comportements inattendus.
+  \item \textbf{Support opérationnel :} Diagnostic d’incidents, analyse des causes, formalisation de constats et contribution aux actions de correction.
+  \item \textbf{Validation terrain :} Vérification de la cohérence entre données applicatives, comportement des équipements et attendus fonctionnels.
+  \item \textbf{Documentation technique :} Rédaction de constats, analyses d’anomalies et éléments de suivi utiles aux équipes.
+  \item \textbf{Développement logiciel :} Contribution à des composants TypeScript, Angular et Node.js intégrés dans une plateforme opérationnelle.
+  \item \textbf{Coordination :} Suivi collaboratif des sujets via Git, Linux, Zenhub et échanges avec les équipes techniques.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- Coordination, données, validation \& programme scientifique}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Activités R\&D et développement logiciel pour le segment sol de la mission spatiale LISA ESA/NASA, avec chaînes de données mission L0--L3, simulation, intégration de modèles, validation technique et environnement CNES/ESA.
+
+\textbf{Objectif :} Structurer, suivre, documenter et valider des travaux complexes impliquant plusieurs contributeurs, données hétérogènes, méthodes de simulation, indicateurs de qualité et revues collaboratives.
+
+\begin{itemize}
+  \item \textbf{Pilotage de travaux complexes :} Structuration des besoins, hypothèses, dépendances, jalons, résultats attendus et points de vigilance.
+  \item \textbf{Coordination transverse :} Interface avec contributeurs scientifiques, logiciels et institutionnels dans un environnement international.
+  \item \textbf{Données \& indicateurs :} Structuration de données, métriques, produits d’analyse, contrôles de cohérence et éléments de reporting.
+  \item \textbf{Validation de résultats :} Définition de critères d’acceptabilité, méthodes de comparaison, analyse d’écarts et synthèse des résultats.
+  \item \textbf{Documentation \& revues :} Production de supports techniques, comptes rendus, synthèses, hypothèses, limites et recommandations.
+  \item \textbf{Analyse de risques techniques :} Identification d’écarts, dépendances, incertitudes, impacts et actions correctrices.
+  \item \textbf{Plateforme Python :} Développement de CATpyLISA pour l’intégration, la comparaison, la validation et la revue technique de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Données capteurs, performance \& recommandations techniques}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Travaux de data science appliqués à des instruments de précision, combinant données capteurs, bruit environnemental, modélisation statistique, machine learning, validation et recommandations techniques.
+
+\textbf{Objectif :} Développer des workflows robustes pour analyser des données complexes, comparer des configurations, évaluer des performances et produire des recommandations exploitables.
+
+\begin{itemize}
+  \item \textbf{Analyse de données :} Exploitation de mesures capteurs, corrélations spatiales, propagation, bruit et impacts sur la performance.
+  \item \textbf{KPI \& performance :} Figures de mérite, analyses de sensibilité, contrôles de cohérence et comparaison de configurations.
+  \item \textbf{Machine learning :} Approches de réduction de bruits non stationnaires avec canaux témoins, machine learning et deep learning.
+  \item \textbf{Reporting technique :} Production de synthèses, recommandations, visualisations et éléments de décision.
+  \item \textbf{Coordination internationale :} Échanges avec parties prenantes scientifiques et techniques dans un contexte multiculturel.
+  \item \textbf{Autonomie \& rigueur :} Gestion de sujets complexes, méthodes reproductibles, documentation et suivi des résultats.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Simulation, signal \& rédaction scientifique}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Recherche appliquée liée à l’analyse de signaux faibles, à la simulation numérique, au traitement du signal et à la préparation de missions spatiales.
+
+\textbf{Objectif :} Développer des méthodes d’analyse, automatiser des simulations et produire des résultats scientifiques documentés et exploitables.
+
+\begin{itemize}
+  \item \textbf{Simulation numérique :} Développement d’approches de simulation pour environnements complexes et grands jeux de données.
+  \item \textbf{Analyse \& synthèse :} Traitement de signaux faibles, comparaison de résultats, études de sensibilité et validation.
+  \item \textbf{Rédaction :} Contribution à des publications, rapports, supports de présentation et documentation scientifique.
+  \item \textbf{Restitution :} Présentation de résultats complexes à des publics scientifiques et techniques.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Docteur en physique et ingénieur R\&D / data avec expérience en pilotage de travaux complexes, coordination transverse, analyse de données, KPI, documentation, synthèse et environnement mobilité électrique.}
+
+Positionnement pour ce rôle : contribuer au pilotage du volet Transport de PRODICEE en apportant une capacité forte d’analyse, de coordination, de structuration des données, de suivi d’actions, de reporting, de rédaction et d’animation technique.
+
+\begin{itemize}
+  \item Expérience concrète liée à la mobilité électrique et aux infrastructures de recharge chez VEV.
+  \item Forte capacité d’analyse de données, indicateurs, flux, résultats techniques et anomalies.
+  \item Expérience en coordination de contributeurs, suivi de livrables, documentation, synthèse et restitution.
+  \item Culture institutionnelle et R\&D : CNES/ESA, revues techniques, méthodes, validation, traçabilité et travail avec parties prenantes.
+  \item Montée ciblée sur le dispositif CEE, les acteurs nationaux transport, CEREMA/ATEE et l’évaluation technico-économique des fiches CEE.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\small{
+Reproducible research, GitLab, notebooks/Jupyter, data management, computational documentation, software environments and reproducibility methods.
+}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, data analysis, software engineering and algorithms.
+}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{VEV -- Mobilité électrique, données opérationnelles \& infrastructures de recharge}{CPMS / EV charging / Data flows}{2025 -- 2026}{}
+
+Contribution à une plateforme numérique connectée à des infrastructures de recharge de véhicules électriques, avec analyse de flux, incidents, données opérationnelles et contraintes terrain.
+
+\textbf{Rôle :} analyse de flux, support technique, investigation d’incidents, validation de comportements applicatifs, documentation et contribution à la fiabilisation.
+
+\textbf{Apport ADEME / Transport :} compréhension opérationnelle d’un environnement lié à la mobilité électrique, aux données d’usage, aux infrastructures et à la fiabilité des services numériques.
+
+\divider
+
+\cvevent{CATpyLISA -- Coordination R\&D, données et validation}{Mission spatiale LISA ESA/NASA -- CNES/ESA}{2023 -- 2025}{}
+
+Plateforme Python dédiée à l’intégration de modèles, à la structuration de données, à la comparaison de résultats, à la validation technique et à la revue collaborative de workflows scientifiques.
+
+\textbf{Rôle :} cadrage, développement Python, structuration de données, validation, analyse d’écarts, documentation technique, synthèse de résultats et coordination avec plusieurs contributeurs.
+
+\textbf{Apport programme :} méthode de pilotage technique, suivi de résultats, analyse de risques, production de synthèses et coordination de travaux complexes.
+
+\divider
+
+\cvevent{Workflows data, KPI et recommandations techniques}{Capteurs / Performance / Modélisation}{2021 -- 2023}{}
+
+Développement de workflows de données pour analyser des mesures complexes, produire des indicateurs, comparer des configurations et formuler des recommandations techniques.
+
+\textbf{Rôle :} analyse de données, production d’indicateurs, validation de résultats, reporting, visualisation et restitution de conclusions.
+
+\textbf{Apport Transport / CEE :} capacité à croiser des données, évaluer des impacts, produire des KPI et documenter des résultats pour éclairer la décision.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{Pilotage programme \& coordination}
+
+{\small
+\cvtag{Pilotage de projet}
+\cvtag{Coordination transverse}
+\cvtag{Animation de réseau -- ramp-up}
+\cvtag{Groupes de travail}
+\cvtag{Comités techniques}
+\cvtag{COMEX / COTECH -- awareness}
+\cvtag{Planning}
+\cvtag{Suivi d’actions}
+\cvtag{Pilotage prestataires -- ramp-up}
+\cvtag{Travail en autonomie}
+\cvtag{Management de projet}
+\cvtag{Diplomatie}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Transport, mobilité \& transition énergétique}
+
+{\small
+\cvtag{Mobilité électrique}
+\cvtag{Infrastructures de recharge}
+\cvtag{Transport -- ramp-up}
+\cvtag{Transition énergétique}
+\cvtag{CEE -- ramp-up}
+\cvtag{Fiches CEE -- ramp-up}
+\cvtag{Économies d’énergie -- awareness}
+\cvtag{Incitativité -- ramp-up}
+\cvtag{CEREMA -- awareness}
+\cvtag{ATEE -- awareness}
+\cvtag{Politiques publiques -- awareness}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Données, KPI \& évaluation}
+
+{\small
+\cvtag{Analyse de données}
+\cvtag{KPI}
+\cvtag{Suivi technique}
+\cvtag{Suivi financier -- ramp-up}
+\cvtag{Budget -- ramp-up}
+\cvtag{Enquêtes terrain -- ramp-up}
+\cvtag{Croisement de données}
+\cvtag{Reporting}
+\cvtag{Tableaux de bord}
+\cvtag{Power BI}
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{pandas}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Rédaction, synthèse \& communication}
+
+{\small
+\cvtag{Rédaction technique}
+\cvtag{Synthèse}
+\cvtag{Communication orale}
+\cvtag{Supports de présentation}
+\cvtag{Comptes rendus}
+\cvtag{Restitution}
+\cvtag{Vulgarisation}
+\cvtag{Recommandations}
+\cvtag{Relations partenaires}
+\cvtag{Anglais professionnel}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{R\&D, méthode \& systèmes complexes}
+
+{\small
+\cvtag{R\&D}
+\cvtag{Validation}
+\cvtag{Analyse de risques}
+\cvtag{Simulation}
+\cvtag{Modélisation}
+\cvtag{Machine Learning}
+\cvtag{Data Science}
+\cvtag{Traitement du signal}
+\cvtag{Systèmes complexes}
+\cvtag{Traçabilité}
+\cvtag{Documentation}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Outils}
+
+{\small
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{Power BI}
+\cvtag{Excel}
+\cvtag{PowerPoint}
+\cvtag{Git / GitLab}
+\cvtag{Linux}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{OpenSearch}
+\cvtag{Sentry}
+}
+
+\end{document}
