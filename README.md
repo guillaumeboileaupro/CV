@@ -40,7 +40,7 @@ applications/_shared/
 ```
 
 Il contient les ressources communes utilisées par les `.tex`.
-Les dossiers `applications/<entreprise>/<offre>/` ne gardent qu'un lien local `altacv.cls` pour permettre la compilation directe depuis le dossier.
+Les dossiers `applications/<entreprise>/<offre>/` ne reçoivent plus de copie ni de lien local des fichiers communs.
 
 ### Templates
 
@@ -127,7 +127,7 @@ Le script [scripts/auto_tex_manager.py](/home/gboileau/Documents/CV/Resume_guill
   - `../../_shared/sample.bib` pour les candidatures
   - `../../_shared/moi` pour les candidatures
   - `../_shared/...` pour les templates
-- création d’un lien local `altacv.cls` dans le dossier cible ;
+- compilation via `TEXINPUTS` pour éviter de déposer `altacv.cls` dans chaque dossier cible ;
 - création du `.xmpdata` pour les lettres ou documents `pdfx`.
 
 ## Warnings gérés automatiquement

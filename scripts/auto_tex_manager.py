@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import shutil
 import subprocess
@@ -176,10 +177,8 @@ def target_dir_for(path: Path) -> ManagedFile | None:
 def ensure_shared(target_dir: Path) -> None:
     if target_dir.parts[-2] == "templates":
         shared_dir = TEMPLATES_SHARED_DIR
-        altacv_target = Path("../_shared/altacv.cls")
     elif "applications" in target_dir.parts:
         shared_dir = APPLICATIONS_SHARED_DIR
-        altacv_target = Path("../../_shared/altacv.cls")
     else:
         return
 
@@ -192,10 +191,18 @@ def ensure_shared(target_dir: Path) -> None:
                 link.unlink()
             link.symlink_to(Path("../../") / name if shared_dir == TEMPLATES_SHARED_DIR else Path("../..") / name)
 
-    altacv_link = target_dir / "altacv.cls"
-    if altacv_link.exists() or altacv_link.is_symlink():
-        altacv_link.unlink()
-    altacv_link.symlink_to(altacv_target)
+
+def texinputs_env(tex_path: Path) -> dict:
+    env = os.environ.copy()
+    extra_paths = []
+    if "applications" in tex_path.parts:
+        extra_paths.append(str(APPLICATIONS_SHARED_DIR.resolve()))
+    if "templates" in tex_path.parts:
+        extra_paths.append(str(TEMPLATES_SHARED_DIR.resolve()))
+    extra_paths.append(str(ROOT.resolve()))
+    current = env.get("TEXINPUTS", "")
+    env["TEXINPUTS"] = os.pathsep.join(extra_paths) + os.pathsep + current
+    return env
 
 
 def patch_tex(tex_path: Path) -> None:
@@ -290,6 +297,7 @@ def compile_tex(tex_path: Path) -> tuple[bool, str]:
         cmd,
         cwd=str(tex_path.parent),
         capture_output=True,
+        env=texinputs_env(tex_path),
     )
     log = decode_process_output(result.stdout) + decode_process_output(result.stderr)
     return (result.returncode == 0, log)
