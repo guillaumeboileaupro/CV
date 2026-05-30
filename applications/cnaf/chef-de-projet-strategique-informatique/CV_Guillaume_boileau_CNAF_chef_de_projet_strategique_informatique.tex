@@ -1,0 +1,352 @@
+%%%%%%%%%%%%%%%%%
+% CV tailored for CNAF - Chef.fe de projet stratégique informatique
+%%%%%%%%%%%%%%%%%
+
+\documentclass[8pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=.5cm,bottom=1.cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{8AC0D9}
+\definecolor{PastelRed}{HTML}{00B0DA}
+\definecolor{GoldenEarth}{HTML}{B4AD0C}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{../_shared/pubs-num.tex}
+
+% auto_tex_manager layout tuning
+\emergencystretch=3em
+\hfuzz=60pt
+\hbadness=9999
+\sloppy
+
+\begin{document}
+
+\name{BOILEAU Guillaume}
+\tagline{Chef de projet technique DSI | SI, build/run, risques, cycle en V, Agile \& interfaces techniques}
+
+\photoL{2.8cm}{../_shared/moi}
+
+\personalinfo{%
+  \email{guillaume.boileaupro@gmail.com}
+  \phone{+33 6 59 94 85 84}
+  \location{Alpes-Maritimes, FRANCE}
+  \linkedin{guillaume-boileau-891b81265}
+  \researchgate{Guillaume-Boileau-2}
+  \orcid{0000-0002-3576-6968}
+}
+
+\makecvheader
+\vspace{-0.3cm}
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.64}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Software Engineer -- Développement logiciel, intégration \& support opérationnel}}{VEV Platform Services France}{2025 -- 2026}{Valbonne, France}
+
+\textbf{Contexte :} Plateforme logicielle industrielle CPMS connectée à des infrastructures de recharge, avec services applicatifs, données opérationnelles, flux d’échanges, contraintes terrain et besoins d’exploitation.
+
+\textbf{Objectif :} Contribuer au développement, à l’intégration et à la fiabilisation de services logiciels opérationnels, en combinant analyse de flux, investigation d’incidents, documentation technique et coordination des sujets avec les équipes.
+
+\begin{itemize}
+  \item \textbf{Interface SI / opérations :} Travail à l’interface entre services applicatifs, flux de données, contraintes terrain, support et exploitation opérationnelle.
+  \item \textbf{Qualification de besoins techniques :} Analyse des comportements applicatifs et des besoins liés aux flux, équipements connectés et contraintes d’exploitation.
+  \item \textbf{Support run :} Diagnostic d’incidents, analyse des causes, formalisation de constats et contribution aux actions de correction.
+  \item \textbf{Analyse de flux :} Investigation d’échanges FTP, interruptions de flux, incohérences de données et comportements inattendus.
+  \item \textbf{Validation opérationnelle :} Vérification de la cohérence entre données applicatives, comportement des équipements et attendus fonctionnels.
+  \item \textbf{Développement logiciel :} Contribution à des composants TypeScript, Angular et Node.js intégrés dans une plateforme opérationnelle.
+  \item \textbf{Suivi collaboratif :} Utilisation de Git, Linux, Zenhub, documentation technique et suivi des sujets avec les équipes.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D senior -- Pilotage technique, validation \& segment sol}}{CNES}{2023 -- 2025}{Nice, France}
+
+\textbf{Contexte :} Développement logiciel et activités de coordination technique pour le segment sol de la mission spatiale LISA ESA/NASA, avec chaînes de données mission L0--L3, simulation, intégration de modèles, validation technique et environnement CNES/ESA.
+
+\textbf{Objectif :} Structurer, qualifier, coordonner et valider des contributions techniques complexes afin de produire des résultats exploitables, traçables et présentables en revue collaborative.
+
+\begin{itemize}
+  \item \textbf{Cadrage technique :} Analyse de besoins, contraintes, dépendances, hypothèses, jalons, données d’entrée et résultats attendus.
+  \item \textbf{Cycle de vie projet :} Connaissance du cycle en V appliqué aux chaînes de données spatiales, de la spécification à l’intégration, vérification et validation.
+  \item \textbf{Interface multi-acteurs :} Coordination de contributeurs scientifiques, logiciels et institutionnels dans un environnement spatial international.
+  \item \textbf{Pilotage de sujets techniques :} Suivi de points bloquants, consolidation des informations, priorisation des analyses et transfert de connaissances.
+  \item \textbf{Risques techniques :} Identification d’écarts, analyse d’impact, formalisation des risques et proposition d’actions correctives.
+  \item \textbf{Validation / IVVQ :} Définition de contrôles de cohérence, règles de comparaison, critères d’acceptation et procédures de vérification.
+  \item \textbf{Reporting \& revues :} Production de synthèses, documentation technique, éléments de revue et supports de décision.
+  \item \textbf{Plateforme Python :} Développement de CATpyLISA pour l’intégration, la comparaison, la validation et la revue technique de modèles.
+  \textcolor{DarkPastelRed}{\href{https://gitlab.oca.eu/gboileau/lisa_l3_tools}{\bf GitLab: CATpyLISA}}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Data Scientist -- Coordination technique, données capteurs \& performance}}{Universiteit Antwerpen, Belgium}{2021 -- 2023}{Antwerp, Belgium}
+
+\textbf{Contexte :} Travaux de data science pour instruments de précision et détecteurs de nouvelle génération, combinant données capteurs, bruit environnemental, modélisation statistique, machine learning et validation de performance.
+
+\textbf{Objectif :} Développer des workflows robustes pour analyser des données complexes, comparer des configurations, évaluer des performances et produire des recommandations techniques exploitables.
+
+\begin{itemize}
+  \item \textbf{Analyse de besoins techniques :} Identification de problèmes, contraintes de mesure, dépendances, incertitudes et limites de performance.
+  \item \textbf{Pipelines Python :} Développement de workflows pour analyse de données, statistiques, performance, validation et reporting technique.
+  \item \textbf{Données capteurs :} Analyse de mesures environnementales, propagation, corrélations spatiales et impacts sur la performance système.
+  \item \textbf{Évaluation :} Utilisation de figures de mérite, analyses de sensibilité, contrôles de cohérence et comparaison de configurations.
+  \item \textbf{Support décisionnel :} Production de résultats traçables, synthèses techniques et recommandations pour parties prenantes internationales.
+  \item \textbf{Machine learning :} Approches de réduction de bruits non stationnaires avec canaux témoins, machine learning et deep learning.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Ingénieur R\&D junior -- Simulation, signal \& documentation technique}}{ARTEMIS, Observatoire de la Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\textbf{Contexte :} Activités de R\&D liées à l’analyse de signaux faibles, à la simulation numérique, aux diagnostics de bruit et à la préparation de missions spatiales et d’instruments de détection.
+
+\textbf{Objectif :} Développer des méthodes d’analyse, automatiser des simulations et produire des résultats exploitables dans un environnement scientifique et technique exigeant.
+
+\begin{itemize}
+  \item \textbf{Simulation numérique :} Développement d’approches de simulation pour environnements de signaux complexes et jeux de données de grande taille.
+  \item \textbf{Analyse de données :} Mise en place de méthodes pour analyser et séparer des signaux faibles et superposés.
+  \item \textbf{Validation technique :} Vérification de cohérence, comparaison de résultats, études de sensibilité et limites méthodologiques.
+  \item \textbf{Diagnostics :} Analyse de sources de bruit, corrélations entre capteurs et risques d’interprétation des résultats.
+  \item \textbf{Documentation :} Formalisation des méthodes, hypothèses, résultats et conclusions pour revue collaborative.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Profile}
+
+\textbf{Ingénieur docteur orienté chefferie de projets techniques, coordination DSI et pilotage de sujets SI complexes, avec une expérience solide en logiciel, build/run, validation, risques techniques, documentation, cycle en V et interfaces multi-acteurs.}
+
+Positionnement pour ce rôle : assurer un rôle de SPOC technique, qualifier les besoins, consolider les contraintes, coordonner les parties prenantes, suivre les actions, identifier les risques, préparer les arbitrages et garantir le bon niveau d’information entre équipes techniques.
+
+\begin{itemize}
+  \item Forte capacité à qualifier des demandes techniques, structurer des besoins, identifier contraintes, dépendances, risques et jalons.
+  \item Expérience en coordination transverse entre contributeurs logiciels, techniques, scientifiques, support et parties prenantes internationales.
+  \item Connaissance du cycle de vie projet : cycle en V, Agile/Kanban, validation, IVVQ, livrables, revues et documentation.
+  \item Culture SI et production : intégration logicielle, support opérationnel, analyse d’incidents, monitoring/logs, Docker, CI/CD, Git/Linux.
+  \item Capacité à communiquer, fédérer, synthétiser et produire des supports clairs en contexte complexe ou sous contrainte.
+\end{itemize}
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+\divider
+\cvskill{Spanish}{2}
+\divider
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{PhD in Physics}{Université Côte d’Azur}{2018 -- 2021}{Nice, France}
+
+\divider
+
+\cvevent{Selective Graduate Program in Fundamental Physics (Magistère)}{Université Paris-Saclay}{2016 -- 2018}{Orsay, France}
+
+\divider
+
+\cvevent{MSc in Astronomy and Astrophysics}{Observatoire de Paris / Université Paris-Saclay}{2017 -- 2018}{Paris, France}
+
+\divider
+
+\cvevent{BSc in Fundamental Physics}{Université Paris-Saclay}{2015 -- 2016}{Orsay, France}
+
+\cvsection{Professional Training}
+
+\cvevent{Machine Learning in Python with scikit-learn}{FUN MOOC -- Inria}{2026}{France Université Numérique}
+
+\small{
+Predictive modelling, supervised learning, model evaluation, cross-validation, metrics, pipelines and practical machine learning workflows with Python and scikit-learn.
+}
+
+\divider
+
+\cvevent{Recherche reproductible : principes méthodologiques pour une science transparente}{FUN MOOC -- Inria}{2025}{France Université Numérique}
+
+\small{
+Reproducible research, GitLab, notebooks/Jupyter, data management, computational documentation, software environments and reproducibility methods.
+}
+
+\divider
+
+\cvevent{Continuous Professional Training -- Software, Data, AI and Systems}{OpenClassrooms}{2024 -- 2026}{}
+
+\small{
+Python, SQL, Machine Learning, AI, Linux, JavaScript, TypeScript, Angular, Node.js, Django, REST APIs, C/C++, web development, algorithms and software engineering fundamentals.
+}
+
+\end{paracol}
+
+\cvsection{Projects}
+
+\cvevent{CATpyLISA / LISA Segment Sol -- Cadrage, validation \& coordination technique}{Mission spatiale LISA ESA/NASA -- CNES/ESA}{2023 -- 2025}{}
+
+Développement logiciel lié au segment sol de LISA : structuration de données mission, niveaux L0--L3, intégration de modèles, comparaison de résultats, validation technique et revue collaborative de workflows scientifiques.
+
+\textbf{Rôle :} cadrage des besoins, développement Python, structuration de données, coordination de contributeurs, validation, analyse d’écarts, documentation technique, préparation de revues et transfert de connaissances.
+
+\textbf{Compétences mobilisées :} cycle en V, IVVQ, Python, GitLab, coordination technique, documentation, analyse de risques, données L0--L3, validation, support décisionnel.
+
+\divider
+
+\cvevent{VEV -- Logiciel opérationnel, flux de données \& support run}{Industrial software / Build-run / Data flows}{2025 -- 2026}{}
+
+Développement et intégration de services logiciels pour une plateforme CPMS connectée à des infrastructures de recharge, avec analyse de flux FTP, investigation d’incidents, vérification de comportements applicatifs, support opérationnel et documentation technique.
+
+\textbf{Rôle :} développement TypeScript, Angular et Node.js, analyse de flux, investigation d’incidents, validation opérationnelle, formalisation de constats et contribution à la fiabilisation.
+
+\textbf{Compétences mobilisées :} build/run, support opérationnel, analyse d’incidents, flux FTP, TypeScript, Angular, Node.js, Linux, Git, documentation technique.
+
+\divider
+
+\cvevent{Workflows de simulation, performance et analyse de bruit}{Systèmes complexes / Données / Performance}{2018 -- 2025}{}
+
+Développement de workflows numériques et statistiques pour analyser des signaux faibles, caractériser des contributions de bruit, comparer des résultats et évaluer la robustesse de modèles dans des environnements complexes.
+
+\textbf{Rôle :} analyse de performance, simulation, traitement du signal, caractérisation de bruit, études de sensibilité, diagnostics techniques, validation de résultats, reporting et support à la décision.
+
+\textbf{Compétences mobilisées :} analyse de performance, Python, C, simulation, statistiques, MCMC, validation, analyse de sensibilité, documentation technique.
+
+\cvsection{Compétences clés}
+
+\vspace{-.3cm}
+
+\cvsubsection{Chefferie de projet technique \& SPOC}
+
+{\small
+\cvtag{Chefferie de projet technique}
+\cvtag{SPOC technique}
+\cvtag{Qualification de besoins}
+\cvtag{Fiche expression de besoin}
+\cvtag{Contraintes / jalons / dépendances}
+\cvtag{Suivi d’actions}
+\cvtag{Coordination transverse}
+\cvtag{Reporting hiérarchie}
+\cvtag{Comités techniques}
+\cvtag{Cadrage}
+\cvtag{Transfert de connaissances}
+\cvtag{Ateliers \& réunions}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{SI, build/run \& production}
+
+{\small
+\cvtag{Systèmes d’information}
+\cvtag{Build}
+\cvtag{Run}
+\cvtag{MCO -- awareness}
+\cvtag{Performance du run}
+\cvtag{Mise en production -- awareness}
+\cvtag{Support opérationnel}
+\cvtag{Métrologie / performance -- awareness}
+\cvtag{Monitoring}
+\cvtag{Logs}
+\cvtag{OpenSearch}
+\cvtag{Sentry}
+\cvtag{Docker}
+\cvtag{CI/CD}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Cycle de vie, risques \& qualité}
+
+{\small
+\cvtag{Cycle en V}
+\cvtag{Agile}
+\cvtag{Kanban}
+\cvtag{IVVQ}
+\cvtag{Validation}
+\cvtag{Tests techniques}
+\cvtag{Analyse de risques}
+\cvtag{Alertes \& plans d’actions}
+\cvtag{Arbitrage technique}
+\cvtag{Qualité de service}
+\cvtag{Amélioration continue}
+\cvtag{Gestion du stress}
+\cvtag{Résilience}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Architecture, intégration \& technique}
+
+{\small
+\cvtag{Architecture technique -- awareness}
+\cvtag{Urbanisation SI -- awareness}
+\cvtag{Intégration logicielle}
+\cvtag{Services applicatifs}
+\cvtag{APIs}
+\cvtag{Backend}
+\cvtag{Frontend}
+\cvtag{Python}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{Node.js}
+\cvtag{SQL}
+\cvtag{Linux}
+\cvtag{Git / GitLab}
+}
+
+\divider\smallskip
+\vspace{-.3cm}
+
+\cvsubsection{Communication \& leadership transverse}
+
+{\small
+\cvtag{Leadership transverse}
+\cvtag{Communication positive}
+\cvtag{Fédérer les parties prenantes}
+\cvtag{Synthèse}
+\cvtag{Analyse}
+\cvtag{Documentation}
+\cvtag{Confluence}
+\cvtag{Jira}
+\cvtag{Zenhub}
+\cvtag{Power BI}
+\cvtag{Anglais technique}
+\cvtag{Veille technologique}
+\cvtag{Environnement international}
+}
+
+\end{document}
